@@ -8,7 +8,7 @@ markdown: kramdown
 disqus: "johanveldhuis"
 google_analytics: johanveldhuis
 title: 'Johan&#039;s Web Portal'
-url: https://www.johanveldhuis.nl
+url: http://www.johanveldhuis.nl
 
 defaults:
   -
