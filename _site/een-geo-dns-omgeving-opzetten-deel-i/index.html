@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Setting up a Geo DNS environment in your test lab &#8211; part I</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Setting up a Geo DNS environment in your test lab &#8211; part I </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   December 
+	   2nd,
+	     
+	   2012
+	 </span>
+	  <div class="article_body">
+	  <p>In one of my previous blogs about Exchange 2013 we talked about how we can install Exchange 2013 using the cmdline.</p>
+
+<p>As you may know there have been made several changes to Exchange related to high availability and site resilience. In this blog we will build a test environment which makes it possible to test the concept of geo DNS.</p>
+
+<p>Let’s start with explaining what geo DNS is. Geo DNS is a system which returns IP-addresses to the client depending on their location. This location is determined by their IP address. Using geo DNS you will get the option to send clients to the datacenter for their region.</p>
+
+<p>Below a graphical overview of our lab environment which we are going to build:</p>
+
+<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/Network-overview.jpg"><img class="aligncenter size-medium wp-image-2600" title="Network overview" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/Network-overview-300x287.jpg?resize=300%2C287" alt="" width="300" height="287" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/Network-overview.jpg?resize=300%2C287&amp;ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/Network-overview.jpg?w=531&amp;ssl=1 531w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" width="211">
+      <strong>Server</strong>
+    </td>
+    
+    <td valign="top" width="197">
+      <strong>Role</strong>
+    </td>
+    
+    <td valign="top" width="197">
+      <strong>IP</strong>
+    </td>
+  </tr>
+  
+  <tr>
+    <td valign="top" width="211">
+      DC01
+    </td>
+    
+    <td valign="top" width="197">
+      Domain Controller
+    </td>
+    
+    <td valign="top" width="197">
+      192.168.2.50
+    </td>
+  </tr>
+  
+  <tr>
+    <td valign="top" width="211">
+      DC02
+    </td>
+    
+    <td valign="top" width="197">
+      Domain Controller
+    </td>
+    
+    <td valign="top" width="197">
+      192.168.3.50
+    </td>
+  </tr>
+  
+  <tr>
+    <td valign="top" width="211">
+      EX01
+    </td>
+    
+    <td valign="top" width="197">
+      Exchange 2013 Multirole server
+    </td>
+    
+    <td valign="top" width="197">
+      192.168.2.51
+    </td>
+  </tr>
+  
+  <tr>
+    <td valign="top" width="211">
+      EX02
+    </td>
+    
+    <td valign="top" width="197">
+      Exchange 2013 Multirole server
+    </td>
+    
+    <td valign="top" width="197">
+      192.168.3.51
+    </td>
+  </tr>
+  
+  <tr>
+    <td valign="top" width="211">
+      GEODNS
+    </td>
+    
+    <td valign="top" width="197">
+      Windows Server with only the DNS role installed
+    </td>
+    
+    <td valign="top" width="197">
+      192.168.1.50
+    </td>
+  </tr>
+</table>
+
+<p>I will assume the following prerequisites are met:</p>
+
+<ul>
+  <li>Both DC’s are in place and replication between them works correctly</li>
+  <li>Both Exchange 2013 Multirole servers are installed using my previous blog or one of the many other blogs which are available on the internet</li>
+  <li>The GEODNS server contains a basic OS and the DNS role is installed</li>
+</ul>
+
+<p>Let’s start with the GEODNS server you may think does Windows offer this functionality? But for real world scenarios you will most likely use one of the DNS servers from vendors offering the service.</p>
+
+<p>To make our GEODNS server ready the only thing we will have to do is add some DNS records which point to the servers in both datacenters. In the table below you will find an overview of the DNS records we will create:</p>
+
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" width="302">
+      <strong>Record</strong>
+    </td>
+    
+    <td valign="top" width="302">
+      <strong>IP</strong>
+    </td>
+  </tr>
+  
+  <tr>
+    <td valign="top" width="302">
+      autodiscover.johanveldhuis.nl
+    </td>
+    
+    <td valign="top" width="302">
+      192.168.2.51&lt;/p&gt; 
+      
+      <p>
+        192.168.3.51&lt;/td&gt; &lt;/tr&gt; 
+        
+        <tr>
+          <td valign="top" width="302">
+            mail.johanveldhuis.nl
+          </td>
+          
+          <td valign="top" width="302">
+            192.168.2.51&lt;/p&gt; 
+            
+            <p>
+              192.168.3.51&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; 
+              
+              <p>
+                As you can see we will create the records twice, one per IP. So how will the Windows DNS server answer? By default it will use Round Robin to provide the answers:
+              </p>
+              
+              <p>
+                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+              </p>
+              
+              <p>
+                <em>192.168.2.51<br /> 192.168.3.51</em>
+              </p>
+              
+              <p>
+                When we peform the same answer we will get this answer:
+              </p>
+              
+              <p>
+                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+              </p>
+              
+              <p>
+                <em>192.168.3.51<br /> 192.168.2.51</em>
+              </p>
+              
+              <p>
+                But there’s a nice feature of Windows DNS we can use for our geo DNS solution called netmask ordering. Using this feature we can arrange that the IP of the server which matches the client subnet is returned as the first answer if round robin has been disabled.
+              </p>
+              
+              <p>
+                For example when we do an nslookup from a machine which is placed in the 192.168.3 segment we will get the following answer:
+              </p>
+              
+              <p>
+                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+              </p>
+              
+              <p>
+                <em>192.168.3.51<br /> 192.168.2.51</em>
+              </p>
+              
+              <p>
+                For all operating systems make sure the following registry key is in place:
+              </p>
+              
+              <p>
+                <em>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters<br /> </em><em>DWORD = OverrideDefaultAddressSelection </em>
+              </p>
+              
+              <p>
+                &nbsp;
+              </p>
+              
+              <p>
+                <em>Value data: = 0</em>
+              </p>
+              
+              <p>
+                This will enable the netmasking feature. Besides this disable round robin on the server. Disabling the round robin feature on a server can be done by opening the DNS MMC and getting the properties of the server. Select the <em>Advanced </em>tab and uncheck the <em>Enable round robin </em>option. Restarting DNS maybe necessary to activate the change.
+              </p>
+              
+              <p>
+                <a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/DNS-properties.jpg"><img class="aligncenter size-medium wp-image-2601" title="DNS properties" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/DNS-properties-257x300.jpg?resize=257%2C300" alt="" width="257" height="300" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/DNS-properties.jpg?resize=257%2C300&amp;ssl=1 257w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/DNS-properties.jpg?w=415&amp;ssl=1 415w" sizes="(max-width: 257px) 100vw, 257px" data-recalc-dims="1" /></a>
+              </p>
+              
+              <p>
+                Let’s assume we perform the same action as in the previous example and see what happens:
+              </p>
+              
+              <p>
+                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+              </p>
+              
+              <p>
+                <em>192.168.3.51<br /> </em><em>192.168.2.51</em>
+              </p>
+              
+              <p>
+                Next time you perform the same query you will get the following answer:
+              </p>
+              
+              <p>
+                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+              </p>
+              
+              <p>
+                <em>192.168.2.51<br /> 192.168.3.51</em>
+              </p>
+              
+              <p>
+                So to summarize the configuration part:
+              </p>
+              
+              <ul>
+                <li>
+                  Disable round robin
+                </li>
+                <li>
+                  Create/modify the registry key
+                </li>
+                <li>
+                  Create the necessary DNS records
+                </li>
+                <li>
+                  Perform some tests from a client to see if it works
+                </li>
+              </ul>
+              
+              <p>
+                Now we have completed the configuration of the geo DNS server we can continue with configuring Exchange 2013.
+              </p>
+              
+              <p>
+                Configuration of the Exchange 2013 environment can be split up in a few parts:
+              </p>
+              
+              <ul>
+                <li>
+                  Configuring the Database Availability Group (DAG)
+                </li>
+                <li>
+                  Configure the CAS role
+                </li>
+              </ul>
+              
+              <p>
+                Let’s start with the DAG. Since we only have two Exchange servers we will need to select a third server to act as Witness-server to get quorum in the cluster. In this scenario we have selected DC01 to be the witness-server. Before creating the DAG make sure the <em>Exchange Trusted Subsystem </em>is a member of the <em>administrators</em> group. In production environments it is not recommend to use a DC for this purpose
+              </p>
+              
+              <p>
+                In this scenario we have multiple sites which are well connected. But in some scenarios you might have some replication latency. If this is the case pre-stage the Cluster Name Object (CNO). This because else you might see that a second CNO is created which will cause issues.
+              </p>
+              
+              <p>
+                Because this is not the case in our scenario we could skip this step but I thought it would be nice to explain how you can create it:
+              </p>
+              
+              <ul>
+                <li>
+                  Open <em>Active Directory Users and Computers (ADUC)</em>
+                </li>
+                <li>
+                  Browse to the OU which you like to contain the object
+                </li>
+                <li>
+                  Create a new <em>computer </em>account an give it the DAG name as the computername
+                </li>
+                <li>
+                  Disable the computer account
+                </li>
+                <li>
+                  Ensure the <em>advanced </em>options are enabled in ADUC
+                </li>
+                <li>
+                  Get the properties of the computer account
+                </li>
+                <li>
+                  Select the <em>security </em>tab
+                </li>
+                <li>
+                  Add the <em>Exchange Trusted Subsystem </em>security group or the computer account of the first DAG node
+                </li>
+                <li>
+                  Give the group/account <em>full control</em>
+                </li>
+              </ul>
+              
+              <p>
+                Once the CNO object has been created and replication has occurred we can execute the cmdlet to create the DAG:
+              </p>
+              
+              <p>
+                <em>New-DatabaseAvailabilityGroup -Name DAG01 -WitnessServer DC01 -WitnessDirectory C:\DAG01 </em>&#8211;<em>DatabaseAvailabilityGroupIpAddresses 192.168.2.60, 192.168.3.60</em>
+              </p>
+              
+              <p>
+                This cmdlet will create a DAG called <em>DAG01 </em>and will configure <em>DC01 </em>to be set as the witness server. During this process the directory and share are created on DC01.
+              </p>
+              
+              <p>
+                Now the DAG has been created we can add both servers to the DAG:
+              </p>
+              
+              <p>
+                <em>Add-DatabaseAvailabilityGroupServer -Identity DAG01 -MailboxServer EX01</em>
+              </p>
+              
+              <p>
+                Followed by:
+              </p>
+              
+              <p>
+                <em>Add-DatabaseAvailabilityGroupServer -Identity DAG01 -MailboxServer EX02</em>
+              </p>
+              
+              <p>
+                Once these two steps have been performed and both servers are successfully added to the DAG it’s time to configure the additional database copies:
+              </p>
+              
+              <p>
+                In our scenario we want to configure the following:
+              </p>
+              
+              <table border="1" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td valign="top" width="201">
+                    <strong>Database</strong>
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    <strong>Server</strong>
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    <strong>Activation Preference</strong>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td valign="top" width="201">
+                    MBDB01
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    EX01
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    1
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td valign="top" width="201">
+                    MBDB01
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    EX02
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    2
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td valign="top" width="201">
+                    MBDB02
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    EX01
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    2
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td valign="top" width="201">
+                    MBDB02
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    EX02
+                  </td>
+                  
+                  <td valign="top" width="201">
+                    1
+                  </td>
+                </tr>
+              </table>
+              
+              <p>
+                To create the configuration as listed above we will use the <em>Exchange Management Shell (EMS)</em>. Configuring the additional database copies can be done by using the <em>Add-MailboxDatabaseCopy </em>cmdlet:
+              </p>
+              
+              <p>
+                <em>Add-MailboxDatabaseCopy -Identity MBDB01 -MailboxServer EX02 -ActivationPreference 2</em>
+              </p>
+              
+              <p>
+                <em>Add-MailboxDatabaseCopy -Identity MBDB02 -MailboxServer EX01 -ActivationPreference 2</em>
+              </p>
+              
+              <p>
+                After running the cmdlet it’s just a matter of time before the seeding process completes. Please verify that the second copy of each database has the status healthy to confirm the process has completed.
+              </p>
+              
+              <p>
+                So to summarize the steps above:
+              </p>
+              
+              <ul>
+                <li>
+                  Create the CNO object
+                </li>
+                <li>
+                  Create the DAG
+                </li>
+                <li>
+                  Add the servers to the DAG
+                </li>
+                <li>
+                  Create the additional database copies
+                </li>
+              </ul>
+              
+              <p>
+                With this step we have completed the Mailbox role side.
+              </p>
+              
+              <p>
+                Here ends the first part of setting up a geo DNS solution in a test lab. In this part we did setup the GEODNS server and had a look at netmasking feature from the DNS server. We finished this part with configuring the Database Availability Group.
+              </p>
+              
+              <p>
+                In the next part we will continue with configuring both Client Access Servers and after that it’s time to perform some testing.
+              </p>
+</p></td></tr></p></td></tr></table>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2013-ref">
+					Exchange 2013 <span>(19)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Setting up a Geo DNS environment in your test lab &#8211; part I&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/microsoft-geeft-exchange-2010-sp2-rollup-5-vrij/" title="Microsoft release Exchange 2010 SP2 Rollup 5">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/een-geo-dns-omgeving-opzetten-deel-ii/" title="Setting up a Geo DNS environment in your test lab &#8211; part II">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

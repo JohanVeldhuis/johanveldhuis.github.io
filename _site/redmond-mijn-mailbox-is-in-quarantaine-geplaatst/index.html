@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Redmond my mailbox is quarantined</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Redmond my mailbox is quarantined </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   June 
+	   20th,
+	   
+	   2012
+	 </span>
+	  <div class="article_body">
+	  <p>As you may know Exchange 2010 contains several built-in security features to prevent issues with your server. Think of the back pressure mechanism which protects your Hub Transport from being brought down due to lack of resources.</p>
+
+<p>Another security feature can be found on the Mailbox Server and then specifically in the Information Store process. For those who don’t know what the responsibilities are of the Information Store: almost everything which is database related. For example if the Information Store is down you won’t be able to mount both mailbox and public folder databases.</p>
+
+<p>The feature I am talking about is quarantining a mailbox. But why does Exchange performs this action on mailboxes? Well there are a few reasons why Exchange can decide to place a mailbox in quarantine:</p>
+
+<ul>
+  <li>Thread doing work for a mailbox fails</li>
+  <li>More than five threads in a mailbox that haven’t made progress for a long time (more than 60 seconds)</li>
+</ul>
+
+<p>As you have seen it all has to do with threads on a mailbox which fail. Every time one of the issues occurs a counter is raised. This counter is stored in the registry. Besides the counter the Information Store keeps the timestamp information about when the issue occurred with the specific mailbox also called the poison mailbox.</p>
+
+<p>You may think why is this setting stored in the registry? Well the reason for this is that the information stored here will be replicated by the cluster database if you are running a high availability environment.  The following registry path is created used to store the keys:</p>
+
+<p><em>HKLM\SYSTEM\CurrentControlSet\Services\MSExchangeIS\Private-{db guid}\QuarantinedMailboxes{mailbox guid}</em><strong>__</strong></p>
+
+<p>In this path the following keys will be created:</p>
+
+<ul>
+  <li>CrashCount: the amount of crashes detected</li>
+  <li>LastCrashTime: the timestamp of the last occurance of a crash</li>
+  <li>QuarantineState: is a mailbox quarantined or not</li>
+  <li>QuarantineTime: the time the mailbox is placed in quarantine</li>
+</ul>
+
+<p>If the issue doesn’t occur again in two hours the registry key used to store the counter is deleted. The 2 hours is a value which can’t be changed. But there are two other interesting keys:</p>
+
+<ul>
+  <li>MailboxQuarantineCrashThreshold: how many issue may occur before a mailbox is put in quarantine</li>
+  <li>MailboxQuarantineDurationInSeconds: how long is the mailbox placed in quarantine<em>**</em></li>
+</ul>
+
+<p>By default when three issues occur a mailbox is placed in quarantine. The mailbox will be kept in quarantine for 6 hours (21600 seconds). After the 6 hours are expired the mailbox is removed from quarantine.</p>
+
+<p>Both keys can be found here:</p>
+
+<p><em>HKLM\SYSTEM\CurrentControlSet\Services\MSExchangeIS\Private-{db guid}\QuarantinedMailboxes</em></p>
+
+<p>But what happens to a mailbox put in quarantine? Well the answer is quit short: it isn’t accessible for any end-user. Even background processes such as content indexing and the mailbox assistant can’t access the mailbox. This is because these processes, just like end-users, don’t pass the <em>OPEN_AS_ADMIN</em>  flag. This special flag checks if a user who tries to connects passes the OPEN_AS_ADMIN flag, if true the user will be able to access the mailbox. If a mailbox is placed in quarantine an event is stored with event id 10018.</p>
+
+<p>Besides the automatic release of the mailbox from quarantine it is possible to manually release it from quarantine. But before doing this it is highly recommended to find the cause of the issue. This since a mailbox is not placed in quarantine because it works but it can cause serious issues for the other mailboxes in your environment.</p>
+
+<p>Another reason why to investigate the issue is if you decide to release it manually but the issue still occurs the mailbox will be put in quarantine again.</p>
+
+<p>To manually release the mailbox you will first need to know the GUID of the mailbox. You can lookup the GUID by using the get-mailboxstatistics cmdlet just like this:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>_Get-Mailbox support</td>
+      <td>select name, GUID_</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Once you have found the GUID you will need to find the corresponding registry path. As discussed earlier each poisoned mailbox has the key <em>MailboxQuarantineDurationInSeconds</em> modify the value to for example 0 or 1. After you’ve made the registry key change perform one of the following tasks:</p>
+
+<ul>
+  <li>Dismount/mount the database</li>
+  <li>Restart the Information Store</li>
+  <li>Reboot your server</li>
+</ul>
+
+<p>Although this last one is a little bit overkill.</p>
+
+<p>Here ends the blog about quarantining mailboxes. Hope it doesn’t happen to much in your environment else you got some serious trouble.</p>
+
+<p>More information about this topic can be found on the site below.</p>
+
+<p>Technet – Understanding the Exchange 2010 Store <a href="http://technet.microsoft.com/en-us/library/bb331958.aspx" target="_blank">open</a></p>
+
+<div id="UMS_TOOLTIP" style="position: absolute; cursor: pointer; z-index: 2147483647; background: none repeat scroll 0% 0% transparent; display: none;">
+  <img id="ums_img_tooltip" class="UMSRatingIcon" alt="" />
+</div>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2010-ref">
+					Exchange 2010 <span>(75)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Redmond my mailbox is quarantined&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/de-impact-van-bring-your-own-device-op-exchange-mobiele-devices/" title="The impact of Bring Your Own Device on Exchange – mobile devices">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/exchange-store-time-out-detectie-uitschakelen/" title="Turn Off Exchange Store Time-Out Detection">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

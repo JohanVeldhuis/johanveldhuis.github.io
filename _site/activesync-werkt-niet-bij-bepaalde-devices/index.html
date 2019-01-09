@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ActiveSync doesn&#8217;t work for specific devices</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>ActiveSync doesn&#8217;t work for specific devices </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   May 
+	   17th,
+	   
+	   2011
+	 </span>
+	  <div class="article_body">
+	  <p>A while ago Microsoft announced the <a href="http://blogs.technet.com/b/exchange/archive/2011/04/13/announcing-the-exchange-activesync-logo-program.aspx" target="_blank">Exchange ActiveSync Logo</a> program. Using this program Microsoft will test the compatability of devices with ActiveSync.</p>
+
+<p>One of the reasons for this is the problems which you may experience with some devices and ActiveSync. As administrator/consultant it is sometimes hard to explain why synchronization doesn’t work to an end user or customer.</p>
+
+<p>At this moment the following devices are certified:</p>
+
+<ul>
+  <li>Windows Phone 7</li>
+  <li>Windows Phone 6.5</li>
+  <li>Nokia’s using Mail for Exchange 3.0.50</li>
+  <li>Nokia E7</li>
+  <li>Apple devices using iOS 4</li>
+</ul>
+
+<p>When a device doesn’t meet the requirements it may cause issues. One of the issues you may experience is that a device doesn’t synchronize at all. This maybe the case after a mailbox is migrated from Exchange 2003 to Exchange 2010. This last one is an example of one of the issues I experienced myself.</p>
+
+<p>To investigate this issue you will have to use the IIS logs. In the case of the Nokia devices the following could be found in the IIS logs:</p>
+
+<p><em>2011-05-06 11:29:50 192.168.1.41 OPTIONS /Microsoft-Server-ActiveSync/default.eas User=XXXXXX&amp;DeviceId=IMEIXXXXXXXXXXX&amp;DeviceType=NokiaEmail&amp;Log=V0_LdapC9_LdapL16_Mbx:</em></p>
+
+<p><em>MB.DOMAIN.LOCAL_Dc:DC.DOMAIN.LOCAL_Throttle0_Budget:(A)Conn%3a0%2cHangingConn%3a0%2cAD%3a%24null%2f%24null%2f0%25%2cCAS%3a%24null%2f%24null%2f0%25%2cAB%3a%24null%2f%24null%2f0%25%2cRPC%3a%24null%2f%24null%2f0%25%2cFC%3a1000%2f0%2cPolicy%3aDefaultThrottlingPolicy%5F3006a3a1-0211-447a-99f5-6c0ab8e33c84%2cNorm_ 443 DOMAIN\Username 192.168.100.201 NokiaE721/2.02(0)MailforExchange+3gpp-gba 200 0 0 140</em></p>
+
+<p><em>2011-05-06 11:30:11 192.168.1.41 POST /Microsoft-Server-ActiveSync/default.eas User=Username&amp;DeviceId=IMEIXXXXXXXX&amp;DeviceType=NokiaEmail&amp;Cmd=Settings&amp;Log=</em></p>
+
+<p><em>V121_Ssnf:T_LdapC4_LdapL16_RpcC45_RpcL125_Ers1_Cpo19781_Fet19999_Pk0_Error:</em></p>
+
+<p><em>DeviceNotProvisioned_As:BlockedP_Mbx:MB.DOMAIN.LOCAL_Dc:DC.DOMAIN.LOCAL_Throttle0_Budget:(D)Conn%3a1%2cHangingConn%3a0%2cAD%3a%24null%2f%24null%2f1%25%2cCAS%3a%24null%2f%24null%2f1%25%2cAB%3a%24null%2f%24null%2f0%25%2cRPC%3a%24null%2f%24null%2f1%25%2cFC%3a1000%2f0%2cPolicy%3aDefaultThrottlingPolicy%5F3006a3a1-0211-447a-99f5-6c0ab8e33c84%2cNorm%5bResources%3a(Mdb)MBDB01(Health%3a-1%25%2cHistLoad%3a0)%2c(DC.LOCAL(Health%3a-1%25%2cHistLoad%3a0)%2c(DC)DOMAIN.LOCAL(Health%3a-1%25%2cHistLoad%3a0)%2c%5d_ 443 DOMAIN\Username192.168.100.201 NokiaE721/2.02(0)MailforExchange+3gpp-gba 449 0 0 19999</em></p>
+
+<p>The rules above are just two rules of the logging. In the first rule you can see that the user will authenticate and the webserver reponds with a 200. In the next step you see that something goes wrong during the provisioning process. When searching on the internet you will find out that Nokia devices are not the only devices who cause problems. Also some Andriod based devices may cause issues with ActiveSync. The problem is caused by the fact that these devices won’t work with the ActiveSync policy. Using this policy administrators can specify for example the security settings for a device.</p>
+
+<p>When a user logs in via the Exchange Control Panel (ECP) en visits the <em>Phone</em> page he will see the device is visible their. But when getting the properties of the device the following will be displayed:</p>
+
+<p><em>Access state:</em></p>
+
+<p><em>Access Denied</em></p>
+
+<p><em>Access set by: Security Policy Application</em></p>
+
+<p>In some cases this may lead to unwanted scenarios. Most end-users will not be very happy when synchronization stops working, although the reasons for this may be a device issue.</p>
+
+<p>Because it is difficult to make an inventory of which devices are active in your organization it might be wise to implement a workaround. This workaround is only needed temporarily till all devices have been upgraded to the recommended version.</p>
+
+<p>The workaround for this issue is to disable the <em>default</em> ActiveSync policy during a migration. By default this policy will be applied to every user. To do this you will need to use the Exchange Management Shell (EMC):</p>
+
+<p><em>Set-ActiveSyncMailboxPolicy -Identity:Default -IsDefaultPolicy:$false</em></p>
+
+<p>When you will reconfigure the device, although this might not be necessary, you will see it works. Because this creates an unwanted situation it is recommended to solve the real issue.</p>
+
+<p>Beside updating the client it might be necessary to update the firmware of the device. In case of the Nokia devices ActiveSync didn’t work after the upgrade to Mail-for-Exchange 3.0.50.</p>
+
+<p>When all devices are upgraded it is recommended to enable the ActiveSync policy again:</p>
+
+<p><em>Set-ActiveSyncMailboxPolicy -Identity:Default -IsDefaultPolicy:$true</em></p>
+
+<p>For more information about ActiveSync policies you can visit the page below:</p>
+
+<p>Technet: Understanding Exchange ActiveSync Mailbox Policies <a href="http://technet.microsoft.com/en-us/library/bb123484.aspx" target="_blank">open</a></p>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2010-ref">
+					Exchange 2010 <span>(75)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=ActiveSync doesn&#8217;t work for specific devices&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/hoe-kun-je-berichten-opnieuw-verwerken-uit-een-queue/" title="How to reprocess messages from a queue">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/een-nadere-kijk-op-de-database-one-copy-alert-scheduled-task/" title="A closer look at the Database One Copy Alert scheduled task">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

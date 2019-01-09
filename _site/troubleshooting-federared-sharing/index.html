@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Troubleshooting Federated Sharing &#8211; part I</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Troubleshooting Federated Sharing &#8211; part I </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   October 
+	   13th,
+	   
+	   2013
+	 </span>
+	  <div class="article_body">
+	  <p> By using federated sharing it is possible to exchange free/busy informative between different Exchange organizations. This can be done by using the Microsoft Federation Gateway (MSFG) when no direct trust exists between the Active Directories. The MSFG is in this case responsible for providing a ticket which is used for authentication. By using a ticket a CAS can contact the CAS from the other organization to retrieve the free/busy information.</p>
+
+<p>To use this feature several things will need to be configured:</p>
+
+<ul>
+  <li>trust with the Microsoft Federation Gateway</li>
+  <li>organizational relationship must be configured</li>
+  <li>autodiscover and EWS must allow WS Security authentication</li>
+  <li>the reverse proxy needs to allow unauthenticated traffic to the following url’s:</li>
+  <li>
+    <ul>
+      <li>/EWS/exchange.asmx/WSSecurity</li>
+      <li>/autodiscover/autodiscover.svc/WSSecurity</li>
+      <li>/autodiscover/autodiscover.svc</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Several sites contain a step-by-step plan on how to configured this. An overview of those sites can be found on the end of this article.</p>
+
+<p>When you setup these things everything should work, indeed should. In most cases it will work but in some cases you will need to perform some troubleshooting. In this serie of blogs we will have a look how you can validate that it works and perform some troubleshooting in case something doesn’t work.</p>
+
+<p>But how can you troubleshoot these issues? First of all it is very useful if you have a contact person who has access to the other Exchange organization. In most cases this isn’t a big issue but when using Office 365 or another form of hosting this can be very hard sometimes.</p>
+
+<p>To start the troubleshooting process you mostly would like to verify your own Exchange organization first. Things that could be checked are:</p>
+
+<ul>
+  <li>verify if autodiscover allows WS Security for authentication</li>
+  <li>verify the external EWS url</li>
+  <li>verify if Exchange Web Services will allow WS Security for authentication</li>
+</ul>
+
+<p>If your Exchange organization contains multiple CAS then Powershell is your friend and you can use several cmdlets to verify the steps above:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>_Get-AutodiscoverVirtualDirectory</td>
+      <td>select server, WSSecurityAuthentication_</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory.png"><img alt="Get-AutodiscoverVirtualDirectory" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory-300x20.png?resize=300%2C20" width="300" height="20" data-recalc-dims="1" /></a></p>
+
+<p>You will get an output like above. Verify if the value of the column <em>WSSecurityAuthentication _is set to _true</em></p>
+
+<p>If WSSecurity is not <em>true</em> then use the following cmdlet to enable it:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>_Get-AutodiscoverVirtualDirectory</td>
+      <td>Set-AutodiscoverVirtualDirectory -WSSecurityAuthentication:$true_</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Using this cmdlet the authentication method will be configured but to offer this authentication type you will need to perform an <em>IISReset</em>. Additional you can verify if the <em>svc-integrated</em> <em>handler</em> is attached to the autodiscover virtual directory:</p>
+
+<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS.png"><img alt="IIS" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS-300x193.png?resize=300%2C193" width="300" height="193" data-recalc-dims="1" /></a></p>
+
+<p>Next step is to verify the Exchange Web Services, this can be done by using the <em>Get-WebServicesVirtualDirectory</em> cmdlet_:_</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>_Get-WebServicesVirtualDirectory</td>
+      <td>select server, ExternalUrl, WSSecurityAuthentication_cmdle</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory.png"><img alt="Get-WebServicesVirtualDirectory" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory-300x21.png?resize=300%2C21" width="300" height="21" data-recalc-dims="1" /></a></p>
+
+<p>Again the same rule apples <em>WSSecurityAuthentication _needs to be set to _true</em>. Besides this the <em>ExternalUrl</em> needs to contains a valid value. This url needs to accessible from the internet. If this is not the case it simply won’t work.</p>
+
+<p>In case that <em>WSSecurity</em> is not <em>true</em> enabled it by using the following cmdlet:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>_Get-WebServicesVirtualDirectory</td>
+      <td>Set-WebServicesVirtualDirectory -WSSecurityAuthentication:$true_</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The same applies for EWS as it did for autodiscover perform an <em>IISReset</em> to activate the authentication method. Besides this verify if the <em>ws-security handler</em> is attached to the EWS virtual directory.</p>
+
+<p>If no external url is configured you will need to configure one. Before you do this make sure the certificate contains all the correct names. If you will configure a value but it is not part of your certificate you will get errors.</p>
+
+<p>To verify if the certificate contains the correct names we will use Powershell again:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>_Get-ExchangeCertificate</td>
+      <td>? {$_.Services -like “*IIS*”}</td>
+      <td>select Subject, CertificateDomains</td>
+      <td>FL_</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Verify if the <em>CertificateDomains</em> contain the FQDN you are planning to use for EWS, for example <em>mail.domain.com</em> of <em>ews.domain.com</em>. If this name is not on the certificate you will need to renew your certificate.</p>
+
+<p>If the certificate contains the name for the external URL then you can continue configuring it:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>_Get-WebServicerVirtualDirectory</td>
+      <td>Set-WebServicesVirtualDirectory -Externalurl “https://ews.domain.com/EWS/exchange.asmx”_</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Using the cmdlet above the external URL on all Client Access Servers will be configured the same. REMARK: in some scenarios this is not what you want. Please verify if this is the case in your scenario before configuring the external url.</p>
+
+<p>When this has been configured and validated it is time to verify the Federation Trust and the Organization Relationship.</p>
+
+<p>This can be done by starting with <em>Test-FederationTrustCertificate</em> which will verify if the certificate used for the trust is correct and is installed on all CAS. During the creation of the trust the self-signed certificate will normally be distributed to all CAS in your environment. But in some cases this may not happen. If this is the case the CAS will be unable to authenticate against the Federation Gateway of Microsoft which will eventually result the autodiscover process to fail.</p>
+
+<p><em>Test-FederationTrustCertificate</em></p>
+
+<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate.png"><img alt="Test-FederationTrustCertificate" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate-300x60.png?resize=300%2C60" width="300" height="60" data-recalc-dims="1" /></a></p>
+
+<p>Verify that the <em>State</em> column for all CAS contain the value <em>installed</em>.</p>
+
+<p>Additionally you can run the <em>Test-FederationTrust</em> cmdlet to verify if the Federation Trust really works. By default this cmdlet will use the <em>extest</em> account:</p>
+
+<p><em>Test-FederationTrust</em></p>
+
+<p>If you don’t have an <em>extest</em> account or you would like to use another user add the <em>UserIdentity</em> parameter:</p>
+
+<p><em>Test-FederationTrust -UserIdentity user@domain.com</em></p>
+
+<p>This cmdlet will perform several tests and will output the results on the screen, verify if no errors did occur.</p>
+
+<p>As final step of the process you can verify the <em>Organization Relationship</em>. This is only applicable if the other organization has issues when looking up the free/busy information for your mailboxes. By using an organization relationship you will give the other organization permission to retrieve free/busy information of your organization. If not all domains are listed here it can cause strange issues such as it works for domain A but not for domain B while they are located in the same Exchange environment.</p>
+
+<p>To troubleshoot these kind of issues you can use two cmdlets:</p>
+
+<ul>
+  <li><em>Get-OrganizationRelationShip, </em> retrieves the current configuration</li>
+  <li><em>GetFederationInformation,</em> will send an autodiscover request to the other organization to retrieve the configuration</li>
+</ul>
+
+<p>The following parameters are important in this case:</p>
+
+<ul>
+  <li>DomainNames</li>
+  <li>TargetApplicationUri</li>
+  <li>TargetAutoDiscoverEpr</li>
+</ul>
+
+<p>One remark must be made about the <em>DomainNames</em> parameter. In some cases this parameter doesn’t have to be the same for both cmdlets. Some organizations only want to share free/busy information with a specific domain and not all domains hosted by the other Exchange organization.</p>
+
+<p>In this part of the series we did have a look which configuration items you will need to verify in your Exchange organization. Besides this we did had a look on how to fix them if they are configured incorrectly.</p>
+
+<p>In the second part we will have a closer look at the reverse proxy and client part of troubleshooting.</p>
+
+<p>Below are some pages which contain use full information about federated sharing:</p>
+
+<p>Office 365 Community: How to configure TMG for Office 365: <a href="http://community.office365.com/en-us/wikis/exchange/1042.aspx">open</a></p>
+
+<p>TechNet: How does Federated Calendar sharing work in Exchange 2010?: <a href="http://blogs.technet.com/b/ucedsg/archive/2010/04/22/how-does-federated-calendar-sharing-work-in-exchange-2010.aspx">open</a></p>
+
+<p>TechNet: Exchange 2013: Sharing: <a href="http://technet.microsoft.com/en-us/library/dd638083(v=exchg.150).aspx">open</a></p>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2010-ref">
+					Exchange 2010 <span>(75)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Troubleshooting Federated Sharing &#8211; part I&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/moet-exchange-publiceren-zodat-lync-mobile-2013-hier-gebruik-kan-maken/" title="How to publish your Exchange environment correctly for Lync Mobile 2013">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/troubleshooting-federated-sharing-deel-ii/" title="Troubleshooting federated sharing &#8211; part II">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

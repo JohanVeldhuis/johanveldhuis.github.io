@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hidden features of Exchange 2010 &#8211; part I</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Hidden features of Exchange 2010 &#8211; part I </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   August 
+	   5th,
+	   
+	   2011
+	 </span>
+	  <div class="article_body">
+	  <p>When you have worked with Exchange 2010 you might know that some things only can be configured by using the Exchange Management Shell (EMS). A few examples are:</p>
+
+<ul>
+  <li>configuring relaying on a receive connector</li>
+  <li>enable logging for IMAP and POP3</li>
+</ul>
+
+<div>
+  In some cases a hidden option is available in the Exchange Control Panel. In this serie of blogs we will have a look at these cmdlet&#8217;s and especially the parameters.
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  We start with the hidden features of distribution groups. These groups can be used to send a message to multiple people. In Exchange 2010 three parameters are available which can be used to define the name and location of the distribution group.
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  The parameters for this must be used i.c.w. the <em>set-organizationconfig </em>Powershell cmdlet:
+</div>
+
+<div>
+  <a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/powershell.jpg"><img title="Three parameters" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/powershell-300x30.jpg?resize=300%2C30" alt="" width="300" height="30" data-recalc-dims="1" /></a>
+</div>
+
+<div>
+  <strong></strong> 
+</div>
+
+<div>
+  <strong>DistributionGroupDefaultOU</strong>
+</div>
+
+<div>
+  As the name already tells you this parameter can be used to configure the default OU which is used to store the distribution groups. By using this parameter you can prevent that distribution groups will be created in multiple OU&#8217;s. For example we had an Active Directory called <strong>corp.local</strong> and we have created an OU <strong>Distribution Groups. </strong>To ensure that the new distribution groups will be stored in this OU we will need to use the following cmdlet:\
+</div>
+
+<div>
+  <em></em> 
+</div>
+
+<div>
+  <em>Set-OrganizationConfig -DistributionGroupDefaultOU &#8221; corp.local/Distribution Groups&#8221; </em>
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  Once configured all new distribution groups will be stored in this OU.
+</div>
+
+<div>
+  <strong></strong> 
+</div>
+
+<div>
+  <strong>DistributionGroupNameBlockedWordsList</strong>
+</div>
+
+<div>
+  Using this parameter we can configure words which may not be used in names of distribution groups. This parameter may not work for all organizations. Before using this parameter make a correct inventory which words can&#8217;t be used. For example when we want to prevent the use of the words <strong>toys </strong>and<strong> computer </strong>as the name of a distribution group we will need to use the following cmdlet:
+</div>
+
+<div>
+  <em></em> 
+</div>
+
+<div>
+  <em>Set-OrganizationConfig -DistributionGroupNameBlockedWordsList toys,computer</em>
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  This parameter can also be configured by using the Exchange Control Panel (ECP).
+</div>
+
+<div>
+  <strong></strong> 
+</div>
+
+<div>
+  <strong>DistributionGroupNamingPolicy</strong>
+</div>
+
+<div>
+  Using this parameter we can configure the naming convention which will be applied when creating a distribution group. In this policy the following variables can be used:
+</div>
+
+<div>
+  <ul>
+    <li>
+      Department
+    </li>
+    <li>
+      Company
+    </li>
+    <li>
+      Office
+    </li>
+    <li>
+      StateorProvince
+    </li>
+    <li>
+      CountryorRegion
+    </li>
+    <li>
+      CountryCode
+    </li>
+    <li>
+      Title
+    </li>
+    <li>
+      CustomAttribute1 tot CustomAttribute15
+    </li>
+  </ul>
+  
+  <div>
+    Let&#8217;s say we want all the names of distribution groups start with <strong>DG_ </strong>followed by the <strong>groupname </strong>en <strong>countrycode </strong>where we will split the last two by using an underscore:
+  </div>
+</div>
+
+<div>
+  <em></em> 
+</div>
+
+<div>
+  <em>Set-OrganizationConfig -DistributionGroupNamingPolicy &#8220;DG_<GroupName><CountryCode>&#8221;&lt;/em&gt;
+&lt;/div&gt;
+
+<div>
+   
+</div>
+
+<div>
+  When a new group is created called support it will be automatically renamed to for example: DG_Support&gt;NL@corp.local. Keep in mind that the e-mail address assigned to the distribution group might not be correct, this of coure depends on you e-mail address policy. In this case the e-mail address will be something like <a href="mailto:DG_support_NL@corp.local">DG_support_NL@corp.local</a>.
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  One remark must be made when using the earlier discussed variables. These values will be determined by copying the values from the user which creates the distribution groups.
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  This parameter can also be configured by using the ECP.
+</div>
+
+<div>
+  <strong></strong> 
+</div>
+
+<div>
+  <strong>Combining parameters</strong>
+</div>
+
+<div>
+  Of course it&#8217;s also possible to combine the three parameters. In the following example we will configure the parameters as followed:
+</div>
+
+<div>
+  <ul>
+    <li>
+      all distribution groups will be created in an OU groups which is located in the OU demo
+    </li>
+    <li>
+      all names of distribution groups need to start with DG_
+    </li>
+    <li>
+      the word everyone may not be used
+    </li>
+  </ul>
+  
+  <div>
+    To configure this we will need to use the following cmdlet:
+  </div>
+  
+  <div>
+     
+  </div>
+</div>
+
+<div>
+  <em>Set-OrganizationConfig -DistributionGroupDefaultOU &#8220;corp.local/demo/groups&#8221;  -DistributionGroupNamingPolicy &#8220;DG_<GroupName>&#8221;  -DistributionGroupNameBlockedWordsList everyone&lt;/em&gt;
+&lt;/div&gt;
+
+<div>
+  <em></em> 
+</div>
+
+<div>
+  When a new user is created using the EMC called <strong>demousers </strong> you will get the following result:
+</div>
+
+<div>
+  <a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new_group.jpg"><img title="Create New Distribution Group" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new_group-300x25.jpg?resize=300%2C25" alt="" width="300" height="25" data-recalc-dims="1" /></a>
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  When a group is created by using the name <strong>everyone </strong>the following error will be displayed:
+</div>
+
+<div>
+  <a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new_group_deny.jpg"><img title="New Distribution Group blocked word used" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new_group_deny-300x166.jpg?resize=300%2C166" alt="" width="300" height="166" data-recalc-dims="1" /></a>
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  Here ends the first blog about the hidden features of Exchange 2010. In the next blog we will continue to have a look at the <em>set-organizationconfig </em>cmdlet and will have a look at which parameters may be very usefull for you.
+</div>
+</GroupName></em></div></CountryCode></GroupName></em></div>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2010-ref">
+					Exchange 2010 <span>(75)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Hidden features of Exchange 2010 &#8211; part I&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/nieuwe-versie-van-fix-alias-ps1/" title="New version of fix-alias.ps1">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/verborgen-mogelijkheden-van-exchange-2010-deel-ii/" title="Hidden features of Exchange 2010 &#8211; part II">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

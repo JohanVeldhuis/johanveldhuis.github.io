@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Johan&#039;s Web Portal</title>
+		<description>Info about Exchange, Office 365 and Lync.</description>
+		<link>/</link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>SefaUtil Gui v2.1</title>
+				<description>&lt;p&gt;SefaUtil Gui v2.1 is a new minor version is published of the SefaUtil GUI script. It contains some small improvements to fix some issues some users experienced. Issues fixed in this release are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;searching for delegates doesn’t work correctly&lt;/li&gt;
+  &lt;li&gt;time before forwarding to a team could not be configured&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you find new issues please let me know.&lt;/p&gt;
+
+&lt;p&gt;Download SefaUtil GUI v2.1&lt;/p&gt;
+
+&lt;div class=&quot;w3eden&quot;&gt;
+  &lt;!-- WPDM Link Template: Default Template --&gt;
+  
+  &lt;div class=&quot;wpdm-link-tpl link-btn [color]&quot; data-durl=&quot;https://johanveldhuis.nl/download/sefautil-gui-v2-1/?wpdmdl=3379&quot;&gt;
+    &lt;div class=&quot;media&quot;&gt;
+      &lt;div class=&quot;pull-left&quot;&gt;
+        &lt;img class=&quot;wpdm_icon&quot; alt=&quot;Icon&quot; src=&quot;https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg&quot; onerror=&quot;this.src=&amp;quot;https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg&amp;quot;;&quot; /&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;media-body&quot;&gt;
+        &lt;strong class=&quot;ptitle&quot;&gt;&lt;!--:en--&gt;SEFAUtil Gui v2.1
+        
+        &lt;!--:--&gt;
+        
+        &lt;!--:nl--&gt;SEFAUtil Gui v2.1
+        
+        &lt;!--:--&gt;
+        
+        &lt;span class=&quot;label label-default&quot; style=&quot;font-weight: 400;&quot;&gt;107.29 KB&lt;/span&gt;&lt;/strong&gt; 
+        
+        &lt;div&gt;
+          &lt;strong&gt;&lt;a class=&quot;wpdm-download-link btn btn-primary &quot; rel=&quot;nofollow&quot; href=&quot;#&quot; onclick=&quot;location.href='https://johanveldhuis.nl/download/sefautil-gui-v2-1/?wpdmdl=3379';return false;&quot;&gt;Download&lt;/a&gt;&lt;/strong&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div style=&quot;clear: both&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+				<pubDate>Sun, 15 Nov 2015 16:22:22 +0100</pubDate>
+				<link>/sefautil-gui-v2-1/</link>
+				<guid isPermaLink="true">/sefautil-gui-v2-1/</guid>
+			</item>
+		
+			<item>
+				<title>SefaUtil GUI v2</title>
+				<description>&lt;p&gt;With pleasure I present you SefaUtil GUI v2. First thanks to all the beta tester which provided a lot of good feedback which has been incorporated in the tool.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-3369&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2-300x161.png?resize=300%2C161&quot; alt=&quot;SefaUtil v2&quot; width=&quot;300&quot; height=&quot;161&quot; srcset=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=300%2C161&amp;amp;ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=1024%2C550&amp;amp;ssl=1 1024w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=900%2C483&amp;amp;ssl=1 900w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1525&amp;amp;ssl=1 1525w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1254&amp;amp;ssl=1 1254w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So know you probably want to know what has improved?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SQL querying&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Well several things have been improved but most improved piece is retrieving the current settings. As you may know Sefautil signs in for every action which you executie: both query and change. Greig Sheridan (@greiginsydney) pointer me to the script of James Cussen which contained soms SQL to query certain databases for Lync. Based on that script I started the research on how I could user those scripts in SefaUtil GUI. It took soms time but in this version querying the setting for a user is performed by using SQL queries. This speeds up the process amazingly. Changing settings is still performed by invoking SefaUtil.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pool switching&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The GUI now contains an option to switch from pools. So if you have multiple pools you can now easily switch by using the GUI. This will safe you time because you now don’t have to reload the tool. In addition to this the user list now only contains the users homed on that pool. The delegates list still is the long list which contains all Enterprise Voice enabled users.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Backup and recovery&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;An option has been introduced to backup &amp;amp; recovery your SefaUtil settings.  Please test this functionality yourself before using it in production. As far as I have tested I it worked good for me but I strongly encourage you to test it in a lab environment prior to restoring settings in production.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Skype for Business support&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Skype for Business is available for a while so I added support for this also. Keep in mind this will user a different version of SefaUtil.exe compared to the one for Lync 2013.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parameters&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Additional parameters have been added most on request:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SfB2015: Could be used to overwrite the default location of SefaUtil for Skype for Business Server 2015&lt;/li&gt;
+  &lt;li&gt;Groupiddigits: Could be used to overwrite amount of digits used for team calls incl. # if used, default value is 3&lt;/li&gt;
+  &lt;li&gt;Loaddata: Can be used to prevent to automatically load data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Besides this a lot of code optimization has been performed and several bugs have been fixed.&lt;/p&gt;
+
+&lt;p&gt;As with all software despite the heavy testing you might find an issue. If so please let me know so I can assist you with troubleshooting the issue and make code changes if necessary so other people can benefit from it.&lt;/p&gt;
+
+&lt;p&gt;SefaUtil GUI V2 van be downloaded via the link below:&lt;/p&gt;
+
+&lt;div class=&quot;w3eden&quot;&gt;
+  &lt;!-- WPDM Link Template: Default Template --&gt;
+  
+  &lt;div class=&quot;wpdm-link-tpl link-btn [color]&quot; data-durl=&quot;https://johanveldhuis.nl/?post_type=wpdmpro&amp;amp;p=3372&amp;amp;wpdmdl=3372&quot;&gt;
+    &lt;div class=&quot;media&quot;&gt;
+      &lt;div class=&quot;pull-left&quot;&gt;
+        &lt;img class=&quot;wpdm_icon&quot; alt=&quot;Icon&quot; src=&quot;https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg&quot; onerror=&quot;this.src=&amp;quot;https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg&amp;quot;;&quot; /&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;media-body&quot;&gt;
+        &lt;strong class=&quot;ptitle&quot;&gt;&lt;!--:en--&gt;SefaUtil GUI V2
+        
+        &lt;!--:--&gt;
+        
+        &lt;!--:nl--&gt;SefaUtil GUI V2
+        
+        &lt;!--:--&gt;
+        
+        &lt;span class=&quot;label label-default&quot; style=&quot;font-weight: 400;&quot;&gt;106.88 KB&lt;/span&gt;&lt;/strong&gt; 
+        
+        &lt;div&gt;
+          &lt;strong&gt;&lt;a class=&quot;wpdm-download-link btn btn-primary &quot; rel=&quot;nofollow&quot; href=&quot;#&quot; onclick=&quot;location.href='https://johanveldhuis.nl/?post_type=wpdmpro&amp;amp;p=3372&amp;amp;wpdmdl=3372';return false;&quot;&gt;Download&lt;/a&gt;&lt;/strong&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div style=&quot;clear: both&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+				<pubDate>Mon, 07 Sep 2015 23:26:48 +0200</pubDate>
+				<link>/sefautil-gui-v2/</link>
+				<guid isPermaLink="true">/sefautil-gui-v2/</guid>
+			</item>
+		
+			<item>
+				<title>An error occurred when processing the security tokens in the message</title>
+				<description>&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Federation always fun as you may have read in one of my previous blogs. Starting this week we had some issues at a customer where the Free/busy lookups across environments stopped working. Not only to other Exchange environments but also Office 365.&lt;/p&gt;
+
+&lt;p&gt;Both the Outlook logging and event logs on the CAS provided the same error. The complete error message is displayed below:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Process Microsoft.Exchange.InfoWorker.Common.Delayed`1[System.String]: &amp;lt;&lt;a href=&quot;mailto:johan.veldhuis@domain.com%3ESMTP:johan.veldhuis@domain.com&quot;&gt;johan.veldhuis@domain.com&amp;gt;SMTP:johan.veldhuis@domain.com&lt;/a&gt; failed. Exception returned is Microsoft.Exchange.InfoWorker.Common.Availability.AutoDiscoverFailedException: Autodiscover failed for e-mail address &amp;lt;&lt;a href=&quot;mailto:johan.veldhuis@domain.com%3ESMTP:johan.veldhuis@domain.com&quot;&gt;johan.veldhuis@domain.com&amp;gt;SMTP:johan.veldhuis@domain.com&lt;/a&gt; with exception System.Web.Services.Protocols.SoapHeaderException: &lt;strong&gt;An error occurred when processing the security tokens in the message&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.SoapWebClient.AutoDiscover.DefaultBinding_Autodiscover.EndGetUserSettings(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.UserSoapAutoDiscoverRequest.EndGetSettings(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;_   at Microsoft.Exchange.InfoWorker.Common.Availability.SoapAutoDiscoverRequest.&amp;lt;&amp;gt;c__DisplayClass4.&lt;EndInvoke&gt;b\_\_3()_&lt;/EndInvoke&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.SoapAutoDiscoverRequest.ExecuteAndHandleException(ExecuteAndHandleExceptionDelegate operation). —&amp;gt; System.Web.Services.Protocols.SoapHeaderException: An error occurred when processing the security tokens in the message.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;   at Microsoft.Exchange.SoapWebClient.AutoDiscover.DefaultBinding_Autodiscover.EndGetUserSettings(IAsyncResult asyncResult)&lt;/p&gt;
+
+&lt;p&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.UserSoapAutoDiscoverRequest.EndGetSettings(IAsyncResult asyncResult)&lt;/p&gt;
+
+&lt;p&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.SoapAutoDiscoverRequest.&amp;lt;&amp;gt;c__DisplayClass4.&lt;EndInvoke&gt;b\_\_3()&lt;/EndInvoke&gt;&lt;/p&gt;
+
+&lt;p&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.SoapAutoDiscoverRequest.ExecuteAndHandleException(ExecuteAndHandleExceptionDelegate operation)&lt;/p&gt;
+
+&lt;p&gt;   — End of inner exception stack trace —&lt;/p&gt;
+
+&lt;p&gt;. &lt;em&gt;Name of the server where exception originated: EXC01. This event may occur when Availability Service cannot discover an Availability Service in the remote forest.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The bold part marks the error in this case &lt;em&gt;An error occurred when processing the security tokens in the message.&lt;/em&gt; This error tells you there is an issue with the security token which your server has received from the Microsoft Federation Gateway. So probably this customer is not the only customer facing this issue.&lt;/p&gt;
+
+&lt;p&gt;Microsoft has acknowledged there were some issues earlier this week which not only affected this functionality but also some Office 365 services.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Office 365 status&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2014/01/O365_status-300x45.png?resize=300%2C45&quot; width=&quot;300&quot; height=&quot;45&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Currently a work around is available to fix this issue. To fix the issue you will need to refresh the federation trust metadata. This can be done by using the following Powershell cmdlets:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_Get-Federationtrust&lt;/td&gt;
+      &lt;td&gt;Set-Federationtrust -Refreshmetadata_&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;It is important to know that this cmdlet will need to be run on both sides else it may not fix the issues. Once the cmdlet have been executed it may take some time before the free/busy lookups start to work again.&lt;/p&gt;
+</description>
+				<pubDate>Thu, 09 Jan 2014 23:43:21 +0100</pubDate>
+				<link>/error-occurred-processing-security-tokens-message/</link>
+				<guid isPermaLink="true">/error-occurred-processing-security-tokens-message/</guid>
+			</item>
+		
+			<item>
+				<title>Relinquishing job because the mailbox is locked</title>
+				<description>&lt;p&gt;During a migration to Office 365 I had this issue. The migration of a mailbox was stalled several times with the following entry logged in the migration log &lt;em&gt;Relinquishing job because the mailbox is locked&lt;/em&gt;. Sometimes this occurs only once but I have seen times that the mailbox will get stuck in this phase.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;12/20/2013 9:24:08 AM [DB4PR04MB459] The Microsoft Exchange Mailbox Replication service ‘DB4PR04MB459.eurprd04.prod.outlook.com’ (15.0.842.8 caps:01FF) is examining the request.&lt;/em&gt; &lt;em&gt;12/20/2013 9:24:09 AM [DB4PR04MB459] Connected to target mailbox ‘Primary (4ca8eac9-f378-4e82-8d07-f984c64176e8)’, database ‘EURPR04DG029-db041’, Mailbox server ‘DB4PR04MB459.eurprd04.prod.outlook.com’ Version 15.0 (Build 842.0).&lt;/em&gt; &lt;em&gt;12/20/2013 9:24:09 AM [DB4PR04MB459] Connected to target mailbox ‘Archive (07121074-d871-4db9-9f4e-153010131a50)’, database ‘EURPR04DG029-db041’, Mailbox server ‘DB4PR04MB459.eurprd04.prod.outlook.com’ Version 15.0 (Build 842.0).&lt;/em&gt; &lt;em&gt;12/20/2013 9:24:14 AM [DB4PR04MB459] Connected to source mailbox ‘Primary (4ca8eac9-f378-4e82-8d07-f984c64176e8)’, database ‘MB_Others’, Mailbox server ‘CAS02.corp.local’ Version 14.3 (Build 158.0), proxy server ‘CAS01.corp.local’ 14.3.151.0 caps:05FFFF.&lt;/em&gt; &lt;em&gt;12/20/2013 9:24:15 AM [DB4PR04MB459] Connected to source mailbox ‘Archive (07121074-d871-4db9-9f4e-153010131a50)’, database ‘MB_Archives_Large’, Mailbox server ‘CAS02.corp.local’ Version 14.3 (Build 158.0), proxy server ‘CAS01.corp.local’ 14.3.151.0 caps:05FFFF.&lt;/em&gt; &lt;em&gt;12/20/2013 9:24:15 AM [DB4PR04MB459] Relinquishing job because the mailbox is locked. The job will attempt to continue again after 12/20/2013 9:29:15 AM.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When searching in Googl you will see several tips but most of them will point to TMG or a Firewall which will block the large amount of requests Office 365 sends because it thinks it’s unsafe. Microsoft has published a Knowledge Base article about this which you can find &lt;a href=&quot;http://support.microsoft.com/kb/2654376&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The solution Microsoft offers is raising the value of the &lt;em&gt;Custom Limit in the&lt;/em&gt; &lt;em&gt;Flood Mitigation Settings.&lt;/em&gt; Microsoft will tell you to raise this number to a higher value but it depends on the amount of mailboxes how high you will configure this value.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/2654412.jpg&quot;&gt;&lt;img alt=&quot;TMG Flood Migration settings&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/2654412-294x300.jpg?resize=294%2C300&quot; width=&quot;294&quot; height=&quot;300&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course this is a nice solution but it might require the modification of the value multiple times. Despite this value will be applied to all IP addresses including those from evil users. There must be a nicer solution. A more suitable solution is to not apply the Flood mitigation settings to the IP addresses of Office 365.&lt;/p&gt;
+
+&lt;p&gt;To configure this it is recommended to create a computer group which contains the separate IP addresses and subnets which are being used by Office 365. In the image below you can see an example.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions.png&quot;&gt;&lt;img alt=&quot;Floot Mitigation - IP Exceptions&quot; src=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions-300x150.png?resize=300%2C150&quot; width=&quot;300&quot; height=&quot;150&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For a complete overview of the IP addresses used by Office 365 you van visit the following pages:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://technet.microsoft.com/en-us/library/dn163583(v=exchg.150).aspx&quot;&gt;Exchange Online Protection IP addresses&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://onlinehelp.microsoft.com/en-us/office365-enterprises/hh373144.aspx&quot;&gt;Office 365 URLs and IP address ranges&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is recommended to visit both pages and add the IP’s and subnets to the computer group. Once the group is created add the group to the &lt;em&gt;IP Exceptions&lt;/em&gt; tab. Once the configuration has been activated in TMG you wille see that the migrations will continue and will not stop anymore. This last benefit has another benefit the migration of a mailbox will be completed faster.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 20 Dec 2013 21:46:32 +0100</pubDate>
+				<link>/relinquishing-job-mailbox-locked/</link>
+				<guid isPermaLink="true">/relinquishing-job-mailbox-locked/</guid>
+			</item>
+		
+			<item>
+				<title>Troubleshooting federated sharing – part III</title>
+				<description>&lt;p&gt;In the first two parts of the blog series about troubleshooting federated sharing we had a look at the infrastructure and configuration which is required. Besides this we did some basic troubleshooting on the components involved during federated sharing. In this part we will look at some examples which I gathered during troubleshooting a federated sharing issue.&lt;/p&gt;
+
+&lt;p&gt;Below you will see an example of an error which was received when trying to retrieve the free/busy information from a user hosted on another Exchange environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Process 1212: ProxyWebRequest FederatedCrossForest from S-1-5-21-1671710892-3805255249-3875359145-102309 to https://mail.domain.com/ews/exchange.asmx/WSSecurity failed. Caller SIDs: WSSecurity. The exception returned is Microsoft.Exchange.InfoWorker.Common.Availability.ProxyWebRequestProcessingException: System.Net.WebException: &lt;strong&gt;The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. —&amp;gt; System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   — End of inner exception stack trace —&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.WebClientAsyncResult.WaitForResponse()&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.WebClientProtocol.EndSend(IAsyncResult asyncResult, Object&amp;amp; internalAsyncState, Stream&amp;amp; responseStream)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.Proxy.Service.EndGetUserAvailability(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.FreeBusyApplication.EndProxyWebRequest(ProxyWebRequest proxyWebRequest, QueryList queryList, Service service, IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.ProxyWebRequest.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.AsyncWebRequest.EndInvokeWithErrorHandling():. The request information is ProxyWebRequest type = FederatedCrossForest, url = https://mail.domain.com/ews/exchange.asmx/WSSecurity&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mailbox list = &lt;a href=&quot;mailto:Johan@domain.com&quot;&gt;Johan@domain.com&lt;/a&gt;SMTP:Johan@domain.com, Parameters: windowStart = 10/1/2013 10:00:00 AM, windowEnd = 10/31/2013 10:00:00 AM, MergedFBInterval = 30, RequestedView = Detailed&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;. —&amp;gt; System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. —&amp;gt; System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   — End of inner exception stack trace —&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.WebClientAsyncResult.WaitForResponse()&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.WebClientProtocol.EndSend(IAsyncResult asyncResult, Object&amp;amp; internalAsyncState, Stream&amp;amp; responseStream)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.Proxy.Service.EndGetUserAvailability(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.FreeBusyApplication.EndProxyWebRequest(ProxyWebRequest proxyWebRequest, QueryList queryList, Service service, IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.ProxyWebRequest.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.AsyncWebRequest.EndInvokeWithErrorHandling()&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   — End of inner exception stack trace —&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;. Name of the server where exception originated:CAS01. Make sure that the Active Directory site/forest that contain the user’s mailbox has at least one local Exchange 2010 server running the Availability service. Turn up logging for the Availability service and test basic network connectivity.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When looking at the marked text you will see the actual cause, a certificate issue. So how to deal in this case? The first step you can take is try to access the Exchange Web Services of the other Exchange environment. In this case we can do it by browsing to &lt;em&gt;https://mail.domain/com/ews/exchange.asmx/WSSecurity&lt;/em&gt; what will probably happen is that you receive a certificate warning. And that is exactly why the lookup fails. The certificate from the remote Exchange environment is not valid according to the validation procedure. However when you open it in a browser you will see the reason why the certificate is not trusted. This can be caused by several things among them:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Certificates is signed by a root CA which is not trusted&lt;/li&gt;
+  &lt;li&gt;Name on the certificate is incorrect&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this case the root CA was not trusted by the Exchange environment. By importing the root CA in the Enterprise Trusted Root folder of the CAS the problem was solved.&lt;/p&gt;
+
+&lt;p&gt;The second one was pretty hard to troubleshoot but the solution to solve it was pretty easy. Again the error is marked in the text below. The error tells you that the other side did close the connection. OK nice and now what? In this case you will need to search in the IIS logs on the CAS of the target Exchange environment to see what happens when traffic from your Exchange environment arrives at the CAS.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Process 1212: ProxyWebRequest FederatedCrossForest from S-1-5-21-1671710892-3805255249-3875359145-102309 to https://mail.domain.com/ews/exchange.asmx/WSSecurity failed. Caller SIDs: WSSecurity. The exception returned is Microsoft.Exchange.InfoWorker.Common.Availability.ProxyWebRequestProcessingException: System.Net.WebException: &lt;strong&gt;The underlying connection was closed: An unexpected error occurred on a receive. —&amp;gt; System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. —&amp;gt; System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   — End of inner exception stack trace —&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.Security._SslStream.EndRead(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.TlsStream.EndRead(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   — End of inner exception stack trace —&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.WebClientAsyncResult.WaitForResponse()&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.WebClientProtocol.EndSend(IAsyncResult asyncResult, Object&amp;amp; internalAsyncState, Stream&amp;amp; responseStream)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.Proxy.Service.EndGetUserAvailability(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.FreeBusyApplication.EndProxyWebRequest(ProxyWebRequest proxyWebRequest, QueryList queryList, Service service, IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.ProxyWebRequest.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.AsyncWebRequest.EndInvokeWithErrorHandling():. The request information is ProxyWebRequest type = FederatedCrossForest, url = https://mail.domain.com/ews/exchange.asmx/WSSecurity&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mailbox list = &lt;a href=&quot;mailto:Johan@domain.com&quot;&gt;Johan@domain.com&lt;/a&gt;SMTP:Johan@domain.com, Parameters: windowStart = 9/29/2013 12:00:00 AM, windowEnd = 11/10/2013 12:00:00 AM, MergedFBInterval = 30, RequestedView = MergedOnly&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;. —&amp;gt; System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. —&amp;gt; System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. —&amp;gt; System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   — End of inner exception stack trace —&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.Security._SslStream.EndRead(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.TlsStream.EndRead(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   — End of inner exception stack trace —&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.WebClientAsyncResult.WaitForResponse()&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.WebClientProtocol.EndSend(IAsyncResult asyncResult, Object&amp;amp; internalAsyncState, Stream&amp;amp; responseStream)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.Proxy.Service.EndGetUserAvailability(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.FreeBusyApplication.EndProxyWebRequest(ProxyWebRequest proxyWebRequest, QueryList queryList, Service service, IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.ProxyWebRequest.EndInvoke(IAsyncResult asyncResult)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   at Microsoft.Exchange.InfoWorker.Common.Availability.AsyncWebRequest.EndInvokeWithErrorHandling()&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;   — End of inner exception stack trace —&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;. Name of the server where exception originated: CAS01. Make sure that the Active Directory site/forest that contain the user’s mailbox has at least one local Exchange 2010 server running the Availability service. Turn up logging for the Availability service and test basic network connectivity.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Search for traffic destined to &lt;em&gt;/ews/exchange.asmx/WSSecurity&lt;/em&gt; and you will probably find the error that did occur. Normally when everything works a &lt;em&gt;200&lt;/em&gt; will be displayed. If you do receive a &lt;em&gt;4XX&lt;/em&gt; error then verify that the federation with the Microsoft Federation Gateway works correctly as explained in the first part. Besides this verify that WSSecurity is enabled on the Autodiscover and EWS directory.&lt;/p&gt;
+
+&lt;p&gt;However you might get other errors, in this case it was a &lt;em&gt;500&lt;/em&gt; error. What this means and that it doesn’t know how to deal with the traffic which arrives and will close the connection. If this happens make sure &lt;em&gt;WSSecurity&lt;/em&gt; is enabled on the virtual directories for Autodiscover and EWS. When this is confirmed verify that the &lt;em&gt;svc-integrated handler&lt;/em&gt; is assigned to both the Autodiscover and EWS. If this is both configured correctly everything should be OK but why doesn’t it work?&lt;/p&gt;
+
+&lt;p&gt;In some occasions it may happen that &lt;em&gt;EWSSecurity&lt;/em&gt; is correctly enabled but for some reason IIS doesn’t pick this up. If this happens an &lt;em&gt;iisreset&lt;/em&gt; will fix your issue and you will be able to retrieve the free/busy information from the other Exchange organization.&lt;/p&gt;
+
+&lt;p&gt;Here ends the series of troubleshooting federated sharing. I am aware there might be other solution for the issues you might find during the implementation but these were just two examples of issues I found.&lt;/p&gt;
+
+&lt;p&gt;I hope you liked this series and if you have any questions use the contact form on the site to send me a message or ask your question by posting a comment.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 29 Nov 2013 22:29:54 +0100</pubDate>
+				<link>/troubleshooting-federated-sharing-deel-iii/</link>
+				<guid isPermaLink="true">/troubleshooting-federated-sharing-deel-iii/</guid>
+			</item>
+		
+			<item>
+				<title>Review: Microsoft Exchange Server 2013 Inside Out: Mailbox and High Availability</title>
+				<description>&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/cat.gif&quot;&gt;&lt;img alt=&quot;Cover&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/cat.gif?resize=180%2C221&quot; width=&quot;180&quot; height=&quot;221&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It has been a while ago since I received this book for review, initially I started reading it on my way to Exchange Connections in Las Vegas on my iPad mini. And the last few weeks I finished reading the book. So what do I think of the book? The book is a must have resource for everyone who is working with Exchange 2013. Tony Redmond is amazing good in describing the several parts of Exchange related to mailbox and high availability. Yes you are reading it correct this book only describes the mailbox an high availability of Exchange 2013. For the Client Access ,Connectivity and UM part of Exchange 2013 you will have to read the book from Paul Robichaux.&lt;/p&gt;
+
+&lt;p&gt;Tony starts with describing some important things you will have to consider when implementing Exchange 2013. This starts with a discussion about the architecture and continuous with several decisions you have to make before implementing Exchange 2013. Then he continuous to describe which preparations you have to make before you can implement Exchange 2013. After these topics have been described Tony describes how to install it and the basic management tools you will need to use to manage your Exchange 2013 and in more detail how to manage your mailboxes.&lt;/p&gt;
+
+&lt;p&gt;Starting from chapter 8 the book makes a very deep dive. For those who are already familiar with Exchange 2013 and want to skip the basic things this is were you should start reading the book. In very deep detail Tony describes several topics among them:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;how does the store work&lt;/li&gt;
+  &lt;li&gt;the database availability group&lt;/li&gt;
+  &lt;li&gt;migrating mailboxes&lt;/li&gt;
+  &lt;li&gt;compliance management&lt;/li&gt;
+  &lt;li&gt;public folders and site mailboxes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For example in the _how does the store work _chapter will describe what is under the hood of the store. When you have read this chapter you will probably have a better understanding of the store process and how complex the product Exchange is under the hood. After the store is described the book continuous with the database availability group. In this chapter Tony describes several topics related to the DAG including: design considerations, daily administration tasks and several important components of the DAG among them the active manager.&lt;/p&gt;
+
+&lt;p&gt;Once the mailbox and high availability part have been discussed the book continues with the mailbox migration process. In this chapter the components are discussed which are key components of the migration process and of course how to perform the migration. This is not limited to only the cmdlets but also contains several practical tips from Tony about planning.&lt;/p&gt;
+
+&lt;p&gt;Some people are already working with the compliance part but some haven’t probably touched it. Both groups will benefit from this chapter as it describes some basic things but contains enough detail so people with experience will also learn a lot from this chapter. Compliance is a topic which becomes more important now-a-days since more and more companies will start implementing it either due to company regulations or government regulations.&lt;/p&gt;
+
+&lt;p&gt;In the last chapter Tony describes one of the probably most discussed topics of Exchange. Will it be there in the next release? How long will Microsoft Public Folders? These are just a few questions you will hear every time during the development phase of the next version of Exchange. In Exchange 2013 the Public Folders have changed a lot since the public folders can now be part of a normal mailbox database so no separate public folder database anymore. But how to get from the “legacy” Public Folder to the “new” Public Folder. Read Tony’s book and you have some good info on how to do this.&lt;/p&gt;
+
+&lt;p&gt;So what’s the conclusion of this review? The book is a must read for everybody who works with Exchange. It does not contain the basic information which most books do but describes several things in very deep detail. Besides this Tony also provides some additional information which really adds value to the book.&lt;/p&gt;
+
+&lt;p&gt;So if you got curious about the book just press the link below to buy the book:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://shop.oreilly.com/product/0790145378309.do&quot; target=&quot;_blank&quot;&gt;Buy Microsoft Exchange Server 2013 Inside Out: Mailbox and High Availability&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Fri, 08 Nov 2013 21:30:41 +0100</pubDate>
+				<link>/review-microsoft-exchange-server-2013-inside-mailbox-high-availability/</link>
+				<guid isPermaLink="true">/review-microsoft-exchange-server-2013-inside-mailbox-high-availability/</guid>
+			</item>
+		
+			<item>
+				<title>Troubleshooting federated sharing &#8211; part II</title>
+				<description>&lt;p&gt;In the first part of the blog series about troubleshooting federated sharing we had a look at the server side. We discussed which parameters you should verify during troubleshooting and if they are configured incorrectly how to fix them.&lt;/p&gt;
+
+&lt;p&gt;Now we will continue our journey in this second part. In this part we will have a look at the reverse proxy side followed by the client side.&lt;/p&gt;
+
+&lt;p&gt;Let’s start with having a look at the reverse proxy.&lt;/p&gt;
+
+&lt;p&gt;Because you don’t want your Exchange environment is directly accessible via the internet most companies will us a reverse proxy to “publish” their Exchange environment. This can either be done via a Microsoft product such as TMG or ARR. The first one will be end-of-support shortly so if not having one in place don’t start implementing it but use ARR or a 3rd party solution. When looking at the third party solutions there are a lot of solutions you can use. For example BlueCoat, Kemp Technologies or F5 have products which offer this functionality.&lt;/p&gt;
+
+&lt;p&gt;So what can be the problem with the reverse proxy which is used for publishing the Exchange environment? Well there can be many problems among them:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Authentication issues&lt;/li&gt;
+  &lt;li&gt;Name resolving issues&lt;/li&gt;
+  &lt;li&gt;Routing issues&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This are just three of the sort of issues you can experience when using a reverse proxy. I am sure there are a lot more sorts. In this blog we will focus on the authentication issues. The reason for this is that these are the issues you will probably encounter during your journey in configuring federated sharing.&lt;/p&gt;
+
+&lt;p&gt;The authentication issue is one of those things you will see a lot. Especially when you are using pre-authentication. Using pre-authentication your session will be authenticated before it is send to the CAS/CAS Array which is located behind the firewall.&lt;/p&gt;
+
+&lt;p&gt;For federated sharing it is required that all the federated sharing sessions will be passed-through to the CAS without having to authenticate. Authentication in this case will take place on the CAS/CAS Array. So one thing to make sure is that you will create the rules required for federated sharing above the existing rules. As mentioned in the first part the URL’s which are required are as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;/EWS/Exchange.asmx/WSSecurity&lt;/li&gt;
+  &lt;li&gt;/Autodiscover/Autodiscover.svc&lt;/li&gt;
+  &lt;li&gt;/Autodiscover/Autodiscover.svc/WSSecurity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are using the TMG to publish these URL’s ensure the following options are select:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Authentication Delegation: No delegation, but client may authenticate directly&lt;/li&gt;
+  &lt;li&gt;Users: all users&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most companies will use Form Based Authentication (FBA) to publish their Exchange Services to the internet. If this is the case you will need to change the listener. This because by default the listener will required all users to authenticate before they can connect which makes sense.&lt;/p&gt;
+
+&lt;p&gt;However for the URL’s used for federated sharing the authentication takes on the CAS so we also want to disable this specific option.&lt;/p&gt;
+
+&lt;p&gt;To do this get the properties of the listener and select the authentication tab. Open the advanced authentication options by pressing the advanced button and uncheck the option Require all users to authenticate.&lt;/p&gt;
+
+&lt;p&gt;Once configured you will need to find out if the rule really works the way you want. For example if configured in the wrong order the traffic will not even hit configured rule. To monitor this piece some logging will need to be enabled on the TMG side. I personally recommend you to create a filter using the following parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Filter by: rule&lt;/li&gt;
+  &lt;li&gt;Condition: equals&lt;/li&gt;
+  &lt;li&gt;Value: name of the publishing rule used to publish these services&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now logging is configured try to do a free/busy from another Exchange environment or from Office 365. If the rule is on the correct place you should see that the traffic hits the rule.&lt;/p&gt;
+
+&lt;p&gt;If you do not see any logging the traffic will not hit the rule. In that case verify the already discussed parameters and try again. In some cases it might take a few minutes before the TMG has picked up the new config so if it does not work directly wait a few minutes and try again.&lt;/p&gt;
+
+&lt;p&gt;Another issue you might see are authentication issues in the TMG log. This will be either 401.x or 403.x errors in most cases. In this case verify that when you browse to the following pages no form will be displayed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mail.domain.com/EWS/Exchange.asmx/WSSecurity&quot;&gt;https://mail.domain.com/EWS/Exchange.asmx/WSSecurity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://autodiscover.domain.com/Autodiscover/Autodiscover.svc&quot;&gt;https://autodiscover.domain.com/Autodiscover/Autodiscover.svc&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://autodiscover.domain.com/Autodiscover/Autodiscover.svc/WSSecurity&quot;&gt;https://autodiscover.domain.com/Autodiscover/Autodiscover.svc/WSSecurity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If a form is displayed please verify the delegation settings on the rule and the authentication settings on the listener.&lt;/p&gt;
+
+&lt;p&gt;OK enough about TMG let’s continue with the client side. By default Outlook has disabled logging for troubleshooting purposes so before starting the troubleshooting you will need to enable it. Microsoft has published a knowledge base article on how to enable the troubleshooting logging which can be found &lt;a href=&quot;http://support.microsoft.com/kb/831053&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When you have reproduced the issue it is time to look at the logs. Depending on the version of Outlook you the log are named different and are located in different locations. Below an overview of Outlook version, the log location and log file name:&lt;/p&gt;
+
+&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+  &lt;tr&gt;
+    &lt;td valign=&quot;top&quot;&gt;
+      Version
+    &lt;/td&gt;
+    
+    &lt;td valign=&quot;top&quot;&gt;
+      Location
+    &lt;/td&gt;
+    
+    &lt;td valign=&quot;top&quot;&gt;
+      Filename
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td valign=&quot;top&quot;&gt;
+      Outlook 2007
+    &lt;/td&gt;
+    
+    &lt;td valign=&quot;top&quot;&gt;
+      %temp%\OLKas
+    &lt;/td&gt;
+    
+    &lt;td valign=&quot;top&quot; width=&quot;201&quot;&gt;
+      date-time -fb.log
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td valign=&quot;top&quot; width=&quot;201&quot;&gt;
+      Outlook 2010
+    &lt;/td&gt;
+    
+    &lt;td valign=&quot;top&quot; width=&quot;201&quot;&gt;
+      %temp%\OLKas
+    &lt;/td&gt;
+    
+    &lt;td valign=&quot;top&quot; width=&quot;201&quot;&gt;
+      date-time -AS.log
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td valign=&quot;top&quot; width=&quot;201&quot;&gt;
+      Outlook 2013
+    &lt;/td&gt;
+    
+    &lt;td valign=&quot;top&quot; width=&quot;201&quot;&gt;
+      %temp%\Outlook logging
+    &lt;/td&gt;
+    
+    &lt;td valign=&quot;top&quot; width=&quot;201&quot;&gt;
+      Outlook-########.etl
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;So if you are on Outlook 2007/2010 your good investigate the logs yourself. If you are using Outlook 2013 you will have to send the etl file to Microsoft support for research.&lt;/p&gt;
+
+&lt;p&gt;Below you will find an example of a log file create with Outlook 2010. Let’s analyse it:&lt;/p&gt;
+
+&lt;p&gt;First Outlook will determine the URL for the availability service. Outlook will use autodiscover to do determine the availability URL.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2013/09/25 11:38:40.041: Getting ASURL&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see Outlook already will use the URL from a previous autodiscover request:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2013/09/25 11:38:40.041: URL returned from cached autodiscover: &lt;a href=&quot;https://mail.domain.com/ews/exchange.asmx&quot;&gt;https://mail.domain.com/ews/exchange.asmx&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The URL in cache is the one that is used for requesting the availability service:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2013/09/25 11:38:40.041: Request to URL: &lt;a href=&quot;https://mail.domain.com/ews/exchange.asmx&quot;&gt;https://mail.domain.com/ews/exchange.asmx&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Next step is to send the actual request which is send as an XML to the target CAS. As you can see this XML request will be used to request the free/busy information from a specific user:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2013/09/25 11:38:40.041: Request action: &lt;a href=&quot;http://schemas.microsoft.com/exchange/services/2006/messages/GetUserAvailability&quot;&gt;http://schemas.microsoft.com/exchange/services/2006/messages/GetUserAvailability&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the type of request has been determined the parameters will be provided in the body. You will see the following parameters to be used in every free/busy request:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:Timezone:&lt;/em&gt; the timezone which is being used: in this case 60&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:StandardTime:&lt;/em&gt; the default value of the time for the request being send, I guess if no specific time is specified it will use this one&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:Time:&lt;/em&gt; the standard time for which we want to know the availability: in this case 03:00:00&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:DayOrder:&lt;/em&gt; the standard day (date) you want to know the availability for: in this case 5&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:Month:&lt;/em&gt; the standard month: in this case 3&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:DayOfWeek:&lt;/em&gt; the day for which you want to know the availability: in this case Sunday&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:DaylightTime:&lt;/em&gt; I haven’t figured out this one but it looks like it has something to do with the winter/summer time&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:Address:&lt;/em&gt; the smtp address of the user for which you want to know the availability: in this case &lt;a href=&quot;mailto:johan.@johanveldhuis.nl&quot;&gt;johan.@johanveldhuis.nl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12Routingtype:&lt;/em&gt; the transport method which is used for sending the actual request once you hit the send button and your CAS will deliver it to the mailbox of the user determined in the ex12t:Address: in this case smtp&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:AttendeeType:&lt;/em&gt; the type of attendee this can be either required or optional: in this case required&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:FreeBusyViewOptions:&lt;/em&gt; contains the meeting specific details&lt;/li&gt;
+  &lt;li&gt;_ex12t:Starttime: _the start time of the meeting: in this case 2013-09-09T18:00:00&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:Endtime:&lt;/em&gt; the end time of the meeting: in this case 2013-10-09T18:00:00&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:MergedFreeBusyIntervalInMinutes:&lt;/em&gt; the intervals for which you would like to display the availability by default per 30 minutes&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:RequestedView:&lt;/em&gt; which info we want to see for the user: in this case detailed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-3313&quot; alt=&quot;request&quot; src=&quot;https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request-300x139.jpg?resize=300%2C139&quot; width=&quot;300&quot; height=&quot;139&quot; srcset=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request.jpg?resize=300%2C139&amp;amp;ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request.jpg?w=785&amp;amp;ssl=1 785w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now the XML has been generated the actual request can be send:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2013/09/25 11:38:40.041: Sending request&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Next we will receive the response which will tell us the request has been successfully send or that it failed. In this case the HTTP status code will tell us the request has been send successfully:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2013/09/25 11:38:44.135: Request sent&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2013/09/25 11:38:44.135: Response error code: 00000000&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2013/09/25 11:38:44.135: HTTP status code: 200&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the request has been send we will receive an answer from the source CAS which tries to route the request to the remote CAS. It starts with some generic XML which contains the server version information. This is the version number our own CAS. In this case we can see it runs Exchange 2010 SP3.&lt;/p&gt;
+
+&lt;p&gt;Next information contains the actual response the source CAS received from the remote CAS. This part will start with FreeBusyResponseArray this part contains the ResponseMessage as you can see there is a security related issue. This issue will prevent Outlook from receiving the free/busy for the other user.&lt;/p&gt;
+
+&lt;p&gt;After the message we will see some more detailed information which will show you which request the source CAS tries to send to the remote CAS.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-3314&quot; alt=&quot;response&quot; src=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response-300x290.jpg?resize=300%2C290&quot; width=&quot;300&quot; height=&quot;290&quot; srcset=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response.jpg?resize=300%2C290&amp;amp;ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response.jpg?w=793&amp;amp;ssl=1 793w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the final part you will see the actual error message and from which CAS it did receive this error. In this case error 5016 id received from CAS02. Outlook will display the 5016 error when hovering over the free/busy info from the specific user.&lt;/p&gt;
+
+&lt;p&gt;Here ends the second part of the blog series about troubleshooting federated sharing. In this part we had a look at the requirements for the reverse proxy and some basic troubleshooting and continued with troubleshooting from the client side.&lt;/p&gt;
+
+&lt;p&gt;In the third and last part of the article we will discuss some issues I have seen happening when setting up federated sharing.&lt;/p&gt;
+
+&lt;p&gt;If you have any comments/questions please let me know.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 02 Nov 2013 21:55:06 +0100</pubDate>
+				<link>/troubleshooting-federated-sharing-deel-ii/</link>
+				<guid isPermaLink="true">/troubleshooting-federated-sharing-deel-ii/</guid>
+			</item>
+		
+			<item>
+				<title>Troubleshooting Federated Sharing &#8211; part I</title>
+				<description>&lt;p&gt; By using federated sharing it is possible to exchange free/busy informative between different Exchange organizations. This can be done by using the Microsoft Federation Gateway (MSFG) when no direct trust exists between the Active Directories. The MSFG is in this case responsible for providing a ticket which is used for authentication. By using a ticket a CAS can contact the CAS from the other organization to retrieve the free/busy information.&lt;/p&gt;
+
+&lt;p&gt;To use this feature several things will need to be configured:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;trust with the Microsoft Federation Gateway&lt;/li&gt;
+  &lt;li&gt;organizational relationship must be configured&lt;/li&gt;
+  &lt;li&gt;autodiscover and EWS must allow WS Security authentication&lt;/li&gt;
+  &lt;li&gt;the reverse proxy needs to allow unauthenticated traffic to the following url’s:&lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;/EWS/exchange.asmx/WSSecurity&lt;/li&gt;
+      &lt;li&gt;/autodiscover/autodiscover.svc/WSSecurity&lt;/li&gt;
+      &lt;li&gt;/autodiscover/autodiscover.svc&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Several sites contain a step-by-step plan on how to configured this. An overview of those sites can be found on the end of this article.&lt;/p&gt;
+
+&lt;p&gt;When you setup these things everything should work, indeed should. In most cases it will work but in some cases you will need to perform some troubleshooting. In this serie of blogs we will have a look how you can validate that it works and perform some troubleshooting in case something doesn’t work.&lt;/p&gt;
+
+&lt;p&gt;But how can you troubleshoot these issues? First of all it is very useful if you have a contact person who has access to the other Exchange organization. In most cases this isn’t a big issue but when using Office 365 or another form of hosting this can be very hard sometimes.&lt;/p&gt;
+
+&lt;p&gt;To start the troubleshooting process you mostly would like to verify your own Exchange organization first. Things that could be checked are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;verify if autodiscover allows WS Security for authentication&lt;/li&gt;
+  &lt;li&gt;verify the external EWS url&lt;/li&gt;
+  &lt;li&gt;verify if Exchange Web Services will allow WS Security for authentication&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If your Exchange organization contains multiple CAS then Powershell is your friend and you can use several cmdlets to verify the steps above:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_Get-AutodiscoverVirtualDirectory&lt;/td&gt;
+      &lt;td&gt;select server, WSSecurityAuthentication_&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory.png&quot;&gt;&lt;img alt=&quot;Get-AutodiscoverVirtualDirectory&quot; src=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory-300x20.png?resize=300%2C20&quot; width=&quot;300&quot; height=&quot;20&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You will get an output like above. Verify if the value of the column &lt;em&gt;WSSecurityAuthentication _is set to _true&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If WSSecurity is not &lt;em&gt;true&lt;/em&gt; then use the following cmdlet to enable it:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_Get-AutodiscoverVirtualDirectory&lt;/td&gt;
+      &lt;td&gt;Set-AutodiscoverVirtualDirectory -WSSecurityAuthentication:$true_&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Using this cmdlet the authentication method will be configured but to offer this authentication type you will need to perform an &lt;em&gt;IISReset&lt;/em&gt;. Additional you can verify if the &lt;em&gt;svc-integrated&lt;/em&gt; &lt;em&gt;handler&lt;/em&gt; is attached to the autodiscover virtual directory:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS.png&quot;&gt;&lt;img alt=&quot;IIS&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS-300x193.png?resize=300%2C193&quot; width=&quot;300&quot; height=&quot;193&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Next step is to verify the Exchange Web Services, this can be done by using the &lt;em&gt;Get-WebServicesVirtualDirectory&lt;/em&gt; cmdlet_:_&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_Get-WebServicesVirtualDirectory&lt;/td&gt;
+      &lt;td&gt;select server, ExternalUrl, WSSecurityAuthentication_cmdle&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory.png&quot;&gt;&lt;img alt=&quot;Get-WebServicesVirtualDirectory&quot; src=&quot;https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory-300x21.png?resize=300%2C21&quot; width=&quot;300&quot; height=&quot;21&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Again the same rule apples &lt;em&gt;WSSecurityAuthentication _needs to be set to _true&lt;/em&gt;. Besides this the &lt;em&gt;ExternalUrl&lt;/em&gt; needs to contains a valid value. This url needs to accessible from the internet. If this is not the case it simply won’t work.&lt;/p&gt;
+
+&lt;p&gt;In case that &lt;em&gt;WSSecurity&lt;/em&gt; is not &lt;em&gt;true&lt;/em&gt; enabled it by using the following cmdlet:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_Get-WebServicesVirtualDirectory&lt;/td&gt;
+      &lt;td&gt;Set-WebServicesVirtualDirectory -WSSecurityAuthentication:$true_&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The same applies for EWS as it did for autodiscover perform an &lt;em&gt;IISReset&lt;/em&gt; to activate the authentication method. Besides this verify if the &lt;em&gt;ws-security handler&lt;/em&gt; is attached to the EWS virtual directory.&lt;/p&gt;
+
+&lt;p&gt;If no external url is configured you will need to configure one. Before you do this make sure the certificate contains all the correct names. If you will configure a value but it is not part of your certificate you will get errors.&lt;/p&gt;
+
+&lt;p&gt;To verify if the certificate contains the correct names we will use Powershell again:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_Get-ExchangeCertificate&lt;/td&gt;
+      &lt;td&gt;? {$_.Services -like “*IIS*”}&lt;/td&gt;
+      &lt;td&gt;select Subject, CertificateDomains&lt;/td&gt;
+      &lt;td&gt;FL_&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Verify if the &lt;em&gt;CertificateDomains&lt;/em&gt; contain the FQDN you are planning to use for EWS, for example &lt;em&gt;mail.domain.com&lt;/em&gt; of &lt;em&gt;ews.domain.com&lt;/em&gt;. If this name is not on the certificate you will need to renew your certificate.&lt;/p&gt;
+
+&lt;p&gt;If the certificate contains the name for the external URL then you can continue configuring it:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_Get-WebServicerVirtualDirectory&lt;/td&gt;
+      &lt;td&gt;Set-WebServicesVirtualDirectory -Externalurl “https://ews.domain.com/EWS/exchange.asmx”_&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Using the cmdlet above the external URL on all Client Access Servers will be configured the same. REMARK: in some scenarios this is not what you want. Please verify if this is the case in your scenario before configuring the external url.&lt;/p&gt;
+
+&lt;p&gt;When this has been configured and validated it is time to verify the Federation Trust and the Organization Relationship.&lt;/p&gt;
+
+&lt;p&gt;This can be done by starting with &lt;em&gt;Test-FederationTrustCertificate&lt;/em&gt; which will verify if the certificate used for the trust is correct and is installed on all CAS. During the creation of the trust the self-signed certificate will normally be distributed to all CAS in your environment. But in some cases this may not happen. If this is the case the CAS will be unable to authenticate against the Federation Gateway of Microsoft which will eventually result the autodiscover process to fail.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Test-FederationTrustCertificate&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate.png&quot;&gt;&lt;img alt=&quot;Test-FederationTrustCertificate&quot; src=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate-300x60.png?resize=300%2C60&quot; width=&quot;300&quot; height=&quot;60&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Verify that the &lt;em&gt;State&lt;/em&gt; column for all CAS contain the value &lt;em&gt;installed&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Additionally you can run the &lt;em&gt;Test-FederationTrust&lt;/em&gt; cmdlet to verify if the Federation Trust really works. By default this cmdlet will use the &lt;em&gt;extest&lt;/em&gt; account:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Test-FederationTrust&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you don’t have an &lt;em&gt;extest&lt;/em&gt; account or you would like to use another user add the &lt;em&gt;UserIdentity&lt;/em&gt; parameter:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Test-FederationTrust -UserIdentity user@domain.com&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This cmdlet will perform several tests and will output the results on the screen, verify if no errors did occur.&lt;/p&gt;
+
+&lt;p&gt;As final step of the process you can verify the &lt;em&gt;Organization Relationship&lt;/em&gt;. This is only applicable if the other organization has issues when looking up the free/busy information for your mailboxes. By using an organization relationship you will give the other organization permission to retrieve free/busy information of your organization. If not all domains are listed here it can cause strange issues such as it works for domain A but not for domain B while they are located in the same Exchange environment.&lt;/p&gt;
+
+&lt;p&gt;To troubleshoot these kind of issues you can use two cmdlets:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Get-OrganizationRelationShip, &lt;/em&gt; retrieves the current configuration&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;GetFederationInformation,&lt;/em&gt; will send an autodiscover request to the other organization to retrieve the configuration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following parameters are important in this case:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DomainNames&lt;/li&gt;
+  &lt;li&gt;TargetApplicationUri&lt;/li&gt;
+  &lt;li&gt;TargetAutoDiscoverEpr&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One remark must be made about the &lt;em&gt;DomainNames&lt;/em&gt; parameter. In some cases this parameter doesn’t have to be the same for both cmdlets. Some organizations only want to share free/busy information with a specific domain and not all domains hosted by the other Exchange organization.&lt;/p&gt;
+
+&lt;p&gt;In this part of the series we did have a look which configuration items you will need to verify in your Exchange organization. Besides this we did had a look on how to fix them if they are configured incorrectly.&lt;/p&gt;
+
+&lt;p&gt;In the second part we will have a closer look at the reverse proxy and client part of troubleshooting.&lt;/p&gt;
+
+&lt;p&gt;Below are some pages which contain use full information about federated sharing:&lt;/p&gt;
+
+&lt;p&gt;Office 365 Community: How to configure TMG for Office 365: &lt;a href=&quot;http://community.office365.com/en-us/wikis/exchange/1042.aspx&quot;&gt;open&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;TechNet: How does Federated Calendar sharing work in Exchange 2010?: &lt;a href=&quot;http://blogs.technet.com/b/ucedsg/archive/2010/04/22/how-does-federated-calendar-sharing-work-in-exchange-2010.aspx&quot;&gt;open&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;TechNet: Exchange 2013: Sharing: &lt;a href=&quot;http://technet.microsoft.com/en-us/library/dd638083(v=exchg.150).aspx&quot;&gt;open&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Sun, 13 Oct 2013 22:18:23 +0200</pubDate>
+				<link>/troubleshooting-federared-sharing/</link>
+				<guid isPermaLink="true">/troubleshooting-federared-sharing/</guid>
+			</item>
+		
+			<item>
+				<title>How to publish your Exchange environment correctly for Lync Mobile 2013</title>
+				<description>&lt;p&gt;Several companies have published their Exchange environment by using TMG. As you may know Microsoft has announced to discontinue the product but when working in the field you will still see that customers are using TMG.&lt;/p&gt;
+
+&lt;p&gt;One of the features of the Lync 2013 mobile client is to retrieve your contacts and free/busy information using Exchange Web Services (EWS). It depends on your TMG config if this will work. You may wonder why? For this we will need to have a closer look at the listener. For those who do not work much with TMG using the listener we can configure:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Which certificate is used to provide HTTPS&lt;/li&gt;
+  &lt;li&gt;What kind of authentication types do we accept&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So the item we need to have  closer look at is the authentication types. Using the authentication types we can configure how clients can authenticate against our Exchange environment. There are various options which you can configure for authentication amongst them:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HTTP form&lt;/li&gt;
+  &lt;li&gt;Basic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s assume you created one rule to publish OWA, ECP, ActiveSync, EWS and Autodiscover. In this case the listener is probably configured to offer form based authentication. Which will perfectly work for Outlook, OWA, ECP and ActiveSync. But it doesn’t work for Lync 2013 mobile clients. Normally when clients try to authenticate they will hit the form. Some clients however can’t authenticate using the form and will fall back to basic authentication. ActiveSync devices are an example of clients which work like this.&lt;/p&gt;
+
+&lt;p&gt;But the Lync 2013 mobile client doesn’t contain the option to fall back to basic authentication which results in authentication to fail. When you have enabled the logging on your device and examine it after trying to authenticate you will see this:&lt;/p&gt;
+
+&lt;p&gt;First the form will be displayed (below a small part of the code):&lt;/p&gt;
+
+&lt;pre class=&quot;brush: html; gutter: false&quot;&gt;&amp;lt;em&amp;gt;&amp;lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Transitional//EN&quot;&amp;gt;&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;&amp;lt;!-- {57A118C6-2DA9-419d-BE9A-F92B0F9A418B} --&amp;gt;&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;&amp;lt;html&amp;gt;&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;&amp;lt;head&amp;gt;&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;    &amp;lt;title&amp;gt;Microsoft Forefront TMG&amp;lt;/title&amp;gt;&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;    &amp;lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; CHARSET=utf-8&quot;&amp;gt;&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;    &amp;lt;meta content=&quot;NOINDEX, NOFOLLOW&quot; name=&quot;Robots&quot;&amp;gt;&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;    &amp;lt;link href=&quot;/CookieAuth.dll?GetPic?formdir=3&amp;amp;image=logon_style.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&amp;gt;&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;    &amp;lt;script src=&quot;/CookieAuth.dll?GetPic?formdir=3&amp;amp;image=flogon.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/em&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;Followed by the following error:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2013-09-12 11:45:31.020 Lync[4120:5520] ERROR APPLICATION CEwsAutoDiscoverOperation.cpp/652:All possible ews autodiscover urls exhausted.Failing autodiscover operation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So how to solve the issue? Well the resolution is pretty simple allow basic authentication for autodiscover and EWS. This can be realized via two methods:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a new publishing rule for EWS and Autodiscover and select the option &lt;em&gt;No delegation, but client may authenticate directly&lt;/em&gt;. Ensure the rule may be used for the &lt;em&gt;All users&lt;/em&gt; group instead of the &lt;em&gt;Authenticated users.&lt;/em&gt; This rule must be placed above the existing publishing rules which are used for publishing Exchange&lt;/li&gt;
+  &lt;li&gt;Create a new web listener and new publishing rule for EWS and Autodiscover. The remark which must be made to this method is that it requires new IP-address&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to have more information about publishing your Exchange environment either using TMG or UAG then  good starting point is the document of Greg Taylor which contains some guidelines on how to publish your Exchange environment using TMG/UAG. This document can be found on the site below:&lt;/p&gt;
+
+&lt;p&gt;TechNet: Publishing Exchange Server 2010 with Forefront UAG and TMG: &lt;a href=&quot;http://blogs.technet.com/b/exchange/archive/2010/07/16/publishing-exchange-server-2010-with-forefront-uag-and-tmg.aspx&quot;&gt;open&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Sat, 21 Sep 2013 11:23:34 +0200</pubDate>
+				<link>/moet-exchange-publiceren-zodat-lync-mobile-2013-hier-gebruik-kan-maken/</link>
+				<guid isPermaLink="true">/moet-exchange-publiceren-zodat-lync-mobile-2013-hier-gebruik-kan-maken/</guid>
+			</item>
+		
+			<item>
+				<title>Using OWA and Internet Explorer 11</title>
+				<description>&lt;p&gt;Now Windows 8.1 RTM is available via Technet and MSDN it is installed by several ITpro’s. And then it is just a matter of time befor someone finds  an issue. This because the code of Exchange doesnt recognize Internet Explorer 11 correctly and this will result in OWA to be displayed in light mode. As you may know OWA light doesn’t connect all the options which are available in the full blown OWA. Microsoft will probably fix this in a future update so you can use Internet Explorer 11 in full blown mode. This is confirmed by something I discovered when using Office 365. It looks like my tenant is already upgraded because Interne Explorer 11 works OK for me. The on-premise environments will need to wait till Microsoft releases an update which contains the correct code to recognize Internet Explorer 11.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 13 Sep 2013 20:28:40 +0200</pubDate>
+				<link>/owa-gebruiken-internet-explorer-11/</link>
+				<guid isPermaLink="true">/owa-gebruiken-internet-explorer-11/</guid>
+			</item>
+		
+	</channel>
+</rss>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Exchange 2013 alphabet: ActiveSync</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>The Exchange 2013 alphabet: ActiveSync </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   January 
+	   15th,
+	   
+	   2013
+	 </span>
+	  <div class="article_body">
+	  <p>We will start this Exchange alphabet blog series with ActiveSync.</p>
+
+<p>Using ActiveSync you will be able to synchronize your mailbox content with mobile devices which support ActiveSync. The ActiveSync feature was originally introduced in Exchange 2000 besides the Outlook Mobile Access (OMA). The last one has been a way for a while but was introduced again with Exchange 2010 SP2 but is not included with Exchange 2013 anymore.</p>
+
+<p>But what is the advantage of ActiveSync compared to other protocols which can be used to sync the content of your mailbox? ActiveSync has the ability to apply policies to mobile devices which include but are not limited to: require a PIN to unlock the phone, disable features of the phone, require encryption of the storage cards, etc. We will have a look at these option and how to configure them later in this article.</p>
+
+<p><strong>How it works</strong></p>
+
+<p>Let’s start with having a look how ActiveSync works.</p>
+
+<p>ActiveSync uses a Direct Push to keep the mobile device up-to-date via the wireless or cellular connection. The Direct Push feature is enabled by default in Exchange 2013. When a mobile device is configured to use ActiveSync and supports the Direct Push technology it issues a long-lived HTTPS request to the Exchange server. In the Technet documentation for Exchange this is sometimes called a PING. With this request the server is informed to send notifications when items change in any folder which the mobile device is configured to sync. This is done the first 15-minutes and is also called the heartbeat interval.</p>
+
+<p>After this 15 minutes the server sends a HTTP 200 OK to device if no items has been changed. When the device receives this response it wakes up and issues another request which restarts the process from sending a long-lived HTTPS request.</p>
+
+<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ActiveSync.jpg"><img title="ActiveSync" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ActiveSync-300x52.jpg?resize=300%2C52" alt="" width="300" height="52" data-recalc-dims="1" /></a></p>
+
+<p>But what happens if a change is detected in the mailbox within the 15-minute timespan? For example a new mail is received in the mailbox? In this case the server will send a response to the mobile device that there is a new item and provides the name of the folder where the item resides. Once the mobile device has received this response it will issue a synchronization request for the specific folder. When the synchronization has completed the mobile device issues a new PING request and the process of the long-lived HTTPS request restarts.</p>
+
+<p>The same is valid for items which have changed in the mailbox. OK now we know how ActiveSync works let’s have a look what the requirements are for the network infrastructure.</p>
+
+<p>To make the ActiveSync feature available for end users you will need to open port 443 on your firewall. In most cases you won’t publish Exchange directly to the internet so traffic will first arrive at a reverse proxy and then is forwarded to the Exchange server.</p>
+
+<p>But what about the long-lived HTTPS session does that require any changes to the network-infrastructure? Ideally you would like to change the time-out of your firewall from 15 minutes to 30 minutes. But what if you firewall or maybe the mobile service provider doesn’t support this maximum time-outs? Or maybe organizational policies won’t allow the time-out for HTTPS to be changed to such a long time. Will this cause that ActiveSync won’t work? Well not exactly if the network doesn’t support these high time-out values ActiveSync will act as follows.</p>
+
+<p>Let’s assume that your mobile provider only supports 10 minutes.</p>
+
+<p>The device will send the long-lived HTTPS request to the server. After 15 minutes the device hasn’t received a reply from the Exchange server the device will assume that the connection was timed-out by the network.</p>
+
+<p>In this case the device will send another HTTPS request but changes the heartbeat internal to 8 minutes. After 8 minutes the device receives a response HTTP 200 OK message from the server. The device will try if a higher heartbeat interval is possible. It will send another HTTPS request and changes the heartbeat internal to 12 minutes.</p>
+
+<p>Since the mobile provider only supports 10 the mobile device will not receive a HTTP 200 OK from the server. So after 12 minutes the mobile will assume a network error and will send a long-live HTTPS request only then with a heartbeat interval of 8 minutes.</p>
+
+<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Activesync-2.jpg"><img title="Activesync" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Activesync-2-300x77.jpg?resize=300%2C77" alt="" width="300" height="77" data-recalc-dims="1" /></a></p>
+
+<p><strong>Environment requirements</strong></p>
+
+<p>So what are the requirements before you can use ActiveSync? I will keep this part short as we already discussed most things in the previous paragraph. The requirements for using ActiveSync are:</p>
+
+<ul>
+  <li>Exchange is published to the internet (recommended via a reverse proxy)</li>
+  <li>User is enabled for ActiveSync (which is by default)</li>
+  <li>User does have an ActiveSync compatible device</li>
+  <li>A valid certificate has been installed on your Exchange server (and on your reverse proxy if applicable)</li>
+</ul>
+
+<p>The first one is the one which might caught your attention. As you may know Microsoft has announced that they won’t continue their ForeFront Threat Management Gateway (TMG for short). So if you haven’t got one in place you will need to select another product which can be used as a reverse proxy. Once of the solutions which has been announced is from KEMP Technologies. They will come with an update for their Load Balancers which makes it possible to publish Exchange via a secure way. So if you are planning to buy load balancers please take a look at the website of KEMP Technologies for more information. The update is planned to be available the Q1 of 2013.</p>
+
+<p><strong>Configuring</strong></p>
+
+<p>Configuring ActiveSync consists of a few steps:</p>
+
+<ul>
+  <li>Configure the ActiveSync url</li>
+  <li>Configure the Mobile Device Mailbox Policy</li>
+</ul>
+
+<p>Both steps can either be performed by using the Exchange Admin Center (EAC) or the Exchange Management Shell (EMS).</p>
+
+<p>Configuring via the EAC can be done by performing the following steps:</p>
+
+<ul>
+  <li>Open the <em>EAC</em></li>
+  <li>Select <em>servers</em></li>
+  <li>Select <em>virtual directories</em></li>
+  <li>Select the  _Microsoft-Server-ActiveSync _entry</li>
+  <li>Click on the Edit button</li>
+</ul>
+
+<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ECP.png"><img title="ECP" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ECP-300x145.png?resize=300%2C145" alt="" width="300" height="145" data-recalc-dims="1" /></a></p>
+
+<p>Modify both the internal and external URL so they contain the correct FQDN you are using to publish your Exchange server.</p>
+
+<p>The same step can be performed by using the _Set-ActiveSyncVirtualDirectory _cmdlet using the EMS:</p>
+
+<p><em>Set-ActiveSyncVirtualDirectory  -Identity “ex01\Microsoft-Server-ActiveSync”  -Internalurl https://mail.johanveldhuis.nl/Microsoft-Server-ActiveSync  -Externalurl https://mail.johanveldhuis.nl/Microsoft-Server-ActiveSync</em></p>
+
+<p>Next step is to modify the Mobile Device Mailbox Policy, in Exchange 2007/2010 this was called the ActiveSync Mailbox Policy. Compared to these policies the policy options might look limited Exchange 2013 when looking at the GUI:</p>
+
+<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ECP-2.png"><img title="ECP" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ECP-2-196x300.png?resize=196%2C300" alt="" width="196" height="300" data-recalc-dims="1" /></a></p>
+
+<p>So the disabling features on devices is not possible anymore via the GUI. But in the EMS you can enable/disable a lot of more options which we will not discuss in this article because it’s a pretty long list. A few examples are:</p>
+
+<ul>
+  <li>DisableRemovableStorage</li>
+  <li>DisableIrDA</li>
+  <li>DisableDesktopSync</li>
+  <li>BlockRemoteDesktop</li>
+  <li>BlockInternetSharing</li>
+</ul>
+
+<p>For a complete overview have a look at <a href="http://technet.microsoft.com/en-us/library/bb123783.aspx">this</a> TechNet article.</p>
+
+<p>If you are using Windows Phone 7 devices you must pay attention to the following.</p>
+
+<p>If you want to let these devices sync their mailbox content either allow non provisionable devices or do not enable the previous mentioned options plus following options:</p>
+
+<ul>
+  <li>PasswordRequired</li>
+  <li>MinPasswordLength</li>
+  <li>IdleTimeoutFrequencyValue</li>
+  <li>DeviceWipeThreshold</li>
+  <li>AllowSimplePassword</li>
+  <li>PasswordExpiration</li>
+  <li>PasswordHistory</li>
+  <li>DisableRemovableStorage</li>
+  <li>DisableIrDA</li>
+  <li>DisableDesktopSync</li>
+  <li>BlockRemoteDesktop</li>
+  <li>BlockInternetSharing</li>
+</ul>
+
+<p>So let’s assume we want to create a policy which:</p>
+
+<ul>
+  <li>Allows Bluetooth</li>
+  <li>Allow Browser usage</li>
+  <li>Allows Camera usage</li>
+  <li>Requires a password</li>
+  <li>Enables password recovery options</li>
+  <li>Allows Wifi</li>
+</ul>
+
+<p>We will call this policy IT because it will be a policy applied to all users in the IT department. To create the new policy we will use the _New-MobileDeviceMailboxPolicy _cmdlet:</p>
+
+<p>New-MobileDeviceMailboxPolicy -Name:”IT” -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -AllowWiFi:$true</p>
+
+<p>Once the policy is configured either via EAC or EMS we need to assign it to a user, there is one exclusion for this. The Mobile Device Mailbox Policy called _Default _which will be assigned to all users which will not match another policy.</p>
+
+<p>Via the EAC you will need to complete this steps:</p>
+
+<ul>
+  <li>Select Recipients</li>
+  <li>Select Mailboxes</li>
+  <li>Select the mailbox which you would like to modify</li>
+  <li>In the <em>details</em> pane scroll to the _Phone and Voice Features _select _View details _to display the Mobile Device Details screen</li>
+  <li>Press _browse _and select the correct policy</li>
+  <li>Click _OK _to close the window</li>
+</ul>
+
+<p>Via the EMS you can do it like this:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>_Get-Mailbox</td>
+      <td>where { $_.Department -eq “IT” }</td>
+      <td>_</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy “IT”).Identity</p>
+
+<p>After these things has been configured it’s time to connect your device to you Exchange environment. On most devices you can use the Autodiscover functionality from Exchange to configure your device the easy way. But what if it doesn’t work? Then it is tome for some troubleshooting.</p>
+
+<p><strong>Troubleshooting</strong></p>
+
+<p>For troubleshooting there are a few things which can help you. If you just have built your environment you might want to have a look at the <a href="https://testconnectivity.microsoft.com/">Remote Connectivity Analyzer</a> from Microsoft. This tool gives you a detailed result which helps you to identity the issue easily.</p>
+
+<p>Besides this tool you could have a look at the IIS logging. But keep in mind that these logs are not only used for Activesync but for all Web Services of Exchange. Starting from Exchange 2013 Exchange contains several built-in test functionalities. These test functionalities also cause a lot of IIS logging. So to filter out only ActiveSync related logging it might be handy to filter the logs. This can be done by using the _Export-ActiveSyncLog _cmdlet, for example:</p>
+
+<p><em>Export-ActiveSyncLog -Filename:”c:\Inetpub\logs\LogFiles\W3SVC2\u_ex130111.log” -StartDate:”2013-1-11″ -EndDate:”2013-1-12″ -UseGMT:$true -OutputPath:”c:\exreports\eas\”</em></p>
+
+<p>The cmdlet above will export all ActiveSync related logging from the 11<sup> th</sup> and 12<sup>th</sup> of January. All results will be exported to a directory called eas.</p>
+
+<p>When looking in the directory after running the cmdlet you will see a couple of files have been created:</p>
+
+<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Export-ActiveSynclog.png"><img title="Export-ActiveSynclog" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Export-ActiveSynclog-300x39.png?resize=300%2C39" alt="" width="300" height="39" data-recalc-dims="1" /></a></p>
+
+<p>So which information is included in each file:</p>
+
+<ul>
+  <li><strong>Servers.csv: </strong>does include the average unique devices and hits per server<em>**</em></li>
+  <li><strong>Hourly.csv:</strong> ActiveSync activity hour-by-hour<em>**</em></li>
+  <li><strong>StatusCodex.csv:</strong> overview of status codes issued in response to ActiveSync requests summarized per status code<em>**</em></li>
+  <li><strong>PolicyCompliance.csv: </strong>overview on device compliance with ActiveSync policy<em>**</em></li>
+  <li><strong>UserAgents.csv: </strong>gives an overview of hits and unique devices per user agent<em>**</em></li>
+</ul>
+
+<p>The last tool is not really a troubleshooting tool but more a tool to generate nice reports. To generate these reports you could use the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=890cd06b-abf8-4c25-91b2-f8d975cf8c07&amp;displaylang=en">Log Parser</a> from Microsoft.</p>
+
+<p>As my test environment doesn’t contain a lot of interesting information I generated it on another Exchange server.</p>
+
+<p>I used the following cmdlet:</p>
+
+<p><em>logparser “SELECT cs(user-agent), count(*) as Devices into chart.gif from c:\inetpub\logs\logfiles\w3svc1\u_ex*.log WHERE cs-uri-stem LIKE ‘%microsoft-server-activesync%’ and cs-username is NOT NULL GROUP BY cs(User-Agent) ORDER BY Devices desc” -charttype:pieexploded3d -ChartTitle:”Device Activity by Type” -categories:OFF</em></p>
+
+<p>Using this cmdlet we can generate the following report:</p>
+
+<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/LogParser.png"><img title="LogParser" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/LogParser-300x225.png?resize=300%2C225" alt="" width="300" height="225" data-recalc-dims="1" /></a></p>
+
+<p>Here ends the first blog in the Exchange ABC series. In this blog we did have a look at ActiveSync: how it works, how you can configure it and troubleshoot it.</p>
+
+<p>Below you will find some useful links to sites containing ActiveSync related information.</p>
+
+<p><strong>Useful links:</strong></p>
+
+<p>Publishing Exchange Server 2013 using TMG:</p>
+
+<p><a href="http://blogs.technet.com/b/exchange/archive/2012/11/21/publishing-exchange-server-2013-using-tmg.aspx">http://blogs.technet.com/b/exchange/archive/2012/11/21/publishing-exchange-server-2013-using-tmg.aspx</a></p>
+
+<p>Enabling Exchange ActiveSync’s Quarantine Features in an existing organization</p>
+
+<p><a href="http://www.stevieg.org/2013/01/implementing-exchange-activesyncs-quarantine-features/">http://www.stevieg.org/2013/01/implementing-exchange-activesyncs-quarantine-features/</a></p>
+
+<p>Understanding Export-ActiveSyncLog:</p>
+
+<p><a href="http://www.windowsitadmin.com/2012/02/02/understanding-export-activesynclog-part-1-2/">http://www.windowsitadmin.com/2012/02/02/understanding-export-activesynclog-part-1-2/</a></p>
+
+<p>Reporting on Mobile Device Activity Using Exchange 2007 ActiveSync Logs:</p>
+
+<p><a href="http://www.simple-talk.com/sysadmin/exchange/reporting-on-mobile-device-activity-using-exchange-2007-activesync-logs/">http://www.simple-talk.com/sysadmin/exchange/reporting-on-mobile-device-activity-using-exchange-2007-activesync-logs/</a></p>
+
+<p>More fun with Logparser and Exchange logs:</p>
+
+<p><a href="http://blogs.technet.com/b/exchange/archive/2007/09/12/3403903.aspx">http://blogs.technet.com/b/exchange/archive/2007/09/12/3403903.aspx</a></p>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2013-ref">
+					Exchange 2013 <span>(19)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=The Exchange 2013 alphabet: ActiveSync&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/een-geo-dns-omgeving-opzetten-deel-ii/" title="Setting up a Geo DNS environment in your test lab &#8211; part II">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/het-exchange-2013-alfabet-backup/" title="The Exchange 2013 alphabet: Backup">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

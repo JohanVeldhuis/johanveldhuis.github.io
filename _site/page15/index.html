@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Johan&#039;s Web Portal</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Johan&#039;s Web Portal </h1>
+</div>
+
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    August
+    18th,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/exchange-2010-rc/">Exchange 2010 RC</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>Microsoft has released Exchange 2010 Release Candidate today. The release candidate is available as VHD and as installable version. The release candidate can be installed on both Windows 2008 and Windows 2008 R2. With this Exchange 2010 will be the only version of Exchange which is supported to run on Windows 2008 R2 for now. Several sources report that Exchange 2007 will not be supported on Windows  2008 R2, even when service pack 2 will be available.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    August
+    9th,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/stappen-die-je-moet-doorlopen-voordat-je-een-rollup-installeert/">Steps to perform before installing a Rollup</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>Install a rollup for Exchange, that’s the way it goes most times. But in some cases it can go wrong, OWA doesn’t work anymore after an upgrade is an example of this. To prevent this from happening Amit Tank (MVP Exchange) wrote an article where he explains which steps to be performed before installing the rollup. Besides this he also explains which logs are created in case you need to troubleshoot an issue.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    August
+    8th,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/problemen-met-de-website/">Issues with website</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>The last couple of days there where some issues with my site, the cause was a problem with the plug-in which makes my site dual-language. Today a new version of the plug-in has been released and everything should work again. If your looking for a good plug-in have a look at the site below, one disadvantage of the plug-in is that you first need to upgrade the plug-in before upgrading your WordPress.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    August
+    4th,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/owa-doesnt-work-after-installing-rollupowa-werkt-niet-meer-na-het-installeren-van-een-rollup/">OWA doesn&#8217;t work after installing Rollup</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>On several forums you will see that installing a rollup can break down OWA. One of the issues you can have is that a blank screen will be presented with in the url reason 0 as a parameter.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    July
+    28th,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/exchange-and-using-the-a-in-an-e-mail-addressexchange-en-de-letter-a-in-een-e-mail-adres-gebruiken/">Exchange and using the ä in an e-mail address</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>Last week I found a nice issue on a forum. A user who managed an Exchange server in a Scandinavian country had issues with using the letter ä in an e-mail address. When a user had this name the e-mail address was generated with an ae instead of the ä.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    July
+    22nd,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/a-while-ago-a-tijdje-geleden/">A while ago &#8230;</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>It has been a while but since this week I am back online thanks to my neighbour.  My own provider hasn’t been able to arrange the new connection despite several phone calls and a letter which mentioned the line should be working on 21-7.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    July
+    21st,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/exchange-2007-shared-address-spaceexchange-2007-shared-address-space/">Exchange 2007 shared address space</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>Sometimes you will find the situation having several types of mailservers within one organization, for example Exchange in combination with another mailserver.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    July
+    2nd,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/congratulations-2009-microsoft-mvpcongratulations-2009-microsoft-mvp/">Congratulations 2009 Microsoft MVP!</a>
+  </h2>
+
+  <div>
+    
+    
+    <p><img class="alignnone size-full wp-image-1246" title="MVP logo" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2009/07/mvplogo.gif?resize=115%2C180" alt="MVP logo" width="115" height="180" data-recalc-dims="1" /></p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    June
+    28th,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/exchange-2007-uses-mx-record-even-is-sending-via-a-smarthostexchange-2007-gebruikt-een-mx-record-zelf-bij-het-verzenden-via-een-smarthost/">Exchange 2007 uses MX record even is sending via a smarthost</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>Normally when using a smarthost you wouldn’t expect that the mailserver does a query for the MX record in DNS. Well it does in Exchange 2007 and Exchange 2010. A while ago I found a post on Technet from someone from Microsoft who mentioned this. I found it pretty weird so I thought let’s test it. And indeed when using a smarthost and making a networktrace you will find out that it does a query for the MX record in DNS.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    June
+    18th,
+    
+    2009
+  </span>
+
+  <h2>
+    <a href="/user-alias-is-incorrectly-displayed-in-the-to-field-in-outlookgebruikers-alias-wordt-incorrect-weergeven-in-het-aan-veld-in-outlook/">User alias is incorrectly displayed in the to field in Outlook</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>This week I had a strange issue but I was able to solve it. There were some serious issues with a user and the only solution was to recreate the user-account. On first sight no problem you will need to trick somethings but it will work. After recreating the user I reconnect the old mailbox and it looked OK.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+<hr/>
+
+<ul class="pager"> 
+
+  
+  <li class="previous">
+    
+    <a href="/page14">&larr; Newer</a>
+    
+  </li>
+  
+  
+  <li>
+    <span class="page_number">Page: 15 of 40</span>
+  </li>
+
+  
+  <li class="next">
+    <a href="/page16">Older &rarr;</a>
+  </li>
+  
+
+</ul>
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

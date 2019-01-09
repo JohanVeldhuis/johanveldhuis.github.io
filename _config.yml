@@ -1,0 +1,36 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+markdown: kramdown
+disqus: "johanveldhuis"
+google_analytics: johanveldhuis
+title: 'Johan&#039;s Web Portal'
+url: https://www.johanveldhuis.nl
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Johan&#039;s Web Portal
+
+description: Info about Exchange, Office 365 and Lync.
+author:
+  name: 'Johan Veldhuis'
+  email: johan@johanveldhuis.nl
+  github: dbtek
+  twitter: jveldh
+  email_md5: 8209ff9e4ba94ac3058e69fd75354b3f
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+about_path: about.html
+
+BASE_PATH:
+
+plugins:
+  - jekyll-paginate

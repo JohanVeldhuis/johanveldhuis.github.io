@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Johan&#039;s Web Portal</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Johan&#039;s Web Portal </h1>
+</div>
+
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    26th,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/blat/">Blat</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>If you would like to test the mail performance of your server then you could use jetstress to test your database. But when you would like to decide yourself what kind of e-mails you want to send to your mailserver then you should have a look at Blat. Blat is a command-line mailer which can be used in a batch file which send multiple mails to your mailserver. This program is not ment to be used for bothering other people with bulkmails. If you are interested in the tool then have a look at the site below.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    25th,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/event-id-2050-op-cas-server/">Event ID 2050 on CAS Server</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>I have been very busy this week so I did not had many time to blog. Yesterday and today I visited a forum to have a look for interesting issues. One item I found was about Event ID 2050 on a CAS server. When looking at the details of the event you will see the following:</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    20th,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/554-561-body-type-not-supported-by-remote-host/">554 5.6.1 Body type not supported by Remote Host</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>Last week I found a message on the Technet forum which contained a question about how to disable 8 bit mime in Exchange 2007. So I started some research on mime types.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    17th,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/voorkom-spoofing-met-imss/">Prevend spoofing with IMSS</a>
+  </h2>
+
+  <div>
+    
+    
+    <p><a href="http://johanveldhuis.nl/wp-content/uploads/2008/10/imss_196x196.bmp"><img class="alignnone size-thumbnail wp-image-919" title="IMSS" src="http://johanveldhuis.nl/wp-content/uploads/2008/10/imss_196x196.bmp" alt="" /></a><a href="http://johanveldhuis.nl/wp-content/uploads/2008/10/imss_196x196.bmp"></a></p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    12th,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/non-delivery-report-codes/">Non Delivery Report codes</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>I think everybody has seen them, Non Delivery Reports, a familier example is 5.7.1 which gives the user a message back that relaying is not permitted. All errorcodes are based on several RFC’s one of them is RFC3461. On Technet you can find an article with the most common NDR’s.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    9th,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/update-rollup-4-voor-exchange-server-2007-service-pack-1/">Update Rollup 4 for Exchange Server 2007 Service Pack 1</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>Microsoft has released rollup 4 today for Exchange Server 2007 SP1.  This rollup pack contains several fixes for several bugs in Exchange 2007 SP1:</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    7th,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/items-exporteren-naar-pst-en-uit-de-mailbox-verwijderen/">Export items to a PST and delete them from the mailbox</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>Deleting items from a specific mailbox can be done really easy via the Powershell using the command <em>export-mailbox.</em> Before deleting the items it may be usefull to make a backup of this items. You can create a backup to a PST of to a special mailbox.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    6th,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/microsoft-exchange-server-2007-service-pack-1-help/">Microsoft Exchange Server 2007 Service Pack 1 Help</a>
+  </h2>
+
+  <div>
+    
+    
+    <p>Microsoft has released the stand-aline version of the help file of Exchange 2007 SP1. It’s always nice to have the help file on your laptop if you would like to search for something quick.</p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    4th,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/blokkeer-backscatter-mails-met-exchange-2007/">Block backscatter mails with Exchange 2007</a>
+  </h2>
+
+  <div>
+    
+    
+    <p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2008/10/step_31.jpg"><img class="alignnone size-thumbnail wp-image-891" title="Transport Rule" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2008/10/step_31-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2008/10/step_31.jpg?resize=150%2C150&amp;ssl=1 150w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/10/step_31.jpg?zoom=2&amp;resize=150%2C150&amp;ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/10/step_31.jpg?zoom=3&amp;resize=150%2C150&amp;ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" /></a></p>
+
+
+    
+    
+  </div>
+
+</article>
+
+
+<article class="home">
+
+  <span class="post-date">
+    
+    October
+    2nd,
+    
+    2008
+  </span>
+
+  <h2>
+    <a href="/0x8004010f-en-oab/">0X8004010F and OAB</a>
+  </h2>
+
+  <div>
+    
+    
+    <p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/10/knipsel.jpg"><img class="alignnone size-thumbnail wp-image-871" title="Dave Goldman's blog" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/10/knipsel-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/10/knipsel.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/10/knipsel.jpg?zoom=2&amp;resize=150%2C150&amp;ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/10/knipsel.jpg?zoom=3&amp;resize=150%2C150&amp;ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" /></a></p>
+
+
+    
+    
+  </div>
+
+</article>
+
+<hr/>
+
+<ul class="pager"> 
+
+  
+  <li class="previous">
+    
+    <a href="/page20">&larr; Newer</a>
+    
+  </li>
+  
+  
+  <li>
+    <span class="page_number">Page: 21 of 40</span>
+  </li>
+
+  
+  <li class="next">
+    <a href="/page22">Older &rarr;</a>
+  </li>
+  
+
+</ul>
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

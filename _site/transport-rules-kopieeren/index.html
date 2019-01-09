@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Copy transport rules</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Copy transport rules </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   January 
+	   3rd,
+	     
+	   2010
+	 </span>
+	  <div class="article_body">
+	  <p>In Exchange 2010 the transport rules functionality have been expanded, as the configuration of Hub servers is saved in the AD transport rules will also be saved there. This has an advantage that multiple Hub servers in the same Exchange organization can use these transport rules.</p>
+
+<p>When having an Edge server this is a little bit more complicated because the Edge is not a member of the AD and has a local ADLDS which makes replication not possible. If you have one Edge it’s not a very big problem to configure the transport rules again. But if you have multiple Edge servers this can be a very time consuming job. In this case you can use the commands <em>Export-TransportRuleCollection _and _Import-TransportRuleCollection</em>. You can run both commands on both the Hub and Edge transport servers.</p>
+
+<p>With the command below we ensure that we make an export of the transport rules to the export directory which is located on our local harddrive.</p>
+
+<p>_$file = Export-TransportRuleCollection</p>
+
+<p>Set-Content -Path “C:\Export\TransportRules.xml” -Value $file.FileData -Encoding Byte_</p>
+
+<p>Next step is to copy the xml file to the other Edge servers and run the import command.</p>
+
+<p>_[Byte[]]$Data = Get-Content -Path “C:\Import\TransportRules.xml” -Encoding Byte -ReadCount 0</p>
+
+<p>Import-TransportRuleCollection -FileData $Data_</p>
+
+<p>This will import the transportrules.xml on the server.</p>
+
+<p>When you make a lot of changes to transport rules it might be usefull to create a script which exports and imports the transport rules.</p>
+
+<p>Below an example script to export the transport rules. This script uses a batch and a Powershell file, the batch is used in the scheduled task to automaticaly run the export, you can also choose to copy the complete command from the batch and place it in the scheduled task. The scheduled task can then be executed every hour or every day depending on your needs. When the command has been executed an entry will be made in the application log. One remark on this script is that you will need to share the export folder and give the account who executes the scheduled task the correct permissions on it:</p>
+
+<p><strong><em>exporttransportrules.cmd</em></strong></p>
+
+<p><em>PowerShell.exe -command “. ‘C:\Program Files\Microsoft\Exchange Server\V14\bin\RemoteExchange.ps1’; Connect-ExchangeServer -auto; C:\Export\exporttransportrules.ps1”</em></p>
+
+<p>_**exporttransportrules.ps1</p>
+
+<p>** $file = Export-TransportRuleCollection</p>
+
+<p>Set-Content -Path “C:\Export\TransportRules.xml” -Value $file.FileData -Encoding Byte</p>
+
+<p>$evt=new-object System.Diagnostics.EventLog(“Application”)</p>
+
+<p>$evt.Source=”Export transport rules”</p>
+
+<p>$infoevent=[System.Diagnostics.EventLogEntryType]::Information</p>
+
+<p>$evt.WriteEntry(“Transport rules have been exported”,$infoevent,70)_</p>
+
+<p>OK now we have the export part we also need to import part:</p>
+
+<p><strong><em>importtransportrules.cmd</em></strong></p>
+
+<p><em>PowerShell.exe -command “. ‘C:\Program Files\Microsoft\Exchange Server\V14\bin\RemoteExchange.ps1’; Connect-ExchangeServer -auto; C:\Import\importtransportrules.ps1”</em></p>
+
+<p>_**importtransportrules.ps1</p>
+
+<p>** _[Byte[]]$Data = Get-Content -Path “\sourceserver\export\TransportRules.xml” -Encoding Byte -ReadCount 0</p>
+
+<p>Import-TransportRuleCollection -FileData $Data</p>
+
+<p>_ $evt=new-object System.Diagnostics.EventLog(“Application”)</p>
+
+<p>$evt.Source=”Import transport rules”</p>
+
+<p>$infoevent=[System.Diagnostics.EventLogEntryType]::Information</p>
+
+<p>$evt.WriteEntry(“Transport rules have been imported”,$infoevent,70)_</p>
+
+<p>The import part is almost the same, only the export-transportrulecollection has been changed to import-transportrulecollection and the path to import has been changed to point to the source server.</p>
+
+<p>But what happens in a co-existentse environment where you have transport rules in Exchange 2007 and Exchange 2010. As described earlier these transport rules are saved in the Active Directory for Hub servers, in Exchange 2010 this is another location as for Exchange 2007. During the setup the transport rules will be converted and placed in the right location. When the installation has finished both Exchange 2007 and Exchange 2010 have the same set of transport rules. But when you like to make changes to the transport rules you will need to make this change in both Exchange 2007 and Exchange 2010.</p>
+
+<p>To export the Exchange 2007 transport rules only on a 2010 Hub server execute the following command:</p>
+
+<p>_$ file = Export-TransportRuleCollection -ExportLegacyRules</p>
+
+<p>Set-Content -Path “C:\Export\LegacyRules.xml” -Value $file.FileData -Encoding Byte_</p>
+
+<p>If you like to have more info about the commands then have a look at the sites mentioned below:</p>
+
+<p>Technet Export-TransportRuleCollection <a href="vhttp://technet.microsoft.com/en-us/library/bb124410.aspx" target="_blank">open</a></p>
+
+<p>Technet Import-TransportRuleCollection <a href="http://technet.microsoft.com/en-us/library/bb123582.aspx" target="_blank">open</a></p>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2010-ref">
+					Exchange 2010 <span>(75)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Copy transport rules&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/voorkom-spam-welke-vanaf-vanaf-je-eigen-domein-verzonden-lijkt/" title="Prevent spam which appear to be sent from your own domain">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/r-gebruiken-in-een-e-mailaddress-policy/" title="Using %r in the e-mailaddress policy">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

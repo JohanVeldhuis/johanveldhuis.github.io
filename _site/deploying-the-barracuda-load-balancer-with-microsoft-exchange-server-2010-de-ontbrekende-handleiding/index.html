@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Deploying the Barracuda Load Balancer with Microsoft Exchange Server 2010 – the missing manual</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Deploying the Barracuda Load Balancer with Microsoft Exchange Server 2010 – the missing manual </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   November 
+	   15th,
+	   
+	   2011
+	 </span>
+	  <div class="article_body">
+	  <p> In a lot of Exchange environments you will see that a hardware load balancer is used to load balance the traffic to the Client Access Servers (CAS) and Hub Transport Servers (HUB).</p>
+
+<p>In this article we will have a look at the Barracuda Load Balancers and specifically the two-armed setup. In this two-armed setup solution the Barracuda has two separate IP-addresses one on the WAN interface and one on the LAN interface.</p>
+
+<h3 id="system-configuration">System configuration</h3>
+
+<p>This is the first pitfall which isn’t mentioned in the whitepaper Barracuda published for Exchange 2010. You will need to place Exchange in a separate VLAN/Subnet for this. Why? If you don’t do it there are a few thinks which don’t work:</p>
+
+<ul>
+  <li>Servers/applications which connect via RPC won’t be able to connect</li>
+  <li>The <strong>Enable Client Impersonation</strong> option can’t be used for the other protocols: SMTP/IMAP etc.</li>
+</ul>
+
+<p>So for example if your company network contains two VLAN’s create another one which does contain Exchange.</p>
+
+<p>The second thing is the gateway. Once of the requirements for the load balancer in a two-armed configuration is that the network configuration is modified so all traffic outside the subnet will be send to the load balancer.</p>
+
+<p>In normal situations this is not a big issue but in a co-existence phase with for example Exchange 2003 it might be an issue. To solve this issue create a persistent route temporarily and remove it once Exchange 2003 has been removed.</p>
+
+<h3 id="rules">Rules</h3>
+
+<p>The rule part described in the whitepaper will described only the RPC and HTTP(s) part of the load balancer. But as probably a lot of organizations does are not the only two protocols who are used.</p>
+
+<p>Most organizations also will use SMTP and IMAP, and some even POP3. In all cases it might be interesting to load balance those three protocols also.</p>
+
+<p>But let’s start with having a look at HTTP because you can fine tune the parameters of this rule also. As discussed earlier the option <strong>Enable Client Impersonation</strong> is disabled by default. This will make it harder to troubleshoot because every client IP is replaced by the VIP of the Load Balancer. So change this option to enabled to ensure that the real client IP is written to the IIS log.</p>
+
+<p>Both SMTP and IMAP can be published by using the service type <strong>TCP Proxy</strong>. Using this service type you also have the option to <strong>Enable Client Impersonation</strong> just like HTTP, which is published using the <strong>Layer 7 – HTTPS </strong>service type.</p>
+
+<p>In the whitepaper you will find persistence time and session time-out. Both values are very important to configure correctly. Using values which are too high may cause a service to fail.</p>
+
+<p>So what are the correct values to use? Well there are a few options. Let’s first have a look at the persistence time. Using this parameter we can configure the persistence time of a connection. Persistence is used to ensure a client will setup a connection to the same real server if it connects within the configured persistence time period. If you configure this value to high the following could happen. An application is using SMTP to send messages. The real server used by the client fails. But since the persistence time is not expired the client will be redirected to this server by the load balancer until the time has expired. This results in messages queuing up on the application server.</p>
+
+<p>To prevent this kind of issues either configure no persistence or configure a low persistence time (for example 5 seconds). The first method is recommended.</p>
+
+<p>The second parameter session time-out, how long does a session need to be kept before a connection is closed. In most cases a low value, or even a zero value, is the way to go. This since as long traffic is send across the connection it won’t be terminated.</p>
+
+<p>At the end of this blog a complete overview is displayed which contains all necessary settings for the Exchange rules.</p>
+
+<h3 id="ssl-offloading">SSL Offloading</h3>
+
+<p>One of the benefits of a load balancer is that you can use it to perform SSL Offloading. Using this feature you can move the encryption and decryption tasks from the Client Access Servers to the hardware load balancer. This has as advantage that the CPU of the Client Access Server will not have to do these tasks which are both CPU intensive.</p>
+
+<p>The SSL Offloading configuration can be split in three parts:</p>
+
+<ul>
+  <li>Import the certificate</li>
+  <li>Configure the rules</li>
+  <li>Exchange configuration</li>
+</ul>
+
+<h4 id="import-the-certificate">Import the certificate</h4>
+
+<p>Importing the certificate on the load balancer is pretty straight forward. Before you start ensure that you’ve got a copy of the certificate including the private key and if applicable the intermediate certificates.</p>
+
+<p>Once you’ve gathered all the stuff you can install it on the load balancer by going to the <strong>certificate</strong> page. On the certificate page provide the following information:</p>
+
+<ul>
+  <li>Name: an identifier for the certificate</li>
+  <li>Password: the password which is used to secure the certificate</li>
+  <li>Signed certificate: the location of the PFX file</li>
+</ul>
+
+<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/10/upload_ssl.jpg"><img title="Upload SSL certificate" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/10/upload_ssl-300x70.jpg?resize=300%2C70" alt="" width="300" height="70" data-recalc-dims="1" /></a></p>
+
+<p>Press <strong>Upload</strong> to store the certificate on the load balancer and your ready to continue with the next step.</p>
+
+<h4 id="configure-the-rules">Configure the rules</h4>
+
+<p>SSL Offloading can only be performed on the rule that is used to load balance the web services, for example Outlook Web App, Exchange Control Panel, Autodiscover, Exchange Web Services and the Offline Address Book (optional).</p>
+
+<p>Edit the rule which is created for load balancing the web services and go to the <strong>SSL Offloading</strong> section.</p>
+
+<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/10/assign_ssl.jpg"><img title="Assign SSL certificate" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/10/assign_ssl-300x30.jpg?resize=300%2C30" alt="" width="300" height="30" data-recalc-dims="1" /></a></p>
+
+<p>The load balancer side has now been configured for SSL offloading. Now it’s time for the Exchange side.</p>
+
+<h4 id="exchange-configuration">Exchange configuration</h4>
+
+<p>The Exchange configuration part is explained very well on this Wiki page:</p>
+
+<p><a href="http://social.technet.microsoft.com/wiki/contents/articles/how-to-configure-ssl-offloading-in-exchange-2010.aspx?ocid=aff-n-we-loc--ITPRO40890&amp;WT.mc_id=aff-n-we-loc--ITPRO40890" target="_blank">Exchange Wiki Load Balancing</a></p>
+
+<p>For this reason I won’t explain the steps you will have to take. Although I recommend to use the script below which can also be found on the Wiki page:</p>
+
+<p>_Set-OutlookAnywhere –Identity “$($env:COMPUTERNAME)\RPC (Default Web Site)” -SSLOffloading $true__</p>
+
+<p>_</p>
+
+<p>New-ItemProperty -Path ‘HKLM:\SYSTEM\CurrentControlSet\Services\MSExchange OWA’ -Name SSLOffloaded -Value 1 -PropertyType DWORD_</p>
+
+<p>_</p>
+
+<p>Import-Module webadministration_</p>
+
+<p>_Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value “None” -PSPath IIS:\ -Location “Default Web Site/OWA”__</p>
+
+<p><em>Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value “None” -PSPath IIS:\ -Location “Default Web Site/ECP”</em></p>
+
+<p><em>Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value “None” -PSPath IIS:\ -Location “Default Web Site/OAB”</em></p>
+
+<p><em>Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value “None” -PSPath IIS:\ -Location “Default Web Site/EWS”</em></p>
+
+<p><em>Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value “None” -PSPath IIS:\ -Location “Default Web Site/Microsoft-Server-ActiveSync”</em></p>
+
+<p><em>Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value “None” -PSPath IIS:\ -Location “Default Web Site/Autodiscover”</em></p>
+
+<p><em>iisreset /noforce</em>__</p>
+
+<p>(source: <a href="http://social.technet.microsoft.com/wiki/contents/articles/how-to-configure-ssl-offloading-in-exchange-2010.aspx?ocid=aff-n-we-loc--ITPRO40890&amp;WT.mc_id=aff-n-we-loc--ITPRO40890">http://social.technet.microsoft.com/wiki/contents/articles/how-to-configure-ssl-offloading-in-exchange-2010.aspx</a>)</p>
+
+<h3 id="test-is-everything-works">Test is everything works</h3>
+
+<p>The most important step if everything is configured is test if everything works. But how can you test all the services?</p>
+
+<p>There are multiple options to test these services. All these tests can be run from a client so you don’t have to install the Exchange Management Tools on your machine.</p>
+
+<h4 id="using-outlook">Using Outlook</h4>
+
+<p>The easiest way is to use Outlook. Perform the following tasks to confirm Outlook can still function correctly:</p>
+
+<ul>
+  <li>Check if you can connect to your mailbox and if applicable the public folders</li>
+  <li>Force a complete download of the Offline Address Book</li>
+  <li>Check if you can enable/disable Out of Office</li>
+  <li>Check if you can view the free/busy information</li>
+  <li>Use the <strong>Test E-mail Autoconfiguration</strong> to confirm the autodiscover functionality still works</li>
+</ul>
+
+<p>The only two things which can’t be tested using Outlook are Outlook Web App (OWA) and the Exchange Control Panel (ECP) if using Outlook 2007. If you are using Outlook 2010 you can test the ECP by for example going getting the message tracking info of a message.</p>
+
+<h4 id="using-internet-explorer">Using Internet Explorer</h4>
+
+<p>The other method, although not comparable with Outlook, is using Internet Explorer. Using Internet Explorer you can only test the web services offered by Exchange:</p>
+
+<ul>
+  <li>
+    <p>Autodiscover: <a href="https://autodiscover.domain.com/autodiscover/autodiscover.xml">https://autodiscover.domain.com/autodiscover/autodiscover.xml</a></p>
+
+    <p>This will give an Invalid Request 600 error</p>
+  </li>
+  <li>
+    <p>Exchange Web Services: <a href="https://mail.domain.com/EWS/Exchange.asmx">https://mail.domain.com/EWS/Exchange.asmx</a></p>
+
+    <p>Will give an XML output with several settings</p>
+  </li>
+  <li>
+    <p>Offline Address Book: <a href="https://mail.domain.com/OAB/guid/oab.xml">https://mail.domain.com/OAB/guid/oab.xml</a></p>
+
+    <p>Will give an XML output with references to the OAB files</p>
+  </li>
+  <li>
+    <p>Outlook Web App: <a href="https://owa.domain.com/owa">https://owa.domain.com/owa</a></p>
+  </li>
+</ul>
+
+<p>Will show you the Outlook Web App login page</p>
+
+<ul>
+  <li>Exchange Control Panel: <a href="https://owa.domain.com/ecp">https://owa.domain.com/ecp</a></li>
+</ul>
+
+<p>Will show you the Exchange Control panel login</p>
+
+<h4 id="using-the-exchange-management-shell">Using the Exchange Management Shell</h4>
+
+<p>As final option you could test it using the Exchange Management Shell. One important remark has to be made. You can’t perform the test cmdlet’s anymore from the servers this because the traffic won’t be accepted because it will create a loop in your network.</p>
+
+<p>So to test the services you will need to perform them from a client which contains the Exchange Management Tools.</p>
+
+<p>The following cmdlets can be used:</p>
+
+<ul>
+  <li>Autodiscover: <strong>Test-OutlookWebServices</strong></li>
+  <li>Exchange Web Services: <strong>Test-WebServicesConnectivity</strong></li>
+  <li>Exchange Control Panel connectivity: <strong>Test-EcpConnectivity</strong></li>
+  <li>Outlook Web Apps: <strong>Test-OwaConnectivity</strong></li>
+  <li>Test RPC connection: <strong>Test-OutlookConnectivity</strong></li>
+</ul>
+
+<p>Here ends the article about how to use the Barracuda Load Balancer in combination with Exchange 2010. As promised earlier below you will find the rules which you need to configure in the load balancer:</p>
+
+<p><strong>RPC</strong></p>
+
+<p>[table id=24 /]</p>
+
+<p>[table id=25 /]</p>
+
+<p><strong>Web</strong> <strong>Services</strong></p>
+
+<p>[table id=32 /]</p>
+
+<p>[table id=33 /]</p>
+
+<p><strong>SMTP</strong></p>
+
+<p>[table id=26 /]</p>
+
+<p>[table id=27 /]</p>
+
+<p><strong>IMAP</strong></p>
+
+<p>[table id=28 /]</p>
+
+<p>[table id=29 /]</p>
+
+<p><strong>POP3</strong></p>
+
+<p>[table id=30 /]</p>
+
+<p>[table id=31 /]</p>
+
+<p>Special thanks to GianPaolo Corona for providing the screenshots and assisting in getting this configuration working.</p>
+
+<p>If you have some other config suggestions don’t hesitate to contact me.</p>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2010-ref">
+					Exchange 2010 <span>(75)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Deploying the Barracuda Load Balancer with Microsoft Exchange Server 2010 – the missing manual&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/exchange-2010-sp1-rollup-6-vrij-gegeven/" title="Exchange 2010 SP1 Rollup 6 released">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/kerberos-authenticatie-mislukt-af-en-toe/" title="Kerberos authentication fails sporadically">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

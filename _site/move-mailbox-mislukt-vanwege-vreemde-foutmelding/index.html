@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Move-mailbox fails with strange error</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Move-mailbox fails with strange error </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   March 
+	   15th,
+	   
+	   2010
+	 </span>
+	  <div class="article_body">
+	  <p>During the conversion of a pilot to production environment I found a nice issue. The mailboxes needed to be moved from the old mailbox server to the new mailbox server. Normally not a very exciting proces which can be done both by using the Exchange Management Console as Exchange Management Shell. But the move from the old Exchange 2010 mailbox server to the new Exchange 2010 mailbox server failed with a strange error. So first I had a look in the event log of the server and found the following error:</p>
+
+<p><em>(PID 5988, Thread 954) Task New-MoveRequest writing error when processing record of index 0. Error: Microsoft.Exchange.MailboxReplicationService.MailboxReplicationTransientException: The call to ‘net.tcp://cas.domain.local/Microsoft.Exchange.MailboxReplicationService’ failed. Error details: The type initializer for ‘Microsoft.Exchange.MailboxReplicationService.LocalMailbox’ threw an exception.. —&gt; System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The type initializer for ‘Microsoft.Exchange.MailboxReplicationService.LocalMailbox’ threw an exception. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:</em></p>
+
+<p><em>System.TypeInitializationException: The type initializer for ‘Microsoft.Exchange.MailboxReplicationService.LocalMailbox’ threw an exception. —-&gt; System.IO.FileLoadException: The located assembly’s manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)</em></p>
+
+<p><em>   at Microsoft.Exchange.MailboxReplicationService.LocalMailbox..cctor()</em></p>
+
+<p><em>   — End of inner ExceptionDetail stack trace —</em></p>
+
+<p><em>   at Microsoft.Exchange.MailboxReplicationService.LocalMailbox..ctor(LocalMailboxFlags flags)</em></p>
+
+<p>   at Microsoft.Exchange.MailboxReplicationService.LocalSourceMailbox..ctor(LocalMailboxFlags flags)</p>
+
+<p>   at Microsoft.Exchange.MailboxReplicationService.MailboxReplicationService.&lt;&gt;c__DisplayClass25.<GetMailboxInformation2>b\_\_24()</GetMailboxInformation2></p>
+
+<p>   at Microsoft.Exchange.MailboxReplicationService.CommonUtils.CatchKnownExceptions(GenericCallDelegate del, FailureDelegate failureDelegate, MrsTracer tracer)</p>
+
+<p>   at Microsoft.Excha…).</p>
+
+<p><em>   — End of inner exception stack trace —</em></p>
+
+<p><em>   at Microsoft.Exchange.MailboxReplicationService.CommonUtils.CallService(GenericCallDelegate del, String epAddress)</em></p>
+
+<p>   at Microsoft.Exchange.MailboxReplicationService.MailboxReplicationServiceClient.GetMailboxInformation(Guid primaryMailboxGuid, Guid physicalMailboxGuid, Guid targetMdbGuid, String targetMdbName, String remoteHostName, String remoteOrgName, String remoteDCName, NetworkCredential cred)</p>
+
+<p>   at Microsoft.Exchange.Management.RecipientTasks.NewMoveRequest.InternalValidate()</p>
+
+<p>   at Microsoft.Exchange.Configuration.Tasks.Task.ProcessRecord()</p>
+
+<p>As you can see in the error message there went something wrong with the Exchange Mailbox Replication Service (MRS). These services are located on a server which has the Client Access Role installed on it and is responsible for moving the mailbox from the source to the target server. When you have multiple CAS servers in one site the MRS services will share information about the mailbox move process to prevent multiple servers are busy with the same request.</p>
+
+<p>As their was only one CAS, cas.domain.local, I decided to have a closer look at that server. The MRS service was running according to the services.msc so I decided to restart the Mailbox Replication Service. After this was done I tried the move of the mailbox again and this time it went without issues.</p>
+
+<p>I haven’t found the cause why this issue happened. One of the issues could be a mailbox database which is not 100% healthy. By using eseutil and isinteg you can fix the database and then try the process again.</p>
+
+<p>Below you will find some links to sites containing further information about this topic:</p>
+
+<p>Technet: Understanding Move Requests <a href="http://technet.microsoft.com/en-us/library/dd298174.aspx" target="_blank">open</a></p>
+
+<p>Technet: Troubleshooting Mailbox Moves <a href="http://technet.microsoft.com/en-us/library/dd638094.aspx" target="_blank">open</a></p>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2010-ref">
+					Exchange 2010 <span>(75)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Move-mailbox fails with strange error&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/waarom-het-gebruik-van-pst-ost-en-pab-bestanden-niet-wordt-ondersteund-over-lanwan-verbindingen/" title="Why the use of PST, OST and PAB files is unsupported over LAN/WAN Links">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/get-owavirtualdirectory-laat-niet-alle-cas-servers-zien/" title="Get-owavirtualdirectory does not return all CAS servers">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

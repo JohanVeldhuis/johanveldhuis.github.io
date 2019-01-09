@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SefaUtil GUI v2</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>SefaUtil GUI v2 </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   September 
+	   7th,
+	   
+	   2015
+	 </span>
+	  <div class="article_body">
+	  <p>With pleasure I present you SefaUtil GUI v2. First thanks to all the beta tester which provided a lot of good feedback which has been incorporated in the tool.</p>
+
+<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png"><img class="alignnone size-medium wp-image-3369" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2-300x161.png?resize=300%2C161" alt="SefaUtil v2" width="300" height="161" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=300%2C161&amp;ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=1024%2C550&amp;ssl=1 1024w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=900%2C483&amp;ssl=1 900w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1525&amp;ssl=1 1525w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1254&amp;ssl=1 1254w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>So know you probably want to know what has improved?</p>
+
+<p><strong>SQL querying</strong></p>
+
+<p>Well several things have been improved but most improved piece is retrieving the current settings. As you may know Sefautil signs in for every action which you executie: both query and change. Greig Sheridan (@greiginsydney) pointer me to the script of James Cussen which contained soms SQL to query certain databases for Lync. Based on that script I started the research on how I could user those scripts in SefaUtil GUI. It took soms time but in this version querying the setting for a user is performed by using SQL queries. This speeds up the process amazingly. Changing settings is still performed by invoking SefaUtil.exe</p>
+
+<p><strong>Pool switching</strong></p>
+
+<p>The GUI now contains an option to switch from pools. So if you have multiple pools you can now easily switch by using the GUI. This will safe you time because you now don’t have to reload the tool. In addition to this the user list now only contains the users homed on that pool. The delegates list still is the long list which contains all Enterprise Voice enabled users.</p>
+
+<p><strong>Backup and recovery</strong></p>
+
+<p>An option has been introduced to backup &amp; recovery your SefaUtil settings.  Please test this functionality yourself before using it in production. As far as I have tested I it worked good for me but I strongly encourage you to test it in a lab environment prior to restoring settings in production.</p>
+
+<p><strong>Skype for Business support</strong></p>
+
+<p>Skype for Business is available for a while so I added support for this also. Keep in mind this will user a different version of SefaUtil.exe compared to the one for Lync 2013.</p>
+
+<p><strong>Parameters</strong></p>
+
+<p>Additional parameters have been added most on request:</p>
+
+<ul>
+  <li>SfB2015: Could be used to overwrite the default location of SefaUtil for Skype for Business Server 2015</li>
+  <li>Groupiddigits: Could be used to overwrite amount of digits used for team calls incl. # if used, default value is 3</li>
+  <li>Loaddata: Can be used to prevent to automatically load data</li>
+</ul>
+
+<p>Besides this a lot of code optimization has been performed and several bugs have been fixed.</p>
+
+<p>As with all software despite the heavy testing you might find an issue. If so please let me know so I can assist you with troubleshooting the issue and make code changes if necessary so other people can benefit from it.</p>
+
+<p>SefaUtil GUI V2 van be downloaded via the link below:</p>
+
+<div class="w3eden">
+  <!-- WPDM Link Template: Default Template -->
+  
+  <div class="wpdm-link-tpl link-btn [color]" data-durl="https://johanveldhuis.nl/?post_type=wpdmpro&amp;p=3372&amp;wpdmdl=3372">
+    <div class="media">
+      <div class="pull-left">
+        <img class="wpdm_icon" alt="Icon" src="https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg" onerror="this.src=&quot;https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg&quot;;" />
+      </div>
+      
+      <div class="media-body">
+        <strong class="ptitle"><!--:en-->SefaUtil GUI V2
+        
+        <!--:-->
+        
+        <!--:nl-->SefaUtil GUI V2
+        
+        <!--:-->
+        
+        <span class="label label-default" style="font-weight: 400;">106.88 KB</span></strong> 
+        
+        <div>
+          <strong><a class="wpdm-download-link btn btn-primary " rel="nofollow" href="#" onclick="location.href='https://johanveldhuis.nl/?post_type=wpdmpro&amp;p=3372&amp;wpdmdl=3372';return false;">Download</a></strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div style="clear: both">
+  </div>
+</div>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Scripts-ref">
+					Scripts <span>(7)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=SefaUtil GUI v2&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/error-occurred-processing-security-tokens-message/" title="An error occurred when processing the security tokens in the message">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/sefautil-gui-v2-1/" title="SefaUtil Gui v2.1">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+

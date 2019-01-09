@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Use Outlook cached mode or not?</title>
+	
+	<meta name="author" content="Johan Veldhuis">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/dbtek">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/jveldh">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=35" class="img-circle" />
+				Johan&#039;s Web Portal
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="/about.html"><i class="fa fa-eye"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Johan&#039;s Web Portal</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/dbtek">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/jveldh">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Use Outlook cached mode or not? </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   February 
+	   7th,
+	   
+	   2012
+	 </span>
+	  <div class="article_body">
+	  <p><strong><span style="font-size: small;"><span style="font-family: Calibri;">Use Outlook cached mode or not?</span></span></strong></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">Since Outlook 2003 it is possible to run Outlook in two modes:</span></span></p>
+
+<ul>
+  <li><span style="font-size: small; font-family: Calibri;">Online mode</span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Cached Exchange mode</span></li>
+</ul>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">But what are the differences between those modes?</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;"><strong>Online mode<br /> </strong>When the Outlook profile is configured in Online Mode Outlook will create a direct connection to the Information Store of Exchange. This has as advantage that messages will appear almost immidiatly when delivered to the mailbox. When the connection to the Exchange server is not available you don’t have access to the mailbox.</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;"><strong>Cached Exchange mode<br /> </strong>When the Outlook profile is configured in Cached Exchange mode a local cache file will be created from the mailbox. This file is also known as the offline data file which can be recognized easily when looking at the extension which is OST. By default the file is stored in <em>Local Settings\Application Data\Microsoft\Outlook.</em> When looking at the size of the OST you will see the size is different than the size of the mailbox.</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">An OST file can be 50 to 80 percent bigger than the mailbox. The cause of this is the method which is being used to store items. Outlook does use a less efficient way then Exchange Server.  </span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">The maximum size of the OST is differs per type:</span></span></p>
+
+<ul>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Non-Unicode (ANSI): maximum 2 GB;</span></span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Unicode: maximum size is configurable, default 50 GB;</span></span></li>
+</ul>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">Which type is used can be discovered by using the following steps:</span></span></p>
+
+<ul>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Select <strong>Tools;</strong></span></span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Select the option <strong>E-mail accounts;</strong></span></span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Select the <strong>Exchange e-mail account </strong>and press the <strong>change </strong>button;</span></span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Select <strong>More Settings;</strong></span></span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Select the <strong>Advanced </strong>tab</span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Check the value of <strong>Mailbox Mode</strong>;</span></span></li>
+</ul>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">Besides the OST file a user in Cached Exchange Mode also uses Offline Address Book (OAB). </span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">The advantage of Cached Exchange Mode is that mailbox content is also available when you don’t have a connection to Exchange, excluded the new items which haven’t been cached. When connected to Exchange messages will arrive with a slight delay in the mailbox. This is caused by Outlook which will check for new messages every 30 seconds by default. A disadvantage of Cached Exchange Mode that the OST file is only cached locally. When a user is working on another workstation a new OST file will be generated if not available.</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">Starting from Outlook 2010 Microsoft recommends to use Cached Exchange Mode. When the autodiscover functionality of Exchange is being used you will see that the Cached Exchange Mode will be enabled by default.</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">In environments with a limited bandwidth (slow connection) you can choose to only download the e0mail headers and the First 256 characters of a message.</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">When the speed of a network connection is 128 KB or less a connection is stamped as slow connection. </span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">The amount of RPC requests, compared with Online mode, is less. This because the local cache on the workstation is being used.  The influence of the harddisk from the workstation is bigger.</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;"><strong>What is being cached?<br /> </strong>When using Outlook 2010 by default both the user mailbox and additional mailboxes are added to the cache. The Public Folder is not stored in the cache. It is possible to add Public Folder favorites to the cache but in this case you will need to enable the option manually or via a GPO.</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">As mentioned earlier Outlook will use an Offline Address Book (OAB). Initially a complete download is being performed of the address book. After that only incremental updates are downloaded from the address book. The OAB is being downloaded once every 24 hours if the OAB contains new data.</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;"><strong>When shouldn’t you use Cached Mode?<br /> </strong>But are there scenario’s where you don’t want to use Cached Exchange mode?<strong></strong></span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">Yes there are, below an overview of these scenario’s:</span></span></p>
+
+<ul>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Computers which are being used by multiple people and where a delay of downloading the new messages is not acceptable;</span></span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Environments where compliance and security rules which prohibits the store of data locally; </span></span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">The complete cached file can’t be stored because of lack due to disk space;</span></span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Mailboxes greater then 25 GB;</span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Virtual or Remote Desktop Service environments where Outlook 2007 and Outlook 2003 is installed. Cached Exchange Mode isn’t supported on a system which offers  Remote Desktop Services;</span></span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Virtual or Remote Desktop Service environments where Outlook 2010 is used but not enough disk space or I/O’s are available;</span></span></li>
+</ul>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;"><strong>Impact of Cached Exchange Mode on Outlook functionalities<br /> </strong>Besides the earlier called scenarios there are some additional functionalities which are influenced when using Outlook in Cached Exchange Mode. Below an overview of the functionalities:</span></span></p>
+
+<ul>
+  <li><span style="font-size: small; font-family: Calibri;">Delegate mailbox data stores;</span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Shared Folders which are not made available offline;</span></span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Retrieve Free/Busy information;</span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Configure/change/disable Out-Of-Office;</span></span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Access to Public Folders;</span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Retrieving IRM messages;</span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Changing rules;</span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Retrieving MailTips;</span></li>
+</ul>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">These functions require a connection to the Exchange environment. When there is no connection this functions are not available. If there is a connection with the Exchange Server it can happen that these functions are working slower then normally. This is only the case when connecting via a connection with a high latency.</span></span></p>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">Besides the earlier called functionalities there are a few functions which Microsoft doesn’t recommend to use:</span></span></p>
+
+<ul>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Using the toast alert function with digitale signatures;</span></span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Multiple address book containers;</span></li>
+  <li><span style="font-size: small;"><span style="font-family: Calibri;">Custom properties on the General tab;</span></span></li>
+</ul>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;"><strong>Influance of large .ost files<br /> </strong>Large ost files can cause performance issues in Outlook. Users can recognize this because Outlook doesn’t respond correctly. This can happen if one of the following tasks is being performed:</span></span></p>
+
+<ul>
+  <li><span style="font-size: small; font-family: Calibri;">Reading messages;</span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Moving messages;</span></li>
+  <li><span style="font-size: small; font-family: Calibri;">Removing messages;</span></li>
+</ul>
+
+<p><span style="font-size: small;"><span style="font-family: Calibri;">Depending on the Outlook version which is being used you will need to use the following guidelines:</span></span></p>
+
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" width="307">
+      <strong><span style="font-size: small;"><span style="font-family: Calibri;">Outlook 2007 with performance update or Outlook 2007 SP1 without the cumulative updates of February 2009 </span></span></strong>
+    </td>
+    
+    <td valign="top" width="307">
+      <strong><span style="font-size: small;"><span style="font-family: Calibri;">Outlook 2007 with SP1 and cumulative updates of  February 2009 or later</span></span></strong>
+    </td>
+  </tr>
+  
+  <tr>
+    <td valign="top" width="307">
+      <span style="font-size: small;"><span style="font-family: Calibri;">2 GB or less<br /> Users should not experience any delay</span></span><span style="font-size: small;"><span style="font-family: Calibri;">2 GB to 4 GB<br /> </span></span><span style="font-size: small;"><span style="font-family: Calibri;">Depending on the hardware a user might experience some delay</span></span><span style="font-size: small;"><span style="font-family: Calibri;">More than 4 GB<br /> Users will definitely experience a delay using most hardware</span></span>&lt;/p&gt; 
+      
+      <p>
+        <span style="font-size: small;"><span style="font-family: Calibri;">More than 10 GB<br /> The amount of delays will increase</span></span>&lt;/td&gt; 
+        
+        <td valign="top" width="307">
+          <span style="font-size: small;"><span style="font-family: Calibri;">5 GB or less<br /> </span></span><span style="font-size: small;"><span style="font-family: Calibri;">Users should not experience any delay </span></span><span style="font-size: small;"><span style="font-family: Calibri;">5 GB to 10 GB<br /> </span></span><span style="font-size: small;"><span style="font-family: Calibri;">Depending on the hardware a user might experience some delay</span></span>&lt;/p&gt; 
+          
+          <p>
+            <span style="font-size: small;"><span style="font-family: Calibri;">More than 10 GB<br /> Users will definitely experience a delay using most hardware</span></span>
+          </p>
+          
+          <p>
+            <span style="font-size: small;"><span style="font-family: Calibri;">More than 25 GB<br /> The amount of delays will increase</span></span>&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; 
+            
+            <p>
+              <span style="font-size: small;"><span style="font-family: Calibri;"><strong>Cached Exchange Mode i.c.w. BlackBerry devices<br /> </strong>Cached Exchange Mode used  i.c.w. mobile devices to synchronize can cause issues. The cause in most cases is that the mobile server will download the message after the message has been downloaded to the Outlook cache file.</span></span>
+            </p>
+            
+            <p>
+              <span style="font-size: small;"><span style="font-family: Calibri;">BlackBerry Server is one of these mobile servers. The BlackBerry Server will add several properties to a message among them <em>RefID</em> which causes the item store in the Information Store to be changed. If a user does make a change to the message it will be updated in the Information Store. Because the properties of both messages are not the same this will result in conflicts.</span></span>
+            </p>
+            
+            <p>
+              <span style="font-size: small;"><span style="font-family: Calibri;">The BlackBerry will download the updated item. One of the items is assigned as primary item. The conflict item will be store in the <em>Sync Issues – Conflicts </em>so a user can restore the copy of the message.</span></span>
+            </p>
+            
+            <p>
+              <span style="font-size: small;"><span style="font-family: Calibri;">To decrease the amount of conlict items it is possible to apply a workaround. This can be done by making a registry change:</span></span>
+            </p>
+            
+            <ul>
+              <li>
+                <span style="font-size: small;"><span style="font-family: Calibri;">Open <em>regedit</em></span></span>
+              </li>
+              <li>
+                <span style="font-size: small;"><span style="font-family: Calibri;">Go to <em>HKEY_LOCAL_MACHINE\SOFTWARE\Research In Motion\BlackBerry Enterprise Server\Agents</em></span></span>
+              </li>
+              <li>
+                <span style="font-size: small;"><span style="font-family: Calibri;">Create a new Dword which has as value <em>ProcessMailDelay</em></span></span>
+              </li>
+              <li>
+                <span style="font-size: small;"><span style="font-family: Calibri;">Assign a value of <em>45</em></span></span>
+              </li>
+            </ul>
+            
+            <p>
+              <span style="font-size: small;"><span style="font-family: Calibri;">Using the workaround we will ensure that the BlackBerry Server will retrieve the mail with a delay of 45 seconds. Note that this should only be used for testing. BlackBerry recommends to decrease this value once you have confirmed this fixes the sync issues.</span></span>
+            </p>
+            
+            <p>
+              <span style="font-size: small;"><span style="font-family: Calibri;"><strong>Cached Exchange Mode i.c.w. Windows Desktop Search<br /> </strong>Windows Desktop Search can be used to index the content of a mailbox. In Cached Exchange Mode you will need leave Outlook running to index the content of the OST. When you quit Outlook Windows Desktop Search won’t index the OST.</span></span>
+            </p>
+            
+            <p>
+              <span style="font-size: small;"><span style="font-family: Calibri;">The advantage of using Cache Exchange Mode i.c.w. Windows Desktop Search is that the requests will be processed locally instead of sending them to the Exchange Server. If you choose to work in Online Mode make sure you are implementing Windows Desktop Search 4.0. Windows Desktop Search 4.0 is the only search engine at this moment which doesn’t create any additional read requests.</span></span>
+            </p>
+            
+            <p>
+              <span style="font-size: small;"><span style="font-family: Calibri;">Here ends the blog about Outlook and Cached Exchange Mode. As you have seen there are a lot of things you should consider before enabling it. One of these things is the Outlook version that is in use. It will depend on the organization but in most cases you will see that it Cached Exchange Mode will be enabled both for desktops and laptops. Excluded are desktops which are used as flexible workstations.</span></span>
+            </p>
+</p></td></p></td></tr></table>
+
+	  </div>
+		
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Exchange 2010-ref">
+					Exchange 2010 <span>(75)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<h4>Comments</h4>
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'johanveldhuis';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Use Outlook cached mode or not?&via=jveldh"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="//www.gravatar.com/avatar/8209ff9e4ba94ac3058e69fd75354b3f" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Johan Veldhuis</h4>
+        <p class="author-bio"></p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/wat-gebeurde-er-in-2011-met-exchange-2010/" title="What happened to Exchange 2010 in 2011">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/microsoft-geeft-eerste-rollup-vrij-voor-exchange-2010-sp2/" title="Microsoft releases first rollup for Exchange 2010 SP2">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2019 Johan Veldhuis with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'johanveldhuis', 'auto');
+  ga('send', 'pageview');
+</script>
+
