@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=202
 permalink: /exchange-um-configureren/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Tutorials
+  - Exchange
 ---
 [![Cisco](/wp-content/uploads/2008/03/cisco.thumbnail.jpg)](/wp-content/uploads/2008/03/cisco.jpg "Cisco")
 

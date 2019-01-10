@@ -6,12 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=344
 permalink: /microsoft-baseline-security-analyzer-21/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Software
 ---

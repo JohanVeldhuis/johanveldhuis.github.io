@@ -6,17 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=309
 permalink: /exchange-2007-mailbox-server-role-storage-requirements-calculator-spreadsheet/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
-  - Software
+  - Exchange
 ---
 Maybe you found it already, but I found it this week. The Storage Requirements Calculator from the Exchange Team.
 

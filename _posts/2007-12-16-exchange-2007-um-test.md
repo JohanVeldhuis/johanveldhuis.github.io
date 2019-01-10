@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=18
 permalink: /exchange-2007-um-test/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 [![Exchange 2007 UM test phone](/wp-content/uploads/2008/03/exchange.thumbnail.jpg)](/wp-content/uploads/2008/03/exchange.jpg "Exchange 2007 UM test phone") 
 

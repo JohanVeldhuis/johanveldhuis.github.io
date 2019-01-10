@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=306
 permalink: /anti-spam-agents-installeren-op-de-hub-transport-server/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Tutorials
+  - Exchange
 ---
 [<img class="alignnone size-thumbnail wp-image-289" title="Install Antispam agents" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-1-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-1.jpg?resize=150%2C150&ssl=1 150w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/D:\Web\wordpress/wp-content/uploads/2008/04/naamloos-1.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/D:\Web\wordpress/wp-content/uploads/2008/04/naamloos-1.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-1.jpg)
 

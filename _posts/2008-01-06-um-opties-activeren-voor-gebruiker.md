@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=204
 permalink: /um-opties-activeren-voor-gebruiker/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Tutorials
+  - Exchange
 ---
 [![Women calling](/wp-content/uploads/2008/03/womancalling.thumbnail.jpg)](/wp-content/uploads/2008/03/womancalling.jpg "Women calling")
 

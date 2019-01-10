@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=91
 permalink: /exchange-sp1/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 [![Microsoft Exchange 2007](/wp-content/uploads/2008/03/exchange1.thumbnail.jpg)](/wp-content/uploads/2008/03/exchange1.jpg "Microsoft Exchange 2007")
 

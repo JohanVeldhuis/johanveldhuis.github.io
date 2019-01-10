@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=286
 permalink: /exchange-2007-forums/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 [<img class="alignnone size-thumbnail wp-image-287" title="Technet Exchange forum" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2008/04/exchangeforum-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2008/04/exchangeforum.jpg?resize=150%2C150&ssl=1 150w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/D:\Web\wordpress/wp-content/uploads/2008/04/exchangeforum.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/D:\Web\wordpress/wp-content/uploads/2008/04/exchangeforum.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2008/04/exchangeforum.jpg)
 

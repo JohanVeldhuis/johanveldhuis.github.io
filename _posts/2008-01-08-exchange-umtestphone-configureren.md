@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=206
 permalink: /exchange-umtestphone-configureren/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Tutorials
+  - Exchange
 ---
 [![Exchange 2007](/wp-content/uploads/2008/03/exchange2.thumbnail.jpg)](/wp-content/uploads/2008/03/exchange2.jpg "Exchange 2007")
 

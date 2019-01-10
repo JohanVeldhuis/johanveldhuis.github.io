@@ -6,12 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=338
 permalink: /wachten-op-schiphol/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Blog
 ---
