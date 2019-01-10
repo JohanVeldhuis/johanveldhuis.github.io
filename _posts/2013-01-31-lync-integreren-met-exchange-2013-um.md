@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - http://img.youtube.com/vi/alpJvl4ERx0/0.jpg
 categories:
-  - Exchange 2013
+  - Exchange
 ---
 In this video I will show which steps are necessary to configure Exchange 2013 UM so it can be integrated with Lync Server.
 

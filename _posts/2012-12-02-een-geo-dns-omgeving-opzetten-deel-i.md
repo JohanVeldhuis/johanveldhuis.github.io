@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2012/11/DNS-properties.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2013
+  - Exchange
 ---
 In one of my previous blogs about Exchange 2013 we talked about how we can install Exchange 2013 using the cmdline.
 

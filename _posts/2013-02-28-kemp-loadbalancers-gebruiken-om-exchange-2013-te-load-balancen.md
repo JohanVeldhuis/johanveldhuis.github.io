@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - http://img.youtube.com/vi/X0opUsMKfx8/0.jpg
 categories:
-  - Exchange 2013
+  - Exchange
 ---
 In this video I will let you see how to configure Kemp Technologies loadbalancers to load balance your Exchange 2013 environment. The Kemp loadbalancers wil be configured in HA mode and also I will use the new maintenance mode which is introduced with Exchange 2013.
 

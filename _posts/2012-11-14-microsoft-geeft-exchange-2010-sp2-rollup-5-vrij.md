@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Microsoft has release Rollup 5 for Exchange 2010 SP2 yesterday. This rollup contains fixes for the following issues:
 

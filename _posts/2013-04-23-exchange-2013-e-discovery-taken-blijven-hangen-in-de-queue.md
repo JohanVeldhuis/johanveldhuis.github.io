@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2013/04/get-mailboxsearch.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2013
+  - Exchange
 ---
 During some testing in a lab environment which contained Exchange 2010 SP3 and Exchange 2013 I found a strange issue. The e-discovery tasks all got stuck in the queue.
 

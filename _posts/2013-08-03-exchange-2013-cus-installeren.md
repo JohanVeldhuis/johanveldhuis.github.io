@@ -13,7 +13,7 @@ ratings_score:
 ratings_average:
   - "0"
 categories:
-  - Exchange 2013
+  - Exchange
 ---
 This weeks the second version of the second cumulative update has been released for Exchange 2013. As you may already know Microsoft has changed his update process completely with the introduction of Exchange 2013. No more rollups and only cumulative updates (CU’s).
 

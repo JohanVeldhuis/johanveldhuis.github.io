@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2013
+  - Exchange
 ---
 Last week Exchange 20130 CU1 was released by Microsoft. It was a little bit later then originally planned but cudo&#8217;s for Microsoft to announce it publicly that the first CU for Exchange would arrive later then expected.
 

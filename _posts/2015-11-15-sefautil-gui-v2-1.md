@@ -7,7 +7,7 @@ layout: post
 guid: http://johanveldhuis.nl/?p=3380
 permalink: /sefautil-gui-v2-1/
 categories:
-  - Blog
+  - Scripts
 ---
 SefaUtil Gui v2.1 is a new minor version is published of the SefaUtil GUI script. It contains some small improvements to fix some issues some users experienced. Issues fixed in this release are:
 

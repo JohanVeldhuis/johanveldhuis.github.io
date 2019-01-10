@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2013/02/Pop-up.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2003
+  - Exchange
 ---
 This is the 3rd blog in the Exchange 2013 ABC serie. In this blog we will look at the Client Access Server component. Let&#8217;s first have a look at a little history of client access in the previous versions.
 

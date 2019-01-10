@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2013/04/Move-ActiveMailboxDatabase.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2013
+  - Exchange
 ---
 In the first part of this blog we looked at the theory and some examples. In this blog we will continue with configuring and managin the DAG.
 

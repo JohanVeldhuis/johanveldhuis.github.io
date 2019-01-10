@@ -7,7 +7,7 @@ layout: post
 guid: http://johanveldhuis.nl/?p=3252
 permalink: /exchange-2010-sp3-rollup-beschikbaar/
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Microsoft has released Exchange 2010 SP3 Rollup 2 yesterday. This rollup will fix the following issues:
 

@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2013/04/DAG_3_Members_Multi_AD_sites.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2013
+  - Exchange
 ---
 In an earlier blog we had a brief look at the Database availability Group (DAG) of Exchange 2013. In this blog we will have a closer look how it works and how you can create it.
 

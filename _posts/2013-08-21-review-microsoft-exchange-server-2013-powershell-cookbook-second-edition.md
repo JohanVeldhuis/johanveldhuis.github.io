@@ -7,7 +7,7 @@ layout: post
 guid: http://johanveldhuis.nl/?p=3258
 permalink: /review-microsoft-exchange-server-2013-powershell-cookbook-second-edition/
 categories:
-  - Exchange 2013
+  - Reviews
 ---
 [<img src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/08/20130821-172919.jpg?w=627" alt="20130821-172919.jpg" class="alignnone size-full" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/08/20130821-172919.jpg)
 

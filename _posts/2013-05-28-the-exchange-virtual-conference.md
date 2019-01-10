@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2013
+  - Blog
 ---
 Colleague Exchange MVP and The UC Architects member Paul Cunningham launched the idea to organize an Exchange Virtual Conference in January 2013. He asked several people who are active in the Exchange community to attend this conference among them me.
 

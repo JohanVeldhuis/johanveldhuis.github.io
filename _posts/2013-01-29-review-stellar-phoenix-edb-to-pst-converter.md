@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2013/01/Progress.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Software
+  - Review
 ---
 <span style="font-size: 13px; line-height: 19px;">In this blog we will have a look at the EDB to PST converter from Stellar Phoenix. As the name already tells you the tool can be used to export EDB content to PST format.</span>
 

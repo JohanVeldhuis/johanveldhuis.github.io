@@ -15,7 +15,6 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
   - Scripts
 ---
 <span style="color: #ff0000;"><em>21-2-2013: script has been updated due to a missing } which will cause the script to fail</em></span>

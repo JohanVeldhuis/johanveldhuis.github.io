@@ -7,7 +7,7 @@ layout: post
 guid: http://johanveldhuis.nl/?p=3276
 permalink: /moet-exchange-publiceren-zodat-lync-mobile-2013-hier-gebruik-kan-maken/
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Several companies have published their Exchange environment by using TMG. As you may know Microsoft has announced to discontinue the product but when working in the field you will still see that customers are using TMG.
 

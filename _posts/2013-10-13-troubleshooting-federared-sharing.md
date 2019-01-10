@@ -5,9 +5,9 @@ date: 2013-10-13T20:18:23+00:00
 author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=3286
-permalink: /troubleshooting-federared-sharing/
+permalink: /troubleshooting-federated-sharing/
 categories:
-  - Exchange 2010
+  - Exchange
 ---
  By using federated sharing it is possible to exchange free/busy informative between different Exchange organizations. This can be done by using the Microsoft Federation Gateway (MSFG) when no direct trust exists between the Active Directories. The MSFG is in this case responsible for providing a ticket which is used for authentication. By using a ticket a CAS can contact the CAS from the other organization to retrieve the free/busy information.
 

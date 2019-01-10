@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2012/12/connected.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 In the first part of this blog we did configure the Geo DNS server and the Database Availability Group. We now will continue with configuring the CAS role and after that perform some testing.
 

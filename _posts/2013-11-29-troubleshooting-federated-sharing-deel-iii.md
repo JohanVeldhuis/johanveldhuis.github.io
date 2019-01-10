@@ -7,7 +7,7 @@ layout: post
 guid: http://johanveldhuis.nl/?p=3333
 permalink: /troubleshooting-federated-sharing-deel-iii/
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 In the first two parts of the blog series about troubleshooting federated sharing we had a look at the infrastructure and configuration which is required. Besides this we did some basic troubleshooting on the components involved during federated sharing. In this part we will look at some examples which I gathered during troubleshooting a federated sharing issue.
 

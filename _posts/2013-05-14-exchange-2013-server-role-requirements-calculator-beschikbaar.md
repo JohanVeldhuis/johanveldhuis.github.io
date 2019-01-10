@@ -15,7 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2013/05/Server-role-calculator.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2013
+  - Exchange
 ---
 One of the most important subjects in an Exchange design is the correct sizing ofthe enviroment. Microsoft has defined several guidelines which need to be used which are described on TechNet. Since today the Server Role Requirements Calculator has been added.
 

@@ -15,8 +15,7 @@ ratings_average:
 onswipe_thumb:
   - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2007
-  - Exchange 2010
+  - Exchange
 ---
 Today it is Microsoft Rollup day. Both for Exchange 2010 SP2 and Exchange 2007 SP3 new rollups have been released. The rollup for Exchange 2010 SP2 contains a lot of fixes. For Exchange 2007 SP3 it is the 10nd rollup which has been released although the fixes contained in the rollup are not as large as for Exchange 2010. The rollup for Exchange 2007 contains a security fix and one issue for a problem with OWA.
 
