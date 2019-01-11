@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2491
 permalink: /mailbox-regels-automatisch-aanmaken/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2012/07/inbox-rule.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 You may not see it in every organization but in a lot of organizations Outlook rules are used to automate some tasks such as: moving item to another folder, auto reply on messages, etc.
 

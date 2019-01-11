@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1282
 permalink: /owa-doesnt-work-after-installing-rollupowa-werkt-niet-meer-na-het-installeren-van-een-rollup/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 On several forums you will see that installing a rollup can break down OWA. One of the issues you can have is that a blank screen will be presented with in the url reason 0 as a parameter.
 

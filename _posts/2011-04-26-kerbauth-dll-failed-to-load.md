@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2168
 permalink: /kerbauth-dll-failed-to-load/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2011/04/eventlog.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Both the Exchange Management Console (EMC) and Exchange Management Shell (EMS) are making a connection to Powershell using a remote session. During the session a connection will me made to the virtual directory Powershell which can be found in the IIS Management Console. This virtual directory can only be accessed by using port 80 by default.
 

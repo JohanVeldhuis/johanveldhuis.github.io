@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1838
 permalink: /preparead-has-either-not-been-run-of-has-not-been-replicated/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Today I had a nice issue at a customer site who tried to install Exchange in a test environment. First I will give a short introduction. Let&#8217;s say you have an AD forest which contains a child domain where you want to host Exchange in. You first will need to do some things in the forest before you can install Exchange in the child domain. You will start with the schema upgrade followed by the forest prep. As last step you will prepare the child domain and you could start the Exchange setup to install Exchange.
 

@@ -6,12 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=693
 permalink: /english-lang_nlmicrosoft-exchange-server-activesync-certificate-based-authentication-toollang_nlmicrosoft-exchange-server-activesync-certificate-based-authentication-tool/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Software
 ---

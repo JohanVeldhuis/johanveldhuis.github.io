@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1192
 permalink: /enable-logging-in-exchange-2010logging-inschakelen-in-exchange-2010/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 In Exchange 2007 you could only enable most of the logging via Powershell. In Exchange 2010 Beta this has changed back to configuring it via the GUI just as in Exchange 2003.
   

@@ -6,12 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=687
 permalink: /microsoft-device-emulator-30/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Software
 ---

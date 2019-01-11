@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1033
 permalink: /export-mailbox-verwijdert-niet-de-inhoud/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 With _export-mailbox_ it&#8217;s possible to export a mailbox to, for example, a pst file. When using the parameter _-DeleteContent_ normally the contact will be deleted after exporting the mail. In some cases this does not happen. It looks like to happen if a mailbox contains more then 4000 items
 

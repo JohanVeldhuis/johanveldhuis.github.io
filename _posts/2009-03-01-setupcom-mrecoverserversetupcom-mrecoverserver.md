@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1122
 permalink: /setupcom-mrecoverserversetupcom-mrecoverserver/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Last week I have been working on an Exchange 2007 migration. After preparing the server for installation I installed the CAS/hub role. Everything went fine till we wanted to modify the settings of the virusscanner. For some strange reason it was not possible to add some exclusions and it was not possible to remove the virusscanner.
 

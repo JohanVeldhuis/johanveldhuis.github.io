@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2379
 permalink: /wat-gebeurde-er-in-2011-met-exchange-2010/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2012/01/tagcloud.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 2012 has arrived, but what has happened in the past year with Exchange 2010? In this blog we will have a look at some of the high lights of the news about Exchange 2010 in 2011.
 

@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2070
 permalink: /het-installatie-proces-van-een-rollup-versnellen/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2010/12/ie-settings.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 The process of installing a rollup for Exchange 2010 can take a lot of time when you have a bad/no internet connection. One of the causes for this is the validation process of the digital signature of the .NET Framework components. When having a bad/no internet connection this can slow down the process, this because of the default time-out of 15000 miliseconds for a single CRL check up to 20000 miliseconds for checking all CRL&#8217;s.
 

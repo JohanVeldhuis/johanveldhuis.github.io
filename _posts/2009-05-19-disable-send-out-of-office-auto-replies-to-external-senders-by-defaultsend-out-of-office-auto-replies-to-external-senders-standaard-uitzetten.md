@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1225
 permalink: /disable-send-out-of-office-auto-replies-to-external-senders-by-defaultsend-out-of-office-auto-replies-to-external-senders-standaard-uitzetten/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 A question on the MsExchange.org forum made me thinking. Somebody wandered if it was possible to change the default of the Send Out of Office auto-replies to External Senders option which is on to off.
 

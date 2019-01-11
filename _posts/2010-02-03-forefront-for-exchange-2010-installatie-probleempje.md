@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1832
 permalink: /forefront-for-exchange-2010-installatie-probleempje/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2010/02/Capture.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 I had a nice issue during the installation of Forefront for Exchange 2010. It began with an issue with the pre-release which caused the Exchange Transport service to stop after a failed update of Forefront. This had as result that several Forefront services didn&#8217;t start anymore. As the Exchange Transport service is dependent on the Forefront service this had as result that this service didn&#8217;t start anymore also. Which caused no mails could be send and received.
 

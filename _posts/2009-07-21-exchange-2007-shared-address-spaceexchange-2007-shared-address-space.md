@@ -6,14 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1251
 permalink: /exchange-2007-shared-address-spaceexchange-2007-shared-address-space/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Tutorials
 ---

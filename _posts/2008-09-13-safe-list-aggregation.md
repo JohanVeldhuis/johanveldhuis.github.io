@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=827
 permalink: /safe-list-aggregation/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 As you may no Exchange 2007 contains anti-spam agents. Besides this it&#8217;s possible for a user to create a _safe list_ which a user can add senders from which he receives mail but he/she wants to ensure that they are not marked as spam. With multi-layer spam solutions this can cause issues. It can happen that a mail is not accepted by the Edge Transport server while the user wants to receive the mail.
 

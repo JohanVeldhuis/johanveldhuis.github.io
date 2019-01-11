@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1229
 permalink: /microsoft-has-release-rollup-8-for-exchange-2007-sp1microsoft-heeft-rollup-8-voor-exchange-2007-sp1-vrijgegeven/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 It has been a few days ago since Microsoft has release Rollup 8 for Exchange 2007 SP1. I was pretty busy the last few days so that&#8217;s why the post is a little bit later then normal..
 

@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1241
 permalink: /exchange-2007-uses-mx-record-even-is-sending-via-a-smarthostexchange-2007-gebruikt-een-mx-record-zelf-bij-het-verzenden-via-een-smarthost/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Normally when using a smarthost you wouldn&#8217;t expect that the mailserver does a query for the MX record in DNS. Well it does in Exchange 2007 and Exchange 2010. A while ago I found a post on Technet from someone from Microsoft who mentioned this. I found it pretty weird so I thought let&#8217;s test it. And indeed when using a smarthost and making a networktrace you will find out that it does a query for the MX record in DNS.
 

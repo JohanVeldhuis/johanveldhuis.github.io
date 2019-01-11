@@ -6,12 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1306
 permalink: /logs-verplaatsen-van-een-ccr-storage-group/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Tutorials
 ---

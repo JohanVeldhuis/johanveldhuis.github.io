@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1917
 permalink: /exchange-2007-service-pack-3-wachtwoord-wijzigen/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2010/06/owa.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 One of the new features in Exchange 2007 Service Pack 3 is the ability for users to change their password before logging in. Before service pack 3 a user who&#8217;s password had expired needed to call the helpdesk to reset their password or use another solution. With this new feature a user will be redirected to another page where he/she can change the password.
 

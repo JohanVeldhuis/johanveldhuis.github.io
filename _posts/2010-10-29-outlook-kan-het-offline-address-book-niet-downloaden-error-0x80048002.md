@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2038
 permalink: /outlook-kan-het-offline-address-book-niet-downloaden-error-0x80048002/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2010/10/iis-log.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Since Exchange 2010 both Outlook 2007 and 2010 will download the offline address book (OAB) by using the  Exchange Web Services and not via Public Folders just like Outlook 2003 anymore.
 

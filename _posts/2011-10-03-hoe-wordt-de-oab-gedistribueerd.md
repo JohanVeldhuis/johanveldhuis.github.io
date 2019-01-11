@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2335
 permalink: /hoe-wordt-de-oab-gedistribueerd/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2011/09/update-frs-completed.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
  As you may know Exchange by default has one Offline Address Book (OAB) and one Global Address List (GAL). The GAL contains all objects for which Exchange attributes are configured. For example groups, userobjects and contacts.
 

@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=895
 permalink: /items-exporteren-naar-pst-en-uit-de-mailbox-verwijderen/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Deleting items from a specific mailbox can be done really easy via the Powershell using the command _export-mailbox._ Before deleting the items it may be usefull to make a backup of this items. You can create a backup to a PST of to a special mailbox.
 

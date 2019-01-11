@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=768
 permalink: /e-mail-address-policy/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 E-mail address policies are always nice to play with, but when you don&#8217;t use them often you sometimes forget the variables which you can provide to build an e-mail address. I made a short list of available variables:
 

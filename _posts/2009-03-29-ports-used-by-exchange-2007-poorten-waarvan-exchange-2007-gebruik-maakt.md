@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1142
 permalink: /ports-used-by-exchange-2007-poorten-waarvan-exchange-2007-gebruik-maakt/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Via one of my <a href="http://www.vdknaap.com" target="_blank">colleagues</a> I received a pretty nice site with an overview of all ports used for communication between the Exchange 2007 server roles. Below the overview:
 

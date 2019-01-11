@@ -6,17 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=747
 permalink: /microsoft-exchange-server-mapi-client-and-collaboration-data-objects-121/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
-  - Software
+  - Exchange
 ---
 <div>
   Microsoft has released Microsoft Exchange Server MAPI Client and Collaboration Data Objects 1.2.1 last week. This API makes it possible to view the contents of stores. Since Exchange 2007 this MAPI is delivered apart. Via the link below you can download it.

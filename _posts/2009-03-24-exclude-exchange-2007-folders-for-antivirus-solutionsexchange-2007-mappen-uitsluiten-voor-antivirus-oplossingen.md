@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1138
 permalink: /exclude-exchange-2007-folders-for-antivirus-solutionsexchange-2007-mappen-uitsluiten-voor-antivirus-oplossingen/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Virusscanners may not have the result you wanted always, especially on databases and log files they can cause strange issues. Below an overview of folders you will need to exclude from virusscanning when a virusscanner is running on your Exchange 2007 server:
 

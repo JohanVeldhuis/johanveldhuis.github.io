@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=837
 permalink: /meerdere-bypassedsenderdomains-toevoegen/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Maybe you discovered it yourself, maybe not. When you want to add values to the _bypassedsenderdomains_ parameter via the _set-contentfilterconfig_ you will lose all previous settings.
 

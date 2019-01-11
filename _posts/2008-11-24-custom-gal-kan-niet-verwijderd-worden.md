@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=951
 permalink: /custom-gal-kan-niet-verwijderd-worden/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 In Exchange 2007 you can create a custom GAL. Creating the custom GAL can be done via the EMC of Powershell.
 

@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1785
 permalink: /voorkom-spam-welke-vanaf-vanaf-je-eigen-domein-verzonden-lijkt/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Last months you may receive spam which looks like to be sent from an account from your own domain. When you investigate the issue you will discover that this it not the case. But why does Exchange doesn&#8217;t do something with this kind of spam. I found the answer on <a href="http://exchangepedia.com" target="_blank">Exchangepedia</a> blog. Each mail which is received from the internet will be accepted with the anonymous user, when removing this user from the connector you won&#8217;t be able to receive mail from the internet. This account has some rights which are needed, one of these rights is the Ms-Exch-Accept-Authoritative-Domain-Sender which ensure that every session which contains a message from an authoritative domain will not be checked.
 

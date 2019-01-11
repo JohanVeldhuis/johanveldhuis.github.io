@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1232
 permalink: /enabledisable-activesyncinuitschakelen-activesync/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Today I got a question if it was possible to disable ActiveSync in Exchange 2007. The answer: yes this is possible and goes really easy:
 

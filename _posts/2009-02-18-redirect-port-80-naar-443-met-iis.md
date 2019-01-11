@@ -6,12 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1096
 permalink: /redirect-port-80-naar-443-met-iis/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Tutorials
 ---
@@ -21,6 +15,7 @@ The script can be placed in the root of the webserver in case of IIS this is www
 
 _redirect.htm (<a href="http://www.raoulpop.com/2007/automatic-redirect-from-http-to-https/" target="_blank">bron</a>)_
 
+```HTML
 _<script language=&#8221;JavaScript&#8221;>__function goElseWhere()_
 
 <!&#8211; begin hide
@@ -35,13 +30,12 @@ window.location = newURL;
 
 }
 
- 
-
 goElseWhere();
 
 _// end hide &#8211;>_
 
 </script>
+```
 
 The last step is to configure IIS to display this page instead of the default error page.
 

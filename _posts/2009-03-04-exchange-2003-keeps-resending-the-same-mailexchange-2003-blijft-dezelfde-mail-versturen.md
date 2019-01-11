@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1126
 permalink: /exchange-2003-keeps-resending-the-same-mailexchange-2003-blijft-dezelfde-mail-versturen/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2003
+  - Exchange
 ---
 Today I had a nice issue with Exchange. For some kind of strange reason Exchange 2003 kept sending the same mails.  Even when deleting the mails from the queue in the Exchange System Manager. A result of this was that the bandwidth was almost used 100% so I adjusted the simultaneous connections etc, without any effect.
 

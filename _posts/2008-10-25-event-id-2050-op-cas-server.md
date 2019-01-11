@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=925
 permalink: /event-id-2050-op-cas-server/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 I have been very busy this week so I did not had many time to blog. Yesterday and today I visited a forum to have a look for interesting issues. One item I found was about Event ID 2050 on a CAS server. When looking at the details of the event you will see the following:
 

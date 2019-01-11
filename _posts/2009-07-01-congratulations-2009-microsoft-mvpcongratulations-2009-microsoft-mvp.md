@@ -6,12 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1245
 permalink: /congratulations-2009-microsoft-mvpcongratulations-2009-microsoft-mvp/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Blog
 ---

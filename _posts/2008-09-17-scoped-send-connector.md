@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=834
 permalink: /scoped-send-connector/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Normally creating a send connector is not really exited. The next step in the wizard is used for giving the domain for which the send connector needs to be used. But when you have a look at the bottom of the screen you will find the option _scoped send connector,_ but what is the effect of enabling this option.
 

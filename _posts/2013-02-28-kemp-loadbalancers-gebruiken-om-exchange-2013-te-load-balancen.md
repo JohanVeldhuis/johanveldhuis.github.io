@@ -6,14 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2737
 permalink: /kemp-loadbalancers-gebruiken-om-exchange-2013-te-load-balancen/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - http://img.youtube.com/vi/X0opUsMKfx8/0.jpg
 categories:
   - Exchange
 ---

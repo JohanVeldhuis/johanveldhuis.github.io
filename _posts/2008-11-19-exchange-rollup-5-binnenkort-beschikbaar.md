@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=945
 permalink: /exchange-rollup-5-binnenkort-beschikbaar/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 On the site of the Microsoft Exchange Team an article is published about rollup 5 which will be available within a few days. One of the fixes in the rollup will ensure that all services will start after the installation of a patch. There are some known cases that this will not happen after the installation of a rollup. The problem is caused by a check of a certificate which is used to sign the binaries. This check wil try to contact crl.microsoft.com but when the environment has limited or no internet access this can cause this issue.
 

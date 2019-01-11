@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1223
 permalink: /strange-issue-easy-solutionvreemd-probleem-makkelijke-oplossing/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Today I had a nice issue. After implementing 2 new domain controllers and deconfiguring the 2 old ones there where some strange issue with the Exchange Management Console. For example setting mail quota&#8217;s was not possible this caused the following error:
 

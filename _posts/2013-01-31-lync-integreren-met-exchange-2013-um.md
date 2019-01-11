@@ -6,14 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2691
 permalink: /lync-integreren-met-exchange-2013-um/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - http://img.youtube.com/vi/alpJvl4ERx0/0.jpg
 categories:
   - Exchange
 ---

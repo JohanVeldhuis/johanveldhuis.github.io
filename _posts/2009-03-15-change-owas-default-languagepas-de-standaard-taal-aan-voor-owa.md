@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1133
 permalink: /change-owas-default-languagepas-de-standaard-taal-aan-voor-owa/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Many people will use the Outlook Web Access (OWA) functionality. The default language is set to _0_ this will ensure that users will be prompted the first time they login to define the default language. Users can change this later by going to the _regional settings_ in OWA.
 

@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1199
 permalink: /exchange-2010-beta-outlook-web-access-mailbox-policiesexchange-2010-beta-outlook-web-access-mailbox-policies/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 It&#8217;s time for the 3rd article about Exchange 2010 Beta, in this article we will have a closer look _Outlook Web Access Mailbox Policies_. In Exchange 2007 configuring which features you want to activate in OWA could only be done per user or global on the OWA itself, in Exchange 2010 Beta there&#8217;s a new features called: _Outlook Web Access Mailbox Policies._ With this policies you can deactivate items for users. When selecting the _CAS server_ under the _Organization Configuration_ you will see two tabs instead of one tab, just as in Exchange 2007.
 

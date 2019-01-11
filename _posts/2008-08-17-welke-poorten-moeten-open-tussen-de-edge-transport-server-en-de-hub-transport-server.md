@@ -1,3 +1,4 @@
+
 ---
 id: 713
 title: Which ports need to be opened between the Edge Transport server and the Hub Transport server
@@ -6,16 +7,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=713
 permalink: /welke-poorten-moeten-open-tussen-de-edge-transport-server-en-de-hub-transport-server/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 As you may know you can place an Edge Transport Server in your DMZ to communicate between the internet and the Hub Transport server, but which ports need to be opened for that ? Below a short overview:
 

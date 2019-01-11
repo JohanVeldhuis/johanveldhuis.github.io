@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=760
 permalink: /mail-queue/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Exchange 2007 contains a few nice tools. One of them is the _queue_ viewer_,_ with this tool you can get an overview of all mails who are still in the queue of Exchange 2007. You can do this also via the Powershell command _get-queue,_ with this command all mail queues are displayed with the ammount of messages in it.
 

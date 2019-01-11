@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1329
 permalink: /access-is-denied-hresult-2147024891/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-aktt_notify_twitter:
-  - 'no'
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 At least I had time to upgrade Exchange to SP2 and install Exchange 2010 RC in the same  organization. Everything went well on first sight. The only issue which I discovered was when opening the CAS server below the server configuration folder. In that case it displayed the following error message: &#8220;Unable to create IIS (Internet Information Services) Directory Entry. Error Message is: Access is denied. HResult =-2147024891.
 

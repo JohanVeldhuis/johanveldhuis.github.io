@@ -6,18 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1375
 permalink: /berichten-naar-specifieke-domeinen-blokkeren/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-aktt_notify_twitter:
-  - 'no'
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2009/10/Capture.JPG&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 With Exchange 2007 you could only configure some specific things on the Edge server, in Exchange 2010 RC some of these functions are also available on the HUB server. One of those things is block messages to specific domains. In Exchange 2007 this could only be configured on the Edge server, in Exchange 2010 RC this can also be done on the HUB server.
 

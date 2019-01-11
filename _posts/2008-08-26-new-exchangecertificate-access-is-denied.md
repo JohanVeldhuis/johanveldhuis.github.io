@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=753
 permalink: /new-exchangecertificate-access-is-denied/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 As you may already now you can use the _New-ExchangeCertificate_ Powershell to add a new certificate to a few services of Exchange or create a certificate request. During a visit on the MsExchange forum I found a post of somebody who had issues with this. Despite the credentials he used to login he got the message Access is denied.
 

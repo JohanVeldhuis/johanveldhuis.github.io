@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1988
 permalink: /owa-geeft-een-leeg-scherm/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2010/08/owa.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 During a troubleshooting sessions at one of our customers I had an issue which can be found on several forums now a days, OWA will only display a blank screen instead of the logon page. But what is the cause of this issue? Well there are several reasons which can cause it:
 

@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1119
 permalink: /mail-flow-issues-in-co-existence-scenariomail-flow-problemen-in-een-co-existence-scenario/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 In a lot of cases Exchange 2007 wil be installed in the current Exchange 2003 environment. During the setup you will have to choose the Exchange 2003 bridgehead server to use for sending mail to the other organization and the internet. After this a routing group connector will be created which will be used to transport mail.
 

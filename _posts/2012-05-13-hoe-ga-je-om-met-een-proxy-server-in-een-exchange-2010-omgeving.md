@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2442
 permalink: /hoe-ga-je-om-met-een-proxy-server-in-een-exchange-2010-omgeving/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2012/05/oof.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 In this blog we will have a look at what the impact of a proxy server in your Exchange 2010 environment. The article is split up in two parts. This since we will also have a look at the client part and what the impact of a proxy server for it.
 

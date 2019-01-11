@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2124
 permalink: /rpc-client-access-service-start-niet-meer-op/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2011/02/error_rpc.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 In Exchange 2010 almost all connections are made via the CAS server, excluded the Public Folder connection. On the CAS server a service is running called the RPC Client Access Service which is used by Outlook to make a connection to the mailbox. When this service isn&#8217;t running no MAPI connections can be made to the server.
 

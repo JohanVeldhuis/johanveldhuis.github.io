@@ -6,14 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1238
 permalink: /user-alias-is-incorrectly-displayed-in-the-to-field-in-outlookgebruikers-alias-wordt-incorrect-weergeven-in-het-aan-veld-in-outlook/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Exchange
 ---

@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1028
 permalink: /standby-continuous-replication-en-logs-verwijderen/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Standby Continuous Replication is a part of Exchange since service pack 1. With this option a copy from the storage group is made to another server for example a server in a DR site. This is done by copying the log files from the production server to the server in the DR site.
 

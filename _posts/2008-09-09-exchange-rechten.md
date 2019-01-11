@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=820
 permalink: /exchange-rechten/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 <div>
   Most times it&#8217;s not a good idea to make everybody full administrator, but what can the different administrators do in Exchange 2007? In Exchange 2003 we had the Exchange Full Administrator, Exchange Administrator and theExchange View Only Administrator in Exchange 2007 we have the Exchange Organization Administrator, Exchange Server Administrator, Exchange Recipient Administrator and Exchange View-Only Administrator. Microsoft has published a really usefull Technet article on this which describes which administrator can do what and what he don&#8217;t can do .

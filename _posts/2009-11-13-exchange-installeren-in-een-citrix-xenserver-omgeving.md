@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1673
 permalink: /exchange-installeren-in-een-citrix-xenserver-omgeving/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2009/11/Capture-150x150.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 [<img title="Exchange setup error" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2009/11/Capture-150x150.jpg?resize=150%2C150" alt="Exchange setup error" width="150" height="150" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2009/11/Capture.jpg)
 

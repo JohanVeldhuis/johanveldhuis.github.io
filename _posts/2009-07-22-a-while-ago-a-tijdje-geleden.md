@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1271
 permalink: /a-while-ago-a-tijdje-geleden/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 It has been a while but since this week I am back online thanks to my neighbour.  My own provider hasn&#8217;t been able to arrange the new connection despite several phone calls and a letter which mentioned the line should be working on 21-7.
 

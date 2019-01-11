@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2026
 permalink: /file-server-resource-manager-client-does-not-have-permission-to-send-as-this-sender/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2010/10/succes.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Windows 2008 R2 contains a new version of the file server resource manager (FSRM) which has been improved a lot. One of the options this tool has is to send notifications for example when an alert is activated. Normally this is really easy to configure, the only thing you need is a mailserver which will accept the traffic and will deliver the e-mail. 
 

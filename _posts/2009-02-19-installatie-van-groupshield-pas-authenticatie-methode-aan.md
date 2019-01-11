@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1112
 permalink: /installatie-van-groupshield-pas-authenticatie-methode-aan/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 [<img class="alignnone size-medium wp-image-1113" title="McAfee GroupShield" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2009/02/groupshield_microsoft_exchange_135x120.jpg?resize=135%2C120" alt="" width="135" height="120" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2009/02/groupshield_microsoft_exchange_135x120.jpg)
 

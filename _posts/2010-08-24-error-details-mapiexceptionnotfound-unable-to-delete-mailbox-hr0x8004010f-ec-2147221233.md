@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1997
 permalink: /error-details-mapiexceptionnotfound-unable-to-delete-mailbox-hr0x8004010f-ec-2147221233/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 I am currently working on an Exchange 2003 to Exchange 2010 migration. During the migration I had an issue which caused that the old mailboxes were not cleaned up correctly and the user was not converted to a mail user. The first issue can happen even if everything is configured correctly. The only solution at this moment is to run the _cleanup agent_ which can be found in the _Exchange System Manager__._
 

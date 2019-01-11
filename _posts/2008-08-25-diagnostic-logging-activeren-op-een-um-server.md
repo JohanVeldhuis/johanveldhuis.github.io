@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=751
 permalink: /diagnostic-logging-activeren-op-een-um-server/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 If you are troubleshooting an issue some logging is really usefull. On the UM server diagnostic logging is enabled by default on the lowest level. In case you need to have more logging you should manually change it to a higher level.
 

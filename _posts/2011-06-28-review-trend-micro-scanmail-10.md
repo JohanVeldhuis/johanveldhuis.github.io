@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2253
 permalink: /review-trend-micro-scanmail-10/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2011/06/trend-frs.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Blog
+  - Reviews
 ---
 In this article we will have a look at Trend Micro Scanmail (SMEX) 10. This is the latest version of Trend Micro’s antivirus/antispam solution for Microsoft Exchange Server.
 

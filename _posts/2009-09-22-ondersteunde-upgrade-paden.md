@@ -6,14 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1331
 permalink: /ondersteunde-upgrade-paden/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-aktt_notify_twitter:
-  - 'no'
 categories:
   - Exchange
 ---

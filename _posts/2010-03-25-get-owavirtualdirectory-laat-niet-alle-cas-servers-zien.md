@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1879
 permalink: /get-owavirtualdirectory-laat-niet-alle-cas-servers-zien/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2010/03/melding_2.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 By accident I found a bug in Exchange 2010. The issue only occurs in Exchange 2010 and if you have multiple CAS servers which are located in different sites and can&#8217;t communicate to eachother. Till now I only saw the issue with Exchange 2010 where an extra CAS server was added to the mainoffice. In this case this is the 3rd CAS server in the Exchange 2010 environment
 

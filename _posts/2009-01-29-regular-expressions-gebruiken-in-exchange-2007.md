@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1042
 permalink: /regular-expressions-gebruiken-in-exchange-2007/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 In the transport rules from Exchange 2007 you can use regular expressions. This can let you block specific words. But what happens in some cases is that correct words are also blocked because they contain the blocked specified character pattern. You can prevent this by using one or more of the parameters below:
 

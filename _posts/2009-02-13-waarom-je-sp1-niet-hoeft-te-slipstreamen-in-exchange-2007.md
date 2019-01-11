@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1079
 permalink: /waarom-je-sp1-niet-hoeft-te-slipstreamen-in-exchange-2007/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 [<img class="alignnone size-thumbnail wp-image-1080" title="Exchange 2007 logo" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2009/02/e12icon_thumb5b55d.png?resize=146%2C145" alt="" width="146" height="145" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2009/02/e12icon_thumb5b55d.png)
 

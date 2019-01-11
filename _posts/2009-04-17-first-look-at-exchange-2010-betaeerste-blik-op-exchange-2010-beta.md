@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1179
 permalink: /first-look-at-exchange-2010-betaeerste-blik-op-exchange-2010-beta/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Exchange 2010 beta has been released for several days and of course I have installed it myself. The coming weeks  I will publish several articles about the changes in Exchange 2010 Beta. Ofcourse it is a beta so it could be that some features will not be available in the final version.
 

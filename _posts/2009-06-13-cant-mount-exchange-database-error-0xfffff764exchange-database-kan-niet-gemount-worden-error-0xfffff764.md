@@ -6,14 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1235
 permalink: /cant-mount-exchange-database-error-0xfffff764exchange-database-kan-niet-gemount-worden-error-0xfffff764/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Exchange
 ---

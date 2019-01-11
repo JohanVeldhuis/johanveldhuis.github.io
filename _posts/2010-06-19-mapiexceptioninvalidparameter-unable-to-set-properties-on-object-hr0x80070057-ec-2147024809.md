@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1910
 permalink: /mapiexceptioninvalidparameter-unable-to-set-properties-on-object-hr0x80070057-ec-2147024809/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 During a cross-forest migration from Exchange 2003 to Exchange 2010 I found a nasty issue while migration a mailbox. The first 10% of the move request went OK but after that it failed. In the first 10% the mailbox is created, the folder structure is created and permissions are set on the folders.
 

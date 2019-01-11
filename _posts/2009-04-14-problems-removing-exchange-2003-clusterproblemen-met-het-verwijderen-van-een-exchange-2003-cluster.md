@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1174
 permalink: /problems-removing-exchange-2003-clusterproblemen-met-het-verwijderen-van-een-exchange-2003-cluster/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2003
+  - Exchange
 ---
 During one of my forum visits I found a really interesting issue. Someone tried to remove his old Exchange 2003 cluster but received the following error when trying to dit it:
 

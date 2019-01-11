@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1796
 permalink: /r-gebruiken-in-een-e-mailaddress-policy/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 E-mailaddress policies always funny to work with them, sometimes you will have to puzzle a bit. Since Exchange 2007 you will have the possibility to use a wizard to create an e-mailaddress policy. Within the wizard a few templates are created which you can use. But sometimes you might want to create your own template. In that case you can use the following parameters:
 

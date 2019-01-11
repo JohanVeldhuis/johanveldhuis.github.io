@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1212
 permalink: /exchange-2010-beta-client-throttlingexchange-2010-beta-client-throttling/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 In Exchange 2010 Beta is _client throttling_ is __introduced. With client throttling policy you are able to limit the bandwidth used per user. Besides this, you are able to keep an eye on the resources consumed per user.
 

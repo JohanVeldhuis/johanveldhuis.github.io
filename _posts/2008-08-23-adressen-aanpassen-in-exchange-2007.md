@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=740
 permalink: /adressen-aanpassen-in-exchange-2007/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 When you would like to use other addresses internal then external you may want to use the _New-AddressRewriteEntry _ Powershell command to let Exchange do this for you.
 

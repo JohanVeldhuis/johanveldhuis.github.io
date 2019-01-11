@@ -6,17 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=899
 permalink: /update-rollup-4-voor-exchange-server-2007-service-pack-1/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
-  - Software
+  - Exchange
 ---
 Microsoft has released rollup 4 today for Exchange Server 2007 SP1.  This rollup pack contains several fixes for several bugs in Exchange 2007 SP1:
 

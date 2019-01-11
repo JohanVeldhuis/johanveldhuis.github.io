@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1973
 permalink: /exchange-2010-schema-prep-mislukt-wanneer-exchange-2007-sp3-is-geinstalleerd/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2010/07/ad-prep.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 According to the Technet documentation you should be able to install Exchange 2010 in an environment where Exchange 2007 is running. A while ago I got a question from a customer who had an issue when trying to install Exchange 2010. The problem occured running the _setup.com /ps_ to extend the schema for Exchange, the following error message was displayed:
 

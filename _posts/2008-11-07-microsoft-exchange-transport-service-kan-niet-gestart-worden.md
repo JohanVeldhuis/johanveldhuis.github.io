@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=939
 permalink: /microsoft-exchange-transport-service-kan-niet-gestart-worden/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 As each version of a software package each package will need some tricks to solve issues. With Exchange 2007 this is also the case. It can happen that the Microsoft Exchange Transport service won&#8217;t start. When you have this issue you may see several events with the ID 5023. This was the case which I found on a forum. The cause of this issue appears to be an empty _MsExchHomeRoutinggroup_ attribute.
 

@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2309
 permalink: /new-mailboximportrequest-couldnt-connect-to-the-target-mailbox/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2011/09/remove-mailboximportrequest.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Starting from Exchange 2010 it is possible to import pst files using the New-MailboxImportRequest cmdlet. By default this cmdlet can&#8217;t be executed. This is caused by the fact that the _New-MailboxImportRequest_ cmdlet is not a part of the default RBAC groups.
 

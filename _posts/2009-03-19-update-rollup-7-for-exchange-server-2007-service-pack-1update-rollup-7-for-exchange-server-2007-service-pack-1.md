@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1136
 permalink: /update-rollup-7-for-exchange-server-2007-service-pack-1update-rollup-7-for-exchange-server-2007-service-pack-1/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Today Microsoft has release rollup 7 for Exchange 2007 SP1.  This rollup contains fixes for several issues:
 

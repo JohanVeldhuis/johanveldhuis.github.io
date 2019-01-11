@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2203
 permalink: /een-nadere-kijk-op-de-database-one-copy-alert-scheduled-task/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2011/05/Capture5.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Starting from Exchange 2010 SP1 a scheduled task called _Database One Copy Alert_ will be configured automatically on each mailbox server. This script will be executed every hour and will check if multiple copies are available inside the DAG. Besides this the status of the copy will be checked. This because a copy which is not healthy may lead to data lost during a failover.
 

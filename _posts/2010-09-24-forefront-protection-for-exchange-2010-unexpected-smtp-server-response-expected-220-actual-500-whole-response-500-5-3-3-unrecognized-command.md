@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2017
 permalink: /forefront-protection-for-exchange-2010-unexpected-smtp-server-response-expected-220-actual-500-whole-response-500-5-3-3-unrecognized-command/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2010/09/forefront_ex2010.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Despite a lot of people will use an antivirus/antispam solution in the cloud some people will like to have an additional Exchange aware antivirus product installed on their Exchange servers. One of the products which can be used for this is ForeFront Protection for Exchange 2010.
 

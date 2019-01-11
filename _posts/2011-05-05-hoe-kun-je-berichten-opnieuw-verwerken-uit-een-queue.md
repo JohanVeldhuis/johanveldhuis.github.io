@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2177
 permalink: /hoe-kun-je-berichten-opnieuw-verwerken-uit-een-queue/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 This week I received a question via e-mail about an Exchange 2010 environment. In this environment some big problems did occur which caused a large amount of messages to be placed in the _Unreachable_ queue. Messages will be placed in the queue when Exchange can&#8217;t deliver the messages. This can be both messages which need to be sent to external mailservers or internal Exchange servers.
 

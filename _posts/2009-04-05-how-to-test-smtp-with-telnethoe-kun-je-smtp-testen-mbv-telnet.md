@@ -6,12 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1146
 permalink: /how-to-test-smtp-with-telnethoe-kun-je-smtp-testen-mbv-telnet/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
   - Blog
 ---

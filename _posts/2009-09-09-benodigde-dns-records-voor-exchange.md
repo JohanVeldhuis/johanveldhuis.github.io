@@ -6,14 +6,6 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1312
 permalink: /benodigde-dns-records-voor-exchange/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-aktt_notify_twitter:
-  - 'no'
 categories:
   - Exchange
 ---

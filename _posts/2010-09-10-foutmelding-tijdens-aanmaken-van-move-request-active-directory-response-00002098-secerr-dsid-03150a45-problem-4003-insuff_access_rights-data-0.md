@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2012
 permalink: /foutmelding-tijdens-aanmaken-van-move-request-active-directory-response-00002098-secerr-dsid-03150a45-problem-4003-insuff_access_rights-data-0/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 During a migration at a customer I had the following issue, one I haven&#8217;t seen before. Selecting the target database went fine but when submitting the move request this resulted in the following error:
 

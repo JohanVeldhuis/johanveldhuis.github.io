@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2131
 permalink: /owa-im-integratie-configuratie-automatiseren-update-2/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 It&#8217;s time for another update for the prepare\_owa\_im script, this update is pretty big compared to the earlier update. Starting with this version it&#8217;s possible to configure both OWA and Lync using the script. There is one limitation: it&#8217;s not possible to enable the new topology.
 

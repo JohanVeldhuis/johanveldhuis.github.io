@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=843
 permalink: /e-mail-blokkeren-naar-een-specifiek-domein/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 In Exchange 2003 we could prevend sending to a domain with _delivery rectrictions._ In Exchange 2007 we can do this by using _transport rules _this can be created on the Hub Transport server. When we start the wizard and specify the name the next step is to define the _conditions_, here we choose the following options:
 

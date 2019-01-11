@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=893
 permalink: /microsoft-exchange-server-2007-service-pack-1-help/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Microsoft has released the stand-aline version of the help file of Exchange 2007 SP1. It&#8217;s always nice to have the help file on your laptop if you would like to search for something quick.
 

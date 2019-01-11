@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1024
 permalink: /winmaildat/
-aktt_notify_twitter:
-  - 'no'
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
 categories:
-  - Exchange 2007
+  - Exchange
 ---
 Maybe you have seen it an e-mail with a winmail.dat file as attachment. This is caused by a sender which sends an e-mail in RTF format to a user that has an e-mail client which does not support RTF.
 

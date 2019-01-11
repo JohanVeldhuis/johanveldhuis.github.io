@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1873
 permalink: /move-mailbox-mislukt-vanwege-vreemde-foutmelding/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 During the conversion of a pilot to production environment I found a nice issue. The mailboxes needed to be moved from the old mailbox server to the new mailbox server. Normally not a very exciting proces which can be done both by using the Exchange Management Console as Exchange Management Shell. But the move from the old Exchange 2010 mailbox server to the new Exchange 2010 mailbox server failed with a strange error. So first I had a look in the event log of the server and found the following error:
 

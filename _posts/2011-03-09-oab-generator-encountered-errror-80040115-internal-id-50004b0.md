@@ -6,16 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=2141
 permalink: /oab-generator-encountered-errror-80040115-internal-id-50004b0/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/uploads/2011/03/oabgen.jpg&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 The OAB Generator of Exchange is responsible for generating the Offline Address Book (OAB). To generate this the service will use information which is found in the Active Directory. When you have a single forest and domain this will not give a lot of issues. But what happens when Exchange is installed in the forest root domain and the users are placed in a child domain? In this case Exchange will contact the domain controllers in the child domain to gather the information.
 

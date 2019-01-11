@@ -6,18 +6,8 @@ author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1365
 permalink: /exchange-2010-rtm-beschikbaar/
-ratings_users:
-  - "0"
-ratings_score:
-  - "0"
-ratings_average:
-  - "0"
-aktt_notify_twitter:
-  - 'no'
-onswipe_thumb:
-  - 'http://johanveldhuis.nl/wp-content/plugins/onswipe/thumb/thumb.php?src=http://johanveldhuis.nl/wp-content/plugins/sociable-zyblog-edition/images/digg.png&amp;w=600&amp;h=800&amp;zc=1&amp;q=75&amp;f=0'
 categories:
-  - Exchange 2010
+  - Exchange
 ---
 Yes it&#8217;s here the RTM version of Exchange 2010. At 9:00AM local  time in the US a blog is posted on MsExchangeteam.com by the Exchange Team. The RTM status means that the software will be available for a selective group of people.  Suspected is that Exchange 2010 will be available for everyone early November, it will be launched during TechEd Berlin.
 
