@@ -14,9 +14,5 @@ categories:
 </div>
 
 <div>
-   
-</div>
-
-<div>
   <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=e17e7f31-079a-43a9-bff2-0a110307611e&DisplayLang=en" target="_blank">open</a>
 </div>

@@ -5,7 +5,7 @@ date: 2009-11-17T21:16:19+00:00
 author: Johan Veldhuis
 layout: post
 guid: http://johanveldhuis.nl/?p=1677
-permalink: /effectiviteit-van-sis-meten/
+permalink: /measure-sis-effectiveness/
 categories:
   - Exchange
 ---

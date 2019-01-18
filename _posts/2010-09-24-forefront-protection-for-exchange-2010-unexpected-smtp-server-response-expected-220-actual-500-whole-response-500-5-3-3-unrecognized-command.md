@@ -26,7 +26,9 @@ To solve this issue there are, depending on your Exchange environment, two solut
 
 The first option must be used when mail from the internet is delivered directly to your CAS/Hub server. In this case the _anonymous users _on the _permissions group_ tab must be enabled, if you do not enable this option you won&#8217;t be able to receive e-mail from the internet. This connector can be created by using the Exchange Management Shell:
 
-_new-receiveconnector -Name &#8220;Forefront&#8221; -MaxRecipientsPerMessage 5000 -Fqdn mail.domain.local -Bindings &#8216;0.0.0.0:25&#8217; -RemoteIPRanges &#8216;10.0.0.11-10.0.0.11&#8217; -MaxInboundConnectionPerSource Unlimited -MaxInboundConnectionPercentagePerSource 100 -SizeEnabled EnabledWithoutValue_
+```PowerShell
+New-ReceiveConnector -Name 'Forefront' -MaxRecipientsPerMessage 5000 -Fqdn mail.domain.local -Bindings '0.0.0.0:25' -RemoteIPRanges '10.0.0.11-10.0.0.11' -MaxInboundConnectionPerSource Unlimited -MaxInboundConnectionPercentagePerSource 100 -SizeEnabled EnabledWithoutValue
+```
 
 The above command will create a receive connector which can only be used by a server which IP address is 10.0.0.11, all other clients can&#8217;t use this connector.
 

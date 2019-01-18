@@ -15,6 +15,8 @@ To solve this issue we can use _safe list aggregation_ this can be done by the P
 
 The negative thing of the command is that it is resource intensive, that&#8217;s why it isn&#8217;t executed automatically. When you would like this to happen you will need to create a Powershell script which will be executed automatically each day at 0:00 AM.
 
-_Get-Mailbox | Update-SafeList –Type SafeSenders_
+```PowerShell
+Get-Mailbox | Update-SafeList –Type SafeSenders
+```
 
 The command above will first get all the users who have a mailbox and will then update the safelist of the user. You see there is an extra parameter added, _type_ with this parameter we can tell the command which list needs to be updated to the user object. Other values are _both_ and _SafeRecipients._ Exchange only uses the _SafeSenders_ that&#8217;s why Microsoft recommands only to use this type and not the other two.

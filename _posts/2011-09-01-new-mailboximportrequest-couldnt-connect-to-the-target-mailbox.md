@@ -15,17 +15,23 @@ Starting from Exchange 2010 it is possible to import pst files using the New-Mai
   
 ** To create a new group you can use the Exchange Management Shell. This to prevent that specific permissions are assigned per user:
 
-_New-RoleGroup &#8220;Mailbox import and export Rights&#8221;_
+```PowerShell
+New-RoleGroup 'Mailbox import and export Rights'
+```
 
 [<img class="alignnone size-medium wp-image-2324" title="New-RoleGroup" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new-rbacgroup-300x21.jpg?resize=300%2C21" alt="" width="300" height="21" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new-rbacgroup.jpg?resize=300%2C21&ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new-rbacgroup.jpg?w=961&ssl=1 961w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new-rbacgroup.jpg)
 
 Using the cmdlet above we will create a new RBAC group called _Mailbox import and export rights_. The next step is to add the cmdlet to the RBAC group:
 
-_new-ManagementRoleAssignment -Role &#8220;Mailbox Import Export&#8221; -SecurityGroup &#8220;Mailbox import and export Rights&#8221;_
+```PowerShell
+New-ManagementRoleAssignment -Role 'Mailbox Import Export' -SecurityGroup 'Mailbox import and export Rights'
+```
 
 Using the above cmdlet we will add the role _Mailbox Import Export _to the earlier created RBAC group.
 
-_Add-RoleGroupMember &#8220;Mailbox import and export Rights&#8221; -Member Administrator_
+```PowerShell
+Add-RoleGroupMember 'Mailbox import and export Rights' -Member Administrator
+```
 
 [<img class="alignnone size-medium wp-image-2325" title="new-managementrolegroupassignment" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/new-managementrolegroupassignment-300x29.jpg?resize=300%2C29" alt="" width="300" height="29" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/new-managementrolegroupassignment.jpg?resize=300%2C29&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/new-managementrolegroupassignment.jpg?w=963&ssl=1 963w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/new-managementrolegroupassignment.jpg)
 
@@ -37,7 +43,9 @@ As last cmdlet we will add the user _administrator_ to the RBAC group _Mailbox i
 
 When the last step has been performed we can submit a new import request:
 
-_New-MailboxImportRequest -Mailbox Johan -FilePath [\\File01\PST\johan.pst](file://file01/PST/johan.pst)_
+```PowerShell
+New-MailboxImportRequest -Mailbox Johan -FilePath \\File01\PST\johan.pst
+```
 
 In the example above we will import the PST file called _johan.pst_ from the PST share on the server called _File01_. The content of the PST will be imported in the mailbox called _Johan_.
 
@@ -52,7 +60,9 @@ To monitor the process we can use the following cmdlets:
 
 For example:
 
-_Get-MailboxImportRequest -Identity &#8220;Johan\MailboxImport&#8221;_
+```PowerShell
+Get-MailboxImportRequest -Identity 'Johan\MailboxImport'
+```
 
 [<img class="alignnone size-medium wp-image-2327" title="Get-MailboxImportRequest" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequest-300x19.jpg?resize=300%2C19" alt="" width="300" height="19" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequest.jpg?resize=300%2C19&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequest.jpg?w=814&ssl=1 814w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequest.jpg)
 
@@ -62,13 +72,17 @@ In this case the identity exists of two parts: the name of the mailbox combined 
   
 ** Gives a detailed overview of the Mailbox Import Request. This cmdlet can be used in combination with the Get-MailboxImportRequest cmdlet:
 
-_Get-MailboxImportRequest | Get-MailboxImportRequestStatistics_
+```PowerShell
+Get-MailboxImportRequest | Get-MailboxImportRequestStatistics
+```
 
 [<img class="alignnone size-medium wp-image-2328" title="Get-MailboxImportRequestStatistics" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequeststatistics-300x15.jpg?resize=300%2C15" alt="" width="300" height="15" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequeststatistics.jpg?resize=300%2C15&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequeststatistics.jpg?w=953&ssl=1 953w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequeststatistics.jpg)
 
 When executing the above example you will get a overview of the currently submitted Mailbox Import Requests with additional information. But when needing very detailed information,  for example the item count, percentage etc. then you will need to add_|FL_ to the example above:
 
-_Get-MailboxImportRequest | Get-MailboxImportRequestStatistics | FL_
+```PowerShell
+Get-MailboxImportRequest | Get-MailboxImportRequestStatistics | FL
+```
 
 [<img class="alignnone size-medium wp-image-2329" title="Get-MailboxImportRequest | Get-MailboxImportRequestStatistics | fl" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequeststatistics_fl-300x142.jpg?resize=300%2C142" alt="" width="300" height="142" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequeststatistics_fl.jpg?resize=300%2C142&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequeststatistics_fl.jpg?w=566&ssl=1 566w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/get-mailboximportrequeststatistics_fl.jpg)
 

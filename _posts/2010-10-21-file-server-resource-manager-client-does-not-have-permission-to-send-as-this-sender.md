@@ -27,7 +27,9 @@ The FSRM will authenticate using the computer account from the system on which F
 
 But what are the correct settings for the receive connector? The receive connector will need to accept _basic authentication_ and the _anonymous_ permission group needs to be added to the connector. By performing the following Powershell cmdlet the connector is created: 
 
-_New-ReceiveConnector -Name FSRM -Usage Custom -Bindings 192.168.1.30:25 -RemoteIPRanges 192.168.1.24_ &#8211;_AuthMechanism BasicAuth_ _-PermissionGroups_ _Anonymous_ 
+'''PowerShell
+New-ReceiveConnector -Name FSRM -Usage Custom -Bindings 192.168.1.30:25 -RemoteIPRanges 192.168.1.24 -AuthMechanism BasicAuth -PermissionGroups Anonymous 
+'''
 
 Now when performing the test again it will succeed: 
 
