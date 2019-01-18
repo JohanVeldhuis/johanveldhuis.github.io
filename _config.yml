@@ -8,7 +8,7 @@ markdown: kramdown
 disqus: "johanveldhuis"
 google_analytics: johanveldhuis
 title: 'Johan&#039;s Web Portal'
-url: http://www.johanveldhuis.nl
+url: https://www.johanveldhuis.nl
 
 defaults:
   -
@@ -21,7 +21,7 @@ description: Info about Exchange, Office 365 and Lync.
 author:
   name: 'Johan Veldhuis'
   email: johan@johanveldhuis.nl
-  github: dbtek
+  github: johanveldhuis
   twitter: jveldh
   email_md5: 8209ff9e4ba94ac3058e69fd75354b3f
 
