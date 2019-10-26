@@ -21,7 +21,7 @@ Download SefaUtil GUI v2.1
 <div class='w3eden'>
   <!-- WPDM Link Template: Default Template -->
   
-  <div class="wpdm-link-tpl link-btn [color]" data-durl="https://johanveldhuis.nl/download/sefautil-gui-v2-1/?wpdmdl=3379" >
+  <div class="wpdm-link-tpl link-btn [color]" data-durl="https://github.com/JohanVeldhuis/SefaUtilGUI" >
     <div class="media">
       <div class="pull-left">
         <img class="wpdm_icon" alt="Icon" src="https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg" onError='this.src="https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg";' />
