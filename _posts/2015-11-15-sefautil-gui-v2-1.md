@@ -39,7 +39,7 @@ Download SefaUtil GUI v2.1
         <span class="label label-default" style="font-weight: 400;">107.29 KB</span></strong> 
         
         <div>
-          <strong><a class='wpdm-download-link btn btn-primary ' rel='nofollow' href='#' onclick="location.href='https://johanveldhuis.nl/download/sefautil-gui-v2-1/?wpdmdl=3379';return false;">Download</a></strong>
+          <strong><a class='wpdm-download-link btn btn-primary ' rel='nofollow' href='#' onclick="location.href='https://github.com/JohanVeldhuis/SefaUtilGUI';return false;">Download</a></strong>
         </div>
       </div>
     </div>
