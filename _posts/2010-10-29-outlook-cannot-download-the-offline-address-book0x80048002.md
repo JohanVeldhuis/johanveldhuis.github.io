@@ -4,7 +4,7 @@ title: 'Outlook can&#8217;t download offline address book: error 0x80048002'
 date: 2010-10-29T14:35:30+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2038
+guid: http://myuclab.nl/?p=2038
 permalink: /outlook-cannot-download-the-offline-address-book0x80048002/
 categories:
   - Exchange
@@ -21,7 +21,7 @@ But where do you have to start with troubleshooting in these kind of situations
 
 The following screen will be displayed:
 
-[<img title="Download Address Book" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2010/10/oab-300x229.jpg?resize=300%2C229" alt="" width="300" height="229" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/10/oab.jpg)
+[<img title="Download Address Book" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2010/10/oab-300x229.jpg?resize=300%2C229" alt="" width="300" height="229" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/10/oab.jpg)
 
 Just leave all options default and click OK to download the address book. When this will not work you may receive an errorcode, for example 0x80048002
 
@@ -34,11 +34,11 @@ The first option is not really difficult but doesn&#8217;t guerantee that OAB is
 
 When trying to access the site it will ask for authentication, once correctly authenticated the following message is displayed:
 
-[<img title="Access OAB via Internet Explorer" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/10/Capture2-300x15.jpg?resize=300%2C15" alt="" width="300" height="15" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2010/10/Capture2.jpg)
+[<img title="Access OAB via Internet Explorer" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/10/Capture2-300x15.jpg?resize=300%2C15" alt="" width="300" height="15" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2010/10/Capture2.jpg)
 
 When OAB isn&#8217;t correctly configured or it has been manually changed then you might receive the following error:
 
-[<img title="Exchange OAB error 500.19" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/10/Capture3-300x88.jpg?resize=300%2C88" alt="" width="300" height="88" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/10/Capture3.jpg)
+[<img title="Exchange OAB error 500.19" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/10/Capture3-300x88.jpg?resize=300%2C88" alt="" width="300" height="88" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/10/Capture3.jpg)
 
 As you can see in the screenshot above IIS has some issues while reading the config file. In this case this was caused by an webconfig.xml file which was placed in the OAB virtual directory. This resulted in problems while downloading the OAB when using Outlook 2007/2010.
 

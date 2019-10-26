@@ -52,7 +52,7 @@
 			</a>
 			
 			
-			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope"></i>
 			</a>
 			
@@ -118,7 +118,7 @@
 		
 		
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+			<a class="btn btn-default btn-sm" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
@@ -164,7 +164,7 @@
 
 <p>The easiest way to figure out if Kerberos is to change the Outlook profile.</p>
 
-<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/Outlook-security-tab.jpg"><img title="Outlook security tab" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/Outlook-security-tab-243x300.jpg?resize=243%2C300" alt="" width="243" height="300" data-recalc-dims="1" /></a></p>
+<p><a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/12/Outlook-security-tab.jpg"><img title="Outlook security tab" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/12/Outlook-security-tab-243x300.jpg?resize=243%2C300" alt="" width="243" height="300" data-recalc-dims="1" /></a></p>
 
 <p>On the <em>security</em> tab of the account you will need to change the value of <em>Logon network security _to _NTLM.</em> If the user can access his/her mailbox after this you know that Kerberos is causing the issue.</p>
 
@@ -187,7 +187,7 @@
 
 <p>One of the first things you will need to do is run <em>SetSPN -L “ASA account”</em>  to verify that all correct SPN’s are registered. The SPN’s should be unique. Despite I have seen environments where the domain controllers also contain two SPN’s named <em>ExchangeAB _followed by the netbios and fqdn. To verify if the SPN’s are unique you can use _SetSPN -Q “SPN VALUE”</em> , for example <em>SetSPN -Q ExchangeAB/*</em>.</p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/setspn-q.jpg"><img title="setspn -q" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/setspn-q-300x241.jpg?resize=300%2C241" alt="" width="300" height="241" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/12/setspn-q.jpg"><img title="setspn -q" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/12/setspn-q-300x241.jpg?resize=300%2C241" alt="" width="300" height="241" data-recalc-dims="1" /></a></p>
 
 <p>As displayed in the screenshot above you will see ExchangeAB will be found four times. Two times on the Exchange Server and two times on the DC.</p>
 
@@ -218,7 +218,7 @@
 
 <p>Restart the computer and change the Outlook profile to <em>Negotiate Authentication</em>. Verify if you can access the mailbox. Using klist.exe or kerbtray.exe verify of the tickets will be created correctly. Both tools are part of the <a href="http://www.microsoft.com/download/en/details.aspx?id=17657?ocid=aff-n-we-loc--ITPRO40890&amp;WT.mc_id=aff-n-we-loc--ITPRO40890">resource kit </a>for Windows 2003. In Windows 7 and 2008 klist is a part of the OS.</p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/Kerberos-tickes.jpg"><img title="Kerberos tickets" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/Kerberos-tickes-300x121.jpg?resize=300%2C121" alt="" width="300" height="121" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/12/Kerberos-tickes.jpg"><img title="Kerberos tickets" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/12/Kerberos-tickes-300x121.jpg?resize=300%2C121" alt="" width="300" height="121" data-recalc-dims="1" /></a></p>
 
 <p>In this screenshot two Kerberos tickets are listed which are being used by Exchange. If all authentication is performed by using Kerberos you will see the following Kerberos tickets:</p>
 

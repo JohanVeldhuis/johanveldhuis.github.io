@@ -4,20 +4,20 @@ title: A closer look at the Database One Copy Alert scheduled task
 date: 2011-05-20T20:06:25+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2203
+guid: http://myuclab.nl/?p=2203
 permalink: /a-closer-look-at-the-database-one-copy-alert-scheduled-task/
 categories:
   - Exchange
 ---
 Starting from Exchange 2010 SP1 a scheduled task called _Database One Copy Alert_ will be configured automatically on each mailbox server. This script will be executed every hour and will check if multiple copies are available inside the DAG. Besides this the status of the copy will be checked. This because a copy which is not healthy may lead to data lost during a failover.
 
-[<img title="Scheduled task" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/05/Capture22-300x23.jpg?resize=300%2C23" alt="" width="300" height="23" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/05/Capture22.jpg)
+[<img title="Scheduled task" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/05/Capture22-300x23.jpg?resize=300%2C23" alt="" width="300" height="23" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/05/Capture22.jpg)
 
 The scheduled task will execute the_CheckDatabaseRedundancy.ps1_ script which can be found in the _scripts_ directory of your Exchange installation. But what if you don&#8217;t have a DAG in you Exchange environment? In this case no alert will be send.
 
 Besides running the script automatically it&#8217;s also possible to run it manually.
 
-[<img title="Run CheckDatabaseRedundacy.ps1" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/05/Capture-300x34.jpg?resize=300%2C34" alt="" width="300" height="34" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/05/Capture.jpg)
+[<img title="Run CheckDatabaseRedundacy.ps1" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/05/Capture-300x34.jpg?resize=300%2C34" alt="" width="300" height="34" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/05/Capture.jpg)
 
 In the screenshot above you will see what the output is of a script ran on an Exchange server which is not a member of a DAG.  In this case no check will be performed. As you can see it&#8217;s possible to send an alert via e-mail.
 
@@ -42,11 +42,11 @@ _-NonInteractive -WindowStyle Hidden -command &#8220;& &#8216;C:\Program Files\M
 
 The script will send an e-mail with detailed information once there is an issue.
 
-[<img title="Red Alert" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/05/capture4-300x148.jpg?resize=300%2C148" alt="" width="300" height="148" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/05/capture4.jpg)
+[<img title="Red Alert" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/05/capture4-300x148.jpg?resize=300%2C148" alt="" width="300" height="148" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/05/capture4.jpg)
 
 In the example above you will see that there is an issue with the database in our DAG. There is only one copy of the specific database which will result in no mailbox access after the server fails.
 
-[<img title="Database in sync" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/05/Capture5-300x96.jpg?resize=300%2C96" alt="" width="300" height="96" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/05/Capture5.jpg)
+[<img title="Database in sync" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/05/Capture5-300x96.jpg?resize=300%2C96" alt="" width="300" height="96" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/05/Capture5.jpg)
 
 When adding an additional database copy and rerunning the script you will see the status has changed from red to green. If the copy with the preference of 1 fails then the database with preference 2 will be actived.
 

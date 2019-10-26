@@ -4,7 +4,7 @@ title: Disable Exchange Store Time-Out Detection
 date: 2012-06-24T21:33:04+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2469
+guid: http://myuclab.nl/?p=2469
 permalink: /disable-exchange-store-time-out-detection/
 categories:
   - Exchange

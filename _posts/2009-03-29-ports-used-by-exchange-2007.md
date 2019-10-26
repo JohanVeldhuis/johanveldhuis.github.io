@@ -4,7 +4,7 @@ title: Ports used by Exchange 2007
 date: 2009-03-29T20:16:51+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1142
+guid: http://myuclab.nl/?p=1142
 permalink: /ports-used-by-exchange-2007/
 categories:
   - Exchange

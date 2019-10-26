@@ -4,7 +4,7 @@ title: Enable logging in Exchange 2010
 date: 2009-04-20T19:53:06+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1192
+guid: http://myuclab.nl/?p=1192
 permalink: /enable-logging-in-exchange-2010/
 categories:
   - Exchange
@@ -17,11 +17,11 @@ Enabling the logging can be done via a simple press on the button and specifying
   * choose one of the serverroles under _server configuration_
   * click on the button _manage diagnostic logging_ in the right menu
 
-[<img class="alignnone size-thumbnail wp-image-1193" title="Diagnostic Logging" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2009/04/diagnostic_1-150x121.jpg?resize=150%2C121" alt="Diagnostic Logging" width="150" height="121" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2009/04/diagnostic_1.jpg)
+[<img class="alignnone size-thumbnail wp-image-1193" title="Diagnostic Logging" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2009/04/diagnostic_1-150x121.jpg?resize=150%2C121" alt="Diagnostic Logging" width="150" height="121" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2009/04/diagnostic_1.jpg)
 
 A new window will be opened where you can select the items you which to enable logging for:
 
-[<img class="alignnone size-thumbnail wp-image-1194" title="Item's you can diagnose" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2009/04/diagnostic_2-150x150.jpg?resize=150%2C150" alt="Item's you can diagnose" width="150" height="150" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2009/04/diagnostic_2.jpg?resize=150%2C150&ssl=1 150w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2009/04/diagnostic_2.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2009/04/diagnostic_2.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2009/04/diagnostic_2.jpg)
+[<img class="alignnone size-thumbnail wp-image-1194" title="Item's you can diagnose" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2009/04/diagnostic_2-150x150.jpg?resize=150%2C150" alt="Item's you can diagnose" width="150" height="150" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2009/04/diagnostic_2.jpg?resize=150%2C150&ssl=1 150w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2009/04/diagnostic_2.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2009/04/diagnostic_2.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2009/04/diagnostic_2.jpg)
 
 For some items you can specify sub-items, in the case of Activesync this are: configuration and requests.
   

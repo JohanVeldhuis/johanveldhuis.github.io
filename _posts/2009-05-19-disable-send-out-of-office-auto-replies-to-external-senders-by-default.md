@@ -4,7 +4,7 @@ title: Disable Send Out of Office auto-replies to External Senders in OWAby defa
 date: 2009-05-19T19:18:40+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1225
+guid: http://myuclab.nl/?p=1225
 permalink: /disable-send-out-of-office-auto-replies-to-external-senders-by-default/
 categories:
   - Exchange

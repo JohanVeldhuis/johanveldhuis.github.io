@@ -4,7 +4,7 @@ title: Copy transport rules
 date: 2010-01-03T21:52:42+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1791
+guid: http://myuclab.nl/?p=1791
 permalink: /copy-transport-rules/
 categories:
   - Exchange

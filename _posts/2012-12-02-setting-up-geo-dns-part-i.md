@@ -4,7 +4,7 @@ title: 'Setting up a Geo DNS environment in your test lab &#8211; part I'
 date: 2012-12-02T20:54:35+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2599
+guid: http://myuclab.nl/?p=2599
 permalink: /een-geo-dns-omgeving-opzetten-deel-i/
 categories:
   - Exchange
@@ -17,7 +17,7 @@ Let’s start with explaining what geo DNS is. Geo DNS is a system which returns
 
 Below a graphical overview of our lab environment which we are going to build:
 
-[<img class="aligncenter size-medium wp-image-2600" title="Network overview" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/Network-overview-300x287.jpg?resize=300%2C287" alt="" width="300" height="287" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/Network-overview.jpg?resize=300%2C287&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/Network-overview.jpg?w=531&ssl=1 531w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/Network-overview.jpg)
+[<img class="aligncenter size-medium wp-image-2600" title="Network overview" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/11/Network-overview-300x287.jpg?resize=300%2C287" alt="" width="300" height="287" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/11/Network-overview.jpg?resize=300%2C287&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/11/Network-overview.jpg?w=531&ssl=1 531w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/11/Network-overview.jpg)
 
 <table border="1" cellspacing="0" cellpadding="0">
   <tr>
@@ -128,7 +128,7 @@ To make our GEODNS server ready the only thing we will have to do is add some DN
   
   <tr>
     <td valign="top" width="302">
-      autodiscover.johanveldhuis.nl
+      autodiscover.myuclab.nl
     </td>
     
     <td valign="top" width="302">
@@ -139,7 +139,7 @@ To make our GEODNS server ready the only thing we will have to do is add some DN
         
         <tr>
           <td valign="top" width="302">
-            mail.johanveldhuis.nl
+            mail.myuclab.nl
           </td>
           
           <td valign="top" width="302">
@@ -153,7 +153,7 @@ To make our GEODNS server ready the only thing we will have to do is add some DN
               </p>
               
               <p>
-                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+                <em>Nslookup autodiscover.myuclab.nl</em>
               </p>
               
               <p>
@@ -165,7 +165,7 @@ To make our GEODNS server ready the only thing we will have to do is add some DN
               </p>
               
               <p>
-                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+                <em>Nslookup autodiscover.myuclab.nl</em>
               </p>
               
               <p>
@@ -181,7 +181,7 @@ To make our GEODNS server ready the only thing we will have to do is add some DN
               </p>
               
               <p>
-                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+                <em>Nslookup autodiscover.myuclab.nl</em>
               </p>
               
               <p>
@@ -209,7 +209,7 @@ To make our GEODNS server ready the only thing we will have to do is add some DN
               </p>
               
               <p>
-                <a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/DNS-properties.jpg"><img class="aligncenter size-medium wp-image-2601" title="DNS properties" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/DNS-properties-257x300.jpg?resize=257%2C300" alt="" width="257" height="300" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/DNS-properties.jpg?resize=257%2C300&ssl=1 257w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/11/DNS-properties.jpg?w=415&ssl=1 415w" sizes="(max-width: 257px) 100vw, 257px" data-recalc-dims="1" /></a>
+                <a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/11/DNS-properties.jpg"><img class="aligncenter size-medium wp-image-2601" title="DNS properties" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/11/DNS-properties-257x300.jpg?resize=257%2C300" alt="" width="257" height="300" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/11/DNS-properties.jpg?resize=257%2C300&ssl=1 257w, https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/11/DNS-properties.jpg?w=415&ssl=1 415w" sizes="(max-width: 257px) 100vw, 257px" data-recalc-dims="1" /></a>
               </p>
               
               <p>
@@ -217,7 +217,7 @@ To make our GEODNS server ready the only thing we will have to do is add some DN
               </p>
               
               <p>
-                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+                <em>Nslookup autodiscover.myuclab.nl</em>
               </p>
               
               <p>
@@ -229,7 +229,7 @@ To make our GEODNS server ready the only thing we will have to do is add some DN
               </p>
               
               <p>
-                <em>Nslookup autodiscover.johanveldhuis.nl</em>
+                <em>Nslookup autodiscover.myuclab.nl</em>
               </p>
               
               <p>

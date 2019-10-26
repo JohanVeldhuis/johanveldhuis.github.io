@@ -4,7 +4,7 @@ title: Voicemails are not delivered to the inbox
 date: 2012-09-10T15:52:14+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2523
+guid: http://myuclab.nl/?p=2523
 permalink: /voicemails-are-not-delivered-to-the-inbox/
 categories:
   - Exchange

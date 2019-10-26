@@ -4,7 +4,7 @@ title: Troubleshooting federated sharing – part III
 date: 2013-11-29T21:29:54+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3333
+guid: http://myuclab.nl/?p=3333
 permalink: /troubleshooting-federated-sharing-deel-iii/
 categories:
   - Exchange

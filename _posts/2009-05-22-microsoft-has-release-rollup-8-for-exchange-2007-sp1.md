@@ -4,7 +4,7 @@ title: Microsoft has release Rollup 8 for Exchange 2007 SP1
 date: 2009-05-22T21:41:09+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1229
+guid: http://myuclab.nl/?p=1229
 permalink: /microsoft-has-release-rollup-8-for-exchange-2007-sp1/
 categories:
   - Exchange

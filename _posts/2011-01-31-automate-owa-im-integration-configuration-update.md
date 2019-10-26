@@ -4,7 +4,7 @@ title: 'Automate OWA IM Integration configuration &#8211; update'
 date: 2011-01-31T21:12:22+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2109
+guid: http://myuclab.nl/?p=2109
 permalink: /automate-owa-im-integration-configuration-update/
 categories:
   - Exchange
@@ -25,4 +25,4 @@ Below the changes which have been made in the script:
 
 If you got any tips or suggestions please leave a comment.
 
-<a href="http://www.johanveldhuis.nl/tools/scripts/prepare_owa_im_v11.ps1" target="_blank">download</a> prepare\_owa\_im.ps1 v1.1
+<a href="http://www.myuclab.nl/tools/scripts/prepare_owa_im_v11.ps1" target="_blank">download</a> prepare\_owa\_im.ps1 v1.1

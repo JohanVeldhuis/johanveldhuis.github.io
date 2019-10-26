@@ -4,7 +4,7 @@ title: Mail queue
 date: 2008-08-30T19:30:24+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=760
+guid: http://myuclab.nl/?p=760
 permalink: /mail-queue/
 categories:
   - Exchange

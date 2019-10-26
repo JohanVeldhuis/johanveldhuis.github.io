@@ -4,7 +4,7 @@ title: 'Exchange Federation &#8211; part II'
 date: 2012-04-26T20:17:58+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2438
+guid: http://myuclab.nl/?p=2438
 permalink: /exchange-federation-part-ii/
 categories:
   - Exchange

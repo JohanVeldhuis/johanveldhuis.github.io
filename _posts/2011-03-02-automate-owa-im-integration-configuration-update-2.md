@@ -4,7 +4,7 @@ title: 'Automate OWA IM Integration configuration &#8211; update 2'
 date: 2011-03-02T22:21:56+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2131
+guid: http://myuclab.nl/?p=2131
 permalink: /automate-owa-im-integration-configuration-update-2/
 categories:
   - Exchange
@@ -21,4 +21,4 @@ If you have any feature requests please let me know so I can add them to a futur
 
 Caution: this script may need to change the ExecutionPolicy settings temporary
 
-prepare\_owa\_im script versie 1.2 <a href="http://www.johanveldhuis.nl/tools/scripts/prepare_owa_im_v12.ps1" target="_self">download</a>
+prepare\_owa\_im script versie 1.2 <a href="http://www.myuclab.nl/tools/scripts/prepare_owa_im_v12.ps1" target="_self">download</a>

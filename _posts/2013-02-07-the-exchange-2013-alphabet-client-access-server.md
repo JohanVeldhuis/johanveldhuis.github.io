@@ -4,7 +4,7 @@ title: 'The Exchange 2013 alphabet: Client Access Server'
 date: 2013-02-07T22:37:50+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2708
+guid: http://myuclab.nl/?p=2708
 permalink: /the-exchange-2013-alphabet-client-access-server/
 categories:
   - Exchange
@@ -58,13 +58,13 @@ That brings us to the second point which would normally not occur on LANs: laten
 
 Another change in Exchange 2013 is the namespaces required for your environment. In a typical site resilient Exchange 2010 environment you could end up with 8 names which are required for your environment. Two of them where the names for the CAS Array. These names were set as RPC Client Access Server on the databases and would appear in the Outlook profile of the user:
 
-[<img class="aligncenter size-medium wp-image-2711" title="Outlook profile" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/02/Outlook-profile-300x80.png?resize=300%2C80" alt="" width="300" height="80" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/02/Outlook-profile.png?resize=300%2C80&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/02/Outlook-profile.png?w=445&ssl=1 445w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/02/Outlook-profile.png)
+[<img class="aligncenter size-medium wp-image-2711" title="Outlook profile" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/02/Outlook-profile-300x80.png?resize=300%2C80" alt="" width="300" height="80" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/02/Outlook-profile.png?resize=300%2C80&ssl=1 300w, https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/02/Outlook-profile.png?w=445&ssl=1 445w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/02/Outlook-profile.png)
 
 Now in Exchange 2013 we don’t need to set the RPC Client Access Server parameter anymore. Instead of the CAS Array name we will connect to something like this: <MailboxGUI@corp.local>.
 
 So what’s the advantage of this? Well maybe you remember the pop up that users received this pop up:
 
-[<img class="aligncenter size-medium wp-image-2715" title="Outlook Pop up" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/02/Pop-up-300x107.png?resize=300%2C107" alt="" width="300" height="107" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/02/Pop-up.png?resize=300%2C107&ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/02/Pop-up.png?w=550&ssl=1 550w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/02/Pop-up.png)
+[<img class="aligncenter size-medium wp-image-2715" title="Outlook Pop up" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/02/Pop-up-300x107.png?resize=300%2C107" alt="" width="300" height="107" srcset="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/02/Pop-up.png?resize=300%2C107&ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/02/Pop-up.png?w=550&ssl=1 550w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/02/Pop-up.png)
 
 Well that’s history starting from Exchange 2013. This since the server value does not change anymore. So if an administrator decides to move a mailbox the user won&#8217;t be prompted to restart Outlook anymore.
 

@@ -4,7 +4,7 @@ title: Non Delivery Report codes
 date: 2008-10-12T21:18:58+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=901
+guid: http://myuclab.nl/?p=901
 permalink: /non-delivery-report-codes/
 categories:
   - Exchange

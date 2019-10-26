@@ -4,12 +4,12 @@ title: Congratulations 2009 Microsoft MVP!
 date: 2009-07-01T22:29:59+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1245
+guid: http://myuclab.nl/?p=1245
 permalink: /congratulations-2009-microsoft-mvp/
 categories:
   - Blog
 ---
-<img class="alignnone size-full wp-image-1246" title="MVP logo" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2009/07/mvplogo.gif?resize=115%2C180" alt="MVP logo" width="115" height="180" data-recalc-dims="1" />
+<img class="alignnone size-full wp-image-1246" title="MVP logo" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2009/07/mvplogo.gif?resize=115%2C180" alt="MVP logo" width="115" height="180" data-recalc-dims="1" />
 
 Today I received the e-mail below:
 

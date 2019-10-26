@@ -4,7 +4,7 @@ title: Tools for Exchange 2010
 date: 2009-11-11T23:24:29+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1386
+guid: http://myuclab.nl/?p=1386
 permalink: /tools-for-exchange-2010/
 categories:
   - Exchange

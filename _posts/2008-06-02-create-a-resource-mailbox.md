@@ -4,7 +4,7 @@ title: Create a resource mailbox
 date: 2008-06-02T20:14:47+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=365
+guid: http://myuclab.nl/?p=365
 permalink: /resource-mailbox-aanmaken/
 categories:
   - Exchange
@@ -13,25 +13,25 @@ In the previous versions of Exchange you need to do some tricks to create a reso
 
 First we will add a box via the <em>Exchange Management Console</em>. This goes nearly the same as creating a user, select one other option and you have a resource mailbox.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_1.jpg"><img class="alignnone size-thumbnail wp-image-356" title="New mailbox (room)" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_1-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/step_1.jpg"><img class="alignnone size-thumbnail wp-image-356" title="New mailbox (room)" src="https://myuclab.nl/wp-content/uploads/2008/06/step_1-150x150.jpg" alt="" width="150" height="150" /></a>
 
 In the first field we choose for a <em>room</em> or <em>equipment</em> <em>mailbox</em> in this example we choose for a <em>room mailbox</em>. And we will click <em>next </em>to continue.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_2.jpg"><img class="alignnone size-thumbnail wp-image-357" title="New user" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_2-150x150.jpg" alt="" width="150" height="150" /></a><a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_6.jpg"></a><a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_5.jpg"></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/step_2.jpg"><img class="alignnone size-thumbnail wp-image-357" title="New user" src="https://myuclab.nl/wp-content/uploads/2008/06/step_2-150x150.jpg" alt="" width="150" height="150" /></a><a href="https://myuclab.nl/wp-content/uploads/2008/06/step_6.jpg"></a><a href="https://myuclab.nl/wp-content/uploads/2008/06/step_5.jpg"></a>
 
 In the next screen you have the ability to create a new user or assign the box to an existing user. We will create a new user.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_3.jpg"><img class="alignnone size-thumbnail wp-image-358" title="New mailbox" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_3-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/step_3.jpg"><img class="alignnone size-thumbnail wp-image-358" title="New mailbox" src="https://myuclab.nl/wp-content/uploads/2008/06/step_3-150x150.jpg" alt="" width="150" height="150" /></a>
 
 The next step will be providing the user details, in this case we will create a user called <em>boardroom</em>. The password is pure formality and you don't need it in most cases especially when you create a box which autoaccepts meetingrequests.
 
 Click on <em>next </em>when ready
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_4.jpg"><em><img class="alignnone size-thumbnail wp-image-359" title="Mailbox settings" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_4-150x150.jpg" alt="" width="150" height="150" /></em></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/step_4.jpg"><em><img class="alignnone size-thumbnail wp-image-359" title="Mailbox settings" src="https://myuclab.nl/wp-content/uploads/2008/06/step_4-150x150.jpg" alt="" width="150" height="150" /></em></a>
 
 In the <em>mailbox settings</em> screen we decide on which <em>mailbox server</em> the mailbox will be created and in which <em>storage group </em>and<em> mailbox database</em>. The two policy options you mostly don't user while creating a <em>resource mailbox.</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_5.jpg"><img class="alignnone size-thumbnail wp-image-360" title="Mailbox created" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_5-150x150.jpg" alt="" width="150" height="150" /></a><a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_6.jpg"></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/step_5.jpg"><img class="alignnone size-thumbnail wp-image-360" title="Mailbox created" src="https://myuclab.nl/wp-content/uploads/2008/06/step_5-150x150.jpg" alt="" width="150" height="150" /></a><a href="https://myuclab.nl/wp-content/uploads/2008/06/step_6.jpg"></a>
 
 A few times clicking on next and the <em>resource mailbox</em> is created.
 
@@ -62,11 +62,11 @@ Set-ResourceConfig -DomainController fqdn.dc -ResourcePropertySchema ('Room/16Se
 
 The next step will be to assign the accesoires to the <em>resource mailbox</em>. This can be done within the  <em>Exchange Management Console</em>. First we will need to get the <em>properties </em>of the <em>resource mailbox </em>and click on the tab <em>Resource Information</em>.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_61.jpg"><img class="alignnone size-thumbnail wp-image-363" title="Resource information" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_61-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/step_61.jpg"><img class="alignnone size-thumbnail wp-image-363" title="Resource information" src="https://myuclab.nl/wp-content/uploads/2008/06/step_61-150x150.jpg" alt="" width="150" height="150" /></a>
 
 In the screen that opens you can click <em>Add</em> to add accessoires to the object:
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_7.jpg"><img class="alignnone size-thumbnail wp-image-364" title="Select Resource" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/step_7-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/step_7.jpg"><img class="alignnone size-thumbnail wp-image-364" title="Select Resource" src="https://myuclab.nl/wp-content/uploads/2008/06/step_7-150x150.jpg" alt="" width="150" height="150" /></a>
 
 A new windows will be opened where we can select the beamer we just created and assign it to the <em>resource mailbox</em>.
 

@@ -4,7 +4,7 @@ title: 'A while ago &#8230;'
 date: 2009-07-22T21:00:26+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1271
+guid: http://myuclab.nl/?p=1271
 permalink: /a-while-ago/
 categories:
   - Exchange

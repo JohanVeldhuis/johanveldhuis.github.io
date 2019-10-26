@@ -4,7 +4,7 @@ title: PrepareAD has either not been run or has not been replicated
 date: 2010-02-08T22:14:51+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1838
+guid: http://myuclab.nl/?p=1838
 permalink: /preparead-has-either-not-been-run-of-has-not-been-replicated/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: How to test smtp with telnet
 date: 2009-04-05T21:18:06+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1146
+guid: http://myuclab.nl/?p=1146
 permalink: /how-to-test-smtp-with-telnet/
 categories:
   - Blog

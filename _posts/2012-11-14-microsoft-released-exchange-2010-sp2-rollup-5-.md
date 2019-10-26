@@ -4,7 +4,7 @@ title: Microsoft releases Exchange 2010 SP2 Rollup 5
 date: 2012-11-14T20:55:35+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2592
+guid: http://myuclab.nl/?p=2592
 permalink: /microsoft-releases-exchange-2010-sp2-rollup-5/
 categories:
   - Exchange

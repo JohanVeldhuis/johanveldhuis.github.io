@@ -52,7 +52,7 @@
 			</a>
 			
 			
-			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope"></i>
 			</a>
 			
@@ -118,7 +118,7 @@
 		
 		
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+			<a class="btn btn-default btn-sm" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
@@ -162,7 +162,7 @@
 
 <p>After testing the same functionality on the Exchange 2010 SP3 server I found out that it worked correctly on that side. After some research the solution was pretty easy. As you might know Exchange contains a few special mailboxes. These mailboxes can’t be seen in the GUI and can only be found using the <em>Get-Mailbox</em> cmdlet and using the _-arbitration _option.</p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/arbitration-mailboxes.png"><img alt="get-mailbox -arbitration" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/arbitration-mailboxes-300x39.png?resize=300%2C39" width="300" height="39" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/04/arbitration-mailboxes.png"><img alt="get-mailbox -arbitration" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/arbitration-mailboxes-300x39.png?resize=300%2C39" width="300" height="39" data-recalc-dims="1" /></a></p>
 
 <p>When you have implemented Exchange 2013 in your current Exchange 2010 environment it is important to move the mailbox _SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9} _to a database hosted on an Exchange 2013 mailbox server.</p>
 
@@ -172,7 +172,7 @@
 
 <p>Once the move request has migtrated the mailbox it might be necessary to restart the search. When looking at the status of the e-discovery now you will see that it proceeds and finally gets the status <em>completed</em>:</p>
 
-<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/get-mailboxsearch.png"><img alt="get-mailboxsearch" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/get-mailboxsearch-300x37.png?resize=300%2C37" width="300" height="37" data-recalc-dims="1" /></a></p>
+<p><a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/get-mailboxsearch.png"><img alt="get-mailboxsearch" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/04/get-mailboxsearch-300x37.png?resize=300%2C37" width="300" height="37" data-recalc-dims="1" /></a></p>
 
 <p>In the Technet documentation you will find a small description about this functionality. Using the e-discovery functionality in a coexistence scenario it is important to know that the mailbox search created on the Exchange 2013 environment can only be used to search Exchange 2013 mailboxes. If you would like to search the Exchange 2010 mailboxes you will need to perform a seperate e-discovery.</p>
 

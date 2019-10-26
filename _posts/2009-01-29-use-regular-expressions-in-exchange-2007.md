@@ -4,7 +4,7 @@ title: Use regular expressions in Exchange 2007
 date: 2009-01-29T00:47:03+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1042
+guid: http://myuclab.nl/?p=1042
 permalink: /use-regular-expressions-in-exchange-2007/
 categories:
   - Exchange

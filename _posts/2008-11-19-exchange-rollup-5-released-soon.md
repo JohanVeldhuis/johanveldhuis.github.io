@@ -4,7 +4,7 @@ title: Exchange Rollup 5 released soon
 date: 2008-11-19T23:56:55+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=945
+guid: http://myuclab.nl/?p=945
 permalink: /exchange-rollup-5-released-soon/
 categories:
   - Exchange

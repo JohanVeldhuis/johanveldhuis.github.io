@@ -4,7 +4,7 @@ title: Prepare Windows 2008 for Exchange 2007
 date: 2009-02-17T00:29:34+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1094
+guid: http://myuclab.nl/?p=1094
 permalink: /prepare-windows-2008-for-exchange-2007/
 categories:
   - Exchange

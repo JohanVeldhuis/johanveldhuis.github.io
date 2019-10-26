@@ -4,7 +4,7 @@ title: Fortimail solves backscattering
 date: 2008-09-30T22:36:51+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=868
+guid: http://myuclab.nl/?p=868
 permalink: /fortimail-solves-backscattering/
 categories:
   - Blog

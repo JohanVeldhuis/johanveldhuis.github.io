@@ -4,7 +4,7 @@ title: 'The Exchange 2013 alphabet: Database Availability Group &#8211; part 1'
 date: 2013-04-14T21:57:48+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2749
+guid: http://myuclab.nl/?p=2749
 permalink: /the-exchange-2013-alphabet-database-availability-group-part-1/
 categories:
   - Exchange
@@ -83,7 +83,7 @@ We already talked about the multiple copies of a database but how does this work
 
 OK enough theory let’s have a look at some examples. The easiest example is a DAG within a datacenter which contains 3 multirole Exchange 2013 servers. Each server contains a copy of each database. The preferences of the databases have been configured in a way that during normal operation each server will only host one active copy:
 
-[<img class="alignnone size-medium wp-image-3142" alt="DAG_3_Members_One_AD_Site" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/DAG_3_Members_One_AD_Site1-300x277.jpg?resize=300%2C277" width="300" height="277" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/DAG_3_Members_One_AD_Site1.jpg?resize=300%2C277&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/DAG_3_Members_One_AD_Site1.jpg?w=484&ssl=1 484w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/DAG_3_Members_One_AD_Site1.jpg)
+[<img class="alignnone size-medium wp-image-3142" alt="DAG_3_Members_One_AD_Site" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/DAG_3_Members_One_AD_Site1-300x277.jpg?resize=300%2C277" width="300" height="277" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/DAG_3_Members_One_AD_Site1.jpg?resize=300%2C277&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/DAG_3_Members_One_AD_Site1.jpg?w=484&ssl=1 484w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/DAG_3_Members_One_AD_Site1.jpg)
 
 Let’s assume one of the nodes has an issue and would need to be taken down for maintenance. No problem just put the node in maintenance and the PAM will ensure the database will be moved to another server.
 
@@ -91,7 +91,7 @@ After the maintenance has been performed on the server just stop the maintenance
 
 In the next example we will have our DAG members spread across two different datacenters. Each datacenter is defined as an AD site. We are still having 3 multirole servers in our Exchange 2013 environment. The only difference with the first example is that two of them are located in the primary datacenter and the third one in the secondary datacenter. The second data center is used for disaster recovery purposes:
 
-[<img class="alignnone size-medium wp-image-3143" alt="DAG_3_Members_Multi_AD_sites" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/DAG_3_Members_Multi_AD_sites-300x206.jpg?resize=300%2C206" width="300" height="206" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/DAG_3_Members_Multi_AD_sites.jpg?resize=300%2C206&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/DAG_3_Members_Multi_AD_sites.jpg?w=493&ssl=1 493w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/DAG_3_Members_Multi_AD_sites.jpg)
+[<img class="alignnone size-medium wp-image-3143" alt="DAG_3_Members_Multi_AD_sites" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/DAG_3_Members_Multi_AD_sites-300x206.jpg?resize=300%2C206" width="300" height="206" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/DAG_3_Members_Multi_AD_sites.jpg?resize=300%2C206&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/DAG_3_Members_Multi_AD_sites.jpg?w=493&ssl=1 493w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/DAG_3_Members_Multi_AD_sites.jpg)
 
 Let’s assume the WAN link goes down in this scenario. Think of the formula what do you think will happen? Right the users can access their mailbox. Let’s use the formula (3/2)+1 = 2.5 which can be rounded down to 2. Which means at least two mailbox servers of a combination of one FSW and one mailbox server should be online. But if the complete primary data center burns down we will need to follow the procedure as described next.
 

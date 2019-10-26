@@ -4,12 +4,12 @@ title: Congratulations 2013 Microsoft MVP!
 date: 2013-07-01T20:36:34+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3217
+guid: http://myuclab.nl/?p=3217
 permalink: /congratulations-2013-microsoft-mvp/
 categories:
   - Blog
 ---
-[<img alt="Microsoft-MVP-badge" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Microsoft-MVP-badge.png?resize=120%2C49" width="120" height="49" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Microsoft-MVP-badge.png)
+[<img alt="Microsoft-MVP-badge" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/04/Microsoft-MVP-badge.png?resize=120%2C49" width="120" height="49" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/04/Microsoft-MVP-badge.png)
 
 Today I received the MVP (Most Valuable Professional) award for the 5th time from Microsoft. This award is valid for one year and each year you have to earn it again.
   

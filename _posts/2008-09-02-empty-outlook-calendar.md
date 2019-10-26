@@ -4,7 +4,7 @@ title: Empty the Outlook calender
 date: 2008-09-02T20:14:38+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=771
+guid: http://myuclab.nl/?p=771
 permalink: /empty-outlook-calendar/
 categories:
   - Exchange

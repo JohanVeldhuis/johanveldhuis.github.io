@@ -4,12 +4,12 @@ title: Enable-AntispamUpdates
 date: 2008-09-04T22:19:53+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=778
+guid: http://myuclab.nl/?p=778
 permalink: /enable-antispamupdates/
 categories:
   - Exchange
 ---
-[<img class="alignnone size-thumbnail wp-image-779" title="get-antispam" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/09/get-antispam-150x128.jpg?resize=150%2C128" alt="" width="150" height="128" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/09/get-antispam.jpg?resize=150%2C128&ssl=1 150w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/09/get-antispam.jpg?zoom=2&resize=150%2C128&ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/09/get-antispam.jpg?zoom=3&resize=150%2C128&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/09/get-antispam.jpg)
+[<img class="alignnone size-thumbnail wp-image-779" title="get-antispam" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2008/09/get-antispam-150x128.jpg?resize=150%2C128" alt="" width="150" height="128" srcset="https://i1.wp.com/myuclab.nl/wp-content/uploads/2008/09/get-antispam.jpg?resize=150%2C128&ssl=1 150w, https://i1.wp.com/myuclab.nl/wp-content/uploads//customers/myuclab.nl/myuclab.nl/httpd.www/wp-content/uploads/2008/09/get-antispam.jpg?zoom=2&resize=150%2C128&ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads//customers/myuclab.nl/myuclab.nl/httpd.www/wp-content/uploads/2008/09/get-antispam.jpg?zoom=3&resize=150%2C128&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2008/09/get-antispam.jpg)
 
 In Exchange 2007 you can activate the anti-spams on the Edge Transport or Hub Transport server. Via Microsoft update you can update the agents, spammers are developing their techniques daily. With the command _Get-AntispamUpdate_ you can get the current settings.
 

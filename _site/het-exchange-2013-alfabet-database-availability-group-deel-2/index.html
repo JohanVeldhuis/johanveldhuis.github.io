@@ -52,7 +52,7 @@
 			</a>
 			
 			
-			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope"></i>
 			</a>
 			
@@ -118,7 +118,7 @@
 		
 		
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+			<a class="btn btn-default btn-sm" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
@@ -182,7 +182,7 @@
 
 <p><strong>Remark:</strong> If the Windows Failover Clustering components are missing the cmdlet will install then automatically. Keep in mind that this might require a restart of your Exchange Server. The cmdlet will in that case only install the components and will not add the server to the DAG. So if the server is rebooted run the cmdlet again to add the server to the DAG. However it may not be required to reboot the server in that case the server will be added to the DAG directly.</p>
 
-<p><em><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Add-DatabaseAvailabilityGroupServer.png"><img alt="Add-DatabaseAvailabilityGroupServer" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Add-DatabaseAvailabilityGroupServer-300x106.png?resize=300%2C106" width="300" height="106" data-recalc-dims="1" /></a></em></p>
+<p><em><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/Add-DatabaseAvailabilityGroupServer.png"><img alt="Add-DatabaseAvailabilityGroupServer" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/Add-DatabaseAvailabilityGroupServer-300x106.png?resize=300%2C106" width="300" height="106" data-recalc-dims="1" /></a></em></p>
 
 <p>Once the first server is completed repeat the same step for the other server:</p>
 
@@ -192,7 +192,7 @@
 
 <p><em>Add-MailboxDatabaseCopy -Identity MBDB01 -MailboxServer EX02 -ActivationPreference 2</em></p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Add-MailboxDatabaseCopy.png"><img alt="Add-MailboxDatabaseCopy" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Add-MailboxDatabaseCopy-300x13.png?resize=300%2C13" width="300" height="13" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/04/Add-MailboxDatabaseCopy.png"><img alt="Add-MailboxDatabaseCopy" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/Add-MailboxDatabaseCopy-300x13.png?resize=300%2C13" width="300" height="13" data-recalc-dims="1" /></a></p>
 
 <p>After the copy is added you will need to restart the <em>Microsoft Exchange Information Store</em> service on the target server. This has to do with the “Managed Store” as introduced in Exchange 2013. Collegue Exchange MVP Tony Redmond published a nice blog. So if you want to know the indept details I recommend to visit<a href="http://windowsitpro.com/blog/why-exchange-2013-asks-you-restart-information-store-after-creating-new-database"> this</a> page.</p>
 
@@ -204,7 +204,7 @@
 
 <p>Once the cmdlets have been ran you can use the <em>Get-MailboxDatabaseCopyStatus</em> cmdlet to verify the status of the databases and its copies:</p>
 
-<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Get-MailboxDatabaseCopyStatus.png"><img alt="Get-MailboxDatabaseCopyStatus" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Get-MailboxDatabaseCopyStatus-300x28.png?resize=300%2C28" width="300" height="28" data-recalc-dims="1" /></a></p>
+<p><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/Get-MailboxDatabaseCopyStatus.png"><img alt="Get-MailboxDatabaseCopyStatus" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/Get-MailboxDatabaseCopyStatus-300x28.png?resize=300%2C28" width="300" height="28" data-recalc-dims="1" /></a></p>
 
 <p>In the example above the first copy is mounted and the content index state is healthy. However for the second copy of the database the content index is FailedAndSuspended. In case of a *over this results in users who will start to have issues when searching their mailbox.</p>
 
@@ -214,23 +214,23 @@
 
 <p>After the confirmation the catalog will be updated on the second copy:</p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Add-MailboxDatabaseCopy.png"><img alt="Add-MailboxDatabaseCopy" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Add-MailboxDatabaseCopy-300x13.png?resize=300%2C13" width="300" height="13" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/04/Add-MailboxDatabaseCopy.png"><img alt="Add-MailboxDatabaseCopy" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/Add-MailboxDatabaseCopy-300x13.png?resize=300%2C13" width="300" height="13" data-recalc-dims="1" /></a></p>
 
 <p>Let’s look at another issue:</p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Get-MailboxDatabaseCopyStatus-2.png"><img alt="Get-MailboxDatabaseCopyStatus" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Get-MailboxDatabaseCopyStatus-2-300x9.png?resize=300%2C9" width="300" height="9" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/04/Get-MailboxDatabaseCopyStatus-2.png"><img alt="Get-MailboxDatabaseCopyStatus" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/Get-MailboxDatabaseCopyStatus-2-300x9.png?resize=300%2C9" width="300" height="9" data-recalc-dims="1" /></a></p>
 
 <p>In this case the second copy failed completely so we do have to update both the database and the catalog:</p>
 
 <p><em>Update-MailboxDatabaseCopy -Identity MBDB02\EX01</em></p>
 
-<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Update-MailboxDatabaseCopy.png"><img alt="Update-MailboxDatabaseCopy" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Update-MailboxDatabaseCopy-300x86.png?resize=300%2C86" width="300" height="86" data-recalc-dims="1" /></a></p>
+<p><a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/Update-MailboxDatabaseCopy.png"><img alt="Update-MailboxDatabaseCopy" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/Update-MailboxDatabaseCopy-300x86.png?resize=300%2C86" width="300" height="86" data-recalc-dims="1" /></a></p>
 
 <p>After confirming the reseed is performed and both the database and catalog should be healthy again.</p>
 
 <p>If we want to perform maintenance on the DAG members we will need to put the member in maintenance mode. This can be done by using the <em>StartDagServerMaintenance</em> script which can be found in the default script directory of Exchange.</p>
 
-<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/StartDagServerMaintenance.png"><img alt="StartDagServerMaintenance" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/StartDagServerMaintenance-300x23.png?resize=300%2C23" width="300" height="23" data-recalc-dims="1" /></a></p>
+<p><a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/04/StartDagServerMaintenance.png"><img alt="StartDagServerMaintenance" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/StartDagServerMaintenance-300x23.png?resize=300%2C23" width="300" height="23" data-recalc-dims="1" /></a></p>
 
 <p>By adding the <em>Server</em> parameter we can specify a server which we would like to put in maintenance. Once this is done it will check if the PAM role and which databases are currently activated on the server and will try to move them to another DAG member.</p>
 
@@ -242,7 +242,7 @@
 
 <p><em>Move-ActiveMailboxDatabase MBDB02 –ActivateOnServer EX02</em></p>
 
-<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Move-ActiveMailboxDatabase.png"><img alt="Move-ActiveMailboxDatabase" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/04/Move-ActiveMailboxDatabase-300x49.png?resize=300%2C49" width="300" height="49" data-recalc-dims="1" /></a></p>
+<p><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/Move-ActiveMailboxDatabase.png"><img alt="Move-ActiveMailboxDatabase" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/04/Move-ActiveMailboxDatabase-300x49.png?resize=300%2C49" width="300" height="49" data-recalc-dims="1" /></a></p>
 
 <p>After confirming the activation on the other server the database will be moved to <em>EX02.</em></p>
 

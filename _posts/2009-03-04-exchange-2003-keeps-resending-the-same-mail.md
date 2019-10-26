@@ -4,7 +4,7 @@ title: Exchange 2003 keeps resending the same mail
 date: 2009-03-04T20:23:12+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1126
+guid: http://myuclab.nl/?p=1126
 permalink: /exchange-2003-keeps-resending-the-same-mail/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: Cannot start the Microsoft Exchange Transport service
 date: 2008-11-07T21:57:08+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=939
+guid: http://myuclab.nl/?p=939
 permalink: /cannot-start-the-microsoft-exchange-transport-service/
 categories:
   - Exchange

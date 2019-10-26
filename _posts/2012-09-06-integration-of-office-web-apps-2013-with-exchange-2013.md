@@ -4,7 +4,7 @@ title: Office Web Apps 2013 integration with Exchange 2013
 date: 2012-09-06T20:38:01+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2518
+guid: http://myuclab.nl/?p=2518
 permalink: /integration-of-office-web-apps-2013-with-exchange-2013/
 categories:
   - Exchange

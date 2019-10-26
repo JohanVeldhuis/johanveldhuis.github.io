@@ -4,7 +4,7 @@ title: Redmond my mailbox is quarantined
 date: 2012-06-20T21:53:35+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2464
+guid: http://myuclab.nl/?p=2464
 permalink: /redmond-my-mailbox-is-quarantined/
 categories:
   - Exchange

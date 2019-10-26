@@ -4,7 +4,7 @@ title: 'Can&#8217;t delete custom GAL'
 date: 2008-11-24T22:41:11+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=951
+guid: http://myuclab.nl/?p=951
 permalink: /cannot-delete-custom-gal/
 categories:
   - Exchange

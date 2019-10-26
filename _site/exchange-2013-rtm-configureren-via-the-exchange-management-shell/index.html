@@ -52,7 +52,7 @@
 			</a>
 			
 			
-			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope"></i>
 			</a>
 			
@@ -118,7 +118,7 @@
 		
 		
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+			<a class="btn btn-default btn-sm" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
@@ -159,14 +159,14 @@
 <p>We will start with configuring the accepted domains, the domains for which Exchange will accept e-mail. By default the Active Directory domain is added. If you have corp.local as Active Directory domain this will be added as authoritative accepted domain to Exchange:</p>
 
 <p align="center">
-  <img title="get-accepteddomain" alt="" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/get_accepteddomain-300x29.png?resize=300%2C29" width="300" height="29" data-recalc-dims="1" />
+  <img title="get-accepteddomain" alt="" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/10/get_accepteddomain-300x29.png?resize=300%2C29" width="300" height="29" data-recalc-dims="1" />
 </p>
 
 <p>Authoritative means that Exchange is the only mail server which is responsible for this domain. When a message is sent to a non-existing user Exchange will reply with an error message immediately.</p>
 
 <p>Because in most cases the Active Directory domain is not the same as the mail domain we will first need to add it. This can be done by using the <em>New-AcceptedDomain</em> cmdlet, for example:</p>
 
-<p><em>New-AcceptedDomain -DomainName johanveldhuis.nl -DomainType authoritative -Name johanveldhuis.nl</em></p>
+<p><em>New-AcceptedDomain -DomainName myuclab.nl -DomainType authoritative -Name myuclab.nl</em></p>
 
 <p>The parameter <em>DomainName</em> specifies the domain, <em>DomainType</em> will tell Exchange to configure it as an authoritative domain and with the last parameter <em>name</em> we specify the name of the domain this makes it easier to identity it in the GUI and Shell.</p>
 
@@ -181,15 +181,15 @@
 
 <p>To create a new e-mail address policy we will use the <em>New-EmailAddressPolicy</em> cmdlet:</p>
 
-<p><em>New-EmailAddressPolicy -Name “johanveldhuis.nl” -IncludedRecipients MailboxUsers -ConditionalCompany “Johan Veldhuis” -EnabledEmailAddressTemplates “SMTP:%g.%s@johanveldhuis.nl”</em></p>
+<p><em>New-EmailAddressPolicy -Name “myuclab.nl” -IncludedRecipients MailboxUsers -ConditionalCompany “Johan Veldhuis” -EnabledEmailAddressTemplates “SMTP:%g.%s@myuclab.nl”</em></p>
 
-<p>In this example we will create an e-mail address policy with the name <em>johanveldhuis.nl.</em> This policy will be applied to all Mailbox users so not to contacts or mail-enabled users. We will add a filter using the ConditionalCompany. As last parameter we will specify the format of the e-mail address. In this case givenname.surename_@johanveldhuis.nl._ A complete overview of variables which can be used can be found <a href="http://technet.microsoft.com/en-us/library/bb232171.aspx" target="_blank">here</a>.</p>
+<p>In this example we will create an e-mail address policy with the name <em>myuclab.nl.</em> This policy will be applied to all Mailbox users so not to contacts or mail-enabled users. We will add a filter using the ConditionalCompany. As last parameter we will specify the format of the e-mail address. In this case givenname.surename_@myuclab.nl._ A complete overview of variables which can be used can be found <a href="http://technet.microsoft.com/en-us/library/bb232171.aspx" target="_blank">here</a>.</p>
 
 <p>Now we have added the accepted domain and e-mail address policy it’s time to configure the internal and external URL’s.  In this example we will use the following URL’s:</p>
 
 <ul>
-  <li>webmail.johanveldhuis.nl: for Outlook Web App and the Exchange Control Panel</li>
-  <li>mail.johanveldhuis.nl: for EWS, the Offline Address Book and ActiveSync</li>
+  <li>webmail.myuclab.nl: for Outlook Web App and the Exchange Control Panel</li>
+  <li>mail.myuclab.nl: for EWS, the Offline Address Book and ActiveSync</li>
 </ul>
 
 <p>We don’t configure Outlook Anywhere we will discuss this in a future blog.</p>
@@ -198,43 +198,43 @@
 
 <p><strong>Set-OwaVirtualDirectory:</strong></p>
 
-<p><em>Set-OwaVirtualDirectory -identity “EXCHANGE\owa (Default Web Site)” -InternalUrl</em> <em>https://webmail.johanveldhuis.nl/owa</em> <em>-ExternalUrl</em> <em>https://webmail.johanveldhuis.nl/owa</em></p>
+<p><em>Set-OwaVirtualDirectory -identity “EXCHANGE\owa (Default Web Site)” -InternalUrl</em> <em>https://webmail.myuclab.nl/owa</em> <em>-ExternalUrl</em> <em>https://webmail.myuclab.nl/owa</em></p>
 
 <p align="center">
-   <img title="Set-OwaVirtualDirectory" alt="" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/set-owavirtualdirectory-300x24.png?resize=300%2C24" width="300" height="24" data-recalc-dims="1" />
+   <img title="Set-OwaVirtualDirectory" alt="" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/10/set-owavirtualdirectory-300x24.png?resize=300%2C24" width="300" height="24" data-recalc-dims="1" />
 </p>
 
 <p>When running the cmdlet above you will receive a warning that you also must change the url of the ECP virtual directory.</p>
 
 <p><strong>Set-EcpVirtualDirectory:</strong></p>
 
-<p><em>Set-EcpVirtualDirectory -identity “EXCHANGE\ecp (Default Web Site)” -InternalUrl https://webmail.johanveldhuis.nl/ecp</em>  <em>-ExternalUrl https://webmail.johanveldhuis.nl/ecp</em></p>
+<p><em>Set-EcpVirtualDirectory -identity “EXCHANGE\ecp (Default Web Site)” -InternalUrl https://webmail.myuclab.nl/ecp</em>  <em>-ExternalUrl https://webmail.myuclab.nl/ecp</em></p>
 
 <p><strong>Set-WebServicesVirtualDirectory:</strong></p>
 
 <p><em>Set-WebServicesVirtualDirectory -identity “EXCHANGE\EWS (Default Web Site)” -InternalUrl</em></p>
 
-<p>https://mail.johanveldhuis.nl/EWS/Exchange.asmx -ExternalUrl</p>
+<p>https://mail.myuclab.nl/EWS/Exchange.asmx -ExternalUrl</p>
 
-<p>https://mail.johanveldhuis.nl/EWS/Exchange.asmx</p>
+<p>https://mail.myuclab.nl/EWS/Exchange.asmx</p>
 
 <p><strong>Set-OabVirtualDirectory:</strong></p>
 
 <p><em>Set-OabVirtualDirectory -identity “EXCHANGE\OAB (Default Web Site)” -InternalUrl</em></p>
 
-<p>https://mail.johanveldhuis.nl/OAB  -ExternalUrl</p>
+<p>https://mail.myuclab.nl/OAB  -ExternalUrl</p>
 
-<p>https://mail.johanveldhuis.nl/OAB</p>
+<p>https://mail.myuclab.nl/OAB</p>
 
 <p><strong>Set-ActiveSyncVirtualDirectory:</strong></p>
 
 <p><em>Set-ActiveSyncVirtualDirectory -identity “EXCHANGE\Microsoft-Server-ActiveSync (Default Web</em></p>
 
-<p>Site)” -Internalurl https://mail.johanveldhuis.nl/Microsoft-Server-ActiveSync  -Externalurl https://mail.johanveldhuis.nl/Microsoft-Server-ActiveSync</p>
+<p>Site)” -Internalurl https://mail.myuclab.nl/Microsoft-Server-ActiveSync  -Externalurl https://mail.myuclab.nl/Microsoft-Server-ActiveSync</p>
 
 <p>As last step we will need to reconfigure the autodiscover URL. For those of you who are familiar with Exchange 2007 and higher this will be no surprise. For those who don’t Exchange will offer autodiscover functionality for auto configure Outlook/Entourage clients. By default a service connection point (SCP) is created. This SCP has the value in the following format http://serverfqdn/autodiscover/autodiscover.xml. Because this will create a single point of failure in a HA environment this has to be reconfigured. Although in our scenario we don’t have a HA environment yet we will reconfigure the autodiscover URL using the <em>Set-ClientAccessServer</em> cmdlet:</p>
 
-<p><em>Set-ClientAccessServer –AutodiscoverInternalUri https://autodiscover.johanveldhuis.nl/autodiscover/autodiscover.xml</em>__</p>
+<p><em>Set-ClientAccessServer –AutodiscoverInternalUri https://autodiscover.myuclab.nl/autodiscover/autodiscover.xml</em>__</p>
 
 <p>Now all URL’s have been configured correctly it’s time to request a new certificate. This because Exchange 2013 has a self-signed certificate by default.</p>
 
@@ -242,7 +242,7 @@
 
 <p><em>$newcert = New-ExchangeCertificate -GenerateRequest -SubjectName</em></p>
 
-<p><em>“c=NL,o=Johan Veldhuis,cn=webmail.johanveldhuis.nl” -DomainName “autodiscover.johanveldhuis.nl”,”mail.johanveldhuis.nl”  -PrivateKeyExportable $true</em></p>
+<p><em>“c=NL,o=Johan Veldhuis,cn=webmail.myuclab.nl” -DomainName “autodiscover.myuclab.nl”,”mail.myuclab.nl”  -PrivateKeyExportable $true</em></p>
 
 <p>In the example above we will store the request in a variable called <em>$newcert.</em> Because we want to have the option to install this certificate on another server we also specify that we want to be able to export the certificate including the private key.</p>
 

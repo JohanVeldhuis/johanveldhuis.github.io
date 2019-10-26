@@ -4,7 +4,7 @@ title: Creating backup tasks for Snapmanager for Exchange using a script
 date: 2013-06-09T18:48:13+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3191
+guid: http://myuclab.nl/?p=3191
 permalink: /create-backup-tasks-snapmanager-for-exchange-via-a-script/
 categories:
   - Scripts

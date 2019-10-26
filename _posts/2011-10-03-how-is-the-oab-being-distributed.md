@@ -4,7 +4,7 @@ title: How is the OAB being distributed?
 date: 2011-10-03T20:43:26+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2335
+guid: http://myuclab.nl/?p=2335
 permalink: /how-is-the-oab-being-distributed/
 categories:
   - Exchange
@@ -21,13 +21,13 @@ To find out which server is responsible for generating the OAB you can use two m
   * Select the _Mailbox_ object
   * Select the tab _Offline Address Book_
 
-_[<img title="Exchange Management Console: Offline Address Book tab" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/emc_oab-300x17.jpg?resize=300%2C17" alt="" width="300" height="17" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/emc_oab.jpg)_
+_[<img title="Exchange Management Console: Offline Address Book tab" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/09/emc_oab-300x17.jpg?resize=300%2C17" alt="" width="300" height="17" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/09/emc_oab.jpg)_
 
 **Exchange Management Shell (EMS)**
 
   * Run the following cmdlet _get-offlineaddressbook | select name,server_
 
-_[<img title="Exchange Management Shell: oab" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/ems_oab-300x38.jpg?resize=300%2C38" alt="" width="300" height="38" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/ems_oab.jpg)_
+_[<img title="Exchange Management Shell: oab" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/09/ems_oab-300x38.jpg?resize=300%2C38" alt="" width="300" height="38" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/09/ems_oab.jpg)_
 
 On the generation server you will find the _ExchangeOAB_ directory inside the Exchange directory. In this directory another folder is created. The name of this directory is the GUID from the OAB. Inside this directory several files are stored:
 
@@ -77,11 +77,11 @@ Update-FileDistributionService -identity servername
 
 Once the cmdlet is executed check the _application_ event log to verify the replication has occured.
 
-[<img title="Update-FileDistributionService" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/update-frs-300x110.jpg?resize=300%2C110" alt="" width="300" height="110" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/update-frs.jpg)
+[<img title="Update-FileDistributionService" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/09/update-frs-300x110.jpg?resize=300%2C110" alt="" width="300" height="110" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/09/update-frs.jpg)
 
 In the screenshot above you can see the data synchronisation has started. In this case the Web distribution has just been enabled but the CAS server doesn&#8217;t have a copy.
 
-[<img title="update-FileReplicationService completed" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/update-frs-completed-300x117.jpg?resize=300%2C117" alt="" width="300" height="117" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/09/update-frs-completed.jpg)
+[<img title="update-FileReplicationService completed" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/09/update-frs-completed-300x117.jpg?resize=300%2C117" alt="" width="300" height="117" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/09/update-frs-completed.jpg)
 
 Once the OAB has been synchronized succesfully you will see the message above in the event log. When you browse to the directory X:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\OAB zal you will find a directory which contains both the oab.xml and addressbook files.
 

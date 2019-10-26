@@ -4,7 +4,7 @@ title: Usefull scripts for use during an Exchange 2010 migration
 date: 2011-07-13T20:16:48+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2279
+guid: http://myuclab.nl/?p=2279
 permalink: /usefull-scripts-for-use-during-an-exchange-2010-migration/
 categories:
   - Exchange

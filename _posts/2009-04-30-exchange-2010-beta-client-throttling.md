@@ -4,7 +4,7 @@ title: 'Exchange 2010 Beta: Client Throttling'
 date: 2009-04-30T20:20:17+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1212
+guid: http://myuclab.nl/?p=1212
 permalink: /exchange-2010-beta-client-throttling/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: 'MapiExceptionInvalidParameter: Unable to set properties on object. (hr=0
 date: 2010-06-19T21:25:42+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1910
+guid: http://myuclab.nl/?p=1910
 permalink: /mapiexceptioninvalidparameter-unable-to-set-properties-on-object-hr0x80070057-ec-2147024809/
 categories:
   - Exchange

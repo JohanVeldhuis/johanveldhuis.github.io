@@ -4,7 +4,7 @@ title: Access is denied. HResult =-2147024891
 date: 2009-09-16T21:28:26+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1329
+guid: http://myuclab.nl/?p=1329
 permalink: /access-is-denied-hresult-2147024891/
 categories:
   - Exchange

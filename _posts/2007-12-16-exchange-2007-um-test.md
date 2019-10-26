@@ -4,7 +4,7 @@ title: Exchange 2007 UM test
 date: 2007-12-16T12:01:39+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=18
+guid: http://myuclab.nl/?p=18
 permalink: /exchange-2007-um-test/
 categories:
   - Exchange

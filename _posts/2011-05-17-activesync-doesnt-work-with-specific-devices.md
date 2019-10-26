@@ -4,7 +4,7 @@ title: 'ActiveSync doesn&#8217;t work for specific devices'
 date: 2011-05-17T21:16:29+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2182
+guid: http://myuclab.nl/?p=2182
 permalink: /activesync-doesnt-work-with-specific-devices/
 categories:
   - Exchange

@@ -52,7 +52,7 @@
 			</a>
 			
 			
-			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope"></i>
 			</a>
 			
@@ -118,7 +118,7 @@
 		
 		
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+			<a class="btn btn-default btn-sm" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
@@ -156,7 +156,7 @@
 	  <div class="article_body">
 	  <p>The OAB Generator of Exchange is responsible for generating the Offline Address Book (OAB). To generate this the service will use information which is found in the Active Directory. When you have a single forest and domain this will not give a lot of issues. But what happens when Exchange is installed in the forest root domain and the users are placed in a child domain? In this case Exchange will contact the domain controllers in the child domain to gather the information.</p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/03/oabgen.jpg"><img title="OABgen error" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/03/oabgen-300x208.jpg?resize=300%2C208" alt="" width="300" height="208" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/03/oabgen.jpg"><img title="OABgen error" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/03/oabgen-300x208.jpg?resize=300%2C208" alt="" width="300" height="208" data-recalc-dims="1" /></a></p>
 
 <p>Exchange will connect to the domain controller by using the netbios name. When the TCP/IP settings are configured using the default value <em>append primary and connection specific DNS suffixes</em> Exchange will not be able to find the domain controller. Which will cause the error above and has as result that the offline address book won’t be generated.</p>
 

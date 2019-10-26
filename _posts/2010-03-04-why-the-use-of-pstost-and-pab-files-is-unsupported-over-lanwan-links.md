@@ -4,7 +4,7 @@ title: Why the use of PST, OST and PAB files is unsupported over LAN/WAN Links
 date: 2010-03-04T19:32:58+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1852
+guid: http://myuclab.nl/?p=1852
 permalink: /why-the-use-of-pstost-and-pab-files-is-unsupported-over-lanwan-links/
 categories:
   - Exchange
@@ -17,7 +17,7 @@ But what does Outlook when a PST is located on the network? Outlook will first t
 
 This will cause a lot of time  for the process to be completed because of all the extra steps.
 
-[<img title="Schema" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/03/pst2.jpg?resize=359%2C57" alt="" width="359" height="57" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/03/pst2.jpg)
+[<img title="Schema" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/03/pst2.jpg?resize=359%2C57" alt="" width="359" height="57" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/03/pst2.jpg)
 
 Besides the performance issues you might  get there are some other things which you should keep in mind:
 

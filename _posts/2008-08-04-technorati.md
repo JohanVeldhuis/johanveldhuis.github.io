@@ -4,7 +4,7 @@ title: Technorati
 date: 2008-08-04T12:21:49+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=501
+guid: http://myuclab.nl/?p=501
 permalink: /technorati/
 categories:
   - Blog

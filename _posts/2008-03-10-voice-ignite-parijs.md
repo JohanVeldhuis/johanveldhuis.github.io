@@ -4,7 +4,7 @@ title: Voice Ignite Paris
 date: 2008-03-10T19:41:06+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=10
+guid: http://myuclab.nl/?p=10
 permalink: /voice-ignite-parijs/
 ratings_users:
   - "0"

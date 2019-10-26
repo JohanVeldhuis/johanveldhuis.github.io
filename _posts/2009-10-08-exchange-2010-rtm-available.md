@@ -4,7 +4,7 @@ title: Exchange 2010 RTM available
 date: 2009-10-08T19:23:34+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1365
+guid: http://myuclab.nl/?p=1365
 permalink: /exchange-2010-rtm-available/
 categories:
   - Exchange

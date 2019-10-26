@@ -4,7 +4,7 @@ title: Organizational forms in Exchange 2007
 date: 2009-04-08T22:38:39+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1168
+guid: http://myuclab.nl/?p=1168
 permalink: /organizational-forms-in-exchange-2007/
 categories:
   - Exchange
@@ -23,41 +23,41 @@ New-PublicFolder -Path "\NON_IPM_SUBTREE\EFORMS REGISTRY" -Name "My Organization
 
 When the library has been succesfully created you will see the same result as below
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2009/04/step1.jpg"><img class="size-thumbnail wp-image-1151 alignnone" title="Organizational forms library" src="https://johanveldhuis.nl/wp-content/uploads/2009/04/step1-150x150.jpg" alt="Organizational forms library" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2009/04/step1.jpg"><img class="size-thumbnail wp-image-1151 alignnone" title="Organizational forms library" src="https://myuclab.nl/wp-content/uploads/2009/04/step1-150x150.jpg" alt="Organizational forms library" width="150" height="150" /></a>
 
 When it is created you can see the folder by using the Public Folder Management Console from Exchange 2007. The folder is created in the Systen Public Folders
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2009/04/step2.jpg"><img class="size-thumbnail wp-image-1152 alignnone" title="System Public Folders" src="https://johanveldhuis.nl/wp-content/uploads/2009/04/step2-150x82.jpg" alt="System Public Folders" width="150" height="82" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2009/04/step2.jpg"><img class="size-thumbnail wp-image-1152 alignnone" title="System Public Folders" src="https://myuclab.nl/wp-content/uploads/2009/04/step2-150x82.jpg" alt="System Public Folders" width="150" height="82" /></a>
 
 When this has succeeded we can start using MFCmapi to continue the configuration.
 
 Start MFCmapi and when asked create a new profile of select an existing one. When logged in with the profile select the <em>session </em>menu and choose the option <em>Logon and Display Store Table. </em>You will see something like below
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2009/04/step3.jpg"><img class="size-thumbnail wp-image-1153 alignnone" title="Store table" src="https://johanveldhuis.nl/wp-content/uploads/2009/04/step3-150x83.jpg" alt="Store table" width="150" height="83" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2009/04/step3.jpg"><img class="size-thumbnail wp-image-1153 alignnone" title="Store table" src="https://myuclab.nl/wp-content/uploads/2009/04/step3-150x83.jpg" alt="Store table" width="150" height="83" /></a>
 
 Select the menu <em>MDB </em>and choose the option <em>Open Public Folder Store </em>and select <em>OK</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2009/04/step4.jpg"><img class="size-thumbnail wp-image-1154 alignnone" title="MDB menu" src="https://johanveldhuis.nl/wp-content/uploads/2009/04/step4-150x150.jpg" alt="MDB menu" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2009/04/step4.jpg"><img class="size-thumbnail wp-image-1154 alignnone" title="MDB menu" src="https://myuclab.nl/wp-content/uploads/2009/04/step4-150x150.jpg" alt="MDB menu" width="150" height="150" /></a>
 
- <a href="https://johanveldhuis.nl/wp-content/uploads/2009/04/step5.jpg"><img class="size-thumbnail wp-image-1155 alignnone" title="Use admin privileges" src="https://johanveldhuis.nl/wp-content/uploads/2009/04/step5-150x105.jpg" alt="Use admin privileges" width="150" height="105" /></a>
+ <a href="https://myuclab.nl/wp-content/uploads/2009/04/step5.jpg"><img class="size-thumbnail wp-image-1155 alignnone" title="Use admin privileges" src="https://myuclab.nl/wp-content/uploads/2009/04/step5-150x105.jpg" alt="Use admin privileges" width="150" height="105" /></a>
 
 An overview of the <em>Public Folder Store table </em>will be displayed<em>. </em>Open the following folders <em>Public Root, NON_IPM_SUBTREE, EFORMS REGISTRY </em>and select the organizational forms library just created. In this case <em>My Organizational Forms Library.</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2009/04/step6.jpg"><img class="size-thumbnail wp-image-1156 alignnone" title="Public Folder Store table" src="https://johanveldhuis.nl/wp-content/uploads/2009/04/step6-150x129.jpg" alt="Public Folder Store table" width="150" height="129" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2009/04/step6.jpg"><img class="size-thumbnail wp-image-1156 alignnone" title="Public Folder Store table" src="https://myuclab.nl/wp-content/uploads/2009/04/step6-150x129.jpg" alt="Public Folder Store table" width="150" height="129" /></a>
 
 When you have selected the correct folder you will need to find the value <em>PR_URL_NAME </em>in the right side of the screen called <em>property name(s). </em>Select the value and choose the menu <em>property pane </em>and choose the option <em>modify extra properties</em>.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2009/04/step7.jpg"><img class="size-thumbnail wp-image-1157 alignnone" title="Modify Extra Properties" src="https://johanveldhuis.nl/wp-content/uploads/2009/04/step7-150x150.jpg" alt="Modify Extra Properties" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2009/04/step7.jpg"><img class="size-thumbnail wp-image-1157 alignnone" title="Modify Extra Properties" src="https://myuclab.nl/wp-content/uploads/2009/04/step7-150x150.jpg" alt="Modify Extra Properties" width="150" height="150" /></a>
 
 A new window will be opened, select the button  <em>select property tag</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2009/04/step8.jpg"><img class="size-thumbnail wp-image-1158 alignnone" title="Select Property tag" src="https://johanveldhuis.nl/wp-content/uploads/2009/04/step8-150x28.jpg" alt="Select Property tag" width="150" height="28" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2009/04/step8.jpg"><img class="size-thumbnail wp-image-1158 alignnone" title="Select Property tag" src="https://myuclab.nl/wp-content/uploads/2009/04/step8-150x28.jpg" alt="Select Property tag" width="150" height="28" /></a>
 
 A new window will be opened again, this windows will contain a long list of <em>properties </em>which can be added. Search for the <em>property PR_EFORMS_LOCAL_ID </em>and choose <em>OK.</em>
 
 Click on the <em>OK </em>button again and startsearching for the <em>property PR_EFORMS_LOCAL_ID</em>, a red cross will be displayed in front of it. Doubleclick on the <em>property, </em>a new window will be opened
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2009/04/step9.jpg"><img class="size-thumbnail wp-image-1159 alignnone" title="Property Editor" src="https://johanveldhuis.nl/wp-content/uploads/2009/04/step10-150x150.jpg" alt="Property Editor" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2009/04/step9.jpg"><img class="size-thumbnail wp-image-1159 alignnone" title="Property Editor" src="https://myuclab.nl/wp-content/uploads/2009/04/step10-150x150.jpg" alt="Property Editor" width="150" height="150" /></a>
 
 In the field <em>unsigned decimal </em>fill in the value of the language the forms library will be used for. In this case English, for a full overview of all languages have a look at the following  <a href="http://msdn2.microsoft.com/en-us/library/aa579489.aspx" target="_blank">page</a> .
 

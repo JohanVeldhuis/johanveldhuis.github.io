@@ -4,7 +4,7 @@ title: Exchange 2010 SP1 Rollup 4 released
 date: 2011-06-22T20:57:19+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2249
+guid: http://myuclab.nl/?p=2249
 permalink: /exchange-2010-sp1-rollup-4-released/
 categories:
   - Exchange

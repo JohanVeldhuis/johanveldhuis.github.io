@@ -4,7 +4,7 @@ title: OWA displays blank screen
 date: 2010-08-18T21:24:31+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1988
+guid: http://myuclab.nl/?p=1988
 permalink: /owa-displays-blank-screen/
 categories:
   - Exchange
@@ -56,10 +56,10 @@ _remove-owavirtualdirectory “owa (Default Web Site)”_
 
 This will remove the virtual directory as you can see in the screenshot below:
 
-[<img class="alignnone size-thumbnail wp-image-1992" title="IIS - Exchange Vdir's" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/08/owa-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/08/owa.jpg)
+[<img class="alignnone size-thumbnail wp-image-1992" title="IIS - Exchange Vdir's" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/08/owa-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/08/owa.jpg)
 
 Once the directory is removed we can create a new one by using the cmdlet below:
 
 _new-owavirtualdirectory -OwaVersion “Exchange2007″ -Name “owa (Default Web Site)”_
 
-This will recreate the OWA virtual directory and if your lucky OWA will work again. This were just 2 options which might cause this issue. If you got the same issue but the above steps didn&#8217;t work contact me so I can add them to this article johan (a) johanveldhuis.nl
+This will recreate the OWA virtual directory and if your lucky OWA will work again. This were just 2 options which might cause this issue. If you got the same issue but the above steps didn&#8217;t work contact me so I can add them to this article johan (a) myuclab.nl

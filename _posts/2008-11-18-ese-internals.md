@@ -4,7 +4,7 @@ title: ESE internals
 date: 2008-11-18T19:52:36+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=942
+guid: http://myuclab.nl/?p=942
 permalink: /ese-internals/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: Microsoft releases first rollup for Exchange 2010
 date: 2009-12-09T22:48:43+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1726
+guid: http://myuclab.nl/?p=1726
 permalink: /microsoft-releases-first-rollup-for-exchange-2010/
 categories:
   - Exchange

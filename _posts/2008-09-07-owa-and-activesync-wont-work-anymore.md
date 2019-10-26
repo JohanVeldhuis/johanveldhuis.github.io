@@ -4,7 +4,7 @@ title: 'OWA and ActiveSync won&#8217;t work anymore'
 date: 2008-09-07T21:04:17+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=817
+guid: http://myuclab.nl/?p=817
 permalink: /owa-and-activesync-wont-work-anymore/
 categories:
   - Exchange

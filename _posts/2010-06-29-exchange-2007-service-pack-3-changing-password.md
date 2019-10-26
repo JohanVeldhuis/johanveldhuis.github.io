@@ -4,7 +4,7 @@ title: 'Exchange 2007 Service Pack 3: changing your password'
 date: 2010-06-29T21:46:58+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1917
+guid: http://myuclab.nl/?p=1917
 permalink: /exchange-2007-service-pack-3-changing-password/
 categories:
   - Exchange
@@ -19,10 +19,10 @@ HLKM\SYSTEM\CurrentControlSet\Services\MSExchange OWA
 
 Create a new DWORD called _ChangeExpiredPasswordEnabled_ and change the value of the key to 1. This should look the same like below:
 
-[<img title="OWA password change feature registry key" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/06/reg.jpg?resize=530%2C60" alt="" width="530" height="60" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/06/reg.jpg)
+[<img title="OWA password change feature registry key" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/06/reg.jpg?resize=530%2C60" alt="" width="530" height="60" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/06/reg.jpg)
 
 During the logon (logon.aspx) a check is done if the password is expired and if this is the case the user will be redirected to expiredpassword.aspx.
 
 Before the user can change his/her password he will first needs to specify the old password. Once the password has change the user will be redirected to his/her mailbox.
 
-[<img title="OWA password change page" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/06/owa-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/06/owa.jpg)
+[<img title="OWA password change page" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/06/owa-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/06/owa.jpg)

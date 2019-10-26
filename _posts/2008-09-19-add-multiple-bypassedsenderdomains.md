@@ -4,7 +4,7 @@ title: Add multiple BypassedSenderDomains
 date: 2008-09-19T22:36:55+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=837
+guid: http://myuclab.nl/?p=837
 permalink: /add-multiple-bypassedsenderdomains/
 categories:
   - Exchange

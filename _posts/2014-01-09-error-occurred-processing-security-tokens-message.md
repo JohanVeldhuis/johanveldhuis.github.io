@@ -4,7 +4,7 @@ title: An error occurred when processing the security tokens in the message
 date: 2014-01-09T22:43:21+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3345
+guid: http://myuclab.nl/?p=3345
 permalink: /error-occurred-processing-security-tokens-message/
 categories:
   - Exchange
@@ -49,7 +49,7 @@ The bold part marks the error in this case _An error occurred when processing th
 
 Microsoft has acknowledged there were some issues earlier this week which not only affected this functionality but also some Office 365 services.
 
-<img alt="Office 365 status" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2014/01/O365_status-300x45.png?resize=300%2C45" width="300" height="45" data-recalc-dims="1" />
+<img alt="Office 365 status" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2014/01/O365_status-300x45.png?resize=300%2C45" width="300" height="45" data-recalc-dims="1" />
 
 Currently a work around is available to fix this issue. To fix the issue you will need to refresh the federation trust metadata. This can be done by using the following Powershell cmdlets:
 

@@ -4,7 +4,7 @@ title: Strange issues with Out of Office
 date: 2008-08-27T20:54:20+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=755
+guid: http://myuclab.nl/?p=755
 permalink: /strange-issues-with-out-of-office/
 categories:
   - Exchange

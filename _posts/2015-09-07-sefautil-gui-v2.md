@@ -4,14 +4,14 @@ title: SefaUtil GUI v2
 date: 2015-09-07T21:26:48+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3368
+guid: http://myuclab.nl/?p=3368
 permalink: /sefautil-gui-v2/
 categories:
   - Scripts
 ---
 With pleasure I present you SefaUtil GUI v2. First thanks to all the beta tester which provided a lot of good feedback which has been incorporated in the tool.
 
-[<img class="alignnone size-medium wp-image-3369" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2-300x161.png?resize=300%2C161" alt="SefaUtil v2" width="300" height="161" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=300%2C161&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=1024%2C550&ssl=1 1024w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=900%2C483&ssl=1 900w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1525&ssl=1 1525w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1254&ssl=1 1254w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png)
+[<img class="alignnone size-medium wp-image-3369" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2-300x161.png?resize=300%2C161" alt="SefaUtil v2" width="300" height="161" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=300%2C161&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=1024%2C550&ssl=1 1024w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=900%2C483&ssl=1 900w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1525&ssl=1 1525w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1254&ssl=1 1254w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png)
 
 So know you probably want to know what has improved?
 
@@ -48,10 +48,10 @@ SefaUtil GUI V2 van be downloaded via the link below:
 <div class='w3eden'>
   <!-- WPDM Link Template: Default Template -->
   
-  <div class="wpdm-link-tpl link-btn [color]" data-durl="https://johanveldhuis.nl/?post_type=wpdmpro&p=3372&wpdmdl=3372" >
+  <div class="wpdm-link-tpl link-btn [color]" data-durl="https://myuclab.nl/?post_type=wpdmpro&p=3372&wpdmdl=3372" >
     <div class="media">
       <div class="pull-left">
-        <img class="wpdm_icon" alt="Icon" src="https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg" onError='this.src="https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg";' />
+        <img class="wpdm_icon" alt="Icon" src="https://myuclab.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg" onError='this.src="https://myuclab.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg";' />
       </div>
       
       <div class="media-body">
@@ -66,7 +66,7 @@ SefaUtil GUI V2 van be downloaded via the link below:
         <span class="label label-default" style="font-weight: 400;">106.88 KB</span></strong> 
         
         <div>
-          <strong><a class='wpdm-download-link btn btn-primary ' rel='nofollow' href='#' onclick="location.href='https://johanveldhuis.nl/?post_type=wpdmpro&p=3372&wpdmdl=3372';return false;">Download</a></strong>
+          <strong><a class='wpdm-download-link btn btn-primary ' rel='nofollow' href='#' onclick="location.href='https://myuclab.nl/?post_type=wpdmpro&p=3372&wpdmdl=3372';return false;">Download</a></strong>
         </div>
       </div>
     </div>

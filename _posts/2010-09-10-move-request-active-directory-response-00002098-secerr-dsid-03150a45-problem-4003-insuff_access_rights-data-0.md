@@ -4,7 +4,7 @@ title: 'Error when submitting move request: Active directory response: 00002098:
 date: 2010-09-10T20:35:58+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2012
+guid: http://myuclab.nl/?p=2012
 permalink: /move-request-active-directory-response-00002098-secerr-dsid-03150a45-problem-4003-insuff_access_rights-data-0/
 categories:
   - Exchange

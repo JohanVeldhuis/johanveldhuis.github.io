@@ -4,18 +4,18 @@ title: Event log errors after installing Exchange 2010 SP1 on a Mailbox Server
 date: 2011-03-17T20:24:01+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2148
+guid: http://myuclab.nl/?p=2148
 permalink: /event-log-errors-after-installation-of-exchange-2010-sp1-on-a-mailbox-server/
 categories:
   - Exchange
 ---
 After the installation of Exchange 2010 SP1 on a server which only contains the Mailbox Server role you might get a lot of errors in the event log.
 
-[<img title="Event log errors" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/03/event-log2-300x107.jpg?resize=300%2C107" alt="" width="300" height="107" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/03/event-log2.jpg)
+[<img title="Event log errors" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/03/event-log2-300x107.jpg?resize=300%2C107" alt="" width="300" height="107" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/03/event-log2.jpg)
 
 When looking specificaly at the errors you will see that they are caused by the Performance Counters. A reference is made to the following registry key_HKLM\Software\Microsoft\ExchangeServer\v14\Transport_ which can&#8217;t be opened.
 
-[<img title="Event log error detail" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/03/event-log-300x143.jpg?resize=300%2C143" alt="" width="300" height="143" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/03/event-log.jpg)[](http://johanveldhuis.nl/wp-content/uploads/2011/03/event-log2.jpg)
+[<img title="Event log error detail" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/03/event-log-300x143.jpg?resize=300%2C143" alt="" width="300" height="143" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/03/event-log.jpg)[](http://myuclab.nl/wp-content/uploads/2011/03/event-log2.jpg)
 
 When you open regedit and search for the specific registry key you won&#8217;t find it. Really strange because the RPC Client Access Service will be installed on a Mailbox Server.
 

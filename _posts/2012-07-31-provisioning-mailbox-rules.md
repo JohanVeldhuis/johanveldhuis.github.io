@@ -4,7 +4,7 @@ title: Provisioning mailbox rules
 date: 2012-07-31T16:56:07+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2491
+guid: http://myuclab.nl/?p=2491
 permalink: /provisioning-mailbox-rules/
 categories:
   - Exchange
@@ -74,15 +74,15 @@ New-Mailbox -name provisioned\_user -alias provisioned\_user -UserPrincipalName 
 
 When running the cmdlet with the _–verbose_ parameter you will see that the Cmdlet Extension Agent is executed after the mailbox has been created:
 
-[<img title="New mailbox with cmdletextension agent enabled" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/07/new-mailbox-300x79.png?resize=300%2C79" alt="" width="300" height="79" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/07/new-mailbox.png)
+[<img title="New mailbox with cmdletextension agent enabled" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/07/new-mailbox-300x79.png?resize=300%2C79" alt="" width="300" height="79" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/07/new-mailbox.png)
 
 Now the mailbox has been created let’s verify if the new folder and inbox rule have been created. We will use OWA to verify if both have been created. When logging in to OWA you will see that the folder has been created:
 
-[<img title="Mailbox folders" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/07/folders.png?resize=174%2C204" alt="" width="174" height="204" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/07/folders.png)
+[<img title="Mailbox folders" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/07/folders.png?resize=174%2C204" alt="" width="174" height="204" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/07/folders.png)
 
 When opening the _Exchange Control Panel (ECP)_ and select the _Organize E-mail_ option in the left menu you will see that an inbox rule has been created:
 
-[<img title="New inbox rule" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/07/inbox-rule-300x106.png?resize=300%2C106" alt="" width="300" height="106" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/07/inbox-rule.png)
+[<img title="New inbox rule" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/07/inbox-rule-300x106.png?resize=300%2C106" alt="" width="300" height="106" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/07/inbox-rule.png)
 
 So as you can see you can provision the anti-spam folder and rule for new mailboxes using the cmdlet extensions. Besides doing this kind of things several other options can be configured using this option. Some examples are:
 

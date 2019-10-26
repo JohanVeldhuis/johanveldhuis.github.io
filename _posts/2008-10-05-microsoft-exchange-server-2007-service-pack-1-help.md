@@ -4,7 +4,7 @@ title: Microsoft Exchange Server 2007 Service Pack 1 Help
 date: 2008-10-05T22:49:31+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=893
+guid: http://myuclab.nl/?p=893
 permalink: /microsoft-exchange-server-2007-service-pack-1-help/
 categories:
   - Exchange

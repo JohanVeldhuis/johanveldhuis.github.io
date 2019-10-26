@@ -4,7 +4,7 @@ title: Rollup 5 released
 date: 2008-11-21T23:03:41+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=949
+guid: http://myuclab.nl/?p=949
 permalink: /rollup-5-released/
 categories:
   - Exchange

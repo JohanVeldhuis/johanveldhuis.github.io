@@ -4,7 +4,7 @@ title: Enable Diagnostic logging on a UM Server
 date: 2008-08-25T19:52:03+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=751
+guid: http://myuclab.nl/?p=751
 permalink: /activate-diagnostic-logging-on-um-server/
 categories:
   - Exchange

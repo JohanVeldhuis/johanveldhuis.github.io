@@ -4,7 +4,7 @@ title: Deploying the Barracuda Load Balancer with Microsoft Exchange Server 2010
 date: 2011-11-15T20:28:26+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2350
+guid: http://myuclab.nl/?p=2350
 permalink: /deploying-the-barracuda-load-balancer-with-microsoft-exchange-server-2010-the-missing-manual/
 categories:
   - Exchange
@@ -66,7 +66,7 @@ Once you’ve gathered all the stuff you can install it on the load balancer by 
   * Password: the password which is used to secure the certificate
   * Signed certificate: the location of the PFX file
 
-[<img title="Upload SSL certificate" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/10/upload_ssl-300x70.jpg?resize=300%2C70" alt="" width="300" height="70" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/10/upload_ssl.jpg)
+[<img title="Upload SSL certificate" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/10/upload_ssl-300x70.jpg?resize=300%2C70" alt="" width="300" height="70" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/10/upload_ssl.jpg)
 
 Press **Upload** to store the certificate on the load balancer and your ready to continue with the next step.
 
@@ -76,7 +76,7 @@ SSL Offloading can only be performed on the rule that is used to load balance th
 
 Edit the rule which is created for load balancing the web services and go to the **SSL Offloading** section.
 
-[<img title="Assign SSL certificate" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/10/assign_ssl-300x30.jpg?resize=300%2C30" alt="" width="300" height="30" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/10/assign_ssl.jpg)
+[<img title="Assign SSL certificate" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/10/assign_ssl-300x30.jpg?resize=300%2C30" alt="" width="300" height="30" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/10/assign_ssl.jpg)
 
 The load balancer side has now been configured for SSL offloading. Now it’s time for the Exchange side.
 

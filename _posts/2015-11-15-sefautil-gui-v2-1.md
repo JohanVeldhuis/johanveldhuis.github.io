@@ -4,7 +4,7 @@ title: SefaUtil Gui v2.1
 date: 2015-11-15T15:22:22+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3380
+guid: http://myuclab.nl/?p=3380
 permalink: /sefautil-gui-v2-1/
 categories:
   - Scripts

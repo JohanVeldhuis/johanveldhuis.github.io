@@ -4,7 +4,7 @@ title: User alias is incorrectly displayed in the to field in Outlook
 date: 2009-06-18T21:14:08+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1238
+guid: http://myuclab.nl/?p=1238
 permalink: /user-alias-is-incorrectly-displayed-in-the-to-field-in-outlook/
 categories:
   - Exchange

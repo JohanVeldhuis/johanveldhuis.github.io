@@ -4,7 +4,7 @@ title: 'Hidden features of Exchange 2010 &#8211; part II'
 date: 2011-08-19T18:05:35+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2302
+guid: http://myuclab.nl/?p=2302
 permalink: /hidden-features-of-exchange-2010-part-2/
 categories:
   - Exchange
@@ -33,7 +33,7 @@ To configure the Mailtip functionality on organization level there are 5 paramet
   * MailTipsGroupMetricsEnabled
   * MailTipsLargeAudienceTreshold
 
-[<img class="alignnone size-medium wp-image-2303" title="Mailtips parameters" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/mailtips-300x36.jpg?resize=300%2C36" alt="" width="300" height="36" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/mailtips.jpg?resize=300%2C36&ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/mailtips.jpg?w=527&ssl=1 527w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/mailtips.jpg)
+[<img class="alignnone size-medium wp-image-2303" title="Mailtips parameters" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/08/mailtips-300x36.jpg?resize=300%2C36" alt="" width="300" height="36" srcset="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/08/mailtips.jpg?resize=300%2C36&ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/08/mailtips.jpg?w=527&ssl=1 527w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/08/mailtips.jpg)
 
 The Mailtip functionality is enabled by default. If you would like to disable this option the parameter _MailTipsAllTipsEnabled_ will need to be set to _false_:
 

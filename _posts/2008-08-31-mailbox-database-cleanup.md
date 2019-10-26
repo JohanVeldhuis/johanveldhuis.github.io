@@ -4,7 +4,7 @@ title: Mailbox-database cleanup
 date: 2008-08-31T22:04:51+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=763
+guid: http://myuclab.nl/?p=763
 permalink: /mailbox-database-cleanup/
 categories:
   - Exchange

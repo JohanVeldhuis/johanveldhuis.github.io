@@ -4,7 +4,7 @@ title: Microsoft releases v2 of the latest Exchange 2010 Rollups
 date: 2012-10-09T20:15:26+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2537
+guid: http://myuclab.nl/?p=2537
 permalink: /microsoft-releases-v2-of-the-latest-exchange-2010-rollups/
 categories:
   - Exchange

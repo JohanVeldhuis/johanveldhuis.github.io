@@ -4,7 +4,7 @@ title: Review Trend Micro Scanmail 10
 date: 2011-06-28T20:44:37+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2253
+guid: http://myuclab.nl/?p=2253
 permalink: /review-trend-micro-scanmail-10/
 categories:
   - Reviews
@@ -36,7 +36,7 @@ In the picture below you see how the process works:
   <div>
     <div>
       <p>
-        <a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/trend-frs.jpg"><img title="File Reputation Services" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/trend-frs-300x120.jpg?resize=300%2C120" alt="" width="300" height="120" data-recalc-dims="1" /></a>
+        <a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/trend-frs.jpg"><img title="File Reputation Services" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/06/trend-frs-300x120.jpg?resize=300%2C120" alt="" width="300" height="120" data-recalc-dims="1" /></a>
       </p>
     </div>
   </div>
@@ -46,7 +46,7 @@ As last major change, besides the optimization of the product, is integration of
   
 The installation of SMEX 10 is pretty easy. But before starting the installation add the CGI component to the IIS server. Once this is done the setup can be launched. One of the first steps in the setup will ask you which Exchange version you have deployed. If deploying it on an Exchange 2007 or 2010 Server you must specify if you are installing it on an Edge or on a Hub Transport/Mailbox Server.Depending on the roles installed on your server a set of scan methods are available. For example on a mailbox server a mail store scan can be performed. While on a Hub Transport server scanning can be done during transport.
 
-[<img title="Server en rol selecteren" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/select_server-300x245.jpg?resize=300%2C245" alt="" width="300" height="245" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/select_server.jpg)
+[<img title="Server en rol selecteren" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/06/select_server-300x245.jpg?resize=300%2C245" alt="" width="300" height="245" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/06/select_server.jpg)
 
 In the next step you will need to add one or multiple servers. This can either be done by adding a server manually or via the browse option. In this last scenario make sure you enable the Computer Browser service which might be disabled by default depending on your OS.
 
@@ -58,7 +58,7 @@ Optionally you can select the option to enable SSL. When enabling this option a 
 
 The next step will verify if all prerequisites have been met. If this is not the case you will be warned and you will need to solve these issues before you can continue.
 
-[<img title="Controle systeem eisen" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/check_prereq-300x245.jpg?resize=300%2C245" alt="" width="300" height="245" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/check_prereq.jpg)
+[<img title="Controle systeem eisen" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/06/check_prereq-300x245.jpg?resize=300%2C245" alt="" width="300" height="245" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/06/check_prereq.jpg)
 
 Because Scanmail will retrieve its updates from the internet you may need to provide a proxy server. If this is not the case leave the option unselected. After providing the activation key you get the option to participate in the World Virus Tracking Program. This program will gather real time data for the Virus Map of Trend Micro.
 
@@ -128,7 +128,7 @@ Before starting the installation you will get a short summary. If you are satisf
         </ul>
         
         <p>
-          In the diagram below you can see a diagram of the complete process:<br /> <a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/wrs.jpg"><img title="WRS proces" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/wrs-300x52.jpg?resize=300%2C52" alt="" width="300" height="52" data-recalc-dims="1" /></a>
+          In the diagram below you can see a diagram of the complete process:<br /> <a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/wrs.jpg"><img title="WRS proces" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/wrs-300x52.jpg?resize=300%2C52" alt="" width="300" height="52" data-recalc-dims="1" /></a>
         </p>
         
         <p>
@@ -172,7 +172,7 @@ Before starting the installation you will get a short summary. If you are satisf
         </p>
         
         <p>
-          <a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/policies.jpg"><img title="Policies" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/policies-300x183.jpg?resize=300%2C183" alt="" width="300" height="183" data-recalc-dims="1" /></a>
+          <a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/06/policies.jpg"><img title="Policies" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/06/policies-300x183.jpg?resize=300%2C183" alt="" width="300" height="183" data-recalc-dims="1" /></a>
         </p>
         
         <p>
@@ -180,7 +180,7 @@ Before starting the installation you will get a short summary. If you are satisf
         </p>
         
         <p>
-          <a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/ers.jpg"><img title="ERS Portal" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/ers-300x258.jpg?resize=300%2C258" alt="" width="300" height="258" data-recalc-dims="1" /></a>
+          <a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/06/ers.jpg"><img title="ERS Portal" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/06/ers-300x258.jpg?resize=300%2C258" alt="" width="300" height="258" data-recalc-dims="1" /></a>
         </p>
         
         <p>
@@ -200,7 +200,7 @@ Before starting the installation you will get a short summary. If you are satisf
         </p>
         
         <p>
-          <a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/server_mgmt.jpg"><img title="Server Management" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/server_mgmt-300x87.jpg?resize=300%2C87" alt="" width="300" height="87" data-recalc-dims="1" /></a>
+          <a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/06/server_mgmt.jpg"><img title="Server Management" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/06/server_mgmt-300x87.jpg?resize=300%2C87" alt="" width="300" height="87" data-recalc-dims="1" /></a>
         </p>
         
         <p>
@@ -220,7 +220,7 @@ Before starting the installation you will get a short summary. If you are satisf
         </p>
         
         <p>
-          <a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/scheduled_report.jpg"><img title="Scheduled report" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/scheduled_report-300x181.jpg?resize=300%2C181" alt="" width="300" height="181" data-recalc-dims="1" /></a>
+          <a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/06/scheduled_report.jpg"><img title="Scheduled report" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/06/scheduled_report-300x181.jpg?resize=300%2C181" alt="" width="300" height="181" data-recalc-dims="1" /></a>
         </p>
         
         <p>
@@ -232,7 +232,7 @@ Before starting the installation you will get a short summary. If you are satisf
         </p>
         
         <p>
-          <a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/spam_prevention_stat.jpg"><img title="Spam Prevention Statistics" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/spam_prevention_stat-300x282.jpg?resize=300%2C282" alt="" width="300" height="282" data-recalc-dims="1" /></a>
+          <a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/spam_prevention_stat.jpg"><img title="Spam Prevention Statistics" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/spam_prevention_stat-300x282.jpg?resize=300%2C282" alt="" width="300" height="282" data-recalc-dims="1" /></a>
         </p>
         
         <p>
@@ -281,7 +281,7 @@ Before starting the installation you will get a short summary. If you are satisf
         </p>
         
         <p>
-          <a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/cont_filt_log.jpg"><img title="Content filtering log" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/cont_filt_log-300x49.jpg?resize=300%2C49" alt="" width="300" height="49" data-recalc-dims="1" /></a>
+          <a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/06/cont_filt_log.jpg"><img title="Content filtering log" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/cont_filt_log-300x49.jpg?resize=300%2C49" alt="" width="300" height="49" data-recalc-dims="1" /></a>
         </p>
         
         <p>
@@ -289,7 +289,7 @@ Before starting the installation you will get a short summary. If you are satisf
         </p>
         
         <p>
-          <a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/cont_filt_log_2.jpg"><img title="Content Filtering log" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/cont_filt_log_2-300x119.jpg?resize=300%2C119" alt="" width="300" height="119" data-recalc-dims="1" /></a>
+          <a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/06/cont_filt_log_2.jpg"><img title="Content Filtering log" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/06/cont_filt_log_2-300x119.jpg?resize=300%2C119" alt="" width="300" height="119" data-recalc-dims="1" /></a>
         </p>
         
         <p>

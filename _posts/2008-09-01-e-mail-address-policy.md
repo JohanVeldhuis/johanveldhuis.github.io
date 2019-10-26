@@ -4,7 +4,7 @@ title: E-mail address policy
 date: 2008-09-01T21:08:34+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=768
+guid: http://myuclab.nl/?p=768
 permalink: /e-mail-address-policy/
 categories:
   - Exchange

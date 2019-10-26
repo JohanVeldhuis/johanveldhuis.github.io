@@ -5,7 +5,7 @@ title: Which ports need to be opened between the Edge Transport server and the H
 date: 2008-08-17T21:57:46+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=713
+guid: http://myuclab.nl/?p=713
 permalink: /ports-open-between-edge-transport-server-and-hub-transport-server/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: 'Powershell: overview of users with an ActivSync device'
 date: 2008-08-12T20:34:20+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=685
+guid: http://myuclab.nl/?p=685
 permalink: /powershell-overzicht-van-gebruikers-met-een-activsync-device/
 categories:
   - Exchange

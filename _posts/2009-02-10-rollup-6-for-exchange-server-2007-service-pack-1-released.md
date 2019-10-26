@@ -4,7 +4,7 @@ title: Rollup 6 for Exchange 2007 Service Pack 1 released
 date: 2009-02-10T23:57:39+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1076
+guid: http://myuclab.nl/?p=1076
 permalink: /rollup-6-for-exchange-server-2007-service-pack-1-released/
 categories:
   - Exchange

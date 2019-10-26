@@ -4,7 +4,7 @@ title: Microsoft Exchange Server MAPI Client and Collaboration Data Objects 1.2.
 date: 2008-08-24T21:25:01+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=747
+guid: http://myuclab.nl/?p=747
 permalink: /microsoft-exchange-server-mapi-client-and-collaboration-data-objects-121/
 categories:
   - Exchange

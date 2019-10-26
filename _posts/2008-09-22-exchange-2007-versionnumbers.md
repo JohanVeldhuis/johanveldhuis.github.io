@@ -4,7 +4,7 @@ title: Exchange 2007 versionnumbers
 date: 2008-09-22T22:51:42+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=839
+guid: http://myuclab.nl/?p=839
 permalink: /exchange-2007-versionnumbers/
 categories:
   - Exchange

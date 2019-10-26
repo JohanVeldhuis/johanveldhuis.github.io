@@ -4,7 +4,7 @@ title: Mail flow issues in coexistence scenario
 date: 2009-02-25T00:36:27+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1119
+guid: http://myuclab.nl/?p=1119
 permalink: /mail-flow-issues-in-coexistence-scenario/
 categories:
   - Exchange

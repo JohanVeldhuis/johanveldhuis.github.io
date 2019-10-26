@@ -4,7 +4,7 @@ title: Add and configure UM language-packs
 date: 2008-06-29T20:29:50+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=377
+guid: http://myuclab.nl/?p=377
 permalink: /add-and-configure-um-language-packs/
 categories:
   - Tutorials
@@ -29,7 +29,7 @@ setup.com /AddUmLanguagePack:nl-NL /sourcedir:d:\Downloads\UmLanguagePacks
 </ul>
 When the command is executed you will get the following result:
 
- <a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/install_lgpk.jpg"><img class="alignnone size-thumbnail wp-image-378" title="Install Exchange language pack" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/install_lgpk-150x150.jpg" alt="" width="150" height="150" /></a>
+ <a href="https://myuclab.nl/wp-content/uploads/2008/06/install_lgpk.jpg"><img class="alignnone size-thumbnail wp-image-378" title="Install Exchange language pack" src="https://myuclab.nl/wp-content/uploads/2008/06/install_lgpk-150x150.jpg" alt="" width="150" height="150" /></a>
 
 It can take a few minutes before the language pack is installed. When the installation is completed you can start the <em>Exchange Management Console.</em>
 
@@ -39,11 +39,11 @@ The first thing we need to modify is the <em>dialplan</em> , with this setting w
 
 Select the <em>UM Dial Plans </em>tab en get the properties of the <em>dialplan</em>. A new window will be opened with a few tabs, choose the tab <em>Settings.</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/prop_dp.jpg"><img class="alignnone size-thumbnail wp-image-379" title="UM Dialplan properties" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/prop_dp-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/prop_dp.jpg"><img class="alignnone size-thumbnail wp-image-379" title="UM Dialplan properties" src="https://myuclab.nl/wp-content/uploads/2008/06/prop_dp-150x150.jpg" alt="" width="150" height="150" /></a>
 
 As you can see in the screenshot above the default language is <em>English (United States)</em> . When you click on the arrow you will get a complete overview of all installed languages.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/installed_lg.jpg"><img class="alignnone size-thumbnail wp-image-380" title="Installed languages" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/installed_lg-150x54.jpg" alt="" width="150" height="54" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/installed_lg.jpg"><img class="alignnone size-thumbnail wp-image-380" title="Installed languages" src="https://myuclab.nl/wp-content/uploads/2008/06/installed_lg-150x54.jpg" alt="" width="150" height="54" /></a>
 
 When you don't have this options, check if the <em>dialplan</em>  is assigned to the Exchange server. You can check this by looking at the <em>Associated UM Servers </em>column. When this is not configured OK you can't view the installed language.
 
@@ -53,12 +53,12 @@ The <em>Subscriber Access</em> is modified, when you use auto attendants you ne
 
 Click on the tab <em>UM AutoAttendants</em> and get the properties of the auto attendant that you want to modify.
 
- <a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/prop_aa.jpg"><img class="alignnone size-thumbnail wp-image-381" title="Properties AA" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/prop_aa-150x150.jpg" alt="" width="150" height="150" /></a>
+ <a href="https://myuclab.nl/wp-content/uploads/2008/06/prop_aa.jpg"><img class="alignnone size-thumbnail wp-image-381" title="Properties AA" src="https://myuclab.nl/wp-content/uploads/2008/06/prop_aa-150x150.jpg" alt="" width="150" height="150" /></a>
 
 A new windows will be opened, click on the tab <em>Features</em> en select the language you want to use.
 
 Earlier we spoke about the option that users can change their default language.  This can be done via the OWA.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/06/owa.jpg"><img class="alignnone size-thumbnail wp-image-382" title="Outlook Web Access" src="https://johanveldhuis.nl/wp-content/uploads/2008/06/owa-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/06/owa.jpg"><img class="alignnone size-thumbnail wp-image-382" title="Outlook Web Access" src="https://myuclab.nl/wp-content/uploads/2008/06/owa-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Let the user login to OWA and select <em>options </em>in the left menu. Next select Regional settings and let the user choose their default language. The list that is displayed to the user is longer then the installed language packs. It can happen that the user selects a language which is not installed which cause that the user will not hear the language he expects.

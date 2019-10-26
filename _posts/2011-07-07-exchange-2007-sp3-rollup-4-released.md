@@ -4,7 +4,7 @@ title: Exchange 2007 SP3 Rollup 4 released
 date: 2011-07-07T21:40:43+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2274
+guid: http://myuclab.nl/?p=2274
 permalink: /exchange-2007-sp3-rollup-4-released/
 categories:
   - Exchange

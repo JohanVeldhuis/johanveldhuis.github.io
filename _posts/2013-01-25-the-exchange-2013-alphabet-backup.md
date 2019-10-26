@@ -4,7 +4,7 @@ title: 'The Exchange 2013 alphabet: Backup'
 date: 2013-01-25T21:32:26+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2665
+guid: http://myuclab.nl/?p=2665
 permalink: /the-exchange-2013-alphabet-backup/
 categories:
   - Exchange
@@ -58,7 +58,7 @@ If you decide not to only use the native data protection but also want to have a
 
 Compared to Exchange 2010 and Exchange 2007 there has been a big change when looking at the VSS writer. In those versions there were two VSS writers available: one in the Information Store en one in the replication service. In Exchange 2013 we’ve only got one VSS writer called the Microsoft Exchange Writer. This functionality can only be found in the Microsoft Exchange Replication Service so no writer is included in the Information Store anymore. One remark must be made, it is still necessary that the Information Store service is running else the VSS writer will not be advertised.
 
-[<img class="aligncenter size-medium wp-image-2666" title="Microsoft Exchange Writer" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Microsoft-Exchange-Writer-300x43.png?resize=300%2C43" alt="" width="300" height="43" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Microsoft-Exchange-Writer.png?resize=300%2C43&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Microsoft-Exchange-Writer.png?w=506&ssl=1 506w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Microsoft-Exchange-Writer.png)
+[<img class="aligncenter size-medium wp-image-2666" title="Microsoft Exchange Writer" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/01/Microsoft-Exchange-Writer-300x43.png?resize=300%2C43" alt="" width="300" height="43" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Microsoft-Exchange-Writer.png?resize=300%2C43&ssl=1 300w, https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Microsoft-Exchange-Writer.png?w=506&ssl=1 506w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Microsoft-Exchange-Writer.png)
 
 It is expected that several other vendors are now working hard to get there software ready and supported for Exchange 2013. In the coming few months they will probably release there software. So if you are using other software then Windows Server Backup or DPM 2012 make sure you verify if and when your backup software vendor will support Exchange 2013.
 
@@ -82,7 +82,7 @@ But what does exactly happen during a VSS backup? We will look at the steps perf
 
 The process can be easily monitored by looking in the Application log of the Mailbox Server. As a lot of information is logged in the Application log you could create a filter which only displays events which have the _MsExchangeRepl _as source:
 
-[<img class="aligncenter size-medium wp-image-2673" title="VSS Backup events" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/VSS-Backup-events-300x149.png?resize=300%2C149" alt="" width="300" height="149" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/VSS-Backup-events.png?resize=300%2C149&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/VSS-Backup-events.png?w=538&ssl=1 538w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/VSS-Backup-events.png)
+[<img class="aligncenter size-medium wp-image-2673" title="VSS Backup events" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/VSS-Backup-events-300x149.png?resize=300%2C149" alt="" width="300" height="149" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/VSS-Backup-events.png?resize=300%2C149&ssl=1 300w, https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/VSS-Backup-events.png?w=538&ssl=1 538w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/VSS-Backup-events.png)
 
 You can expect the following event id&#8217;s during the process:
 
@@ -130,11 +130,11 @@ _Get-MailboxDatabase –status|select Identity, Status, BackupInProgress, Snapsh
 
 When running the cmdlet above you when the backups runs you can expect an output like this:
 
-[<img class="aligncenter size-medium wp-image-2667" title="Backup in progress" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Backup-in-progress-300x63.png?resize=300%2C63" alt="" width="300" height="63" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Backup-in-progress.png?resize=300%2C63&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Backup-in-progress.png?w=962&ssl=1 962w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Backup-in-progress.png)
+[<img class="aligncenter size-medium wp-image-2667" title="Backup in progress" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Backup-in-progress-300x63.png?resize=300%2C63" alt="" width="300" height="63" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/Backup-in-progress.png?resize=300%2C63&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/Backup-in-progress.png?w=962&ssl=1 962w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/Backup-in-progress.png)
 
 Once the backup has finished you will see this:
 
-[<img class="aligncenter size-medium wp-image-2668" title="Backup completed" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Backup-completed-300x62.png?resize=300%2C62" alt="" width="300" height="62" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Backup-completed.png?resize=300%2C62&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Backup-completed.png?w=959&ssl=1 959w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Backup-completed.png)
+[<img class="aligncenter size-medium wp-image-2668" title="Backup completed" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/Backup-completed-300x62.png?resize=300%2C62" alt="" width="300" height="62" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/Backup-completed.png?resize=300%2C62&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/Backup-completed.png?w=959&ssl=1 959w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/Backup-completed.png)
 
 In this example we created a VSS Copy backup using Windows Server Backup. The _SnapshotLastCopy_ tells us that a snapshot is used to create the backup. The _LastCopyBackup_ will display the date and time of the last backup.
 

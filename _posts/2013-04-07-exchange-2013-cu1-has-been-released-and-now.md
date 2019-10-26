@@ -4,7 +4,7 @@ title: Exchange 2013 CU1 has been release and now?
 date: 2013-04-07T20:51:24+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2742
+guid: http://myuclab.nl/?p=2742
 permalink: /exchange-2013-cu1-has-been-released-and-now/
 categories:
   - Exchange

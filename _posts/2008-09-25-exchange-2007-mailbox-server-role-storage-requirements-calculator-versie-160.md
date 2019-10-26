@@ -4,7 +4,7 @@ title: Exchange 2007 Mailbox Server Role Storage Requirements Calculator version
 date: 2008-09-25T08:00:56+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=854
+guid: http://myuclab.nl/?p=854
 permalink: /exchange-2007-mailbox-server-role-storage-requirements-calculator-versie-160/
 categories:
   - Exchange

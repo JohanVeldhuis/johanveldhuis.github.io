@@ -4,7 +4,7 @@ title: Exchange 2010 SP3 Rollup 1 released
 date: 2013-05-30T15:29:30+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3184
+guid: http://myuclab.nl/?p=3184
 permalink: /exchange-2010-sp3-rollup-1-released/
 categories:
   - Exchange

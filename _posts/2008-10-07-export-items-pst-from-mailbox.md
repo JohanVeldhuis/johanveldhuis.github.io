@@ -4,7 +4,7 @@ title: Export items to a PST and delete them from the mailbox
 date: 2008-10-07T21:56:07+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=895
+guid: http://myuclab.nl/?p=895
 permalink: /export-items-pst-from-mailbox/
 categories:
   - Exchange

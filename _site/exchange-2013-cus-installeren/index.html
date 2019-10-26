@@ -52,7 +52,7 @@
 			</a>
 			
 			
-			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope"></i>
 			</a>
 			
@@ -118,7 +118,7 @@
 		
 		
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+			<a class="btn btn-default btn-sm" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
@@ -170,19 +170,19 @@
 
 <p>Which components are active on a server depends on which roles are deployed to  server. To find out which components are available on a server you can run <em>Get-ServerComponentState</em>. In the example below you will see an output example of a multi-role Exchange 2013 server:</p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate.png"><img alt="get-servercomponentstate" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate-300x122.png?resize=300%2C122" width="300" height="122" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate.png"><img alt="get-servercomponentstate" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate-300x122.png?resize=300%2C122" width="300" height="122" data-recalc-dims="1" /></a></p>
 
 <p>As you can see all components are up and running. Let’s assume that we have prepared our AD and are now ready to deploy the bits on our Exchange 2013 servers.</p>
 
 <p>Our environment consists of two Exchange 2013 multirole servers. A third server is used as the File Share Witness (FSW) to maintain quorum.</p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline.png"><img alt="get-servercomponentstate serverwideoffline" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline-300x124.png?resize=300%2C124" width="300" height="124" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline.png"><img alt="get-servercomponentstate serverwideoffline" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline-300x124.png?resize=300%2C124" width="300" height="124" data-recalc-dims="1" /></a></p>
 
 <p>The first step will me to ensure that the transport queues will be empty before continuing the process. Using the S_et-ServerComponentState_ cmdlet we can set the status of a component. Besides the status we will need to provide the requestor. In this case the requestor we are going to use is <em>maintenance.</em></p>
 
-<p><em>Set-ServerComponentState –identity ex02 –component –state draining –requestor  maintenance<a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline.png"><img alt="get-servercomponentstate serverwideoffline" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline-300x124.png?resize=300%2C124" width="300" height="124" data-recalc-dims="1" /></a></em></p>
+<p><em>Set-ServerComponentState –identity ex02 –component –state draining –requestor  maintenance<a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline.png"><img alt="get-servercomponentstate serverwideoffline" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline-300x124.png?resize=300%2C124" width="300" height="124" data-recalc-dims="1" /></a></em></p>
 
-<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/hub_draining.png"><img alt="hub_draining" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/hub_draining-300x15.png?resize=300%2C15" width="300" height="15" data-recalc-dims="1" /></a></p>
+<p><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/hub_draining.png"><img alt="hub_draining" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/07/hub_draining-300x15.png?resize=300%2C15" width="300" height="15" data-recalc-dims="1" /></a></p>
 
 <p>By using the cmdlet above we will put the transport component in draining state. This means it will take care of the messages which are currently in the queue but will not accept any new messages.</p>
 
@@ -190,23 +190,23 @@
 
 <p><em>Redirect-Messages -server ex02 –targetserver ex01.corp.local</em></p>
 
-<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/redirect-message.png"><img alt="redirect-message" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/redirect-message-300x45.png?resize=300%2C45" width="300" height="45" data-recalc-dims="1" /></a></p>
+<p><a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/07/redirect-message.png"><img alt="redirect-message" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/redirect-message-300x45.png?resize=300%2C45" width="300" height="45" data-recalc-dims="1" /></a></p>
 
 <p>To check if the queues are empty we can use the good old <em>get-queue</em> cmdlet:</p>
 
 <p><em>Get-Queue –server ex02</em></p>
 
-<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/queue.png"><img alt="queue" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/queue-300x27.png?resize=300%2C27" width="300" height="27" data-recalc-dims="1" /></a></p>
+<p><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/queue.png"><img alt="queue" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/queue-300x27.png?resize=300%2C27" width="300" height="27" data-recalc-dims="1" /></a></p>
 
 <p>If all queues are clean we can continue with disabling all the other components which are active on the server:</p>
 
 <p><em>Set-ServerComponentState –identity ex02 –component serverwideoffline –state inactive –requestor maintenance</em></p>
 
-<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-hub.png"><img alt="set-servcomponentstat serverwideoffline restore hub" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-hub-300x9.png?resize=300%2C9" width="300" height="9" data-recalc-dims="1" /></a></p>
+<p><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-hub.png"><img alt="set-servcomponentstat serverwideoffline restore hub" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-hub-300x9.png?resize=300%2C9" width="300" height="9" data-recalc-dims="1" /></a></p>
 
 <p>To verify if all components are set to the status inactive we could run the <em>Get-ServerComponentState</em> cmdlet again:</p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline.png"><img alt="get-servercomponentstate serverwideoffline" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline-300x124.png?resize=300%2C124" width="300" height="124" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline.png"><img alt="get-servercomponentstate serverwideoffline" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate-serverwideoffline-300x124.png?resize=300%2C124" width="300" height="124" data-recalc-dims="1" /></a></p>
 
 <p>Now all components are inactive it’s time to handle the database availability group (DAG) part.</p>
 
@@ -216,13 +216,13 @@
 
 <p><em>Suspend-ClusterNode</em></p>
 
-<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/suspend-clusternode.png"><img alt="suspend-clusternode" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/suspend-clusternode-300x56.png?resize=300%2C56" width="300" height="56" data-recalc-dims="1" /></a></p>
+<p><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/suspend-clusternode.png"><img alt="suspend-clusternode" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/suspend-clusternode-300x56.png?resize=300%2C56" width="300" height="56" data-recalc-dims="1" /></a></p>
 
 <p>Once the cluster node has been stopped you will need to prevent the databases from being moved d on the member:</p>
 
 <p><em>Set-MailboxServer  -Identity ex02-DatabaseCopyActivationDisabledAndMoveNow $trueSet-MailboxServer  -DatabaseCopyAutoActivationPolicy Blocked</em></p>
 
-<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/set-mailboxserver-activation.png"><img alt="set-mailboxserver activation" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/set-mailboxserver-activation-300x11.png?resize=300%2C11" width="300" height="11" data-recalc-dims="1" /></a></p>
+<p><a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/07/set-mailboxserver-activation.png"><img alt="set-mailboxserver activation" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/set-mailboxserver-activation-300x11.png?resize=300%2C11" width="300" height="11" data-recalc-dims="1" /></a></p>
 
 <p>And as final step we want to set the auto activation policy temporarily to blocked:</p>
 
@@ -234,7 +234,7 @@
 
 <p>This will start the upgrade to CU2 as you can see below:</p>
 
-<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/accept-license.png"><img alt="setup.exe /m:upgrade" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/accept-license-300x15.png?resize=300%2C15" width="300" height="15" data-recalc-dims="1" /></a></p>
+<p><a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/07/accept-license.png"><img alt="setup.exe /m:upgrade" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/07/accept-license-300x15.png?resize=300%2C15" width="300" height="15" data-recalc-dims="1" /></a></p>
 
 <p>Once the setup has finished you might decide to reboot the server. Once the server is back online it is time to restore the services.</p>
 
@@ -252,13 +252,13 @@
 
 <p><em>Set-MailboxServer  -Identity ex02 -DatabaseCopyAutoActivationPolicy Blocked</em></p>
 
-<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/resume-clusternode.png"><img alt="resume-clusternode" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/resume-clusternode-300x45.png?resize=300%2C45" width="300" height="45" data-recalc-dims="1" /></a></p>
+<p><a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/07/resume-clusternode.png"><img alt="resume-clusternode" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/resume-clusternode-300x45.png?resize=300%2C45" width="300" height="45" data-recalc-dims="1" /></a></p>
 
 <p>Now our DAG member is back online we need to change the component states to active:</p>
 
 <p><em>Set-ServerComponentStatus –identity ex02 –component serverwideoffline –status active –requestor maintenance</em></p>
 
-<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore.png"><img alt="set-servcomponentstat serverwideoffline restore" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-300x22.png?resize=300%2C22" width="300" height="22" data-recalc-dims="1" /></a></p>
+<p><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore.png"><img alt="set-servcomponentstat serverwideoffline restore" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-300x22.png?resize=300%2C22" width="300" height="22" data-recalc-dims="1" /></a></p>
 
 <p>When running the <em>Get-ServerComponentStatus</em> cmdlet you will see that the status of the transport component is still <em>draining</em>.</p>
 
@@ -266,11 +266,11 @@
 
 <p><em>Set-ServerComponentStatus –identity ex02 –component transport –status active –requestor maintenance</em></p>
 
-<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-hub1.png"><img alt="set-servcomponentstat serverwideoffline restore hub" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-hub1-300x9.png?resize=300%2C9" width="300" height="9" data-recalc-dims="1" /></a></p>
+<p><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-hub1.png"><img alt="set-servcomponentstat serverwideoffline restore hub" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/set-servcomponentstat-serverwideoffline-restore-hub1-300x9.png?resize=300%2C9" width="300" height="9" data-recalc-dims="1" /></a></p>
 
 <p>Now when running the <em>Get-ServerComponent</em> cmdlet again the status of each component should show <em>active.</em></p>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate_fullrestore.png"><img alt="get-servercomponentstate_fullrestore" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/07/get-servercomponentstate_fullrestore-300x143.png?resize=300%2C143" width="300" height="143" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate_fullrestore.png"><img alt="get-servercomponentstate_fullrestore" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/07/get-servercomponentstate_fullrestore-300x143.png?resize=300%2C143" width="300" height="143" data-recalc-dims="1" /></a></p>
 
 <p>Here ends the blog about how to install a CU on an Exchange 2013 server. If you hate to type the cmdlets manually then have a look at this script from Michael van Hoorenbeeck:</p>
 

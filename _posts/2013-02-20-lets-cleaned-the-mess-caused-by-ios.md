@@ -4,7 +4,7 @@ title: 'Let&#8217;s cleanup the mess caused by iOS'
 date: 2013-02-20T20:58:08+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2729
+guid: http://myuclab.nl/?p=2729
 permalink: /lets-cleaned-the-mess-caused-by-ios/
 categories:
   - Scripts

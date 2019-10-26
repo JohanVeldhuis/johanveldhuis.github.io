@@ -4,7 +4,7 @@ title: Prevent spam which appears to be sent from your own domain
 date: 2009-12-26T22:24:40+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1785
+guid: http://myuclab.nl/?p=1785
 permalink: /prevent-spam-which-appears-to-be-sent-from-your-own-domain/
 categories:
   - Exchange

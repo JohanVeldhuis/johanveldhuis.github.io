@@ -4,7 +4,7 @@ title: Modify Out Of Office settings on the Exchange Server
 date: 2008-12-22T23:58:53+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1004
+guid: http://myuclab.nl/?p=1004
 permalink: /change-oof-settings-on-Exchange/
 categories:
   - Exchange
@@ -42,7 +42,7 @@ Set-remoteDomain -Identity &lt;domain identity&gt; -AllowedOOFType [None,Interna
 </ul>
 <p>The Out Of Office settings can also be configured per remote domain via the Exchange Management Console.</p>
 <p>For this we need to open the EMC en go to <em>hub transport </em>via <em>organization configuration</em> when selected select the tab <em>remote domains. </em>Here you can see al the <em>remote domains </em>configured, get the properties of it and you will see the following:</p>
-<p><a href="https://johanveldhuis.nl/wp-content/uploads/2008/12/oof_emc.jpg"><img class="alignnone size-thumbnail wp-image-1010" title="oof_emc" src="https://johanveldhuis.nl/wp-content/uploads/2008/12/oof_emc-150x150.jpg" alt="" width="150" height="150" /></a></p>
+<p><a href="https://myuclab.nl/wp-content/uploads/2008/12/oof_emc.jpg"><img class="alignnone size-thumbnail wp-image-1010" title="oof_emc" src="https://myuclab.nl/wp-content/uploads/2008/12/oof_emc-150x150.jpg" alt="" width="150" height="150" /></a></p>
 <p>As you can see you can define the settings for Out Of Office you want.</p>
 <p><a href="http://www.google.nl/url?sa=t&amp;source=web&amp;ct=res&amp;cd=1&amp;url=http%3A%2F%2Ftechnet.microsoft.com%2Fen-us%2Flibrary%2Faa997857.aspx&amp;ei=bgJQSbHvDpWN-gah7MjMDw&amp;usg=AFQjCNE_GbQE38v6mVkjLOrdMUTEoj0bbw&amp;sig2=TRoE6G1Ye_X9URKiYa2Tag" target="_blank">set-remotedomain</a></p>
 <p><a href="http://www.google.nl/url?sa=t&amp;source=web&amp;ct=res&amp;cd=1&amp;url=http%3A%2F%2Ftechnet.microsoft.com%2Fen-us%2Flibrary%2Fbb123981.aspx&amp;ei=rAJQSbbuKcyL-gbJhozKDw&amp;usg=AFQjCNFiCxoRWSAZoTbDJnm1Z8WXxozOGQ&amp;sig2=yHr37wncgzcZdp45OSqqZg" target="_blank">set-mailbox</a>

@@ -4,7 +4,7 @@ title: Remote Server Administration Tools
 date: 2008-04-09T19:57:11+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=275
+guid: http://myuclab.nl/?p=275
 permalink: /remote-server-administration-tools/
 ratings_users:
   - "0"

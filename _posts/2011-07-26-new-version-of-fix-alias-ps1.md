@@ -4,7 +4,7 @@ title: New version of fix-alias.ps1
 date: 2011-07-26T21:45:25+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2285
+guid: http://myuclab.nl/?p=2285
 permalink: /new-version-of-fix-alias-ps1/
 categories:
   - Scripts
@@ -19,4 +19,4 @@ If you have additional whishes please let me know by leaving a comment or by con
 
 download <a href="http://gallery.technet.microsoft.com/scriptcenter/411aec4e-8c01-4594-b993-fbd968f15399" target="_blank">fix-alias.ps1</a> (original version)
   
-download <a href="http://www.johanveldhuis.nl/tools/scripts/fix-aliasv20.ps1" target="_blank">fix-aliasv20.ps1</a>
+download <a href="http://www.myuclab.nl/tools/scripts/fix-aliasv20.ps1" target="_blank">fix-aliasv20.ps1</a>

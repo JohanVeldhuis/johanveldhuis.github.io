@@ -4,7 +4,7 @@ title: Kerberos authentication fails sporadically
 date: 2011-12-16T21:06:40+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2364
+guid: http://myuclab.nl/?p=2364
 permalink: /kerberos-authentication-fails-sporadically/
 categories:
   - Exchange
@@ -19,7 +19,7 @@ But what if Kerberos sometimes works and sometimes not, or does only work for sp
 
 The easiest way to figure out if Kerberos is to change the Outlook profile.
 
-[<img title="Outlook security tab" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/Outlook-security-tab-243x300.jpg?resize=243%2C300" alt="" width="243" height="300" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/Outlook-security-tab.jpg)
+[<img title="Outlook security tab" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/12/Outlook-security-tab-243x300.jpg?resize=243%2C300" alt="" width="243" height="300" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/12/Outlook-security-tab.jpg)
 
 On the _security_ tab of the account you will need to change the value of _Logon network security _to _NTLM._ If the user can access his/her mailbox after this you know that Kerberos is causing the issue.
 
@@ -40,7 +40,7 @@ When you will search the internet for this error you will see you are not the on
 
 One of the first things you will need to do is run _SetSPN -L &#8220;ASA account&#8221;_  to verify that all correct SPN&#8217;s are registered. The SPN&#8217;s should be unique. Despite I have seen environments where the domain controllers also contain two SPN&#8217;s named _ExchangeAB _followed by the netbios and fqdn. To verify if the SPN&#8217;s are unique you can use _SetSPN -Q &#8220;SPN VALUE&#8221;_ , for example _SetSPN -Q ExchangeAB/*_.
 
-[<img title="setspn -q" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/setspn-q-300x241.jpg?resize=300%2C241" alt="" width="300" height="241" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/setspn-q.jpg)
+[<img title="setspn -q" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/12/setspn-q-300x241.jpg?resize=300%2C241" alt="" width="300" height="241" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/12/setspn-q.jpg)
 
 As displayed in the screenshot above you will see ExchangeAB will be found four times. Two times on the Exchange Server and two times on the DC.
 
@@ -67,7 +67,7 @@ By making this change all Kerberos packages which are bigger then 1K will be sen
 
 Restart the computer and change the Outlook profile to _Negotiate Authentication_. Verify if you can access the mailbox. Using klist.exe or kerbtray.exe verify of the tickets will be created correctly. Both tools are part of the [resource kit ](http://www.microsoft.com/download/en/details.aspx?id=17657?ocid=aff-n-we-loc--ITPRO40890&WT.mc_id=aff-n-we-loc--ITPRO40890)for Windows 2003. In Windows 7 and 2008 klist is a part of the OS.
 
-[<img title="Kerberos tickets" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/Kerberos-tickes-300x121.jpg?resize=300%2C121" alt="" width="300" height="121" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/12/Kerberos-tickes.jpg)
+[<img title="Kerberos tickets" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/12/Kerberos-tickes-300x121.jpg?resize=300%2C121" alt="" width="300" height="121" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/12/Kerberos-tickes.jpg)
 
 In this screenshot two Kerberos tickets are listed which are being used by Exchange. If all authentication is performed by using Kerberos you will see the following Kerberos tickets:
 

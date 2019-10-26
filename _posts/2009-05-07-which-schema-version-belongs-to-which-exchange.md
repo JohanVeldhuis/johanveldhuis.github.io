@@ -4,7 +4,7 @@ title: Which schema version belongs to which Exchange
 date: 2009-05-07T21:29:11+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1218
+guid: http://myuclab.nl/?p=1218
 permalink: /which-schema-version-belongs-to-which-exchange/
 categories:
   - Exchange

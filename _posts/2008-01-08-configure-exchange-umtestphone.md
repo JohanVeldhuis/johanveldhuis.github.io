@@ -4,7 +4,7 @@ title: Configure Exchange UMTestphone
 date: 2008-01-08T22:07:42+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=186
+guid: http://myuclab.nl/?p=186
 permalink: /configure-exchange-umtestphone/
 categories:
   - Exchange
@@ -52,11 +52,11 @@ Besides the three files we already copied we need to copy a few files more, this
 </ul>
 After all files have been copied you can start up the phone, this can be done by double clicking on the ExchangeUMTestPhone file.
 
-<a title="UMTestPhone" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/testphone.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/testphone.thumbnail.jpg" alt="UMTestPhone" /></a>
+<a title="UMTestPhone" href="https://myuclab.nl/wp-content/uploads/2008/03/testphone.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/testphone.thumbnail.jpg" alt="UMTestPhone" /></a>
 
 The next step will be to setup the UMTestPhone, this can be done via tools en then choosing the option setup, you wil then get the following screen:
 
-<a title="Setup UMTestPhone" href="https://johanveldhuis.nl/wp-admin/h/wp-content/uploads/2008/03/setup.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/setup.thumbnail.jpg" alt="Setup UMTestPhone" /></a>
+<a title="Setup UMTestPhone" href="https://myuclab.nl/wp-admin/h/wp-content/uploads/2008/03/setup.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/setup.thumbnail.jpg" alt="Setup UMTestPhone" /></a>
 
 Fill in the following fields:
 <ul>
@@ -65,4 +65,4 @@ Fill in the following fields:
 </ul>
 When you have finished all steps you only need to make one change on the Exchange server itself. The UM gateway needs to be modified so it points to the client that runs the UMTestphone. You can do this by opening the Exchange Management Console and then go ti <em>Organization Configuration</em> and choosing the option <em>Unified Messaging</em>. On the tab <em>UM IP Gateways</em> you can change the current gateway:
 
-<a title="UM IP Gateway" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/image7.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/image7.thumbnail.jpg" alt="UM IP Gateway" /></a>
+<a title="UM IP Gateway" href="https://myuclab.nl/wp-content/uploads/2008/03/image7.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/image7.thumbnail.jpg" alt="UM IP Gateway" /></a>

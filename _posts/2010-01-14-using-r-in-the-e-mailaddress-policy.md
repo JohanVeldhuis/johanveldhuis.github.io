@@ -4,7 +4,7 @@ title: 'Using %r in the e-mailaddress policy'
 date: 2010-01-14T21:19:06+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1796
+guid: http://myuclab.nl/?p=1796
 permalink: /using-r-in-the-e-mailaddress-policy/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: 'Troubleshooting Federated Sharing &#8211; part I'
 date: 2013-10-13T20:18:23+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3286
+guid: http://myuclab.nl/?p=3286
 permalink: /troubleshooting-federated-sharing/
 categories:
   - Exchange
@@ -37,7 +37,7 @@ If your Exchange organization contains multiple CAS then Powershell is your frie
 
 _Get-AutodiscoverVirtualDirectory|select server, WSSecurityAuthentication_
 
-[<img alt="Get-AutodiscoverVirtualDirectory" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory-300x20.png?resize=300%2C20" width="300" height="20" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory.png)
+[<img alt="Get-AutodiscoverVirtualDirectory" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory-300x20.png?resize=300%2C20" width="300" height="20" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory.png)
 
 You will get an output like above. Verify if the value of the column _WSSecurityAuthentication _is set to _true_
 
@@ -47,13 +47,13 @@ _Get-AutodiscoverVirtualDirectory|Set-AutodiscoverVirtualDirectory -WSSecurityAu
 
 Using this cmdlet the authentication method will be configured but to offer this authentication type you will need to perform an _IISReset_. Additional you can verify if the _svc-integrated_ _handler_ is attached to the autodiscover virtual directory:
 
-[<img alt="IIS" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS-300x193.png?resize=300%2C193" width="300" height="193" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS.png)
+[<img alt="IIS" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/10/IIS-300x193.png?resize=300%2C193" width="300" height="193" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/10/IIS.png)
 
 Next step is to verify the Exchange Web Services, this can be done by using the _Get-WebServicesVirtualDirectory_ cmdlet_:_
 
 _Get-WebServicesVirtualDirectory|select server, ExternalUrl, WSSecurityAuthentication_cmdle
 
-[<img alt="Get-WebServicesVirtualDirectory" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory-300x21.png?resize=300%2C21" width="300" height="21" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory.png)
+[<img alt="Get-WebServicesVirtualDirectory" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory-300x21.png?resize=300%2C21" width="300" height="21" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory.png)
 
 Again the same rule apples _WSSecurityAuthentication _needs to be set to _true_. Besides this the _ExternalUrl_ needs to contains a valid value. This url needs to accessible from the internet. If this is not the case it simply won&#8217;t work.
 
@@ -83,7 +83,7 @@ This can be done by starting with _Test-FederationTrustCertificate_ which will v
 
 _Test-FederationTrustCertificate_
 
-[<img alt="Test-FederationTrustCertificate" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate-300x60.png?resize=300%2C60" width="300" height="60" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate.png)
+[<img alt="Test-FederationTrustCertificate" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate-300x60.png?resize=300%2C60" width="300" height="60" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate.png)
 
 Verify that the _State_ column for all CAS contain the value _installed_.
 

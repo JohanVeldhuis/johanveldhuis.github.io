@@ -4,7 +4,7 @@ title: kerbauth.dll failed to load
 date: 2011-04-26T20:44:51+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2168
+guid: http://myuclab.nl/?p=2168
 permalink: /kerbauth-dll-failed-to-load/
 categories:
   - Exchange
@@ -15,7 +15,7 @@ To authenticate users Kerberos is used. During the Exchange setup a seperate dll
 
 In case of a remove and re-install of Exchange on another volume this may lead to problems. Of course this is a scenarion which you won&#8217;t see a lot.
 
-[<img title="Kerbauth.dll error in event log" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/04/eventlog-300x47.jpg?resize=300%2C47" alt="" width="300" height="47" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/04/eventlog.jpg)
+[<img title="Kerbauth.dll error in event log" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/04/eventlog-300x47.jpg?resize=300%2C47" alt="" width="300" height="47" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/04/eventlog.jpg)
 
 After Exchange is completely re-installed on the new location you won&#8217;t be able to start the EMC anymore. In the event log you will see a lot of errors just like the one above.
 

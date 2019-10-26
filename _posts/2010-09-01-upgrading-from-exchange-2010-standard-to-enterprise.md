@@ -4,7 +4,7 @@ title: Upgrading from Exchange 2010 Standard to Enterprise
 date: 2010-09-01T18:45:03+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2001
+guid: http://myuclab.nl/?p=2001
 permalink: /upgrading-from-exchange-2010-standard-to-enterprise/
 categories:
   - Exchange
@@ -26,10 +26,10 @@ Set-ExchangeServer -productkey 123445-14553-53363-453463
 
 We will tell Exchange to use a new productkey, in this case a productkey for the Enterprise Edition. Just as like upgrading from a trail key to an official key you will need to restart the Information Store service.
 
-[<img title="Exchange productkey" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/08/Exchange-License-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/08/Exchange-License.jpg)
+[<img title="Exchange productkey" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/08/Exchange-License-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/08/Exchange-License.jpg)
 
 Once restarted run the _get-exchangeserver_ cmdlet and you will see you have upgraded from Standard Edition to Enterprise Edition. But is there a way back? No there isn&#8217;t. You can only perform an upgrade and not a downgrade. When you try to do this you will receive the following error message:
 
-[<img title="Exchange productkey" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2010/08/exchange-license-2-150x70.jpg?resize=150%2C70" alt="" width="150" height="70" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/08/exchange-license-2.jpg)
+[<img title="Exchange productkey" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2010/08/exchange-license-2-150x70.jpg?resize=150%2C70" alt="" width="150" height="70" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/08/exchange-license-2.jpg)
 
 So don&#8217;t change the key before you are 100% sure that&#8217;s this is the way to go.

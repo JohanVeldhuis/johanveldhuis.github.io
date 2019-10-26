@@ -4,7 +4,7 @@ title: Microsoft releases Rollup 2 for Exchange 2007 SP2
 date: 2010-01-29T22:42:26+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1829
+guid: http://myuclab.nl/?p=1829
 permalink: /microsoft-releases-rollup-for-exchange-2007-sp2/
 categories:
   - Exchange

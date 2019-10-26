@@ -4,7 +4,7 @@ title: 'ForeFront Protection for Exchange 2010: Unexpected SMTP server response.
 date: 2010-09-24T21:41:49+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2017
+guid: http://myuclab.nl/?p=2017
 permalink: /forefront-protection-for-exchange-2010-unexpected-smtp-server-response-expected-220-actual-500-whole-response-500-5-3-3-unrecognized-command/
 categories:
   - Exchange
@@ -13,7 +13,7 @@ Despite a lot of people will use an antivirus/antispam solution in the cloud so
 
 This software can be installed on the Edge, CAS/Hub and the Mailbox server. In most cases people decide to install it only on one server but in some cases it might be necessary to install it on all servers. The last situation may give the following issue:
 
-[<img title="forefront_ex2010" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2010/09/forefront_ex2010-300x88.jpg?resize=300%2C88" alt="" width="300" height="88" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/09/forefront_ex2010.jpg)
+[<img title="forefront_ex2010" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2010/09/forefront_ex2010-300x88.jpg?resize=300%2C88" alt="" width="300" height="88" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/09/forefront_ex2010.jpg)
 
 You will find this event only on the server which hosts the Mailbox server role and as a result you won&#8217;t receive any notification when, for example, an engine could not be updated.
 

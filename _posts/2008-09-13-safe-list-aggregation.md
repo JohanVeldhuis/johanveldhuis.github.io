@@ -4,7 +4,7 @@ title: Safe List Aggregation
 date: 2008-09-13T23:08:49+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=827
+guid: http://myuclab.nl/?p=827
 permalink: /safe-list-aggregation/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: New CAS-server not used by clients
 date: 2009-10-19T21:01:59+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1372
+guid: http://myuclab.nl/?p=1372
 permalink: /new-cas-server-not-used-by-clients/
 categories:
   - Exchange

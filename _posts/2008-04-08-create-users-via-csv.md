@@ -4,7 +4,7 @@ title: Create users via CSV
 date: 2008-04-08T20:16:42+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=273
+guid: http://myuclab.nl/?p=273
 permalink: /create-users-via-csv/
 categories:
   - Exchange
@@ -70,30 +70,30 @@ The template is really easy, it's the same as creating a default user only we wi
 
 We will create the template via the<em>Exchange Management Console</em>, I guess you have used it a few times and start with the <em>wizard.</em>
 
-[<img class="alignnone size-thumbnail wp-image-265" title="Add new user" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_1-150x150.jpg" alt="" width="150" height="150" srcset="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_1-150x150.jpg 150w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](http://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_1.jpg)
+[<img class="alignnone size-thumbnail wp-image-265" title="Add new user" src="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_1-150x150.jpg" alt="" width="150" height="150" srcset="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_1-150x150.jpg 150w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](http://myuclab.nl/wp-content/uploads/2008/04/bulk_user_1.jpg)
 
 
 We will try to complete all fields, choose a name that you can easily recognize, for example <em>_template</em>
 
 When finished click next <em>next</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_2.jpg"><img class="alignnone size-thumbnail wp-image-266" title="New Mailbox" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_2-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_2.jpg"><img class="alignnone size-thumbnail wp-image-266" title="New Mailbox" src="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_2-150x150.jpg" alt="" width="150" height="150" /></a>
 
 In the screen above it's important to choose the correct <em>Mailbox Server</em>, this will be used for all users who are created via this template. The <em>Storage Group</em>will be hardcoded in the script.
 
 When the user is created you can get the <em>properties</em> of the user and go to the tabs <em>Address and Phone</em>and <em>Organization </em>and fill in the fields that are generic for each user. This is optional and you can choose to do this also via the script, for this you need to add some extra fields to the csv and extra code to the script to import these fields.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_3.jpg"><img class="alignnone size-thumbnail wp-image-267" title="Address and Phone" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_3-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_3.jpg"><img class="alignnone size-thumbnail wp-image-267" title="Address and Phone" src="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_3-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Some values will be automaticly assigned to new users: <em>City</em>and <em>Country/Region</em>, this will ensure that it doesn't cost you a lot of time to fill it in manually. Some values are not being parsed, fields such as <em>Zip-Code</em> and<em> Street Address </em>are examples of this.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_4.jpg"><img class="alignnone size-thumbnail wp-image-268" title="Organization" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_4-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_4.jpg"><img class="alignnone size-thumbnail wp-image-268" title="Organization" src="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_4-150x150.jpg" alt="" width="150" height="150" /></a>
 
 If you want to create users in different departments, it may be easier to create multiple templates. This because I haven't found out how you can specify using the <em>new-mailbox </em>command.
 
 Now that we have created the <em>template mailbox </em>we only need to create the CSV file, this can be done via Notepad or <em>Excel. </em>I created a CSV myself in <em>Notepad.</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_5.jpg"><img class="alignnone size-thumbnail wp-image-269" title="Users.csv file" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_5-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_5.jpg"><img class="alignnone size-thumbnail wp-image-269" title="Users.csv file" src="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_5-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Now that we have done all preparations it's just a matter of running the script. You need to execute the script via the <em>Exchange Management Shell</em>:
 
@@ -103,7 +103,7 @@ CreateNewUser.ps1 -MailboxTemplate "_Template_Rotterdam" -CSVFile "c:\users.csv"
 
 When the script is completed you will have the following result:
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_6.jpg"><img class="alignnone size-thumbnail wp-image-270" title="Users created by Powershell" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_6-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_6.jpg"><img class="alignnone size-thumbnail wp-image-270" title="Users created by Powershell" src="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_6-150x150.jpg" alt="" width="150" height="150" /></a>
 
 After a <em>refresh, </em>when the <em>Exchange Management Console</em>open is left open, you can see the users there too.
 
@@ -135,6 +135,6 @@ CreateNewUser.ps1 -MailboxTemplate "_Template_Rotterdam" -CSVFile "c:\users.csv"
 
 In the <em>Exchange Management Shell </em>you don't really get a good output, therefor we need to look in the <em>Exchange Management Console</em>:
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_7.jpg"><img class="alignnone size-thumbnail wp-image-271" title="Organization properties of user" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/bulk_user_7-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_7.jpg"><img class="alignnone size-thumbnail wp-image-271" title="Organization properties of user" src="https://myuclab.nl/wp-content/uploads/2008/04/bulk_user_7-150x150.jpg" alt="" width="150" height="150" /></a>
 
 This is the end of this tutorial, it's quite a long one I think, but it's very useful when you need to create multiple users in Exchange 2007.

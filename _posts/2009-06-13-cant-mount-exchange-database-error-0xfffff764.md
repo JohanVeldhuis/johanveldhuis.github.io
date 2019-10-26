@@ -4,7 +4,7 @@ title: 'Can&#8217;t mount Exchange Database: error 0xfffff764'
 date: 2009-06-13T20:05:57+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1235
+guid: http://myuclab.nl/?p=1235
 permalink: /cant-mount-exchange-database-error-0xfffff764/
 categories:
   - Exchange

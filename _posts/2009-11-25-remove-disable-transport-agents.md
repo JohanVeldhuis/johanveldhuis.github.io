@@ -4,7 +4,7 @@ title: Remove/disable Transport Agents
 date: 2009-11-25T22:36:39+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1680
+guid: http://myuclab.nl/?p=1680
 permalink: /remove-disable-transport-agents/
 categories:
   - Exchange

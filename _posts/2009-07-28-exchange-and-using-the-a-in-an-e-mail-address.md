@@ -4,7 +4,7 @@ title: Exchange and using the ä in an e-mail address
 date: 2009-07-28T20:49:27+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1275
+guid: http://myuclab.nl/?p=1275
 permalink: /exchange-and-using-the-a-in-an-e-mail-address/
 categories:
   - Exchange

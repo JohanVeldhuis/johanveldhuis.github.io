@@ -22,10 +22,10 @@
 &lt;div class=&quot;w3eden&quot;&gt;
   &lt;!-- WPDM Link Template: Default Template --&gt;
   
-  &lt;div class=&quot;wpdm-link-tpl link-btn [color]&quot; data-durl=&quot;https://johanveldhuis.nl/download/sefautil-gui-v2-1/?wpdmdl=3379&quot;&gt;
+  &lt;div class=&quot;wpdm-link-tpl link-btn [color]&quot; data-durl=&quot;https://myuclab.nl/download/sefautil-gui-v2-1/?wpdmdl=3379&quot;&gt;
     &lt;div class=&quot;media&quot;&gt;
       &lt;div class=&quot;pull-left&quot;&gt;
-        &lt;img class=&quot;wpdm_icon&quot; alt=&quot;Icon&quot; src=&quot;https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg&quot; onerror=&quot;this.src=&amp;quot;https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg&amp;quot;;&quot; /&gt;
+        &lt;img class=&quot;wpdm_icon&quot; alt=&quot;Icon&quot; src=&quot;https://myuclab.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg&quot; onerror=&quot;this.src=&amp;quot;https://myuclab.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg&amp;quot;;&quot; /&gt;
       &lt;/div&gt;
       
       &lt;div class=&quot;media-body&quot;&gt;
@@ -40,7 +40,7 @@
         &lt;span class=&quot;label label-default&quot; style=&quot;font-weight: 400;&quot;&gt;107.29 KB&lt;/span&gt;&lt;/strong&gt; 
         
         &lt;div&gt;
-          &lt;strong&gt;&lt;a class=&quot;wpdm-download-link btn btn-primary &quot; rel=&quot;nofollow&quot; href=&quot;#&quot; onclick=&quot;location.href='https://johanveldhuis.nl/download/sefautil-gui-v2-1/?wpdmdl=3379';return false;&quot;&gt;Download&lt;/a&gt;&lt;/strong&gt;
+          &lt;strong&gt;&lt;a class=&quot;wpdm-download-link btn btn-primary &quot; rel=&quot;nofollow&quot; href=&quot;#&quot; onclick=&quot;location.href='https://myuclab.nl/download/sefautil-gui-v2-1/?wpdmdl=3379';return false;&quot;&gt;Download&lt;/a&gt;&lt;/strong&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -59,7 +59,7 @@
 				<title>SefaUtil GUI v2</title>
 				<description>&lt;p&gt;With pleasure I present you SefaUtil GUI v2. First thanks to all the beta tester which provided a lot of good feedback which has been incorporated in the tool.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-3369&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2-300x161.png?resize=300%2C161&quot; alt=&quot;SefaUtil v2&quot; width=&quot;300&quot; height=&quot;161&quot; srcset=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=300%2C161&amp;amp;ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=1024%2C550&amp;amp;ssl=1 1024w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=900%2C483&amp;amp;ssl=1 900w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1525&amp;amp;ssl=1 1525w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1254&amp;amp;ssl=1 1254w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-3369&quot; src=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2-300x161.png?resize=300%2C161&quot; alt=&quot;SefaUtil v2&quot; width=&quot;300&quot; height=&quot;161&quot; srcset=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=300%2C161&amp;amp;ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=1024%2C550&amp;amp;ssl=1 1024w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?resize=900%2C483&amp;amp;ssl=1 900w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1525&amp;amp;ssl=1 1525w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2015/09/SefaUtil_v2.png?w=1254&amp;amp;ssl=1 1254w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So know you probably want to know what has improved?&lt;/p&gt;
 
@@ -98,10 +98,10 @@
 &lt;div class=&quot;w3eden&quot;&gt;
   &lt;!-- WPDM Link Template: Default Template --&gt;
   
-  &lt;div class=&quot;wpdm-link-tpl link-btn [color]&quot; data-durl=&quot;https://johanveldhuis.nl/?post_type=wpdmpro&amp;amp;p=3372&amp;amp;wpdmdl=3372&quot;&gt;
+  &lt;div class=&quot;wpdm-link-tpl link-btn [color]&quot; data-durl=&quot;https://myuclab.nl/?post_type=wpdmpro&amp;amp;p=3372&amp;amp;wpdmdl=3372&quot;&gt;
     &lt;div class=&quot;media&quot;&gt;
       &lt;div class=&quot;pull-left&quot;&gt;
-        &lt;img class=&quot;wpdm_icon&quot; alt=&quot;Icon&quot; src=&quot;https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg&quot; onerror=&quot;this.src=&amp;quot;https://johanveldhuis.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg&amp;quot;;&quot; /&gt;
+        &lt;img class=&quot;wpdm_icon&quot; alt=&quot;Icon&quot; src=&quot;https://myuclab.nl/wp-content/plugins/download-manager/assets/file-type-icons/ps1.svg&quot; onerror=&quot;this.src=&amp;quot;https://myuclab.nl/wp-content/plugins/download-manager/assets/file-type-icons/unknown.svg&amp;quot;;&quot; /&gt;
       &lt;/div&gt;
       
       &lt;div class=&quot;media-body&quot;&gt;
@@ -116,7 +116,7 @@
         &lt;span class=&quot;label label-default&quot; style=&quot;font-weight: 400;&quot;&gt;106.88 KB&lt;/span&gt;&lt;/strong&gt; 
         
         &lt;div&gt;
-          &lt;strong&gt;&lt;a class=&quot;wpdm-download-link btn btn-primary &quot; rel=&quot;nofollow&quot; href=&quot;#&quot; onclick=&quot;location.href='https://johanveldhuis.nl/?post_type=wpdmpro&amp;amp;p=3372&amp;amp;wpdmdl=3372';return false;&quot;&gt;Download&lt;/a&gt;&lt;/strong&gt;
+          &lt;strong&gt;&lt;a class=&quot;wpdm-download-link btn btn-primary &quot; rel=&quot;nofollow&quot; href=&quot;#&quot; onclick=&quot;location.href='https://myuclab.nl/?post_type=wpdmpro&amp;amp;p=3372&amp;amp;wpdmdl=3372';return false;&quot;&gt;Download&lt;/a&gt;&lt;/strong&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -173,7 +173,7 @@
 
 &lt;p&gt;Microsoft has acknowledged there were some issues earlier this week which not only affected this functionality but also some Office 365 services.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;Office 365 status&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2014/01/O365_status-300x45.png?resize=300%2C45&quot; width=&quot;300&quot; height=&quot;45&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Office 365 status&quot; src=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2014/01/O365_status-300x45.png?resize=300%2C45&quot; width=&quot;300&quot; height=&quot;45&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Currently a work around is available to fix this issue. To fix the issue you will need to refresh the federation trust metadata. This can be done by using the following Powershell cmdlets:&lt;/p&gt;
 
@@ -203,13 +203,13 @@
 
 &lt;p&gt;The solution Microsoft offers is raising the value of the &lt;em&gt;Custom Limit in the&lt;/em&gt; &lt;em&gt;Flood Mitigation Settings.&lt;/em&gt; Microsoft will tell you to raise this number to a higher value but it depends on the amount of mailboxes how high you will configure this value.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/2654412.jpg&quot;&gt;&lt;img alt=&quot;TMG Flood Migration settings&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/2654412-294x300.jpg?resize=294%2C300&quot; width=&quot;294&quot; height=&quot;300&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/12/2654412.jpg&quot;&gt;&lt;img alt=&quot;TMG Flood Migration settings&quot; src=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/12/2654412-294x300.jpg?resize=294%2C300&quot; width=&quot;294&quot; height=&quot;300&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Of course this is a nice solution but it might require the modification of the value multiple times. Despite this value will be applied to all IP addresses including those from evil users. There must be a nicer solution. A more suitable solution is to not apply the Flood mitigation settings to the IP addresses of Office 365.&lt;/p&gt;
 
 &lt;p&gt;To configure this it is recommended to create a computer group which contains the separate IP addresses and subnets which are being used by Office 365. In the image below you can see an example.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions.png&quot;&gt;&lt;img alt=&quot;Floot Mitigation - IP Exceptions&quot; src=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions-300x150.png?resize=300%2C150&quot; width=&quot;300&quot; height=&quot;150&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions.png&quot;&gt;&lt;img alt=&quot;Floot Mitigation - IP Exceptions&quot; src=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions-300x150.png?resize=300%2C150&quot; width=&quot;300&quot; height=&quot;150&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;For a complete overview of the IP addresses used by Office 365 you van visit the following pages:&lt;/p&gt;
 
@@ -382,7 +382,7 @@
 		
 			<item>
 				<title>Review: Microsoft Exchange Server 2013 Inside Out: Mailbox and High Availability</title>
-				<description>&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/cat.gif&quot;&gt;&lt;img alt=&quot;Cover&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/cat.gif?resize=180%2C221&quot; width=&quot;180&quot; height=&quot;221&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+				<description>&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/11/cat.gif&quot;&gt;&lt;img alt=&quot;Cover&quot; src=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/11/cat.gif?resize=180%2C221&quot; width=&quot;180&quot; height=&quot;221&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;It has been a while ago since I received this book for review, initially I started reading it on my way to Exchange Connections in Las Vegas on my iPad mini. And the last few weeks I finished reading the book. So what do I think of the book? The book is a must have resource for everyone who is working with Exchange 2013. Tony Redmond is amazing good in describing the several parts of Exchange related to mailbox and high availability. Yes you are reading it correct this book only describes the mailbox an high availability of Exchange 2013. For the Client Access ,Connectivity and UM part of Exchange 2013 you will have to read the book from Paul Robichaux.&lt;/p&gt;
 
@@ -574,7 +574,7 @@
   &lt;li&gt;&lt;em&gt;ex12t:Month:&lt;/em&gt; the standard month: in this case 3&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;ex12t:DayOfWeek:&lt;/em&gt; the day for which you want to know the availability: in this case Sunday&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;ex12t:DaylightTime:&lt;/em&gt; I haven’t figured out this one but it looks like it has something to do with the winter/summer time&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;ex12t:Address:&lt;/em&gt; the smtp address of the user for which you want to know the availability: in this case &lt;a href=&quot;mailto:johan.@johanveldhuis.nl&quot;&gt;johan.@johanveldhuis.nl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;ex12t:Address:&lt;/em&gt; the smtp address of the user for which you want to know the availability: in this case &lt;a href=&quot;mailto:johan.@myuclab.nl&quot;&gt;johan.@myuclab.nl&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;ex12Routingtype:&lt;/em&gt; the transport method which is used for sending the actual request once you hit the send button and your CAS will deliver it to the mailbox of the user determined in the ex12t:Address: in this case smtp&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;ex12t:AttendeeType:&lt;/em&gt; the type of attendee this can be either required or optional: in this case required&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;ex12t:FreeBusyViewOptions:&lt;/em&gt; contains the meeting specific details&lt;/li&gt;
@@ -584,7 +584,7 @@
   &lt;li&gt;&lt;em&gt;ex12t:RequestedView:&lt;/em&gt; which info we want to see for the user: in this case detailed&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-3313&quot; alt=&quot;request&quot; src=&quot;https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request-300x139.jpg?resize=300%2C139&quot; width=&quot;300&quot; height=&quot;139&quot; srcset=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request.jpg?resize=300%2C139&amp;amp;ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request.jpg?w=785&amp;amp;ssl=1 785w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/request.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-3313&quot; alt=&quot;request&quot; src=&quot;https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/11/request-300x139.jpg?resize=300%2C139&quot; width=&quot;300&quot; height=&quot;139&quot; srcset=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/request.jpg?resize=300%2C139&amp;amp;ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/request.jpg?w=785&amp;amp;ssl=1 785w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Now the XML has been generated the actual request can be send:&lt;/p&gt;
 
@@ -604,7 +604,7 @@
 
 &lt;p&gt;After the message we will see some more detailed information which will show you which request the source CAS tries to send to the remote CAS.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-3314&quot; alt=&quot;response&quot; src=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response-300x290.jpg?resize=300%2C290&quot; width=&quot;300&quot; height=&quot;290&quot; srcset=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response.jpg?resize=300%2C290&amp;amp;ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response.jpg?w=793&amp;amp;ssl=1 793w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/response.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-3314&quot; alt=&quot;response&quot; src=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/response-300x290.jpg?resize=300%2C290&quot; width=&quot;300&quot; height=&quot;290&quot; srcset=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/response.jpg?resize=300%2C290&amp;amp;ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/response.jpg?w=793&amp;amp;ssl=1 793w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In the final part you will see the actual error message and from which CAS it did receive this error. In this case error 5016 id received from CAS02. Outlook will display the 5016 error when hovering over the free/busy info from the specific user.&lt;/p&gt;
 
@@ -664,7 +664,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory.png&quot;&gt;&lt;img alt=&quot;Get-AutodiscoverVirtualDirectory&quot; src=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory-300x20.png?resize=300%2C20&quot; width=&quot;300&quot; height=&quot;20&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory.png&quot;&gt;&lt;img alt=&quot;Get-AutodiscoverVirtualDirectory&quot; src=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory-300x20.png?resize=300%2C20&quot; width=&quot;300&quot; height=&quot;20&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;You will get an output like above. Verify if the value of the column &lt;em&gt;WSSecurityAuthentication _is set to _true&lt;/em&gt;&lt;/p&gt;
 
@@ -681,7 +681,7 @@
 
 &lt;p&gt;Using this cmdlet the authentication method will be configured but to offer this authentication type you will need to perform an &lt;em&gt;IISReset&lt;/em&gt;. Additional you can verify if the &lt;em&gt;svc-integrated&lt;/em&gt; &lt;em&gt;handler&lt;/em&gt; is attached to the autodiscover virtual directory:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS.png&quot;&gt;&lt;img alt=&quot;IIS&quot; src=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS-300x193.png?resize=300%2C193&quot; width=&quot;300&quot; height=&quot;193&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/10/IIS.png&quot;&gt;&lt;img alt=&quot;IIS&quot; src=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/10/IIS-300x193.png?resize=300%2C193&quot; width=&quot;300&quot; height=&quot;193&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Next step is to verify the Exchange Web Services, this can be done by using the &lt;em&gt;Get-WebServicesVirtualDirectory&lt;/em&gt; cmdlet_:_&lt;/p&gt;
 
@@ -694,7 +694,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory.png&quot;&gt;&lt;img alt=&quot;Get-WebServicesVirtualDirectory&quot; src=&quot;https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory-300x21.png?resize=300%2C21&quot; width=&quot;300&quot; height=&quot;21&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory.png&quot;&gt;&lt;img alt=&quot;Get-WebServicesVirtualDirectory&quot; src=&quot;https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory-300x21.png?resize=300%2C21&quot; width=&quot;300&quot; height=&quot;21&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Again the same rule apples &lt;em&gt;WSSecurityAuthentication _needs to be set to _true&lt;/em&gt;. Besides this the &lt;em&gt;ExternalUrl&lt;/em&gt; needs to contains a valid value. This url needs to accessible from the internet. If this is not the case it simply won’t work.&lt;/p&gt;
 
@@ -747,7 +747,7 @@
 
 &lt;p&gt;&lt;em&gt;Test-FederationTrustCertificate&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate.png&quot;&gt;&lt;img alt=&quot;Test-FederationTrustCertificate&quot; src=&quot;https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate-300x60.png?resize=300%2C60&quot; width=&quot;300&quot; height=&quot;60&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate.png&quot;&gt;&lt;img alt=&quot;Test-FederationTrustCertificate&quot; src=&quot;https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate-300x60.png?resize=300%2C60&quot; width=&quot;300&quot; height=&quot;60&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Verify that the &lt;em&gt;State&lt;/em&gt; column for all CAS contain the value &lt;em&gt;installed&lt;/em&gt;.&lt;/p&gt;
 

@@ -4,7 +4,7 @@ title: Use Outlook cached mode or not?
 date: 2012-02-07T21:25:43+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2411
+guid: http://myuclab.nl/?p=2411
 permalink: /use-outlook-cached-mode-or-not/
 categories:
   - Exchange

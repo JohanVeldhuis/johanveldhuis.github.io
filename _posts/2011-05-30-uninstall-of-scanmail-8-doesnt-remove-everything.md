@@ -4,7 +4,7 @@ title: 'Uninstall of Scanmail 8 doesn&#8217;t remove everything'
 date: 2011-05-30T19:46:36+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2228
+guid: http://myuclab.nl/?p=2228
 permalink: /uninstall-of-scanmail-8-doesnt-remove-everything/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: Using Kemp loadbalancers to load balance Exchange 2013
 date: 2013-02-28T17:46:14+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2737
+guid: http://myuclab.nl/?p=2737
 permalink: /using-kemp-loadbalancers-to-load-balance-exchange-2013/
 categories:
   - Exchange

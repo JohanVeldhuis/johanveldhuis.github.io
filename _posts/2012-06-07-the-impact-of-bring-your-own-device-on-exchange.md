@@ -4,7 +4,7 @@ title: The impact of Bring Your Own Device on Exchange – mobile devices
 date: 2012-06-07T20:57:01+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2453
+guid: http://myuclab.nl/?p=2453
 permalink: /the-impact-of-bring-your-own-device-on-exchange/
 categories:
   - Exchange
@@ -293,7 +293,7 @@ If you want to limit the amount of ActiveSync devices per user you will need to 
 
 To modify the throttling policy you will need to use the _Exchange Management Shell (EMS)_. The output below is the result of the _Get-ThrottlingPolicy:_
 
-[<img class="aligncenter size-medium wp-image-2454" title="get-throttlingpolicy" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/get-throttlingpolicy-300x120.jpg?resize=300%2C120" alt="" width="300" height="120" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/get-throttlingpolicy.jpg?resize=300%2C120&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/get-throttlingpolicy.jpg?w=402&ssl=1 402w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/get-throttlingpolicy.jpg)
+[<img class="aligncenter size-medium wp-image-2454" title="get-throttlingpolicy" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/06/get-throttlingpolicy-300x120.jpg?resize=300%2C120" alt="" width="300" height="120" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/get-throttlingpolicy.jpg?resize=300%2C120&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/get-throttlingpolicy.jpg?w=402&ssl=1 402w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/get-throttlingpolicy.jpg)
 
 As you can see the _EASMaxDevices_ is the parameter which will need to be modified to limit the amount of ActiveSync devices which can be used.
 
@@ -320,7 +320,7 @@ The option can be found in the Exchange Control Panel (ECP) in the _Phone & Voic
 
 On the _ActiveSync Access_ page scroll down till you see the _Device Access Rules_ and klik on _New_ to create a new rule:
 
-[<img class="aligncenter size-medium wp-image-2455" title="New Device Access Rule" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/new-deviceaccessrule-300x276.jpg?resize=300%2C276" alt="" width="300" height="276" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/new-deviceaccessrule.jpg?resize=300%2C276&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/new-deviceaccessrule.jpg?w=506&ssl=1 506w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/new-deviceaccessrule.jpg)
+[<img class="aligncenter size-medium wp-image-2455" title="New Device Access Rule" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/06/new-deviceaccessrule-300x276.jpg?resize=300%2C276" alt="" width="300" height="276" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/06/new-deviceaccessrule.jpg?resize=300%2C276&ssl=1 300w, https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/06/new-deviceaccessrule.jpg?w=506&ssl=1 506w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/06/new-deviceaccessrule.jpg)
 
 Using the _Browse_ __buttons select a family and/or model and select the _Quarantine – Let me decide to block or allow later_ option
 
@@ -328,7 +328,7 @@ Using the _Browse_ __buttons select a family and/or model and select the _Quaran
 
 The disadvantage of the rule per family is that not all devices may hit this rule. In this case the default settings are used. These can be changed by pressing the _Edit_ button on top of the page:
 
-[<img class="aligncenter size-medium wp-image-2456" title="Exchange ActiveSync Access Settings" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/activesync-300x79.jpg?resize=300%2C79" alt="" width="300" height="79" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/activesync.jpg?resize=300%2C79&ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/activesync.jpg?w=609&ssl=1 609w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/activesync.jpg)
+[<img class="aligncenter size-medium wp-image-2456" title="Exchange ActiveSync Access Settings" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/06/activesync-300x79.jpg?resize=300%2C79" alt="" width="300" height="79" srcset="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/06/activesync.jpg?resize=300%2C79&ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/06/activesync.jpg?w=609&ssl=1 609w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/06/activesync.jpg)
 
 This will bring up a new window which gives you the following options:
 
@@ -336,7 +336,7 @@ This will bring up a new window which gives you the following options:
   * Which user or distribution group must be notified when an unknown device is quarantined
   * Which text needs to be send to the user which tries to connect with an unknown device
 
-[<img class="aligncenter size-medium wp-image-2457" title="Exchange ActiveSync Settings" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/activesync2-300x275.jpg?resize=300%2C275" alt="" width="300" height="275" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/activesync2.jpg?resize=300%2C275&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/activesync2.jpg?w=578&ssl=1 578w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/activesync2.jpg)
+[<img class="aligncenter size-medium wp-image-2457" title="Exchange ActiveSync Settings" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/activesync2-300x275.jpg?resize=300%2C275" alt="" width="300" height="275" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/activesync2.jpg?resize=300%2C275&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/activesync2.jpg?w=578&ssl=1 578w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/activesync2.jpg)
 
 **How about BlackBerry can this be limited also?**
 
@@ -354,7 +354,7 @@ By default all Exchange related HTTP/HTTPS traffic is logged in the same IIS log
 
 The cause of this is that the default setting is to only have one log file per site:
 
-[<img class="aligncenter size-medium wp-image-2458" title="IIS logging" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/iis-300x90.jpg?resize=300%2C90" alt="" width="300" height="90" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/iis.jpg?resize=300%2C90&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/iis.jpg?w=409&ssl=1 409w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/06/iis.jpg)
+[<img class="aligncenter size-medium wp-image-2458" title="IIS logging" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/iis-300x90.jpg?resize=300%2C90" alt="" width="300" height="90" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/iis.jpg?resize=300%2C90&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/iis.jpg?w=409&ssl=1 409w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/06/iis.jpg)
 
 Since all virtual directories of Exchange are created in the default web site by default all this setting will be applied to these virtual directories to. So reading the log is a little bit difficult although it is possible.
 

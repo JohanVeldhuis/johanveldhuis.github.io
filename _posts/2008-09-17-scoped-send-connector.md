@@ -4,7 +4,7 @@ title: Scoped Send Connector
 date: 2008-09-17T23:01:59+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=834
+guid: http://myuclab.nl/?p=834
 permalink: /scoped-send-connector/
 categories:
   - Exchange

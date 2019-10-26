@@ -4,7 +4,7 @@ title: Outlook Web Access
 date: 2008-08-09T22:38:17+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=605
+guid: http://myuclab.nl/?p=605
 permalink: /outlook-web-access/
 categories:
   - Exchange
@@ -15,7 +15,7 @@ Users can only use these functionalities if their mailbox is hosted on an Exchan
 
 The OWA functionalities are delivered by the Client Access Server (CAS) if you had an Exchange 2003 environment running with OWA this functionality was provided by the Frontednd Server. When we zoom in to the Exchange Management Console en then have a close look ath the server configuration of  the CAS server you will discover that it hosts mutiple websites:
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-sites.jpg"><img class="alignnone size-thumbnail wp-image-603" title="Diverse websites op de CAS server" src="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-sites-150x127.jpg" alt="" width="150" height="127" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/08/owa-sites.jpg"><img class="alignnone size-thumbnail wp-image-603" title="Diverse websites op de CAS server" src="https://myuclab.nl/wp-content/uploads/2008/08/owa-sites-150x127.jpg" alt="" width="150" height="127" /></a>
 
 The three that are important for Outlook Web Access are:
 <ul>
@@ -32,7 +32,7 @@ We will restrict this tutorial to OWA 2007 only, so we will get the properties o
 
 The first tab we see is <em>general:</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-general.jpg"><img class="alignnone size-thumbnail wp-image-604" title="OWA general tab" src="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-general-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/08/owa-general.jpg"><img class="alignnone size-thumbnail wp-image-604" title="OWA general tab" src="https://myuclab.nl/wp-content/uploads/2008/08/owa-general-150x150.jpg" alt="" width="150" height="150" /></a>
 
 You can't change much on this tab, it contains some information you may find interesting:
 <ul>
@@ -54,11 +54,11 @@ The next tab is <em>authentication</em> on this tab we can setup the way the us
 	<li>User Principale Name, the user logs in like this <a href="mailto:johan@test.local">johan@test.local</a></li>
 	<li>User Name Only, the user fills in his username, in this case the field <em>logon domain </em>contains the domain where the user needs to login.</li>
 </ul>
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-auth.jpg"><img class="alignnone size-thumbnail wp-image-607" title="OWA Authentication" src="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-auth-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/08/owa-auth.jpg"><img class="alignnone size-thumbnail wp-image-607" title="OWA Authentication" src="https://myuclab.nl/wp-content/uploads/2008/08/owa-auth-150x150.jpg" alt="" width="150" height="150" /></a>
 
 The next tab is <em>segmentation </em>on this tab we can control what options end-users will get when they use OWA. You can for example block the ActivSync integration or prevent the password changing in OWA.
 
- <a href="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-segment.jpg"><img class="alignnone size-thumbnail wp-image-612" title="OWA segmentation" src="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-segment-150x150.jpg" alt="" width="150" height="150" /></a>
+ <a href="https://myuclab.nl/wp-content/uploads/2008/08/owa-segment.jpg"><img class="alignnone size-thumbnail wp-image-612" title="OWA segmentation" src="https://myuclab.nl/wp-content/uploads/2008/08/owa-segment-150x150.jpg" alt="" width="150" height="150" /></a>
 
 On the tab <em>Public Computer File Access </em>you can decide how OWA will react if a user tries to open an attachment while logged into OWA from a public computer:
 <ul>
@@ -66,7 +66,7 @@ On the tab <em>Public Computer File Access </em>you can decide how OWA will re
 	<li>OWA needs to prevent the opening/downloading of the file</li>
 	<li>OWA allows to open/download the file</li>
 </ul>
- <a href="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-public.jpg"><img class="alignnone size-thumbnail wp-image-633" title="OWA Public Computer Files Access" src="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-public-150x150.jpg" alt="" width="150" height="150" /></a>
+ <a href="https://myuclab.nl/wp-content/uploads/2008/08/owa-public.jpg"><img class="alignnone size-thumbnail wp-image-633" title="OWA Public Computer Files Access" src="https://myuclab.nl/wp-content/uploads/2008/08/owa-public-150x150.jpg" alt="" width="150" height="150" /></a>
 
 As you can see it has been changed a lot compared to OWA 2003. The first option <em>enable direct file access </em>let you configure which files the end-user may open without using the Web ready functionality. When you click on the <em>customise </em>button you can change the files allowed or blocked:
 <ul>
@@ -95,11 +95,11 @@ The <em>remote file servers </em>need to defined on another tab called <em>remot
 
 The next tab is <em>Private Computer Access </em>with this tab you can configure the same things as on the tab <em>Public Computer Access </em>only then for trusted computers/laptops. Default there are a few settings that are not the same as on the tab <em>Public Computer Access </em>for example the options to access Windows File Shares and Windows SharePoint Services is enabled.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-private.jpg"><img class="alignnone size-thumbnail wp-image-634" title="OWA Private Computer File Access" src="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-private-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/08/owa-private.jpg"><img class="alignnone size-thumbnail wp-image-634" title="OWA Private Computer File Access" src="https://myuclab.nl/wp-content/uploads/2008/08/owa-private-150x150.jpg" alt="" width="150" height="150" /></a>
 
 On the last tab <em>remote file servers </em>you can setup which servers are accessable via OWA. You can easily set this up by adding a server to one of the two lists. It would be a lot of work to add all the file-servers that you want to block and for example allow only one. For this case you can use the option <em>unknown servers </em>the action defined there will be used for every server who isn't listed on the <em>allow </em>or <em>block </em>list. Default the action is <em>block. </em>
 
- <a href="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-remote.jpg"><img class="alignnone size-thumbnail wp-image-637" title="OWA remote file servers" src="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-remote-150x150.jpg" alt="" width="150" height="150" /></a>
+ <a href="https://myuclab.nl/wp-content/uploads/2008/08/owa-remote.jpg"><img class="alignnone size-thumbnail wp-image-637" title="OWA remote file servers" src="https://myuclab.nl/wp-content/uploads/2008/08/owa-remote-150x150.jpg" alt="" width="150" height="150" /></a>
 
 As you can see there is only one button left that we didn't spoke about. The button <em>configuration </em>on the bottom of the tab. With this button we need to specify which domains need to be seen as internal domains. When a server is added from a domain that is not listed OWA will not see it as an internal server and will block access to it.
 
@@ -107,7 +107,7 @@ We now have spoken about all the tabs of OWA. The other things such as certifica
 
 When OWA is published on the internet it may be necessary to use a 3rd party certificate for the OWA, you can buy a certificate with for example VeriSign. OWA 2007 uses https and form-based authentication by default. Here a self-signed certificate is used, which can result in warnings from webbrowsers.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-certificaatfout.jpg"><img class="alignnone size-thumbnail wp-image-638" title="OWA certificate error" src="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-certificaatfout.jpg" alt="" width="104" height="27" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/08/owa-certificaatfout.jpg"><img class="alignnone size-thumbnail wp-image-638" title="OWA certificate error" src="https://myuclab.nl/wp-content/uploads/2008/08/owa-certificaatfout.jpg" alt="" width="104" height="27" /></a>
 
 You will have to add a copy of the self signed certificate to the trusted root authority to prevent this error. You can get a copy of this certificate in two ways:
 <ul>
@@ -135,7 +135,7 @@ All the steps above can be done on a client. All the steps below need to be exec
 	<li>when this command is executed it will prompt you for a username and password. The password is the only thing that is necessary to export and import the certificate.</li>
 	<li>the last step is importing the certificate in the trusted root authorities on the client, optionally this can be done via a Group Policy.</li>
 </ul>
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-cert.jpg"><img class="alignnone size-thumbnail wp-image-639" title="Get-Exchangecertificate output" src="https://johanveldhuis.nl/wp-content/uploads/2008/08/owa-cert-150x103.jpg" alt="" width="150" height="103" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/08/owa-cert.jpg"><img class="alignnone size-thumbnail wp-image-639" title="Get-Exchangecertificate output" src="https://myuclab.nl/wp-content/uploads/2008/08/owa-cert-150x103.jpg" alt="" width="150" height="103" /></a>
 
 Both warnings will result in not displaying the message anymore. When a 3rd party certificate will be installed the steps above are not needed. The only thing you should arrange is that you trust the root certificate from the 3rd party.
 

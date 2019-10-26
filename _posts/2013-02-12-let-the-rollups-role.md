@@ -4,7 +4,7 @@ title: Let the rollups role
 date: 2013-02-12T21:00:37+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2721
+guid: http://myuclab.nl/?p=2721
 permalink: /let-the-rollups-role/
 categories:
   - Exchange

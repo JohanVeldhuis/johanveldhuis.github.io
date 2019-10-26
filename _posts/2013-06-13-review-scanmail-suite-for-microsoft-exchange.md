@@ -4,7 +4,7 @@ title: Review ScanMail Suite for Microsoft Exchange
 date: 2013-06-13T21:47:35+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3202
+guid: http://myuclab.nl/?p=3202
 permalink: /review-scanmail-suite-for-microsoft-exchange/
 categories:
   - Exchange
@@ -26,7 +26,7 @@ Currently all vendors are working hard or have already released their new versio
 
 Among those vendors is Trend Micro, they have just release the RTM version of ScanMail™ Suite for Microsoft® Exchange™  , also known as SMEX. You may think that it took long before they released the new version for Exchange 2013 but keep in mind Exchange 2013 is totally different then Exchange 2010 as discussed earlier.
 
-[<img alt="SMEX console" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/06/SMEX-console-300x149.png?resize=300%2C149" width="300" height="149" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/06/SMEX-console.png)
+[<img alt="SMEX console" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/06/SMEX-console-300x149.png?resize=300%2C149" width="300" height="149" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/06/SMEX-console.png)
 
 With SMEX 11 Trend Micro does continue to build on previous releases of the product only then available for Exchange 2013. Starting from SMEX 11 you can&#8217;t install the product anymore on Exchange 2003. This is a logical result of the support for Exchange 2003 will end in April 2014.
 
@@ -123,7 +123,7 @@ The search and destroy functionality uses two types of accounts which must be co
 
 At least one search & destroy administrator needs to be assigned, this since “normal” administrators won’t be able to perform the search & destroy tasks unless assigned this role.
 
-[<img alt="Search & Destroy" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/06/sd-300x157.png?resize=300%2C157" width="300" height="157" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/06/sd.png)
+[<img alt="Search & Destroy" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/06/sd-300x157.png?resize=300%2C157" width="300" height="157" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/06/sd.png)
 
 The Search & Destroy feature has the ability to create PST files before removing the content. The content in that case will be exported to PST and stored in a folder on the local server. So if performing large search & destroy operations make sure you have enough space left on the volume where you install SMEX. This option does require the Exchange Mailbox Import Export role to be assigned to the user account.
 

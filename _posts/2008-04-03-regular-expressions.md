@@ -4,7 +4,7 @@ title: Regular expressions
 date: 2008-04-03T20:50:52+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=245
+guid: http://myuclab.nl/?p=245
 permalink: /regular-expressions/
 ratings_users:
   - "0"
@@ -15,7 +15,7 @@ ratings_average:
 categories:
   - Blog
 ---
-[<img class="alignleft size-thumbnail wp-image-246" title="Regular Expressions cartoon" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/04/regular_expressions-150x150.png?resize=150%2C150" alt="" width="150" height="150" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2008/04/regular_expressions.png?resize=150%2C150&ssl=1 150w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/D:\Web\wordpress/wp-content/uploads/2008/04/regular_expressions.png?zoom=2&resize=150%2C150&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/D:\Web\wordpress/wp-content/uploads/2008/04/regular_expressions.png?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2008/04/regular_expressions.png)
+[<img class="alignleft size-thumbnail wp-image-246" title="Regular Expressions cartoon" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2008/04/regular_expressions-150x150.png?resize=150%2C150" alt="" width="150" height="150" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2008/04/regular_expressions.png?resize=150%2C150&ssl=1 150w, https://i0.wp.com/myuclab.nl/wp-content/uploads/D:\Web\wordpress/wp-content/uploads/2008/04/regular_expressions.png?zoom=2&resize=150%2C150&ssl=1 300w, https://i0.wp.com/myuclab.nl/wp-content/uploads/D:\Web\wordpress/wp-content/uploads/2008/04/regular_expressions.png?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2008/04/regular_expressions.png)
 
  
 

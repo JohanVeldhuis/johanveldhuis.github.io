@@ -4,12 +4,12 @@ title: 'Review: Microsoft Exchange Server 2013 PowerShell Cookbook: Second Editi
 date: 2013-08-21T16:26:16+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3258
+guid: http://myuclab.nl/?p=3258
 permalink: /review-microsoft-exchange-server-2013-powershell-cookbook-second-edition/
 categories:
   - Reviews
 ---
-[<img src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/08/20130821-172919.jpg?w=627" alt="20130821-172919.jpg" class="alignnone size-full" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/08/20130821-172919.jpg)
+[<img src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/08/20130821-172919.jpg?w=627" alt="20130821-172919.jpg" class="alignnone size-full" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/08/20130821-172919.jpg)
 
 A few weeks ago the Exchange 2013 version of the Powershell Cookbook was published by Packt Publishing. This version also introduced a additional writer for the book: Jonas Andersson. A frequent Exchange blogger with quality articles so before I started reading I was convinced the book should be from high quality also. The second writer is the one who was also responsible for the first part Mike Pfeiffer. Those who missed the first part and are working with Exchange 2010, please read the book it contains very usefull info.
 

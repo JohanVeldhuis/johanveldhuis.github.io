@@ -4,7 +4,7 @@ title: 'Add mailcontacts via a  CSV and add the new user to a distributiongroup'
 date: 2008-04-23T20:36:03+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=314
+guid: http://myuclab.nl/?p=314
 permalink: /add-contacts-via-csv-to-distributiongroup/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: Exchange permissions
 date: 2008-09-09T21:26:16+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=820
+guid: http://myuclab.nl/?p=820
 permalink: /exchange-permissions/
 categories:
   - Exchange

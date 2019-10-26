@@ -4,7 +4,7 @@ title: 'MapiExceptionNotFound: Unable to delete mailbox'
 date: 2010-05-14T21:27:19+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1908
+guid: http://myuclab.nl/?p=1908
 permalink: /mapiexceptionnotfound-unable-to-delete-mailbox/
 categories:
   - Exchange

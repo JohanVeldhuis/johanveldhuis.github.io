@@ -4,7 +4,7 @@ title: Exclude domain-controllers to be used by Exchange
 date: 2009-10-12T21:37:19+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1368
+guid: http://myuclab.nl/?p=1368
 permalink: /exclude-specific-domaincontrollers/
 categories:
   - Exchange

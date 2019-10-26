@@ -4,7 +4,7 @@ title: Public folders in Exchange 2007
 date: 2008-04-26T22:18:33+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=315
+guid: http://myuclab.nl/?p=315
 permalink: /public-folders-in-exchange-2007/
 categories:
   - Exchange

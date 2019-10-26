@@ -4,7 +4,7 @@ title: 'MapiExceptionNetworkError: Unable to make connection to the server. (hr=
 date: 2010-07-03T22:08:59+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1923
+guid: http://myuclab.nl/?p=1923
 permalink: /error-mapiexceptionnetworkerror-unable-to-make-connection-to-the-server-hr0x80004005-ec2423/
 categories:
   - Exchange

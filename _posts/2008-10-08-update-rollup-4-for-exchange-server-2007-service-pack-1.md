@@ -4,7 +4,7 @@ title: Update Rollup 4 for Exchange Server 2007 Service Pack 1
 date: 2008-10-08T22:45:56+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=899
+guid: http://myuclab.nl/?p=899
 permalink: /update-rollup-4-for-exchange-server-2007-service-pack-1/
 categories:
   - Exchange

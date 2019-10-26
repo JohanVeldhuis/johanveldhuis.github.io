@@ -51,7 +51,7 @@ SQL Queries based on James Cussens script: http://www.myskypelab.com/2013/10/lyn
 
 .NOTES
 Written By: Johan Veldhuis
-Website:    http://www.johanveldhuis.nl
+Website:    http://www.myuclab.nl
 Twitter:    http://twitter.com/jveldh
 
 Change Log
@@ -1128,7 +1128,8 @@ function initialize
 
 function ConnectSQL
 {
-    #Find ResourceId for user'    param([string]$query)
+    #Find ResourceId for user'
+    param([string]$query)
 
     #Define connection string
 
@@ -1186,7 +1187,8 @@ $EXPORT|Out-File $file
 
 function SRC_USER
 {
-    #Find ResourceId for user'    param([string]$userid)
+    #Find ResourceId for user'
+    param([string]$userid)
 
     ConnectSQL -query "select ResourceId from Resource where UserAtHost = '$userid'"
 
@@ -2640,7 +2642,16 @@ function APPLY
 				}
 				elseif($CB_SIM_RING_DEST.text -ne ""){
 					if ($CB_SIM_RING.Checked -eq $true){
-                        if ($CB_SIM_RING_DEST.SelectedItem -eq "Home"){                            $output = SEFAUTIL /Server:$pool $($getUserInfo.SipAddress.ToLower().Replace('sip:','')) /setsimulringdestination:$((Get-CsAdUser -identity $getUserInfo.Identity).homePhone) /enablesimulring                        }                        elseif($CB_SIM_RING_DEST.SelectedItem -eq "IP"){                            $output = SEFAUTIL /Server:$pool $($getUserInfo.SipAddress.ToLower().Replace('sip:','')) /setsimulringdestination:$((Get-CsAdUser -identity $getUserInfo.Identity).IPPhone) /enablesimulring                        }                        elseif($CB_SIM_RING_DEST.SelectedItem -eq "Mobile"){                            $output = SEFAUTIL /Server:$pool $($getUserInfo.SipAddress.ToLower().Replace('sip:','')) /setsimulringdestination:$((Get-CsAdUser -identity $getUserInfo.Identity).MobilePhone) /enablesimulring                        }
+                        if ($CB_SIM_RING_DEST.SelectedItem -eq "Home"){
+                            $output = SEFAUTIL /Server:$pool $($getUserInfo.SipAddress.ToLower().Replace('sip:','')) /setsimulringdestination:$((Get-CsAdUser -identity $getUserInfo.Identity).homePhone) /enablesimulring
+
+                        }
+                        elseif($CB_SIM_RING_DEST.SelectedItem -eq "IP"){
+                            $output = SEFAUTIL /Server:$pool $($getUserInfo.SipAddress.ToLower().Replace('sip:','')) /setsimulringdestination:$((Get-CsAdUser -identity $getUserInfo.Identity).IPPhone) /enablesimulring
+                        }
+                        elseif($CB_SIM_RING_DEST.SelectedItem -eq "Mobile"){
+                            $output = SEFAUTIL /Server:$pool $($getUserInfo.SipAddress.ToLower().Replace('sip:','')) /setsimulringdestination:$((Get-CsAdUser -identity $getUserInfo.Identity).MobilePhone) /enablesimulring
+                        }
                         else
                         {                        
                             $temp = $CB_SIM_RING_DEST.text

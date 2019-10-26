@@ -4,12 +4,12 @@ title: 'Review: Microsoft Exchange Server 2013 Inside Out: Mailbox and High Avai
 date: 2013-11-08T20:30:41+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3326
+guid: http://myuclab.nl/?p=3326
 permalink: /review-microsoft-exchange-server-2013-inside-mailbox-high-availability/
 categories:
   - Reviews
 ---
-[<img alt="Cover" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/cat.gif?resize=180%2C221" width="180" height="221" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/cat.gif)
+[<img alt="Cover" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/11/cat.gif?resize=180%2C221" width="180" height="221" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/11/cat.gif)
 
 It has been a while ago since I received this book for review, initially I started reading it on my way to Exchange Connections in Las Vegas on my iPad mini. And the last few weeks I finished reading the book. So what do I think of the book? The book is a must have resource for everyone who is working with Exchange 2013. Tony Redmond is amazing good in describing the several parts of Exchange related to mailbox and high availability. Yes you are reading it correct this book only describes the mailbox an high availability of Exchange 2013. For the Client Access ,Connectivity and UM part of Exchange 2013 you will have to read the book from Paul Robichaux.
 

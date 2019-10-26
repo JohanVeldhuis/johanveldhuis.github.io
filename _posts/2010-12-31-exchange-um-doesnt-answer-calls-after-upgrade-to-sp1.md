@@ -4,7 +4,7 @@ title: 'Exchange UM doesn&#8217;t answer calls after SP1 upgrade'
 date: 2010-12-31T13:48:31+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2085
+guid: http://myuclab.nl/?p=2085
 permalink: /exchange-um-doesnt-answer-calls-after-upgrade-to-sp1/
 categories:
   - Exchange
@@ -47,13 +47,13 @@ In this case this doesn&#8217;t help you much either so there was one option lef
 
 Once installed it&#8217;s time to reproduce the issue again, don&#8217;t forget to enable the capture before doing this.  
 
-[<img title="Wireshark UM trace" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/12/um-300x18.jpg?resize=300%2C18" alt="" width="300" height="18" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2010/12/um.jpg)  
+[<img title="Wireshark UM trace" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/12/um-300x18.jpg?resize=300%2C18" alt="" width="300" height="18" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2010/12/um.jpg)  
 
 When you have reproduced the issue you will see a lot of messages which are captured. Among them messages which are from the protocol type SIP. Select one of these rules and select the option _Analyze _followed by _Follow TCP Stream._ This will give an overview of all SIP messages.  
 
 Normally you will see the messages below:   
 
-[<img title="SIP workflow" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/12/sip-300x278.jpg?resize=300%2C278" alt="" width="300" height="278" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2010/12/sip.jpg)  
+[<img title="SIP workflow" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/12/sip-300x278.jpg?resize=300%2C278" alt="" width="300" height="278" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2010/12/sip.jpg)  
 
 When the problem occurs you will find only two messages Invite and Moved Temporarily:  
 

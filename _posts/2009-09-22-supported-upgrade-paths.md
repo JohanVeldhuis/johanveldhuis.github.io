@@ -4,7 +4,7 @@ title: Supported upgrade paths
 date: 2009-09-22T22:08:42+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1331
+guid: http://myuclab.nl/?p=1331
 permalink: /supported-upgrade-paths/
 categories:
   - Exchange

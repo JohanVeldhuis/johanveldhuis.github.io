@@ -4,7 +4,7 @@ title: Block mails to specific domain
 date: 2008-09-23T22:20:36+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=843
+guid: http://myuclab.nl/?p=843
 permalink: /block-mails-to-specific-domain/
 categories:
   - Exchange

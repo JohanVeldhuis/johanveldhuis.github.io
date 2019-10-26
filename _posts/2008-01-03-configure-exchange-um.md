@@ -4,7 +4,7 @@ title: Configure Exchange UM
 date: 2008-01-03T12:32:15+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=202
+guid: http://myuclab.nl/?p=202
 permalink: /exchange-um-configureren/
 categories:
   - Exchange
@@ -20,7 +20,7 @@ In this tutorial we will use the Exchange Management Console to configure the UM
 
 First we start the Exchange Management Console and open the option <em>Organization Configuration</em>.
 
-<a title="Organization Configuration" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/image1.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/image1.thumbnail.jpg" alt="Organization Configuration" /></a>
+<a title="Organization Configuration" href="https://myuclab.nl/wp-content/uploads/2008/03/image1.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/image1.thumbnail.jpg" alt="Organization Configuration" /></a>
 
 Below this you will find 4 sub menu's:
 <ul>
@@ -31,11 +31,11 @@ Below this you will find 4 sub menu's:
 </ul>
 The last of the 4 we need, this because we would like to configure the UM functionality. When you click on it the middle piece of the MMC changes and will get 4 tabs.
 
-<a title="Unified Messaging" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/image2.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/image2.thumbnail.jpg" alt="Unified Messaging" /></a>
+<a title="Unified Messaging" href="https://myuclab.nl/wp-content/uploads/2008/03/image2.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/image2.thumbnail.jpg" alt="Unified Messaging" /></a>
 
 The first tab is named <em>UM Dial Plans</em>; configuring starts here. In the right side of the screen a menu is displayed, click on <em>New UM Dial Plan</em>, the following window will be opened:
 
-<a title="UM Dial Plan" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/image3.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/image3.thumbnail.jpg" alt="UM Dial Plan" /></a>
+<a title="UM Dial Plan" href="https://myuclab.nl/wp-content/uploads/2008/03/image3.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/image3.thumbnail.jpg" alt="UM Dial Plan" /></a>
 
 As you can see above the window contains four fields. All the fields need to be filled in:
 <ul>
@@ -46,15 +46,15 @@ As you can see above the window contains four fields. All the fields need to be 
 </ul>
 When all fields are filled in click on <em>new </em>to create the dial plan. When the dial plan is created you will see it when you select the tab <em>UM Dial Plans</em>:
 
-<a title="UM Dial Plan" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/image4.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/image4.thumbnail.jpg" alt="UM Dial Plan" /></a>
+<a title="UM Dial Plan" href="https://myuclab.nl/wp-content/uploads/2008/03/image4.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/image4.thumbnail.jpg" alt="UM Dial Plan" /></a>
 
 When you select the <em>UM Mailbox Policies </em>tab you can see that there is a policy created with the name <em>name of the numberplan-default</em>. When you create a dial plan there will also be a default policy created. In this policy several things are specified: minimum pin length, how long may the voicemail message be and a lot of other options. This can be used to create separate policies for different users. For example you can give user A a shorter voicemail text then user B.
 
-<a title="UM Mailbox Policy" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/image5.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/image5.thumbnail.jpg" alt="UM Mailbox Policy" /></a> 
+<a title="UM Mailbox Policy" href="https://myuclab.nl/wp-content/uploads/2008/03/image5.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/image5.thumbnail.jpg" alt="UM Mailbox Policy" /></a> 
 
 The next step will be to define the IP gateway, this is the device where all incoming calls are arriving at the Exchange server and via which all outgoing calls leave the Exchange server.  By pressing <em>New UM IP </em>Gateway in the right menu you will get the following window:
 
-<a title="UM IP Gateway" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/image6.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/image6.thumbnail.jpg" alt="UM IP Gateway" /></a>
+<a title="UM IP Gateway" href="https://myuclab.nl/wp-content/uploads/2008/03/image6.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/image6.thumbnail.jpg" alt="UM IP Gateway" /></a>
 
 In this windows we need to specify the following:
 <ul>
@@ -63,7 +63,7 @@ In this windows we need to specify the following:
 </ul>
 When this two fields are filled in you can assign the created <em>dial plan </em>to the <em>IP Gateway. </em>When doing this a hunt group will be created for the specific gateway. When you do not select a dial plan then you need to create the hunt group manually. When the wizard is finished you will have the following address:
 
-<a title="UM IP Gateway" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/image7.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/image7.thumbnail.jpg" alt="UM IP Gateway" /></a>
+<a title="UM IP Gateway" href="https://myuclab.nl/wp-content/uploads/2008/03/image7.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/image7.thumbnail.jpg" alt="UM IP Gateway" /></a>
 
 You can see that it exists of 2 levels:
 <ul>
@@ -78,7 +78,7 @@ The final step is to create an <em>auto attendant. </em>With this feature we can
 
 Go to the tab <em>auto attendant</em> and press <em>New UM Auto Attendant</em> in the right menu, you will get the following window:
 
-<a title="Auto Attendant" href="https://johanveldhuis.nl/wp-content/uploads/2008/03/image8.jpg"><img src="https://johanveldhuis.nl/wp-content/uploads/2008/03/image8.thumbnail.jpg" alt="Auto Attendant" /></a>
+<a title="Auto Attendant" href="https://myuclab.nl/wp-content/uploads/2008/03/image8.jpg"><img src="https://myuclab.nl/wp-content/uploads/2008/03/image8.thumbnail.jpg" alt="Auto Attendant" /></a>
 
 We will need to fill in thw following fields:
 

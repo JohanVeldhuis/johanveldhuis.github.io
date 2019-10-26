@@ -4,7 +4,7 @@ title: The risks of publishing EWS
 date: 2012-08-10T05:49:02+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2509
+guid: http://myuclab.nl/?p=2509
 permalink: /the-risks-of-publishing-ews/
 categories:
   - Exchange

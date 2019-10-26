@@ -4,7 +4,7 @@ title: Create a new room and set permissions in one step
 date: 2009-10-04T20:38:34+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1357
+guid: http://myuclab.nl/?p=1357
 permalink: /create-new-room-and-set-permissions-in-one-step/
 categories:
   - Exchange

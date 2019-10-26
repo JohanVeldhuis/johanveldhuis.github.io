@@ -4,7 +4,7 @@ title: Remove-Mailbox versus Disable-Mailbox
 date: 2008-08-19T21:17:09+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=717
+guid: http://myuclab.nl/?p=717
 permalink: /remove-mailbox-versus-disable-mailbox/
 categories:
   - Exchange

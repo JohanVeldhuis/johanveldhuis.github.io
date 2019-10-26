@@ -4,7 +4,7 @@ title: Update Rollup 3 for Exchange Server 2007 SP1 and Update Rollup 7 for Exch
 date: 2008-08-10T22:55:59+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=683
+guid: http://myuclab.nl/?p=683
 permalink: /update-rollup-3-for-exchange-server-2007-sp1-and-update-rollup-7-for-exchange-2007-rtm-could-cause-issues/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: Exclude Exchange 2007 folders for antivirus solutions
 date: 2009-03-24T21:18:30+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1138
+guid: http://myuclab.nl/?p=1138
 permalink: /exclude-exchange-2007-folders-for-antivirus-solutions/
 categories:
   - Exchange

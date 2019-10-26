@@ -4,7 +4,7 @@ title: Forefront for Exchange 2010 installation issue
 date: 2010-02-03T21:05:59+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1832
+guid: http://myuclab.nl/?p=1832
 permalink: /forefront-for-exchange-2010-installation-issue/
 categories:
   - Exchange
@@ -13,7 +13,7 @@ I had a nice issue during the installation of Forefront for Exchange 2010. It be
 
 As the RTM is released it was a nice moment to install that one. So first removed the pre-release so this couldn&#8217;t cause any issues. After this the problems began, the first steps went OK till I reached the prerequisite check. This gave the following error: 
 
-[<img src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/02/Capture-150x150.jpg?resize=150%2C150" alt="" title="Forefront for Exchange 2010 installation error" width="150" height="150" class="alignnone size-thumbnail wp-image-1831" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/02/Capture.jpg?resize=150%2C150&ssl=1 150w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/02/Capture.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/02/Capture.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/02/Capture.jpg)
+[<img src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/02/Capture-150x150.jpg?resize=150%2C150" alt="" title="Forefront for Exchange 2010 installation error" width="150" height="150" class="alignnone size-thumbnail wp-image-1831" srcset="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/02/Capture.jpg?resize=150%2C150&ssl=1 150w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/02/Capture.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/02/Capture.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/02/Capture.jpg)
 
 First I checked the group membership of the user, these were:
 

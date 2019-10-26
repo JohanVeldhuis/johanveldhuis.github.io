@@ -4,7 +4,7 @@ title: Open another users calender via OWA
 date: 2010-04-26T19:02:53+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1900
+guid: http://myuclab.nl/?p=1900
 permalink: /open_another_users_calender_via_owa/
 categories:
   - Exchange

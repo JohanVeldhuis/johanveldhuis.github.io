@@ -4,7 +4,7 @@ title: 'The Exchange 2013 alphabet: ActiveSync'
 date: 2013-01-15T13:41:48+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2633
+guid: http://myuclab.nl/?p=2633
 permalink: /the-exchange-2013-alphabet-activesync/
 categories:
   - Exchange
@@ -23,7 +23,7 @@ ActiveSync uses a Direct Push to keep the mobile device up-to-date via the wirel
 
 After this 15 minutes the server sends a HTTP 200 OK to device if no items has been changed. When the device receives this response it wakes up and issues another request which restarts the process from sending a long-lived HTTPS request.
 
-[<img title="ActiveSync" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ActiveSync-300x52.jpg?resize=300%2C52" alt="" width="300" height="52" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ActiveSync.jpg)
+[<img title="ActiveSync" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/ActiveSync-300x52.jpg?resize=300%2C52" alt="" width="300" height="52" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/ActiveSync.jpg)
 
 But what happens if a change is detected in the mailbox within the 15-minute timespan? For example a new mail is received in the mailbox? In this case the server will send a response to the mobile device that there is a new item and provides the name of the folder where the item resides. Once the mobile device has received this response it will issue a synchronization request for the specific folder. When the synchronization has completed the mobile device issues a new PING request and the process of the long-lived HTTPS request restarts.
 
@@ -41,7 +41,7 @@ In this case the device will send another HTTPS request but changes the heartbea
 
 Since the mobile provider only supports 10 the mobile device will not receive a HTTP 200 OK from the server. So after 12 minutes the mobile will assume a network error and will send a long-live HTTPS request only then with a heartbeat interval of 8 minutes.
 
-[<img title="Activesync" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Activesync-2-300x77.jpg?resize=300%2C77" alt="" width="300" height="77" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Activesync-2.jpg)
+[<img title="Activesync" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Activesync-2-300x77.jpg?resize=300%2C77" alt="" width="300" height="77" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/Activesync-2.jpg)
 
 **Environment requirements**
 
@@ -71,17 +71,17 @@ Configuring via the EAC can be done by performing the following steps:
   * Select the  _Microsoft-Server-ActiveSync _entry
   * Click on the Edit button
 
-[<img title="ECP" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ECP-300x145.png?resize=300%2C145" alt="" width="300" height="145" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ECP.png)
+[<img title="ECP" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/ECP-300x145.png?resize=300%2C145" alt="" width="300" height="145" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/ECP.png)
 
 Modify both the internal and external URL so they contain the correct FQDN you are using to publish your Exchange server.
 
 The same step can be performed by using the _Set-ActiveSyncVirtualDirectory _cmdlet using the EMS:
 
-_Set-ActiveSyncVirtualDirectory  -Identity &#8220;ex01\Microsoft-Server-ActiveSync&#8221;  -Internalurl https://mail.johanveldhuis.nl/Microsoft-Server-ActiveSync  -Externalurl https://mail.johanveldhuis.nl/Microsoft-Server-ActiveSync_
+_Set-ActiveSyncVirtualDirectory  -Identity &#8220;ex01\Microsoft-Server-ActiveSync&#8221;  -Internalurl https://mail.myuclab.nl/Microsoft-Server-ActiveSync  -Externalurl https://mail.myuclab.nl/Microsoft-Server-ActiveSync_
 
 Next step is to modify the Mobile Device Mailbox Policy, in Exchange 2007/2010 this was called the ActiveSync Mailbox Policy. Compared to these policies the policy options might look limited Exchange 2013 when looking at the GUI:
 
-[<img title="ECP" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ECP-2-196x300.png?resize=196%2C300" alt="" width="196" height="300" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/ECP-2.png)
+[<img title="ECP" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/ECP-2-196x300.png?resize=196%2C300" alt="" width="196" height="300" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/ECP-2.png)
 
 So the disabling features on devices is not possible anymore via the GUI. But in the EMS you can enable/disable a lot of more options which we will not discuss in this article because it’s a pretty long list. A few examples are:
 
@@ -154,7 +154,7 @@ The cmdlet above will export all ActiveSync related logging from the 11<sup> th
 
 When looking in the directory after running the cmdlet you will see a couple of files have been created:
 
-[<img title="Export-ActiveSynclog" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Export-ActiveSynclog-300x39.png?resize=300%2C39" alt="" width="300" height="39" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Export-ActiveSynclog.png)
+[<img title="Export-ActiveSynclog" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/01/Export-ActiveSynclog-300x39.png?resize=300%2C39" alt="" width="300" height="39" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Export-ActiveSynclog.png)
 
 So which information is included in each file:
 
@@ -174,7 +174,7 @@ _logparser &#8220;SELECT cs(user-agent), count(\*) as Devices into chart.gif fro
 
 Using this cmdlet we can generate the following report:
 
-[<img title="LogParser" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/LogParser-300x225.png?resize=300%2C225" alt="" width="300" height="225" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/LogParser.png)
+[<img title="LogParser" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/LogParser-300x225.png?resize=300%2C225" alt="" width="300" height="225" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/LogParser.png)
 
 Here ends the first blog in the Exchange ABC series. In this blog we did have a look at ActiveSync: how it works, how you can configure it and troubleshoot it.
 

@@ -4,7 +4,7 @@ title: Event ID 2050 on CAS Server
 date: 2008-10-25T19:46:51+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=925
+guid: http://myuclab.nl/?p=925
 permalink: /event-id-2050-on-cas-server/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: Exchange Single Instance Storage (SIS)
 date: 2009-11-03T21:34:10+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1378
+guid: http://myuclab.nl/?p=1378
 permalink: /exchange-single-instance-storage-sis/
 categories:
   - Exchange

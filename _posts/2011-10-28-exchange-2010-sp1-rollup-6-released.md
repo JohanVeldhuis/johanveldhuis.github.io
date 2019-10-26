@@ -4,7 +4,7 @@ title: Exchange 2010 SP1 Rollup 6 released
 date: 2011-10-28T19:35:05+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2347
+guid: http://myuclab.nl/?p=2347
 permalink: /exchange-2010-sp1-rollup-6-released/
 categories:
   - Exchange

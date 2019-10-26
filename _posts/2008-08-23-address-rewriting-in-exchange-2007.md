@@ -4,7 +4,7 @@ title: Address rewriting in Exchange 2007
 date: 2008-08-23T21:44:18+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=740
+guid: http://myuclab.nl/?p=740
 permalink: /address-rewriting-in-exchange-2007/
 categories:
   - Exchange

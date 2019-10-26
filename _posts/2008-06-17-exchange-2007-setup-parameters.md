@@ -4,7 +4,7 @@ title: Automate Exchange 2007 setup
 date: 2008-06-17T21:46:11+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=372
+guid: http://myuclab.nl/?p=372
 permalink: /exchange-2007-setup-automatiseren/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: 'Error details: MapiExceptionNotFound: Unable to delete mailbox. (hr=0x80
 date: 2010-08-24T19:52:41+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1997
+guid: http://myuclab.nl/?p=1997
 permalink: /error-details-mapiexceptionnotfound-unable-to-delete-mailbox-hr0x8004010f-ec-2147221233/
 categories:
   - Exchange

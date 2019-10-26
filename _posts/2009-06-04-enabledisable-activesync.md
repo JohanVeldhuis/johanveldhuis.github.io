@@ -4,7 +4,7 @@ title: Enable/disable ActiveSync
 date: 2009-06-04T21:43:26+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1232
+guid: http://myuclab.nl/?p=1232
 permalink: /enabledisable-activesync/
 categories:
   - Exchange

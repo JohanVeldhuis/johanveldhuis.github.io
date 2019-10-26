@@ -4,7 +4,7 @@ title: Exchange 2010 SP2 Rollup 3 released
 date: 2012-05-30T08:22:19+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2450
+guid: http://myuclab.nl/?p=2450
 permalink: /exchange-2010-sp2-rollup-3-released/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: Problems exporting a mailbox
 date: 2009-05-06T19:31:00+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1215
+guid: http://myuclab.nl/?p=1215
 permalink: /problems-exporting-a-mailbox/
 categories:
   - Exchange

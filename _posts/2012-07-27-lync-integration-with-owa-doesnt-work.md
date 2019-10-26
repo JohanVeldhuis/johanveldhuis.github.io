@@ -4,7 +4,7 @@ title: 'Lync integration doesn&#8217;t work with OWA'
 date: 2012-07-27T18:52:53+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2488
+guid: http://myuclab.nl/?p=2488
 permalink: /lync-integration-with-owa-doesnt-work/
 categories:
   - Exchange

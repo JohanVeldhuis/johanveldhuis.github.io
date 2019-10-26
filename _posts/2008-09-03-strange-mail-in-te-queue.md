@@ -4,7 +4,7 @@ title: Strange mails in the queue
 date: 2008-09-03T20:05:16+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=774
+guid: http://myuclab.nl/?p=774
 permalink: /strange-mail-in-te-queue/
 categories:
   - Exchange

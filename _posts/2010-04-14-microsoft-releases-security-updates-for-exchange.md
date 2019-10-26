@@ -4,7 +4,7 @@ title: Microsoft releases security updates for Exchange
 date: 2010-04-14T21:28:43+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1892
+guid: http://myuclab.nl/?p=1892
 permalink: /microsoft-releases-security-updates-for-exchange/
 categories:
   - Exchange

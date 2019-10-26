@@ -4,7 +4,7 @@ title: Backup software for exchange 2010
 date: 2010-01-22T21:49:04+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1824
+guid: http://myuclab.nl/?p=1824
 permalink: /backup-software-for-exchange-2010/
 categories:
   - Exchange

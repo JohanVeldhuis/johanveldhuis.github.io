@@ -4,7 +4,7 @@ title: Install Exchange 2007 in a Exchange 2003 environment
 date: 2008-04-28T21:12:45+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=316
+guid: http://myuclab.nl/?p=316
 permalink: /Install-Exchange-2007-in-an-Exchange-2003-environment/
 categories:
   - Exchange
@@ -51,13 +51,13 @@ After we did the checks on the Exchange 2003 site we can install Exchange 2007 o
 
 <span>We start with the part where we need to choose which components we like to install.</span>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/step-4.jpg"><img class="alignnone size-thumbnail wp-image-319" title="Exchange Server 2007 setup" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/step-4-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/step-4.jpg"><img class="alignnone size-thumbnail wp-image-319" title="Exchange Server 2007 setup" src="https://myuclab.nl/wp-content/uploads/2008/04/step-4-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <span><span>You have two options here, which one you choose depends on how many servers you have. When you have only one server choose the option <em>Typical Exchange Server Installation</em> this will install the Hub Transport, Client Access, Mailbox Server and Exchange management tools. When you have multiple server then select the option <em>Custom Exchange Server Installation</em>.</span></span>
 
 <span><span>When you made a choice press the <em>next</em> button</span></span>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/step-5.jpg"><img class="alignnone size-thumbnail wp-image-320" title="Mail flwo settings" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/step-5-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/step-5.jpg"><img class="alignnone size-thumbnail wp-image-320" title="Mail flwo settings" src="https://myuclab.nl/wp-content/uploads/2008/04/step-5-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <span>We like to add Exchange 2007 to an existing Exchange 2003 environment, during the setup you need to decide how mail will be send between the Exchange 2003 and Exchange 2007 environment. This will automatically create a separate routing group connector. Via browse you can choose the server, normally this is the Exchange 2003 server which is the bridge-head server, where you would like to create a routing group connector with.</span>
 
@@ -65,17 +65,17 @@ After we did the checks on the Exchange 2003 site we can install Exchange 2007 o
 
 <span><span>The setup will check if all pre-requisites are met. If there is something wrong/not installed it will give you a warning. When all problems are solved you can continue with the Exchange installation, press <em>next</em></span></span>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/step-6.jpg"><img class="alignnone size-thumbnail wp-image-321" title="Readiness Checks" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/step-6-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/step-6.jpg"><img class="alignnone size-thumbnail wp-image-321" title="Readiness Checks" src="https://myuclab.nl/wp-content/uploads/2008/04/step-6-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <span>After waiting a while the setup is ready and you have an Exchange 2007 server in an Exchange 2003 environment.</span>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/ex2003_connectors.jpg"><img class="alignnone size-thumbnail wp-image-322" title="Exchange 2003 connectors" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/ex2003_connectors-150x66.jpg" alt="" width="150" height="66" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/ex2003_connectors.jpg"><img class="alignnone size-thumbnail wp-image-322" title="Exchange 2003 connectors" src="https://myuclab.nl/wp-content/uploads/2008/04/ex2003_connectors-150x66.jpg" alt="" width="150" height="66" /></a>
 
 <span>When you start the System Manager from Exchange 2003 and have a look at the connectors you will see the <em>routing group connector</em>which is made during the setup. When you try to modify it you will receive a warning that it can be modified from a Exchange 8.0.30535.0 manager.</span>
 
 <span>During the creation of the <em>routing group connector</em>there will be done a few actions more then only creating it. The setup also creates a seperate <em>administrative group</em> and an apart <em>routing group</em>. This two objects are created so that Exchange 2003 and Exchange 2007 can cooperate with each other. In Exchange 2003 you had the possibility to assign delegates per <em>administrative group</em>. In Exchange 2007 there is only one <em>administrative group</em> where all Exchange 2007 servers reside.  This group has the following name <em>FYDIBOHF23SPDLT</em>. According to some web page's this name is created during a cipher has, the original text is EXCHANGE12ROCKS!<em> </em></span>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/ex2003_admin.jpg"><img class="alignnone size-thumbnail wp-image-323" title="Administrative groups" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/ex2003_admin-150x50.jpg" alt="" width="150" height="50" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/ex2003_admin.jpg"><img class="alignnone size-thumbnail wp-image-323" title="Administrative groups" src="https://myuclab.nl/wp-content/uploads/2008/04/ex2003_admin-150x50.jpg" alt="" width="150" height="50" /></a>
 
 <span>Maybe you do now have a question ? Why is there an apart <em>routing group connector</em> created ? Exchange 2003 uses the <em>routing group connector </em>to decide how a mail is delivered to another Exchange Server. In Exchange 2007 this is done by creating separate sites in <em>Active Direcory</em>. The <em>routing group</em> created during installation is calles</span><span> </span><em>DWBGZMFD01QNBJR</em>.
 

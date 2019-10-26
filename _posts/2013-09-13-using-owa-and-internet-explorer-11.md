@@ -4,7 +4,7 @@ title: Using OWA and Internet Explorer 11
 date: 2013-09-13T18:28:40+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3273
+guid: http://myuclab.nl/?p=3273
 permalink: /using-owa-and-internet-explorer-11/
 categories:
   - Exchange

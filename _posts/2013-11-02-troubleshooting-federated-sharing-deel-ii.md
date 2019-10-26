@@ -4,7 +4,7 @@ title: 'Troubleshooting federated sharing &#8211; part II'
 date: 2013-11-02T20:55:06+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3300
+guid: http://myuclab.nl/?p=3300
 permalink: /troubleshooting-federated-sharing-deel-ii/
 categories:
   - Exchange
@@ -153,7 +153,7 @@ Once the type of request has been determined the parameters will be provided in 
   * _ex12t:Month:_ the standard month: in this case 3
   * _ex12t:DayOfWeek:_ the day for which you want to know the availability: in this case Sunday
   * _ex12t:DaylightTime:_ I haven’t figured out this one but it looks like it has something to do with the winter/summer time
-  * _ex12t:Address:_ the smtp address of the user for which you want to know the availability: in this case <johan.@johanveldhuis.nl>
+  * _ex12t:Address:_ the smtp address of the user for which you want to know the availability: in this case <johan.@myuclab.nl>
   * _ex12Routingtype:_ the transport method which is used for sending the actual request once you hit the send button and your CAS will deliver it to the mailbox of the user determined in the ex12t:Address: in this case smtp
   * _ex12t:AttendeeType:_ the type of attendee this can be either required or optional: in this case required
   * _ex12t:FreeBusyViewOptions:_ contains the meeting specific details
@@ -162,7 +162,7 @@ Once the type of request has been determined the parameters will be provided in 
   * _ex12t:MergedFreeBusyIntervalInMinutes:_ the intervals for which you would like to display the availability by default per 30 minutes
   * _ex12t:RequestedView:_ which info we want to see for the user: in this case detailed
 
-[<img class="alignnone size-medium wp-image-3313" alt="request" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request-300x139.jpg?resize=300%2C139" width="300" height="139" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request.jpg?resize=300%2C139&ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request.jpg?w=785&ssl=1 785w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/request.jpg)
+[<img class="alignnone size-medium wp-image-3313" alt="request" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/11/request-300x139.jpg?resize=300%2C139" width="300" height="139" srcset="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/request.jpg?resize=300%2C139&ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/request.jpg?w=785&ssl=1 785w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/request.jpg)
 
 Now the XML has been generated the actual request can be send:
 
@@ -182,7 +182,7 @@ Next information contains the actual response the source CAS received from the r
 
 After the message we will see some more detailed information which will show you which request the source CAS tries to send to the remote CAS.
 
-[<img class="alignnone size-medium wp-image-3314" alt="response" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response-300x290.jpg?resize=300%2C290" width="300" height="290" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response.jpg?resize=300%2C290&ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response.jpg?w=793&ssl=1 793w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/11/response.jpg)
+[<img class="alignnone size-medium wp-image-3314" alt="response" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/response-300x290.jpg?resize=300%2C290" width="300" height="290" srcset="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/response.jpg?resize=300%2C290&ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/response.jpg?w=793&ssl=1 793w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/11/response.jpg)
 
 In the final part you will see the actual error message and from which CAS it did receive this error. In this case error 5016 id received from CAS02. Outlook will display the 5016 error when hovering over the free/busy info from the specific user.
 

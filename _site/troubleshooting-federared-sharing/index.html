@@ -52,7 +52,7 @@
 			</a>
 			
 			
-			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope"></i>
 			</a>
 			
@@ -118,7 +118,7 @@
 		
 		
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+			<a class="btn btn-default btn-sm" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
@@ -197,7 +197,7 @@
   </tbody>
 </table>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory.png"><img alt="Get-AutodiscoverVirtualDirectory" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory-300x20.png?resize=300%2C20" width="300" height="20" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory.png"><img alt="Get-AutodiscoverVirtualDirectory" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-AutodiscoverVirtualDirectory-300x20.png?resize=300%2C20" width="300" height="20" data-recalc-dims="1" /></a></p>
 
 <p>You will get an output like above. Verify if the value of the column <em>WSSecurityAuthentication _is set to _true</em></p>
 
@@ -214,7 +214,7 @@
 
 <p>Using this cmdlet the authentication method will be configured but to offer this authentication type you will need to perform an <em>IISReset</em>. Additional you can verify if the <em>svc-integrated</em> <em>handler</em> is attached to the autodiscover virtual directory:</p>
 
-<p><a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS.png"><img alt="IIS" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/IIS-300x193.png?resize=300%2C193" width="300" height="193" data-recalc-dims="1" /></a></p>
+<p><a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/10/IIS.png"><img alt="IIS" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/10/IIS-300x193.png?resize=300%2C193" width="300" height="193" data-recalc-dims="1" /></a></p>
 
 <p>Next step is to verify the Exchange Web Services, this can be done by using the <em>Get-WebServicesVirtualDirectory</em> cmdlet_:_</p>
 
@@ -227,7 +227,7 @@
   </tbody>
 </table>
 
-<p><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory.png"><img alt="Get-WebServicesVirtualDirectory" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory-300x21.png?resize=300%2C21" width="300" height="21" data-recalc-dims="1" /></a></p>
+<p><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory.png"><img alt="Get-WebServicesVirtualDirectory" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/10/Get-WebServicesVirtualDirectory-300x21.png?resize=300%2C21" width="300" height="21" data-recalc-dims="1" /></a></p>
 
 <p>Again the same rule apples <em>WSSecurityAuthentication _needs to be set to _true</em>. Besides this the <em>ExternalUrl</em> needs to contains a valid value. This url needs to accessible from the internet. If this is not the case it simply won’t work.</p>
 
@@ -280,7 +280,7 @@
 
 <p><em>Test-FederationTrustCertificate</em></p>
 
-<p><a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate.png"><img alt="Test-FederationTrustCertificate" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate-300x60.png?resize=300%2C60" width="300" height="60" data-recalc-dims="1" /></a></p>
+<p><a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate.png"><img alt="Test-FederationTrustCertificate" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/10/Test-FederationTrustCertificate-300x60.png?resize=300%2C60" width="300" height="60" data-recalc-dims="1" /></a></p>
 
 <p>Verify that the <em>State</em> column for all CAS contain the value <em>installed</em>.</p>
 

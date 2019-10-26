@@ -4,7 +4,7 @@ title: Strange issue, easy solution
 date: 2009-05-11T21:57:04+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1223
+guid: http://myuclab.nl/?p=1223
 permalink: /strange-issue-easy-solution/
 categories:
   - Exchange

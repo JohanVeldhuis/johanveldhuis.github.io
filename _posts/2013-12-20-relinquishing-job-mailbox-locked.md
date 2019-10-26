@@ -4,7 +4,7 @@ title: Relinquishing job because the mailbox is locked
 date: 2013-12-20T20:46:32+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3338
+guid: http://myuclab.nl/?p=3338
 permalink: /relinquishing-job-mailbox-locked/
 categories:
   - Office 365
@@ -17,13 +17,13 @@ When searching in Googl you will see several tips but most of them will point to
 
 The solution Microsoft offers is raising the value of the _Custom Limit in the_ _Flood Mitigation Settings._ Microsoft will tell you to raise this number to a higher value but it depends on the amount of mailboxes how high you will configure this value.
 
-[<img alt="TMG Flood Migration settings" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/2654412-294x300.jpg?resize=294%2C300" width="294" height="300" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/2654412.jpg)
+[<img alt="TMG Flood Migration settings" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/12/2654412-294x300.jpg?resize=294%2C300" width="294" height="300" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/12/2654412.jpg)
 
 Of course this is a nice solution but it might require the modification of the value multiple times. Despite this value will be applied to all IP addresses including those from evil users. There must be a nicer solution. A more suitable solution is to not apply the Flood mitigation settings to the IP addresses of Office 365.
 
 To configure this it is recommended to create a computer group which contains the separate IP addresses and subnets which are being used by Office 365. In the image below you can see an example.
 
-[<img alt="Floot Mitigation - IP Exceptions" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions-300x150.png?resize=300%2C150" width="300" height="150" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions.png)
+[<img alt="Floot Mitigation - IP Exceptions" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions-300x150.png?resize=300%2C150" width="300" height="150" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/12/Floot-Mitigation-IP-Exceptions.png)
 
 For a complete overview of the IP addresses used by Office 365 you van visit the following pages:
 

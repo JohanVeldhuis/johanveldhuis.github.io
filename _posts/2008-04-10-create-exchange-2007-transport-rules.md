@@ -4,7 +4,7 @@ title: Create transport rules for Exchange 2007
 date: 2008-04-10T09:30:11+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=273
+guid: http://myuclab.nl/?p=273
 permalink: /create-exchange-2007-transport-rules/
 categories:
   - Exchange
@@ -13,7 +13,7 @@ A new feature in Exchange 2007 is <em>Transport rules</em> this rules can be add
 
 The transport rules will be created on the <em>Hub transport</em> <em>server. </em>The transport rules will be executed as follows:
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/schema.jpg"><img class="alignnone size-thumbnail wp-image-274" title="Transport rules schema" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/schema-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/schema.jpg"><img class="alignnone size-thumbnail wp-image-274" title="Transport rules schema" src="https://myuclab.nl/wp-content/uploads/2008/04/schema-150x150.jpg" alt="" width="150" height="150" /></a>
 
 When you choose to create the rules via the <em>Exchange Management Shell</em> you will see you will pass those steps.
 
@@ -21,31 +21,31 @@ Besides the parameters you can assign a priority to each <em>Transport Rule</em>
 
 First we are going to create a <em>Transport Rule</em> via the <em>Exchange Management Console</em>. You have to start the <em>Exchange Management Console</em>  for this, next click on <em>Organizational Configuration</em>, <em>Hub Transport</em> and select the tab <em>Transport Rules.</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_1.jpg"><img class="alignnone size-thumbnail wp-image-276" title="Exchange Management Console" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_1-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_1.jpg"><img class="alignnone size-thumbnail wp-image-276" title="Exchange Management Console" src="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_1-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Now click somewhere in the white space in the center of the screen and choose the option <em>New Transport Rule</em>, you can also do this on the right side of the screen. You will get the following screen:
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_2.jpg"><img class="alignnone size-thumbnail wp-image-277" title="New Transport Rule" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_2-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_2.jpg"><img class="alignnone size-thumbnail wp-image-277" title="New Transport Rule" src="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_2-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Fill in the fields that are displayed, <em>Name</em> is the name you want to give to the <em>Transport Rule, Description</em>  is a short description of the rules. The checkmark before <em>Enable Rule </em>is enabled by default, when you don't want to use the rule immediately uncheck it, click on <em>next.</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_3.jpg"><img class="alignnone size-thumbnail wp-image-278" title="Conditions" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_3-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_3.jpg"><img class="alignnone size-thumbnail wp-image-278" title="Conditions" src="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_3-150x150.jpg" alt="" width="150" height="150" /></a>
 
 First we will select the <em>Conditions</em>, this are the conditions that a message has to have. This can be for example: all mail to external users
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_4.jpg"><img class="alignnone size-thumbnail wp-image-279" title="Rules" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_4-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_4.jpg"><img class="alignnone size-thumbnail wp-image-279" title="Rules" src="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_4-150x150.jpg" alt="" width="150" height="150" /></a>
 
 The next step will be the <em>Rules </em>that are applied to the mail. In this case we will add a disclaimer to the e-mail.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_5.jpg"><img class="alignnone size-thumbnail wp-image-280" title="Exceptions" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_5-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_5.jpg"><img class="alignnone size-thumbnail wp-image-280" title="Exceptions" src="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_5-150x150.jpg" alt="" width="150" height="150" /></a>
 
 You can see in the flowchart that we only need the define the <em>Exceptions.</em> In this case we don't want to add <em>exceptions</em> and click on <em>next</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_6.jpg"><img class="alignnone size-thumbnail wp-image-281" title="Summary" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_6-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_6.jpg"><img class="alignnone size-thumbnail wp-image-281" title="Summary" src="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_6-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Before the rule is created you will get a small summary of the parameters we defined. Click on <em>New</em> to create the <em>Transport Rule.</em>
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_7.jpg"><img class="alignnone size-thumbnail wp-image-282" title="Rule completed" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_rule_step_7-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_7.jpg"><img class="alignnone size-thumbnail wp-image-282" title="Rule completed" src="https://myuclab.nl/wp-content/uploads/2008/04/tr_rule_step_7-150x150.jpg" alt="" width="150" height="150" /></a>
 
 When you get the same screen as above the rule is created successfully and a disclaimer is added to all messages send to external users.
 
@@ -83,7 +83,7 @@ Now we defined all parameters we can use the <em>New-TransportRule </em>to creat
 
 I saved the script myself and executed it, the screen below shows the result:
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_ps.jpg"><img class="alignnone size-thumbnail wp-image-283" title="Transport Rule made via Powershell" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/tr_ps-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/tr_ps.jpg"><img class="alignnone size-thumbnail wp-image-283" title="Transport Rule made via Powershell" src="https://myuclab.nl/wp-content/uploads/2008/04/tr_ps-150x150.jpg" alt="" width="150" height="150" /></a>
 
 The links below will direct you to the pages on Technet about the two commands:
 

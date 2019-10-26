@@ -4,7 +4,7 @@ title: How to reprocess messages from a queue
 date: 2011-05-05T22:11:49+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2177
+guid: http://myuclab.nl/?p=2177
 permalink: /how-to-reprocess-messages-from-a-queue/
 categories:
   - Exchange

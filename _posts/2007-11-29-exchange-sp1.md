@@ -4,7 +4,7 @@ title: Exchange SP1
 date: 2007-11-29T21:48:15+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=91
+guid: http://myuclab.nl/?p=91
 permalink: /exchange-sp1/
 categories:
   - Exchange

@@ -4,12 +4,12 @@ title: Microsoft Exchange Server ActiveSync Web Administration Tool
 date: 2008-08-18T22:53:30+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=716
+guid: http://myuclab.nl/?p=716
 permalink: /microsoft-exchange-server-activesync-web-administration-tool/
 categories:
   - Software
 ---
-<img class="alignnone size-thumbnail wp-image-715" title="ActiveSync Web Administration tool" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/08/as_webmin-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/08/as_webmin.jpg?resize=150%2C150&ssl=1 150w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/08/as_webmin.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/08/as_webmin.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />
+<img class="alignnone size-thumbnail wp-image-715" title="ActiveSync Web Administration tool" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2008/08/as_webmin-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i1.wp.com/myuclab.nl/wp-content/uploads/2008/08/as_webmin.jpg?resize=150%2C150&ssl=1 150w, https://i2.wp.com/myuclab.nl/wp-content/uploads//customers/myuclab.nl/myuclab.nl/httpd.www/wp-content/uploads/2008/08/as_webmin.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads//customers/myuclab.nl/myuclab.nl/httpd.www/wp-content/uploads/2008/08/as_webmin.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />
 
 Besides that users can whipe there smartphone/pda within the OWA administrator have the ActiveSync Web Administration tool. This tool is completely web-based and makes it possible for adminstrators to:
 

@@ -4,7 +4,7 @@ title: Most blog-items translated
 date: 2008-08-06T15:27:14+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=602
+guid: http://myuclab.nl/?p=602
 permalink: /most-blog-items-translated/
 categories:
   - Blog

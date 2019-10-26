@@ -4,7 +4,7 @@ title: No EdgeSync credentials were found for Edge transport server
 date: 2008-09-10T22:04:01+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=822
+guid: http://myuclab.nl/?p=822
 permalink: /no-edgesync-credentials-were-found-for-edge-transport-server/
 categories:
   - Exchange

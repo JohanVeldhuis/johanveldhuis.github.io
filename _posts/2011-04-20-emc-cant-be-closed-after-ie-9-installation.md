@@ -4,7 +4,7 @@ title: 'EMC can&#8217;t be closed after IE 9 is installed'
 date: 2011-04-20T15:07:59+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2161
+guid: http://myuclab.nl/?p=2161
 permalink: /emc-cant-be-closed-after-ie-9-installation/
 categories:
   - Exchange
@@ -13,7 +13,7 @@ categories:
 
 On several fora messages are posted about problems with closing the Exchange Management Console (EMC). This issue was caused after the installation of Internet Explorer 9 which resulted in the following error:
 
-[<img title="EMC: Close all dialog boxes" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/04/ex_close-300x107.jpg?resize=300%2C107" alt="" width="300" height="107" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/04/ex_close.jpg)
+[<img title="EMC: Close all dialog boxes" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/04/ex_close-300x107.jpg?resize=300%2C107" alt="" width="300" height="107" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/04/ex_close.jpg)
 
 The problem was reported using both the EMC for Exchange 2007 and Exchange 2010 which run on Windows 2007, Windows 2008 and Windows 2008 R2. Including the ones fully updated to Service Pack 1.
 

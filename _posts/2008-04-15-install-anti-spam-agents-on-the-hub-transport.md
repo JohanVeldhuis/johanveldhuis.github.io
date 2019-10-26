@@ -4,7 +4,7 @@ title: Install anti-spam agents on the Hub Transport server
 date: 2008-04-15T21:02:06+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=316
+guid: http://myuclab.nl/?p=316
 permalink: /install-anti-spam-agents-on-the-hub-transport/
 categories:
   - Exchange
@@ -19,7 +19,7 @@ Exchange 2007 includes a few anti-spam agent to prevent spam. This filters are a
 
 This command needs to be executed from the scripts directory, you will find it in the Exchange install directory.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-1.jpg"><img class="alignnone size-thumbnail wp-image-289" title="Install Antispam agents" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-1-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-1.jpg"><img class="alignnone size-thumbnail wp-image-289" title="Install Antispam agents" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-1-150x150.jpg" alt="" width="150" height="150" /></a>
 
 When the command is executed you need to restart the <em>Transport Services</em>, this can be done by executing the following command:
 
@@ -27,11 +27,11 @@ When the command is executed you need to restart the <em>Transport Services</em>
 Restart-Service MSExchangeTransport</em>
 ```
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-2.jpg"><img class="alignnone size-thumbnail wp-image-290" title="Restart Transport services" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-2-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-2.jpg"><img class="alignnone size-thumbnail wp-image-290" title="Restart Transport services" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-2-150x150.jpg" alt="" width="150" height="150" /></a>
 
 After restarting the <em>Transport Services</em> you can open the <em>Exchange Management Console</em>, when it is opened click on the <em>Organizational Configuration </em>and then choose <em>HUB Transport</em>. You will see there's an extra tab added named <em>Anti-Spam</em>, click on it
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-3.jpg"><img class="alignnone size-thumbnail wp-image-291" title="Exchange Management Console" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-3-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-3.jpg"><img class="alignnone size-thumbnail wp-image-291" title="Exchange Management Console" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-3-150x150.jpg" alt="" width="150" height="150" /></a>
 
 You will see the <em>anti-spam agents</em> that are installed:
 <ul>
@@ -51,15 +51,15 @@ Below the agents are described per agent:
 
 With this agent you can filter on keywords. For example you can filter on the words Make Money Fast, this can be seen below. But when you have a company that does sell <em>Hovercrafts</em> you don't want mail with that word ends up in the junk mail. This word can be added to the top of the screen in the section named <em>Messages with these words or phrases will not be blocked</em>.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-4.jpg"><img class="alignnone size-thumbnail wp-image-292" title="Content Filtering Properties" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-4-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-4.jpg"><img class="alignnone size-thumbnail wp-image-292" title="Content Filtering Properties" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-4-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Besides the last called option there is a possibility to exclude mail-adresses from filtering. This can be done on the tab <em>Exceptions</em>.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-5.jpg"><img class="alignnone size-thumbnail wp-image-293" title="Customer Filtering Properties Exceptions" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-5-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-5.jpg"><img class="alignnone size-thumbnail wp-image-293" title="Customer Filtering Properties Exceptions" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-5-150x150.jpg" alt="" width="150" height="150" /></a>
 
 The final step is deciding which action needs to be executed, this can be: delete, reject or quarantaine. Per action you can define when it needs to be executed. Which action is executed depends on the SCL (Spam Confidence Level), this is determined by the IMF (Intelligent Message Filter) i.c.w. de words we setup earlier. When you are gone experimentate with the filter, for example put the SCL values lower. Then I would suggest to first choose the action to quarantaine it before choosing delete/reject as the action. This will safe you a lot of angry end-users that don't receive their normal mail anymore.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-6.jpg"><img class="alignnone size-thumbnail wp-image-294" title="Content Filtering Properties Actions" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-6-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-6.jpg"><img class="alignnone size-thumbnail wp-image-294" title="Content Filtering Properties Actions" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-6-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <em>Powershell commands:</em>
 
@@ -92,7 +92,7 @@ This command will delete "This is an e-mail that you don't want to receive" from
 
 As the name already tells you this agent lets you create IP-address white-lists. This can be used for business-relations that are on a black-list but you still want to receive mail from them. When clicking on <em>Add</em>you can add an ip-address of ip-range.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-7.jpg"><img class="alignnone size-thumbnail wp-image-295" title="IP Allow list" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-7-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-7.jpg"><img class="alignnone size-thumbnail wp-image-295" title="IP Allow list" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-7-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <em>Powershell commando's:</em>
 
@@ -118,7 +118,7 @@ Adds the IP-range 192.168.0.1/24 to the IP Allow list
 
 Besides RBL providers there are white-list providers. This are providers who provide lists with <em>safe </em>IP-addresses. On the following site you will find an overview of Whitelist providers: <a href="http://www.spamlinks.net/filter-dnsbl-lists.htm#whitelists" target="_blank">SpamLinks</a> .
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-8.jpg"><img class="alignnone size-thumbnail wp-image-296" title="IP Allow List Providers Properties" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-8-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-8.jpg"><img class="alignnone size-thumbnail wp-image-296" title="IP Allow List Providers Properties" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-8-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <em>Powershell commando's:</em>
 
@@ -152,7 +152,7 @@ With this command you can do a lookup of the IP-address <em>192.168.0.1 </em>wi
 
 This agent contains IP-addresses who will be blocked by Exchange. It can happen that you don't want to accept mails from specific IP-addresses or IP-ranges because you receive a lot of viruses or spam from them. In most cases it is easier to use a RBL provider then using an list with manual entries.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-9.jpg"><img class="alignnone size-thumbnail wp-image-297" title="IP Block List properties" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-9-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-9.jpg"><img class="alignnone size-thumbnail wp-image-297" title="IP Block List properties" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-9-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <em>Powershell commando's:</em>
 
@@ -178,7 +178,7 @@ Adds the IP-range 192.168.0.1/24 to the <em>IP Block list</em>
 
 In this agent we can add RBL providers. This are organizations who provide lists with IP-addresses that are sending a lot of spam or servers which are configured as open-relay. On this <a href="http://www.spamlinks.net/filter-dnsbl-lists.htm#spamsource" target="_blank">page</a> you can find an overview of them.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-10.jpg"><img class="alignnone size-thumbnail wp-image-298" title="IP Block List Providers Properties" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-10-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-10.jpg"><img class="alignnone size-thumbnail wp-image-298" title="IP Block List Providers Properties" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-10-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Within this agent there is an extra tab added <em>exceptions, </em>here  you can exclude IP-addresses from this agent.
 
@@ -210,7 +210,7 @@ With recipient filtering you can filter messages on existing/non-existing recipi
 
 This agent can use the GAL as source, the GAL will be automatically updated when a user is added to Exchange. Besides that there is a possibility to manually add addresses that you want to block, when you use the previous mentioned option this is not necessary.
 
-<a href="http://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-12.jpg"><img class="alignnone size-thumbnail wp-image-299" title="Recipient Filtering Properties" src="http://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-12-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="http://myuclab.nl/wp-content/uploads/2008/04/naamloos-12.jpg"><img class="alignnone size-thumbnail wp-image-299" title="Recipient Filtering Properties" src="http://myuclab.nl/wp-content/uploads/2008/04/naamloos-12-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <em>Powershell commando's:</em>
 
@@ -228,7 +228,7 @@ Checks if the mail is send to klaas@domein.com or pietje@domein.com if this is t
 
 You may wish to block e-mails from specific senders because you receive a lot of spam from this address. Then you can use the sender filtering agent. Here you can specify addresses from which you don't want to receive mail. Besides that possibility you can enable the option to block e-mails which contain no sender address. Depending on which action is activate on the tab <em>action</em> mail will be bounced or marked as spam.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-13.jpg"><img class="alignnone size-thumbnail wp-image-300" title="Sender Filtering properties" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-13-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-13.jpg"><img class="alignnone size-thumbnail wp-image-300" title="Sender Filtering properties" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-13-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <em>Powershell commando's:</em>
 
@@ -244,11 +244,11 @@ When a mail is send from the domain or subdomain example.com mail will be blocke
 
 With sender ID you can prevent <em>spoofing </em>mails being delivered. When a mail arrives at the Hub Transport Server the SMTP header will be checked and according to the results a query will be done via DNS. The agent will search for a <em>SPF record; </em>in this record all IP-addresses are listed which are used by the domain to send mail.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/cc160870fig01_l.gif"><img class="alignnone size-thumbnail wp-image-302" title="Sender ID" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/cc160870fig01_l-150x150.gif" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/cc160870fig01_l.gif"><img class="alignnone size-thumbnail wp-image-302" title="Sender ID" src="https://myuclab.nl/wp-content/uploads/2008/04/cc160870fig01_l-150x150.gif" alt="" width="150" height="150" /></a>
 
 When the IP-address is not found in the SMTP-header, then the mail will be rejected, deleted or marked as spam.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-15.jpg"><img class="alignnone size-thumbnail wp-image-301" title="Sender ID properties" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-15-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-15.jpg"><img class="alignnone size-thumbnail wp-image-301" title="Sender ID properties" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-15-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <em>Powershell commando's:</em>
 
@@ -275,11 +275,11 @@ This agent will check the sender reputation. The sender reputation is determin
 	<li>analysis by the content filter to determine the SCL level</li>
 	<li>open proxy test</li>
 </ul>
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-16.jpg"><img class="alignnone size-thumbnail wp-image-303" title="Sender Reputation properties" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-16-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-16.jpg"><img class="alignnone size-thumbnail wp-image-303" title="Sender Reputation properties" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-16-150x150.jpg" alt="" width="150" height="150" /></a>
 
 On the tab <em>action </em>you can specify how the filter will work, besides that you can specify how long the sender will be blocked. All e-mails that will be blocked by this agent will be blocked for 24 hours by default. Besides that you can define the following actions:
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-17.jpg"><img class="alignnone size-thumbnail wp-image-304" title="Sender Reputation Properties" src="https://johanveldhuis.nl/wp-content/uploads/2008/04/naamloos-17-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-17.jpg"><img class="alignnone size-thumbnail wp-image-304" title="Sender Reputation Properties" src="https://myuclab.nl/wp-content/uploads/2008/04/naamloos-17-150x150.jpg" alt="" width="150" height="150" /></a>
 
 <em>Powershell commando's:</em>
 

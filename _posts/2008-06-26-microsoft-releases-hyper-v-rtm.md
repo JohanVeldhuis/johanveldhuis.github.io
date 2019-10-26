@@ -4,7 +4,7 @@ title: Microsoft releases Hyper V (RTM)
 date: 2008-06-26T21:39:37+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=376
+guid: http://myuclab.nl/?p=376
 permalink: /microsoft-releases-hyper-v-rtm/
 categories:
   - Blog

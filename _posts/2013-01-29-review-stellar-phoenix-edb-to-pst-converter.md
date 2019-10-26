@@ -4,7 +4,7 @@ title: 'Review: Stellar Phoenix EDB to PST converter'
 date: 2013-01-29T09:51:47+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2679
+guid: http://myuclab.nl/?p=2679
 permalink: /review-stellar-phoenix-edb-to-pst-converter/
 categories:
   - Reviews
@@ -29,17 +29,17 @@ Once you have selected option convert and offline EDB to PST you will have to pr
 
 Once these two parameters have been provided the tool will read the content of the EDB. This may take a while depending on the amount of mailboxes which are located in the DB. For a database of 1 GB it took just a few seconds till the overview of mailboxes was displayed. This was including the folders that were placed in the mailbox:
 
-[<img class="aligncenter size-medium wp-image-2680" title="Mailstore content" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Mailstore-content-300x163.png?resize=300%2C163" alt="" width="300" height="163" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Mailstore-content.png?resize=300%2C163&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Mailstore-content.png?w=376&ssl=1 376w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Mailstore-content.png)
+[<img class="aligncenter size-medium wp-image-2680" title="Mailstore content" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/01/Mailstore-content-300x163.png?resize=300%2C163" alt="" width="300" height="163" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Mailstore-content.png?resize=300%2C163&ssl=1 300w, https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Mailstore-content.png?w=376&ssl=1 376w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Mailstore-content.png)
 
 Selecting a folder will cause the tool to load all the items which are located in the folder. One of the nice features of the tool is a preview of the content of the folder content as you can see in the screenshot below. If you select one of the items event the content of the message including attachments will be displayed.
 
-[<img class="aligncenter size-medium wp-image-2682" title="Mailbox content" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Mailbox-content-300x66.png?resize=300%2C66" alt="" width="300" height="66" srcset="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Mailbox-content.png?resize=300%2C66&ssl=1 300w, https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Mailbox-content.png?w=707&ssl=1 707w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Mailbox-content.png)
+[<img class="aligncenter size-medium wp-image-2682" title="Mailbox content" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2013/01/Mailbox-content-300x66.png?resize=300%2C66" alt="" width="300" height="66" srcset="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/01/Mailbox-content.png?resize=300%2C66&ssl=1 300w, https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/01/Mailbox-content.png?w=707&ssl=1 707w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/01/Mailbox-content.png)
 
 This option gives you the ability to check the content of the EDB first before exporting it to PST. Another reason why this feature may be useful if you just want to export a specific message and not the complete content.
 
 Exporting an item or a complete mailbox can be performed by pressing this symbol in the toolbar:
 
-[<img class="aligncenter size-full wp-image-2681" title="Save icon" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Save-icon.png?resize=59%2C57" alt="" width="59" height="57" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Save-icon.png)
+[<img class="aligncenter size-full wp-image-2681" title="Save icon" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/01/Save-icon.png?resize=59%2C57" alt="" width="59" height="57" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2013/01/Save-icon.png)
 
 This will launch a window where you have to provide a location where the PST folders can be stored. The PST file will get the name of the mailbox. So for example if you export a mailbox called Johan the PST will be named Johan.pst
 
@@ -49,7 +49,7 @@ During the process a progress bar is being viewed which displays:
   * The folder which is currently processed
   * The amount of items being recovered
 
-[<img class="aligncenter size-medium wp-image-2683" title="Progress" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Progress-300x126.png?resize=300%2C126" alt="" width="300" height="126" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Progress.png?resize=300%2C126&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Progress.png?w=569&ssl=1 569w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2013/01/Progress.png)
+[<img class="aligncenter size-medium wp-image-2683" title="Progress" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Progress-300x126.png?resize=300%2C126" alt="" width="300" height="126" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Progress.png?resize=300%2C126&ssl=1 300w, https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Progress.png?w=569&ssl=1 569w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2013/01/Progress.png)
 
 Besides exporting a mailbox or message to PST the tool has the ability to export single messages to the .MSG or .EML format.
 

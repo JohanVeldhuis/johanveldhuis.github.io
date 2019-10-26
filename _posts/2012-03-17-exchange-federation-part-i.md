@@ -4,7 +4,7 @@ title: 'Exchange Federation &#8211; part I'
 date: 2012-03-17T12:33:57+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2418
+guid: http://myuclab.nl/?p=2418
 permalink: /exchange-federation-part-i/
 categories:
   - Exchange
@@ -165,7 +165,7 @@ But what happens when a user request free/busy information of a user in another 
 
 In the workflow below a complete overview of the process:
 
-[<img title="Federation free/busy workflow" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/03/Federation-free-busy-300x240.jpg?resize=300%2C240" alt="" width="300" height="240" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/03/Federation-free-busy.jpg)
+[<img title="Federation free/busy workflow" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/03/Federation-free-busy-300x240.jpg?resize=300%2C240" alt="" width="300" height="240" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/03/Federation-free-busy.jpg)
 
   1. User provides a SMTP adress of another user in another organization;
   2. The CAS Server checks if Federation is configured;

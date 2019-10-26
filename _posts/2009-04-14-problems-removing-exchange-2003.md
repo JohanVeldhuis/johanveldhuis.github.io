@@ -4,7 +4,7 @@ title: Problems removing Exchange 2003 cluster
 date: 2009-04-14T21:10:43+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1174
+guid: http://myuclab.nl/?p=1174
 permalink: /problems-removing-exchange-2003-cluster/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: Use Powershell script to disable mailboxes
 date: 2009-02-23T00:34:13+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1117
+guid: http://myuclab.nl/?p=1117
 permalink: /use-powershell-script-to-disable-mailboxes/
 categories:
   - Exchange

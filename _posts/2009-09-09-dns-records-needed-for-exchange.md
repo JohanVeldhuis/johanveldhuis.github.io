@@ -4,7 +4,7 @@ title: DNS records needed for Exchange
 date: 2009-09-09T21:32:00+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1312
+guid: http://myuclab.nl/?p=1312
 permalink: /dns-records-needed-for-exchange/
 categories:
   - Exchange

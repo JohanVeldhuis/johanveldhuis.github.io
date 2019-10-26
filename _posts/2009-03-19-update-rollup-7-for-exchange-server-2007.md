@@ -4,7 +4,7 @@ title: Update Rollup 7 for Exchange Server 2007 Service Pack 1
 date: 2009-03-19T19:27:39+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1136
+guid: http://myuclab.nl/?p=1136
 permalink: /update-rollup-7-for-exchange-server-2007-service-pack-1/
 categories:
   - Exchange

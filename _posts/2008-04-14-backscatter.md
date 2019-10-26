@@ -4,7 +4,7 @@ title: Backscatter
 date: 2008-04-14T23:15:30+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=305
+guid: http://myuclab.nl/?p=305
 permalink: /backscatter/
 categories:
   - Blog

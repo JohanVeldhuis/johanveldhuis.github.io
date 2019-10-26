@@ -4,7 +4,7 @@ title: Get-owavirtualdirectory does not return all CAS servers
 date: 2010-03-25T20:07:14+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1879
+guid: http://myuclab.nl/?p=1879
 permalink: /get-owavirtualdirectory-does-not-return-all-cas-servers/
 categories:
   - Exchange
@@ -13,10 +13,10 @@ By accident I found a bug in Exchange 2010. The issue only occurs in Exchange 20
 
 Normally you will get a nice overview of all CAS servers when running the get-owavirtualdirectory command. But when no RPC traffic is allowed between the sites you will get the following result:
 
-[<img title="get-owavirtualdirectory" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/03/melding_1-150x144.jpg?resize=150%2C144" alt="" width="150" height="144" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2010/03/melding_1.jpg)
+[<img title="get-owavirtualdirectory" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/03/melding_1-150x144.jpg?resize=150%2C144" alt="" width="150" height="144" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2010/03/melding_1.jpg)
 
 As you can see the command will display the first CAS server but it goes wrong when it wants to connect to the 2nd CAS server. This is normal because it can&#8217;t connect to it via RPC. Normally you would expect that the query will continue to run and will display the other servers, NOT. After contacting Microsoft they confirmed that this is a bug which will be fixed in a future update.
 
 Workaround: open RPC
 
-[<img title="get-owavirtualdirectory" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2010/03/melding_2-150x105.jpg?resize=150%2C105" alt="" width="150" height="105" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2010/03/melding_2.jpg)
+[<img title="get-owavirtualdirectory" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2010/03/melding_2-150x105.jpg?resize=150%2C105" alt="" width="150" height="105" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2010/03/melding_2.jpg)

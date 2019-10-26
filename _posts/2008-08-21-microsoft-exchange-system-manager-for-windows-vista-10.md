@@ -4,7 +4,7 @@ title: Microsoft Exchange System Manager for Windows Vista 1.0
 date: 2008-08-21T00:07:08+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=729
+guid: http://myuclab.nl/?p=729
 permalink: /microsoft-exchange-system-manager-for-windows-vista-10/
 categories:
   - Software

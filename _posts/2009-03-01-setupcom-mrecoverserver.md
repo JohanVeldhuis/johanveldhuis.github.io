@@ -4,7 +4,7 @@ title: Setup.com /M:RecoverServer
 date: 2009-03-01T21:59:26+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1122
+guid: http://myuclab.nl/?p=1122
 permalink: /setupcom-mrecoverserver/
 categories:
   - Exchange

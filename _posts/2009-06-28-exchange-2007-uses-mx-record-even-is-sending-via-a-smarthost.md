@@ -4,7 +4,7 @@ title: Exchange 2007 uses MX record even is sending via a smarthost
 date: 2009-06-28T20:11:43+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1241
+guid: http://myuclab.nl/?p=1241
 permalink: /exchange-2007-uses-mx-record-even-is-sending-via-a-smarthost/
 categories:
   - Exchange
@@ -13,7 +13,7 @@ Normally when using a smarthost you wouldn&#8217;t expect that the mailserver do
 
 Below a screenshot of the DNS part when using a smarthost:
 
-[<img class="alignnone size-thumbnail wp-image-1242" title="Network trace when sending via a smarthost" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2009/06/mx-150x59.jpg?resize=150%2C59" alt="Network trace when sending via a smarthost" width="150" height="59" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2009/06/mx.jpg?resize=150%2C59&ssl=1 150w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2009/06/mx.jpg?zoom=2&resize=150%2C59&ssl=1 300w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2009/06/mx.jpg?zoom=3&resize=150%2C59&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2009/06/mx.jpg)
+[<img class="alignnone size-thumbnail wp-image-1242" title="Network trace when sending via a smarthost" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2009/06/mx-150x59.jpg?resize=150%2C59" alt="Network trace when sending via a smarthost" width="150" height="59" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2009/06/mx.jpg?resize=150%2C59&ssl=1 150w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2009/06/mx.jpg?zoom=2&resize=150%2C59&ssl=1 300w, https://i2.wp.com/myuclab.nl/wp-content/uploads/2009/06/mx.jpg?zoom=3&resize=150%2C59&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2009/06/mx.jpg)
 
 Also the quote below from Elan Shudnow confirms that a DNS query for the MX record is performed even when using a smarthost:
 

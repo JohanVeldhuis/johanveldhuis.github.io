@@ -4,7 +4,7 @@ title: Move-mailbox fails with strange error
 date: 2010-03-15T19:47:35+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1873
+guid: http://myuclab.nl/?p=1873
 permalink: /move-mailbox-failed-with-strange-error/
 categories:
   - Exchange

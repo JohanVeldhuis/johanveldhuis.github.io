@@ -4,7 +4,7 @@ title: Message Classifications
 date: 2008-07-06T21:38:49+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=387
+guid: http://myuclab.nl/?p=387
 permalink: /message-classifications/
 categories:
   - Exchange
@@ -27,7 +27,7 @@ Get-MessageClassifications
 
 This will give the following result:
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/07/get-messageclas.jpg"><img class="alignnone size-thumbnail wp-image-388" title="Get message classifications" src="https://johanveldhuis.nl/wp-content/uploads/2008/07/get-messageclas-150x119.jpg" alt="" width="150" height="119" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/07/get-messageclas.jpg"><img class="alignnone size-thumbnail wp-image-388" title="Get message classifications" src="https://myuclab.nl/wp-content/uploads/2008/07/get-messageclas-150x119.jpg" alt="" width="150" height="119" /></a>
 
 You can make new message classifications with the following command <em>new-messageclassification</em> and a few parameters.
 
@@ -65,7 +65,7 @@ But it is a way to make it more difficult for a user to use it.
 
 In the previous part we spoke about message classification in Outlook 2007. In OWA you don't have to configure anything for message classification but for Outlook 2007 you need.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/07/owa.jpg"><img class="alignnone size-thumbnail wp-image-389" title="OWA message classification" src="https://johanveldhuis.nl/wp-content/uploads/2008/07/owa-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/07/owa.jpg"><img class="alignnone size-thumbnail wp-image-389" title="OWA message classification" src="https://myuclab.nl/wp-content/uploads/2008/07/owa-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Configuring Outlook 2007 takes two steps:
 <ul>
@@ -102,4 +102,4 @@ Message classifications can be used in <em>transport rules. </em>You could do a
 
 Besides that option you can also let a <em>transport rule </em>assign a classification to a mail according to the conditions you specify.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2008/07/tr_rule_mc.jpg"><img class="alignnone size-thumbnail wp-image-390" title="Set message classification via Transport Rule" src="https://johanveldhuis.nl/wp-content/uploads/2008/07/tr_rule_mc-150x92.jpg" alt="" width="150" height="92" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2008/07/tr_rule_mc.jpg"><img class="alignnone size-thumbnail wp-image-390" title="Set message classification via Transport Rule" src="https://myuclab.nl/wp-content/uploads/2008/07/tr_rule_mc-150x92.jpg" alt="" width="150" height="92" /></a>

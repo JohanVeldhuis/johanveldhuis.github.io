@@ -4,7 +4,7 @@ title: Exchange 2013 hits RTM
 date: 2012-10-14T19:08:00+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2541
+guid: http://myuclab.nl/?p=2541
 permalink: /exchange-2013-hits-rtm/
 categories:
   - Exchange

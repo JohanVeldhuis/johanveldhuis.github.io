@@ -4,7 +4,7 @@ title: Microsoft Exchange Server ActiveSync Certificate-Based Authentication Too
 date: 2008-08-15T23:52:01+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=693
+guid: http://myuclab.nl/?p=693
 permalink: /icrosoft-exchange-server-activesync-certificate-based-authentication-tool/
 categories:
   - Software

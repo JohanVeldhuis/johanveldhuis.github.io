@@ -4,20 +4,20 @@ title: The UC Architects
 date: 2012-07-07T19:27:18+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2474
+guid: http://myuclab.nl/?p=2474
 permalink: /the-uc-architects/
 categories:
   - Blog
 ---
  A few weeks ago it started with the following tweet of <a href="http://www.stevieg.org/" target="_blank">Steve Goodman</a>:
 
-<img title="tweet" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/07/tweet.jpg?resize=519%2C98" alt="" width="519" height="98" data-recalc-dims="1" />
+<img title="tweet" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/07/tweet.jpg?resize=519%2C98" alt="" width="519" height="98" data-recalc-dims="1" />
 
 In a very short period several Exchange and Lync bloggers informed Steve that they would like to attend and this resulted in <a href="http://www.theucarchitects.com/" target="_blank">The UCArchitects</a>. A podcast which only contains unified communications related subjects. The mail and IM traffic which was exchanged between the contributors was from a high volume and new ideas were found.
 
 After several days the site was already online although hidden for the large public. As it looks like Metro will be the new style we decided to use this both for the website and landing page. This resulted in the following landing page:
 
-[<img title="The UCArchitects Landingpage" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/07/599901_305081346249956_1827154067_n-298x300.jpg?resize=298%2C300" alt="" width="298" height="300" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/07/599901_305081346249956_1827154067_n.jpg)
+[<img title="The UCArchitects Landingpage" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/07/599901_305081346249956_1827154067_n-298x300.jpg?resize=298%2C300" alt="" width="298" height="300" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/07/599901_305081346249956_1827154067_n.jpg)
 
 On the 18th of June the website was launched together with the first episode of the podcast: In the Beginning &#8230; . In this episode the following things where discussed:
 

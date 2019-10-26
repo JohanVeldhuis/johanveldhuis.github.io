@@ -4,7 +4,7 @@ title: Cleanup Shadow Redundancy Queues
 date: 2013-06-23T20:49:29+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3213
+guid: http://myuclab.nl/?p=3213
 permalink: /cleanup-shadow-redundancy-queues/
 categories:
   - Scripts

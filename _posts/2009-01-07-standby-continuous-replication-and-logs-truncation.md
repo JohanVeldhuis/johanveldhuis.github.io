@@ -4,7 +4,7 @@ title: Standby Continuous Replication and log truncation
 date: 2009-01-07T23:44:25+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1028
+guid: http://myuclab.nl/?p=1028
 permalink: /standby-continuous-replication-and-logs-truncation/
 categories:
   - Exchange

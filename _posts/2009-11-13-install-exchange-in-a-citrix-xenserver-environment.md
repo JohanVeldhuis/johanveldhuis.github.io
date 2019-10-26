@@ -4,12 +4,12 @@ title: Install Exchange in a Citrix Xenserver environment
 date: 2009-11-13T21:22:53+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1673
+guid: http://myuclab.nl/?p=1673
 permalink: /install-exchange-in-a-citrix-xenserver-environment/
 categories:
   - Exchange
 ---
-[<img title="Exchange setup error" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2009/11/Capture-150x150.jpg?resize=150%2C150" alt="Exchange setup error" width="150" height="150" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2009/11/Capture.jpg)
+[<img title="Exchange setup error" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2009/11/Capture-150x150.jpg?resize=150%2C150" alt="Exchange setup error" width="150" height="150" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2009/11/Capture.jpg)
 
 Today I brought a new Exchange environment in the air. This time it was a greenfield situation, an environment which is completely seperated from the old environment. A big part of the server environment is virtualized, one of them is the Exchange server. Citrix XenServer was selected as the virtualization environment, and as it is listed on the list on the Microsoft site it should not be a problem.
 

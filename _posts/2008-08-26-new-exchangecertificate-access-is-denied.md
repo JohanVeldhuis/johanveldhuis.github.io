@@ -4,7 +4,7 @@ title: 'New-ExchangeCertificate : Access is denied'
 date: 2008-08-26T23:00:05+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=753
+guid: http://myuclab.nl/?p=753
 permalink: /new-exchangecertificate-access-is-denied/
 categories:
   - Exchange

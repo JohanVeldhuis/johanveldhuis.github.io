@@ -4,7 +4,7 @@ title: 'RPC Client Access Service doesn&#8217;t start anymore'
 date: 2011-02-09T20:49:38+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2124
+guid: http://myuclab.nl/?p=2124
 permalink: /rpc-client-access-service-doesnt-start-anymore/
 categories:
   - Exchange
@@ -13,7 +13,7 @@ In Exchange 2010 almost all connections are made via the CAS server, excluded th
 
 In most cases a restart of the service or reboot of the entire server will fix the issue. But it may happen that it won&#8217;t start at all. When the service doesn&#8217;t start anymore you won&#8217;t see much in the event log:
 
-[<img title="RPC Client service doesn't start" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/02/error_rpc-300x121.jpg?resize=300%2C121" alt="" width="300" height="121" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/02/error_rpc.jpg)
+[<img title="RPC Client service doesn't start" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/02/error_rpc-300x121.jpg?resize=300%2C121" alt="" width="300" height="121" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/02/error_rpc.jpg)
 
 Unfortunatly the logging methods for the RPC Client Access Service are minimal. During the startup process of the service it will use a config file. This file can be found in the _BIN_ directory of Exchange and has the following name _Microsoft.Exchange.RpcClientAccess.Service.exe.config._
 

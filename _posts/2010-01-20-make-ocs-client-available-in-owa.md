@@ -4,7 +4,7 @@ title: Make OCS client available in OWA
 date: 2010-01-20T22:43:19+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1821
+guid: http://myuclab.nl/?p=1821
 permalink: /make-ocs-client-available-in-owa/
 categories:
   - Exchange
@@ -26,7 +26,7 @@ When the files are installed it's time to build the configuration. First we need
 	<li>Issuer</li>
 	<li>SerialNumber</li>
 </ul>
-<a href="https://johanveldhuis.nl/wp-content/uploads/2010/01/certificate.jpg"><img class="alignnone size-thumbnail wp-image-1811" title="Get-Exchangecertificate |fl" src="https://johanveldhuis.nl/wp-content/uploads/2010/01/certificate-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2010/01/certificate.jpg"><img class="alignnone size-thumbnail wp-image-1811" title="Get-Exchangecertificate |fl" src="https://myuclab.nl/wp-content/uploads/2010/01/certificate-150x150.jpg" alt="" width="150" height="150" /></a>
 
 Now we copied the values it's time to make the modifications to the OWA configurationfile, you can find it in the following directory <em>c:\Program Files\Microsoft\Exchange\v14\ClientAccess\Owa</em>. Here you will find <em>web.config </em>, which contains the configuration for Outlook Web Access. Before modifying it create a backup of the file, this will let you quickly restore to the original configuration in case OWA doesn't work anymore after the modifications. Then open the web.config using a text editor such as Notepad and search for the line containing the following word <em>IMPoolName </em>this is the firstline of the section which needs to be changed. Once found change the following lines:
 <ul>
@@ -50,10 +50,10 @@ The Exchange side is completed, now it's time for the OCS side. For this you wil
 <ul>
 	<li>FQDN of OWA</li>
 </ul>
-<a href="https://johanveldhuis.nl/wp-content/uploads/2010/01/add_authorized_host.jpg"><img class="alignnone size-thumbnail wp-image-1812" title="Add Authorized host" src="https://johanveldhuis.nl/wp-content/uploads/2010/01/add_authorized_host-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2010/01/add_authorized_host.jpg"><img class="alignnone size-thumbnail wp-image-1812" title="Add Authorized host" src="https://myuclab.nl/wp-content/uploads/2010/01/add_authorized_host-150x150.jpg" alt="" width="150" height="150" /></a>
 
 When the fqdn has been added restart the Front End service to make the modifications active. Once the service is started again you will see the OCS client once logged in using OWA.
 
-<a href="https://johanveldhuis.nl/wp-content/uploads/2010/01/user.jpg"><img class="alignnone size-thumbnail wp-image-1813" title="OCS client in OWA" src="https://johanveldhuis.nl/wp-content/uploads/2010/01/user-150x150.jpg" alt="" width="150" height="150" /></a>
+<a href="https://myuclab.nl/wp-content/uploads/2010/01/user.jpg"><img class="alignnone size-thumbnail wp-image-1813" title="OCS client in OWA" src="https://myuclab.nl/wp-content/uploads/2010/01/user-150x150.jpg" alt="" width="150" height="150" /></a>
 
 As you can see you can set your own status and see the status of other users. Besides this the left menu has been extended with a contactlist which corresponds with your contactlist in the MOC client.

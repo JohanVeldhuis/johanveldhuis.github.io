@@ -4,7 +4,7 @@ title: The Exchange Virtual Conference
 date: 2013-05-28T12:25:13+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3181
+guid: http://myuclab.nl/?p=3181
 permalink: /the-exchange-virtual-conference/
 categories:
   - Blog

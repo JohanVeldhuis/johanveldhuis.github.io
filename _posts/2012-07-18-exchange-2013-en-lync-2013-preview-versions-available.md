@@ -4,7 +4,7 @@ title: Exchange 2013 and Lync 2013 Preview versions available
 date: 2012-07-18T12:59:01+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2482
+guid: http://myuclab.nl/?p=2482
 permalink: /exchange-2013-en-lync-2013-preview-versions-available/
 categories:
   - Blog

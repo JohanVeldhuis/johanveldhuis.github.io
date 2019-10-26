@@ -4,7 +4,7 @@ title: 'OWA doesn&#8217;t work after installing Rollup'
 date: 2009-08-04T19:33:11+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1282
+guid: http://myuclab.nl/?p=1282
 permalink: /owa-doesnt-work-after-installing-rollup/
 categories:
   - Exchange

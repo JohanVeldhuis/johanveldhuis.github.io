@@ -4,7 +4,7 @@ title: Speeding up the installation proces of a rollup
 date: 2010-12-29T15:09:08+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2070
+guid: http://myuclab.nl/?p=2070
 permalink: /speeding-up-the-installation-proces-of-a-rollup/
 categories:
   - Exchange
@@ -15,7 +15,7 @@ A while ago the Microsoft Exchange team posted a <a href="http://msexchangetea
 
 Starting from Exchange 2010 SP1 rollup 2 a new feature is introduced. The setup will check if CRL checking is enabled and if so it will prompt you with a warning:
 
-[<img title="Exchange 2010 SP1 Rollup setup" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/12/warning-300x129.jpg?resize=300%2C129" alt="" width="300" height="129" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/12/warning.jpg)
+[<img title="Exchange 2010 SP1 Rollup setup" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/12/warning-300x129.jpg?resize=300%2C129" alt="" width="300" height="129" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/12/warning.jpg)
 
 To solve this issue you might decide to turn off CRL checking temporarily, this can be done by performing the following steps:
 
@@ -26,7 +26,7 @@ To solve this issue you might decide to turn off CRL checking temporarily, this 
   * search for the _Security_ item
   * disable the following option: _Check for publisher&#8217;s certificate revocation_
 
-[<img title="Internet Explorer: advanced settings" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2010/12/ie-settings-300x81.jpg?resize=300%2C81" alt="" width="300" height="81" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2010/12/ie-settings.jpg)
+[<img title="Internet Explorer: advanced settings" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2010/12/ie-settings-300x81.jpg?resize=300%2C81" alt="" width="300" height="81" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2010/12/ie-settings.jpg)
 
 Restart the setup and you won&#8217;t get the warning again. Disabling this option is not a best practice of  course because the digital signature isn&#8217;t checked. So disable this option only if you have no or a very bad internet connection.
 

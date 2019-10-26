@@ -4,7 +4,7 @@ title: Chinese signs in non-delivery reports
 date: 2009-12-21T20:30:16+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1783
+guid: http://myuclab.nl/?p=1783
 permalink: /chinese-signs-in-non-delivery-reports/
 categories:
   - Exchange

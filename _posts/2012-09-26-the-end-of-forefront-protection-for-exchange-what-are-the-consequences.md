@@ -4,7 +4,7 @@ title: The end of ForeFront Protection for Exchange (FPE) what are the consequen
 date: 2012-09-26T07:24:01+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2528
+guid: http://myuclab.nl/?p=2528
 permalink: /the-end-of-forefront-protection-for-exchange-what-are-the-consequences/
 categories:
   - Exchange

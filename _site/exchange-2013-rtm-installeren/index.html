@@ -52,7 +52,7 @@
 			</a>
 			
 			
-			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@johanveldhuis.nl">
+			<a type="button" class="navbar-toggle nav-link" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope"></i>
 			</a>
 			
@@ -118,7 +118,7 @@
 		
 		
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:johan@johanveldhuis.nl">
+			<a class="btn btn-default btn-sm" href="mailto:johan@myuclab.nl">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
@@ -161,7 +161,7 @@
 <p>Before extending the schema you will need to install the ADDS tools on the system. These can be installed very easy by insing the following Powershell cmdlet <em>Install-WindowsFeature RSAT-ADDS</em></p>
 
 <p style="text-align: center;">
-  <a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/install-windowsfeature-rsat-adds.png"><img class="aligncenter" title="install-windowsfeature rsat-adds" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/install-windowsfeature-rsat-adds-300x33.png?resize=300%2C33" alt="" width="300" height="33" data-recalc-dims="1" /></a>
+  <a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/10/install-windowsfeature-rsat-adds.png"><img class="aligncenter" title="install-windowsfeature rsat-adds" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/10/install-windowsfeature-rsat-adds-300x33.png?resize=300%2C33" alt="" width="300" height="33" data-recalc-dims="1" /></a>
 </p>
 
 <p>Once the installation has finished it’s time to install the other prerequisites. Which features of Windows you will need to install depends on the server roles which are installed. The example below will install all prerequisites for a multi role server:</p>
@@ -169,7 +169,7 @@
 <p><em>Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation</em></p>
 
 <p style="text-align: center;">
-  <a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/install-windowsfeature-other.png"><img class="aligncenter" title="install-windowsfeature other prerequisites" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/install-windowsfeature-other-300x25.png?resize=300%2C25" alt="" width="300" height="25" data-recalc-dims="1" /></a>
+  <a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/10/install-windowsfeature-other.png"><img class="aligncenter" title="install-windowsfeature other prerequisites" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/10/install-windowsfeature-other-300x25.png?resize=300%2C25" alt="" width="300" height="25" data-recalc-dims="1" /></a>
 </p>
 
 <p>After the installation of the prerequisites has completed you will need to reboot the server. Once rebooted it’s time for the last three prerequisites. These need to be downloaded from the Microsoft website, below you will find the links for the three downloads:</p>
@@ -189,13 +189,13 @@
 <p><em>setup.exe /PS /IAcceptExchangeServerLicenseTerms</em></p>
 
 <p style="text-align: center;">
-  <em><a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/schema-prep.png"><img class="aligncenter" title="AD Schema Prep" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/schema-prep-300x88.png?resize=300%2C88" alt="" width="300" height="88" data-recalc-dims="1" /></a></em>
+  <em><a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/10/schema-prep.png"><img class="aligncenter" title="AD Schema Prep" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/10/schema-prep-300x88.png?resize=300%2C88" alt="" width="300" height="88" data-recalc-dims="1" /></a></em>
 </p>
 
 <p>The setup will tell you if the extension of the schema completed succesfully or not. Optionally you could use <em>ADSIEdit</em> to verify if the schema is extended. Verify if the value of the object <em>ms-Exch-Schema-Verision-Pt</em> and more specific the parameter _rangUpper _has the value 15137.</p>
 
 <p style="text-align: center;">
-  <a href="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/adsiedit_schema.png"><img class="aligncenter" title="Adsiedit" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/adsiedit_schema-300x190.png?resize=300%2C190" alt="" width="300" height="190" data-recalc-dims="1" /></a>
+  <a href="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/10/adsiedit_schema.png"><img class="aligncenter" title="Adsiedit" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/10/adsiedit_schema-300x190.png?resize=300%2C190" alt="" width="300" height="190" data-recalc-dims="1" /></a>
 </p>
 
 <p>Now the schema has been extended it’s time for the next step prepare the AD. This can be done by using the following cmdlet:</p>
@@ -205,11 +205,11 @@
 <p>During this steps several security groups are created for Exchange 2013. Besides this several objects are created in the configuration partition of AD. After the step has completed you can use <em>Active Directory Users &amp; Computers</em> and <em>ADSIEdit</em> to verify if the step has completed succesfully.</p>
 
 <p style="text-align: center;">
-  <a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/aduc.png"><img class="aligncenter" title="Active Directory Users and Computers" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/aduc.png?resize=257%2C170" alt="" width="257" height="170" data-recalc-dims="1" /></a>
+  <a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/10/aduc.png"><img class="aligncenter" title="Active Directory Users and Computers" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/10/aduc.png?resize=257%2C170" alt="" width="257" height="170" data-recalc-dims="1" /></a>
 </p>
 
 <p style="text-align: center;">
-  <a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/ad_config.png"><img class="aligncenter" title="Configuration partition" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/ad_config-300x191.png?resize=300%2C191" alt="" width="300" height="191" data-recalc-dims="1" /></a>
+  <a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/10/ad_config.png"><img class="aligncenter" title="Configuration partition" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/10/ad_config-300x191.png?resize=300%2C191" alt="" width="300" height="191" data-recalc-dims="1" /></a>
 </p>
 
 <p>After the AD has been prepped it’s time to install the bits.</p>
@@ -221,7 +221,7 @@
 <p>By using these parameters both the Client Access and Mailbox Server role will be installed on the server</p>
 
 <p style="text-align: center;">
-  <a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/setup-finished.png"><img class="aligncenter" title="setup finished" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/10/setup-finished-300x212.png?resize=300%2C212" alt="" width="300" height="212" data-recalc-dims="1" /></a>
+  <a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/10/setup-finished.png"><img class="aligncenter" title="setup finished" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/10/setup-finished-300x212.png?resize=300%2C212" alt="" width="300" height="212" data-recalc-dims="1" /></a>
 </p>
 
 <p>As you can see a reboot is required, after the reboot it’s time to configure Exchange.</p>

@@ -4,7 +4,7 @@ title: Export-Mailbox did not delete content
 date: 2009-01-20T20:44:38+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1033
+guid: http://myuclab.nl/?p=1033
 permalink: /export-mailbox-did-not-delete-content/
 categories:
   - Exchange

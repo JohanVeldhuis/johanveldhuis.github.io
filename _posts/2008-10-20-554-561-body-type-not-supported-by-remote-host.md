@@ -4,7 +4,7 @@ title: 554 5.6.1 Body type not supported by Remote Host
 date: 2008-10-20T20:52:03+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=921
+guid: http://myuclab.nl/?p=921
 permalink: /554-561-body-type-not-supported-by-remote-host/
 categories:
   - Exchange

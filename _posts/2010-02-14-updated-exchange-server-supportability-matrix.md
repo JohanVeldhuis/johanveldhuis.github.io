@@ -4,7 +4,7 @@ title: Updated Exchange Server Supportability Matrix
 date: 2010-02-14T02:11:09+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1841
+guid: http://myuclab.nl/?p=1841
 permalink: /updated-exchange-server-supportability-matrix/
 categories:
   - Exchange

@@ -4,7 +4,7 @@ title: 'Hidden features of Exchange 2010 &#8211; part I'
 date: 2011-08-05T20:00:19+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2290
+guid: http://myuclab.nl/?p=2290
 permalink: /hidden-features-of-exchange-2010-part-1/
 categories:
   - Exchange
@@ -27,7 +27,7 @@ When you have worked with Exchange 2010 you might know that some things only can
 </div>
 
 <div>
-  <a href="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/powershell.jpg"><img title="Three parameters" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/powershell-300x30.jpg?resize=300%2C30" alt="" width="300" height="30" data-recalc-dims="1" /></a>
+  <a href="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/08/powershell.jpg"><img title="Three parameters" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2011/08/powershell-300x30.jpg?resize=300%2C30" alt="" width="300" height="30" data-recalc-dims="1" /></a>
 </div>
 <div>
   <strong></strong> 
@@ -167,7 +167,7 @@ Set-OrganizationConfig -DistributionGroupDefaultOU 'corp.local/demo/groups'  -D
 </div>
 
 <div>
-  <a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new_group.jpg"><img title="Create New Distribution Group" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new_group-300x25.jpg?resize=300%2C25" alt="" width="300" height="25" data-recalc-dims="1" /></a>
+  <a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/08/new_group.jpg"><img title="Create New Distribution Group" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/08/new_group-300x25.jpg?resize=300%2C25" alt="" width="300" height="25" data-recalc-dims="1" /></a>
 </div>
 
 <div>
@@ -175,7 +175,7 @@ Set-OrganizationConfig -DistributionGroupDefaultOU 'corp.local/demo/groups'  -D
 </div>
 
 <div>
-  <a href="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new_group_deny.jpg"><img title="New Distribution Group blocked word used" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2011/08/new_group_deny-300x166.jpg?resize=300%2C166" alt="" width="300" height="166" data-recalc-dims="1" /></a>
+  <a href="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/08/new_group_deny.jpg"><img title="New Distribution Group blocked word used" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2011/08/new_group_deny-300x166.jpg?resize=300%2C166" alt="" width="300" height="166" data-recalc-dims="1" /></a>
 </div>
 
 <div>

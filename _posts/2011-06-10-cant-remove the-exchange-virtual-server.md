@@ -4,7 +4,7 @@ title: Can’t remove the Exchange Virtual Server
 date: 2011-06-10T19:42:21+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2244
+guid: http://myuclab.nl/?p=2244
 permalink: /cant-remove the-exchange-virtual-server/
 categories:
   - Exchange
@@ -77,7 +77,7 @@ Once you have confirmed this it’s time to make the change. Open the Configurat
 
 Get the properties of _CN=Global Settings_ and search for the attribute called _MsExchAdminMailbox_. You will see the value of this attribute has been a deleted object:
 
-[<img class="alignnone size-medium wp-image-2245" title="Postmaster mailbox" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/adsiedit-270x300.jpg?resize=270%2C300" alt="" width="270" height="300" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/adsiedit.jpg?resize=270%2C300&ssl=1 270w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/adsiedit.jpg?w=405&ssl=1 405w" sizes="(max-width: 270px) 100vw, 270px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2011/06/adsiedit.jpg)
+[<img class="alignnone size-medium wp-image-2245" title="Postmaster mailbox" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/adsiedit-270x300.jpg?resize=270%2C300" alt="" width="270" height="300" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/adsiedit.jpg?resize=270%2C300&ssl=1 270w, https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/adsiedit.jpg?w=405&ssl=1 405w" sizes="(max-width: 270px) 100vw, 270px" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2011/06/adsiedit.jpg)
 
 In this case the attribute has the value _CN=Exchadmin\0ADEL:bbf20ca9-7def-4e0f-bdd9-f9107c1643d6,CN=Deleted Objects,DC=Corp,DC=local_. The _DEL_ means the object doesn´t exist anymore. To solve this issue replace the value with a value of an existing user, for example _CN=Postmaster,DN=ServiceAccounts,DC=Corp,DC=local_.
 

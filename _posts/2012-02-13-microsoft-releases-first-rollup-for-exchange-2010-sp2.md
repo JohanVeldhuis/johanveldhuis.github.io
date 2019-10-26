@@ -4,7 +4,7 @@ title: Microsoft releases first rollup for Exchange 2010 SP2
 date: 2012-02-13T22:11:35+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2416
+guid: http://myuclab.nl/?p=2416
 permalink: /microsoft-releases-first-rollup-for-exchange-2010-sp2/
 categories:
   - Exchange

@@ -4,12 +4,12 @@ title: Microsoft Exchange Server Remote Connectivity Analyzer
 date: 2008-09-27T18:47:14+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=859
+guid: http://myuclab.nl/?p=859
 permalink: /microsoft-exchange-server-remote-connectivity-analyzer/
 categories:
   - Exchange
 ---
-[<img class="alignnone size-thumbnail wp-image-860" title="Microsoft Exchange Server Remote Connectivity Analyzer" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2008/09/exchangetest-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2008/09/exchangetest.jpg?resize=150%2C150&ssl=1 150w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/09/exchangetest.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i0.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/09/exchangetest.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2008/09/exchangetest.jpg)
+[<img class="alignnone size-thumbnail wp-image-860" title="Microsoft Exchange Server Remote Connectivity Analyzer" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2008/09/exchangetest-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i0.wp.com/myuclab.nl/wp-content/uploads/2008/09/exchangetest.jpg?resize=150%2C150&ssl=1 150w, https://i0.wp.com/myuclab.nl/wp-content/uploads//customers/myuclab.nl/myuclab.nl/httpd.www/wp-content/uploads/2008/09/exchangetest.jpg?zoom=2&resize=150%2C150&ssl=1 300w, https://i0.wp.com/myuclab.nl/wp-content/uploads//customers/myuclab.nl/myuclab.nl/httpd.www/wp-content/uploads/2008/09/exchangetest.jpg?zoom=3&resize=150%2C150&ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2008/09/exchangetest.jpg)
 
 During my visit to a forum I found this site. The site is an idea of Shawn McGrath and is developed by Brad Hughes. This site makes it possible to test your Exchange environment from the internet. It makes it possible to test:
 

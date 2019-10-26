@@ -4,7 +4,7 @@ title: 'Change OWA&#8217;s default language'
 date: 2009-03-15T21:15:50+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1133
+guid: http://myuclab.nl/?p=1133
 permalink: /change-owas-default-language/
 categories:
   - Exchange

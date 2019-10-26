@@ -4,7 +4,7 @@ title: How to deal with a proxy server in an Exchange 2010 environment
 date: 2012-05-13T20:49:39+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2442
+guid: http://myuclab.nl/?p=2442
 permalink: /how-to-deal-with-a-proxy-server-in-an-exchange-2010-environment/
 categories:
   - Exchange
@@ -76,7 +76,7 @@ By default Outlook will use the proxy settings configured in Internet Explorer. 
 
 If you forgot to exclude the url’s by Exchange then you might get this kind of errors:
 
-[<img title="Out Of Office fout" src="https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/05/oof-300x58.jpg?resize=300%2C58" alt="" width="300" height="58" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/05/oof.jpg)
+[<img title="Out Of Office fout" src="https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/05/oof-300x58.jpg?resize=300%2C58" alt="" width="300" height="58" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/05/oof.jpg)
 
 In the example above the user tries to enable his/her out of office. But since the EWS url is not excluded it can’t check the current status and displays this error.
 

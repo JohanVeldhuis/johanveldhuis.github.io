@@ -4,7 +4,7 @@ title: Steps to perform before installing a Rollup
 date: 2009-08-09T12:17:00+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1287
+guid: http://myuclab.nl/?p=1287
 permalink: /steps-to-perform-before-installing-rollup/
 categories:
   - Exchange

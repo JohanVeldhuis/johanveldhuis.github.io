@@ -4,7 +4,7 @@ title: New version of iOS cleanup script released
 date: 2013-05-28T12:08:30+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3179
+guid: http://myuclab.nl/?p=3179
 permalink: /new-version-ios-cleanup-script-released/
 categories:
   - Scripts

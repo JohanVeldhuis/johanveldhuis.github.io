@@ -4,12 +4,12 @@ title: 'Virtual PC won&#8217;t show console anymore'
 date: 2008-08-08T23:00:45+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=618
+guid: http://myuclab.nl/?p=618
 permalink: /virtual-pc-wont-show-console/
 categories:
   - Blog
 ---
-[<img class="alignnone size-thumbnail wp-image-617" title="Virtual -C" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2008/08/virtual-pc-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2008/08/virtual-pc.jpg?resize=150%2C150&ssl=1 150w, https://i2.wp.com/johanveldhuis.nl/wp-content/uploads//customers/johanveldhuis.nl/johanveldhuis.nl/httpd.www/wp-content/uploads/2008/08/virtual-pc.jpg?zoom=2&resize=150%2C150&ssl=1 300w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2008/08/virtual-pc.jpg)
+[<img class="alignnone size-thumbnail wp-image-617" title="Virtual -C" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2008/08/virtual-pc-150x150.jpg?resize=150%2C150" alt="" width="150" height="150" srcset="https://i2.wp.com/myuclab.nl/wp-content/uploads/2008/08/virtual-pc.jpg?resize=150%2C150&ssl=1 150w, https://i2.wp.com/myuclab.nl/wp-content/uploads//customers/myuclab.nl/myuclab.nl/httpd.www/wp-content/uploads/2008/08/virtual-pc.jpg?zoom=2&resize=150%2C150&ssl=1 300w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />](https://i2.wp.com/myuclab.nl/wp-content/uploads/2008/08/virtual-pc.jpg)
 
 Since yesterday I had a nice issue with Virtual PC, the console wouldn&#8217;t open anymore. The icon was visible in the taskbar so I could start a VM from there. After some searching on the internet I found out that I was nog the only one who had this issue, below 3 solutions I found that you could try:
 

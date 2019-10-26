@@ -4,7 +4,7 @@ title: How to publish your Exchange environment correctly for Lync Mobile 2013
 date: 2013-09-21T09:23:34+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=3276
+guid: http://myuclab.nl/?p=3276
 permalink: /how-to-publish-your-exchange-environment-correctly-for-Lync-Mobile-2013/
 categories:
   - Exchange

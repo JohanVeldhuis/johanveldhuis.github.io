@@ -4,7 +4,7 @@ title: 'Setting up a Geo DNS environment in your test lab &#8211; part II'
 date: 2012-12-31T13:08:40+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=2625
+guid: http://myuclab.nl/?p=2625
 permalink: /setting-up-geo-dns-part-ii/
 categories:
   - Exchange
@@ -19,43 +19,43 @@ _Get-WebServicesVirtualDirectory|Select Identity, ExternalUrl, InternalUrl_
 
 To set all the url’s to the same value we will use the _Set-WebServicesVirtualDirectory _cmdlet i.c.w. the _Get-WebServicesVirtualDirectory _cmdlet:
 
-_Get-WebServicesVirtualDirectory|Set-WebServicesVirtualDirectory –ExternalUrl https://mail.johanveldhuis.nl/EWS/exchange.asmx -InternalUrl https://mail.johanveldhuis.nl/EWS/exchange.asmx_
+_Get-WebServicesVirtualDirectory|Set-WebServicesVirtualDirectory –ExternalUrl https://mail.myuclab.nl/EWS/exchange.asmx -InternalUrl https://mail.myuclab.nl/EWS/exchange.asmx_
 
 After these URL&#8217;s have been fixed it’s time for the remaining URL’s to be corrected:
 
 **OWA:**
 
-_Get-OwaVirtualDirectory|Set-OwaVirtualDirectory –ExternalUrl https://mail.johanveldhuis.nl/owa
+_Get-OwaVirtualDirectory|Set-OwaVirtualDirectory –ExternalUrl https://mail.myuclab.nl/owa
   
-–InternalUrl https://mail.johanveldhuis.nl/owa_
+–InternalUrl https://mail.myuclab.nl/owa_
 
 **ECP:**
 
-_Get-EcpVirtualDirectory|Set-EcpVirtualDirectory –ExternalUrl https://mail.johanveldhuis.nl/ecp
+_Get-EcpVirtualDirectory|Set-EcpVirtualDirectory –ExternalUrl https://mail.myuclab.nl/ecp
   
-–InternalUrl https://mail.johanveldhuis.nl/ecp_
+–InternalUrl https://mail.myuclab.nl/ecp_
 
 **OAB:**
 
-_Get-OabVirtualDirectory|Set-OabVirtualDirectory –ExternalUrl https://mail.johanveldhuis.nl/OAB
+_Get-OabVirtualDirectory|Set-OabVirtualDirectory –ExternalUrl https://mail.myuclab.nl/OAB
   
-–InternalUrl __https://mail.johanveldhuis.nl/OAB___
+–InternalUrl __https://mail.myuclab.nl/OAB___
 
 **ActiveSync:**
 
-_Get-ActiveSyncVirtualDirectory|Set-ActiveSyncVirtualDirectory  -Internalurl https://mail.johanveldhuis.nl/Microsoft-Server-ActiveSync  -Externalurl https://mail.johanveldhuis.nl/Microsoft-Server-ActiveSync_
+_Get-ActiveSyncVirtualDirectory|Set-ActiveSyncVirtualDirectory  -Internalurl https://mail.myuclab.nl/Microsoft-Server-ActiveSync  -Externalurl https://mail.myuclab.nl/Microsoft-Server-ActiveSync_
 
 When the URL’s for the webservices have been configured it’s time to configure the Autodiscover url on both servers:
 
-_Set-ClientAccessServer –Identity EX01 –AutodiscoverInternalUri https://autodiscover.johanveldhuis.nl/autodiscover/autodiscover.xml___
+_Set-ClientAccessServer –Identity EX01 –AutodiscoverInternalUri https://autodiscover.myuclab.nl/autodiscover/autodiscover.xml___
 
 And for the next server:
 
-_Set-ClientAccessServer –Identity EX02 –AutodiscoverInternalUri https://autodiscover.johanveldhuis.nl/autodiscover/autodiscover.xml___
+_Set-ClientAccessServer –Identity EX02 –AutodiscoverInternalUri https://autodiscover.myuclab.nl/autodiscover/autodiscover.xml___
 
 Since we haven’t enabled Outlook Anywhere will need to enable it and configure it to use the correct FQDN. To do this we will need to use the _Enable-OutlookAnywhere cmdlet:_
 
-_get-outlookanywhere|set-OutlookAnywhere -InternalHostname mail.johanveldhuis.nl -ExternalHostname mail.johanveldhuis.nl -InternalClientsRequireSsl: $true -ExternalClientsRequireSsl: $true_
+_get-outlookanywhere|set-OutlookAnywhere -InternalHostname mail.myuclab.nl -ExternalHostname mail.myuclab.nl -InternalClientsRequireSsl: $true -ExternalClientsRequireSsl: $true_
 
 Now we have configured all services with the correct url’s it’s time to generate a certificate request:
 
@@ -63,7 +63,7 @@ First we generate the request and put the output in a variable called $newcert:
 
 _$newcert = New-ExchangeCertificate -GenerateRequest -SubjectName _
   
-_&#8220;c=NL,o=Johan Veldhuis,cn=mail.johanveldhuis.nl&#8221; -DomainName &#8220;autodiscover.johanveldhuis.nl&#8221;  -PrivateKeyExportable $true_
+_&#8220;c=NL,o=Johan Veldhuis,cn=mail.myuclab.nl&#8221; -DomainName &#8220;autodiscover.myuclab.nl&#8221;  -PrivateKeyExportable $true_
 
 Make sure you don’t forget the set the PrivateKeyExportable to true. This will give us the option to export the certificate including the private key which is needed on the other Exchange server.
 
@@ -126,25 +126,25 @@ To test this we can use _nslookup:_
 
 From a client in the 192.168.2.x range we will get this answer:
 
-[<img title="DNS request" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/dns_1.png?resize=247%2C41" alt="" width="247" height="41" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/dns_1.png)
+[<img title="DNS request" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/12/dns_1.png?resize=247%2C41" alt="" width="247" height="41" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/12/dns_1.png)
 
 From a client in the 192.168.3.x range we will get this answer:
 
-[<img title="DNS request" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/dns_2.png?resize=248%2C41" alt="" width="248" height="41" data-recalc-dims="1" />](https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/dns_2.png)
+[<img title="DNS request" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/12/dns_2.png?resize=248%2C41" alt="" width="248" height="41" data-recalc-dims="1" />](https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/12/dns_2.png)
 
-So far so good let’s verify if we can connect to OWA from both subnets. To perform this test simply open your favorite browser and browse to the OWA url, in this scenario https://mail.johanveldhuis.nl/owa:
+So far so good let’s verify if we can connect to OWA from both subnets. To perform this test simply open your favorite browser and browse to the OWA url, in this scenario https://mail.myuclab.nl/owa:
   
-[<img title="Outlook Web App" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/owa-300x202.png?resize=300%2C202" alt="" width="300" height="202" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/owa.png)
+[<img title="Outlook Web App" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/12/owa-300x202.png?resize=300%2C202" alt="" width="300" height="202" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/12/owa.png)
 
 As you can see OWA is displayed correctly. Once this test has been performed you will need to change the network settings of the client again to match the other network. Then perform the same test again and you should still have a working OWA only then proxied via the other server.
 
 As a final test we will perform several checks using Outlook. After configuring the profile you can see we’re connected to Outlook. When this is completed we verified that both the connection to the mailbox and autodiscover work:
 
-[<img title="Outlook" src="https://i2.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/outlook-300x300.png?resize=300%2C300" alt="" width="300" height="300" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/outlook.png)
+[<img title="Outlook" src="https://i2.wp.com/myuclab.nl/wp-content/uploads/2012/12/outlook-300x300.png?resize=300%2C300" alt="" width="300" height="300" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/12/outlook.png)
 
 Now let’s change the client’s network settings and see what happens. You might see a short disconnected but after a few seconds you are connected via the other server:
 
-[<img title="Outlook connected" src="https://i0.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/connected-300x16.png?resize=300%2C16" alt="" width="300" height="16" data-recalc-dims="1" />](https://i1.wp.com/johanveldhuis.nl/wp-content/uploads/2012/12/connected.png)
+[<img title="Outlook connected" src="https://i0.wp.com/myuclab.nl/wp-content/uploads/2012/12/connected-300x16.png?resize=300%2C16" alt="" width="300" height="16" data-recalc-dims="1" />](https://i1.wp.com/myuclab.nl/wp-content/uploads/2012/12/connected.png)
 
 And Outlook continuous to synchronize the mailbox for the user. Besides this test you might want to verify some other things via Outlook:
 

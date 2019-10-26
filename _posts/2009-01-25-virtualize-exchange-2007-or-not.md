@@ -4,7 +4,7 @@ title: To virtualize Exchange 2007 or not
 date: 2009-01-25T23:44:41+00:00
 author: Johan Veldhuis
 layout: post
-guid: http://johanveldhuis.nl/?p=1040
+guid: http://myuclab.nl/?p=1040
 permalink: /virtualize-exchange-2007-or-not/
 categories:
   - Exchange
