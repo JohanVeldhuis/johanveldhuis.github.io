@@ -8,7 +8,7 @@ markdown: kramdown
 disqus: "johanveldhuis"
 google_analytics: johanveldhuis
 title: 'MyUCLab'
-url: https://www.myuclab.nl
+url: https://myuclab.nl
 
 defaults:
   -
