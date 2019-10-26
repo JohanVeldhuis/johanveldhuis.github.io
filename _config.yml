@@ -7,17 +7,17 @@ highlighter: rouge
 markdown: kramdown
 disqus: "johanveldhuis"
 google_analytics: johanveldhuis
-title: 'Johan&#039;s Web Portal'
-url: https://www.johanveldhuis.nl
+title: 'MyUCLab'
+url: https://www.myuclab.nl
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: Johan&#039;s Web Portal
+      title: MyUCLab
 
-description: Info about Exchange, Office 365 and Lync.
+description: Info about Exchange, Office 365, Lync and Skype for Business.
 author:
   name: 'Johan Veldhuis'
   email: johan@johanveldhuis.nl
