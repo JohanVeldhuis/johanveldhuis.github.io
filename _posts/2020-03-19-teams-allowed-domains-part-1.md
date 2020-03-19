@@ -31,7 +31,7 @@ To do this perform the following steps:
 1. Browse to the SharePoint site
 2. Select **New** and from the menu select **List**
 
-![New menu](/assets/images/teamsalloweddomains/New_list.jpg)
+![New menu](/assets/images/teamsalloweddomains/New_List.jpg)
 
 3. Provide a name for the SharePoint list, for example **FederationAllowedDomains**
 4. From the left menu select **Site contents** and locate the list created earlier
